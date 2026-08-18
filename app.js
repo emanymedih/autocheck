@@ -1,5 +1,54 @@
 const VIN_RE = /^[A-HJ-NPR-Z0-9]{17}$/;
 const INVALID_VIN_LETTERS = /[IOQ]/;
+const THEME_STORAGE_KEY = "avtocheck-theme";
+const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+function getSavedTheme() {
+  try {
+    return localStorage.getItem(THEME_STORAGE_KEY);
+  } catch (_) {
+    return null;
+  }
+}
+
+function applyTheme(theme, { persist = false } = {}) {
+  const resolvedTheme = theme === "dark" ? "dark" : "light";
+  document.documentElement.dataset.theme = resolvedTheme;
+
+  const toggle = document.getElementById("themeToggle");
+  if (toggle) {
+    const isDark = resolvedTheme === "dark";
+    toggle.setAttribute("aria-pressed", String(isDark));
+    toggle.setAttribute("aria-label", isDark ? "Включить светлую тему" : "Включить тёмную тему");
+    toggle.title = isDark ? "Светлая тема" : "Тёмная тема";
+  }
+
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.setAttribute("content", resolvedTheme === "dark" ? "#0f1412" : "#ffffff");
+
+  if (persist) {
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, resolvedTheme);
+    } catch (_) {}
+  }
+}
+
+function initTheme() {
+  const currentTheme = document.documentElement.dataset.theme || (darkModeQuery.matches ? "dark" : "light");
+  applyTheme(currentTheme);
+
+  document.getElementById("themeToggle")?.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(nextTheme, { persist: true });
+  });
+
+  darkModeQuery.addEventListener?.("change", (event) => {
+    if (getSavedTheme()) return;
+    applyTheme(event.matches ? "dark" : "light");
+  });
+
+  requestAnimationFrame(() => document.documentElement.classList.add("theme-ready"));
+}
 
 function normalizeVin(value) {
   return value
@@ -130,6 +179,8 @@ document.querySelectorAll('a[href="#vin-help"]').forEach((link) => {
 });
 
 if (window.location.hash === "#vin-help") openVinHelp();
+
+initTheme();
 
 wireVinForm({
   formId: "vinForm",
