@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Авточек — проверка истории автомобиля по VIN." />
+  <title>Авточек — история автомобиля по VIN</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Авточек — главная">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">АВТОЧЕК</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">Что проверяем</a>
+        <a href="#how">Как работает</a>
+        <a href="#markets">Рынки</a>
+      </nav>
+      <a class="header-link" href="#vin">Проверить VIN</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="vin">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Китай — первый доступный рынок</div>
+          <h1>Узнайте историю автомобиля до покупки</h1>
+          <p class="hero-text">Введите VIN. Дальше Авточек сам соберёт доступную историю автомобиля, сопоставит события и подготовит единый понятный отчёт.</p>
+
+          <form class="vin-card" id="vinForm" novalidate>
+            <div class="market-row">
+              <span class="field-caption">Рынок автомобиля</span>
+              <button class="market-chip active" type="button" aria-pressed="true"><span class="flag-dot"></span>Китай</button>
+            </div>
+            <label class="vin-label" for="vinInput">VIN автомобиля</label>
+            <div class="vin-control">
+              <input id="vinInput" name="vin" type="text" inputmode="latin" autocomplete="off" spellcheck="false" maxlength="17" placeholder="Например, LYVUE25D5MB718839" aria-describedby="vinHint vinError" />
+              <button class="primary-button" type="submit">Проверить автомобиль <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="form-meta">
+              <span id="vinHint">17 символов VIN</span>
+              <span class="privacy-note">Без регистрации на первом шаге</span>
+            </div>
+            <p class="form-error" id="vinError" role="alert"></p>
+          </form>
+
+          <div class="result-card" id="resultCard" hidden>
+            <div><span class="result-kicker">VIN принят</span><strong id="resultVin">—</strong></div>
+            <p>Здесь будет следующий этап сценария Авточек. Оплату и автоматический опрос источников пока не подключаем.</p>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Что попадёт в отчёт">
+          <div class="panel-topline"><span>Будущий отчёт</span><span class="status-pill">Китай</span></div>
+          <div class="report-preview">
+            <div class="preview-head">
+              <div>
+                <span class="preview-label">История автомобиля</span>
+                <strong>Единая хронология</strong>
+              </div>
+            </div>
+            <div class="preview-list">
+              <div class="preview-item"><span class="preview-icon">01</span><div><strong>Пробег</strong><span>Сверим последовательность записей</span></div></div>
+              <div class="preview-item"><span class="preview-icon">02</span><div><strong>Обслуживание и ремонт</strong><span>Соберём найденные сервисные события</span></div></div>
+              <div class="preview-item"><span class="preview-icon">03</span><div><strong>Страховые события</strong><span>Покажем даты, суммы и детали, когда они доступны</span></div></div>
+              <div class="preview-item"><span class="preview-icon">04</span><div><strong>Кузов и риски</strong><span>Отдельно отметим важные повреждения и противоречия</span></div></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>Один VIN</strong><span>Без выбора поставщиков и сложных настроек</span></div>
+        <div><strong>Несколько слоёв истории</strong><span>Сервис, страховые события, пробег и другие доступные записи</span></div>
+        <div><strong>Один понятный результат</strong><span>Источники остаются внутренней инфраструктурой Авточек</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading"><span class="section-number">01</span><div><p class="section-kicker">Что проверяем</p><h2>Собираем разрозненные события в одну историю</h2></div></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-wide"><span class="feature-tag">История</span><h3>Хронология автомобиля</h3><p>Даты, пробеги, обслуживание, ремонты и страховые события будут собраны в одной последовательности.</p></article>
+          <article class="feature-card"><span class="feature-tag">Контроль</span><h3>Пробег</h3><p>Проверяем последовательность найденных значений и отмечаем аномалии.</p></article>
+          <article class="feature-card"><span class="feature-tag">Риски</span><h3>Повреждения</h3><p>Отделяем косметические ремонты от событий, которые требуют внимания.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="how">
+      <div class="container">
+        <div class="section-heading"><span class="section-number">02</span><div><p class="section-kicker">Как работает</p><h2>Для пользователя всё начинается с одного поля</h2></div></div>
+        <div class="steps">
+          <div class="step"><span>1</span><div><h3>Введите VIN</h3><p>Авточек принимает 17-значный номер автомобиля.</p></div></div>
+          <div class="step"><span>2</span><div><h3>Система собирает историю</h3><p>Внутренние источники и сценарии пользователь выбирать не будет.</p></div></div>
+          <div class="step"><span>3</span><div><h3>Получите единый отчёт</h3><p>Факты, хронология, риски и пояснения на русском языке.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="markets">
+      <div class="container markets-layout">
+        <div><p class="section-kicker">Рынки</p><h2>Начинаем с Китая</h2><p class="markets-copy">Архитектура страницы уже рассчитана на новые рынки. Пока в работе — китайский сценарий проверки.</p></div>
+        <div class="markets-list">
+          <div class="market-item available"><span>Китай</span><strong>Доступен</strong></div>
+          <div class="market-item"><span>Япония</span><strong>Скоро</strong></div>
+          <div class="market-item"><span>Южная Корея</span><strong>Скоро</strong></div>
+          <div class="market-item"><span>США</span><strong>Скоро</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>© Авточек</span><span>Прототип стартовой страницы</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
