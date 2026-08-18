@@ -116,6 +116,21 @@ function wireVinForm({ formId, inputId, errorId, counterId, statusId, showResult
   });
 }
 
+function openVinHelp() {
+  const target = document.getElementById("vin-help");
+  if (!target) return;
+  target.open = true;
+}
+
+document.querySelectorAll('a[href="#vin-help"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    openVinHelp();
+    requestAnimationFrame(() => document.getElementById("vin-help")?.scrollIntoView({ behavior: "smooth", block: "center" }));
+  });
+});
+
+if (window.location.hash === "#vin-help") openVinHelp();
+
 wireVinForm({
   formId: "vinForm",
   inputId: "vinInput",
