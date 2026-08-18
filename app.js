@@ -58,6 +58,145 @@ function initTheme() {
   requestAnimationFrame(() => document.documentElement.classList.add("theme-ready"));
 }
 
+function installReportVisuals() {
+  if (!document.getElementById("reportVisualStyles")) {
+    const style = document.createElement("style");
+    style.id = "reportVisualStyles";
+    style.textContent = `
+      .hero-visual.hero-visual-image {
+        min-height: 484px;
+        display: grid;
+        place-items: center;
+        align-self: end;
+        overflow: visible;
+        padding: 20px 0 8px;
+      }
+      .hero-report-image {
+        display: block;
+        width: min(100%, 500px);
+        height: auto;
+        max-height: 470px;
+        object-fit: contain;
+        filter: drop-shadow(0 18px 35px rgba(28, 35, 31, .10));
+      }
+      .report-showcase-layout {
+        display: grid;
+        grid-template-columns: minmax(360px, .9fr) minmax(0, 1.1fr);
+        gap: 30px;
+        align-items: start;
+      }
+      .report-overview-figure {
+        position: sticky;
+        top: 92px;
+        margin: 0;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--soft);
+        box-shadow: var(--shadow);
+      }
+      .report-overview-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: contain;
+      }
+      .report-overview-figure figcaption {
+        margin-top: 13px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .report-showcase-layout .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        margin: 0;
+      }
+      .report-showcase-layout .service-card {
+        min-height: 220px;
+      }
+      .report-showcase-layout .service-card.featured {
+        grid-column: 1 / -1;
+        min-height: 190px;
+      }
+      @media (max-width: 1040px) {
+        .report-showcase-layout {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        .report-overview-figure {
+          position: static;
+          width: min(100%, 720px);
+          justify-self: center;
+        }
+      }
+      @media (max-width: 760px) {
+        .hero-visual.hero-visual-image {
+          min-height: 390px;
+          padding-top: 4px;
+        }
+        .hero-report-image {
+          width: min(100%, 370px);
+          max-height: 370px;
+        }
+        .report-overview-figure {
+          padding: 11px;
+          border-radius: 14px;
+        }
+        .report-showcase-layout .services-grid {
+          grid-template-columns: 1fr;
+        }
+        .report-showcase-layout .service-card.featured {
+          grid-column: auto;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const hero = document.querySelector(".hero-visual");
+  if (hero && !hero.classList.contains("hero-visual-image")) {
+    const image = document.createElement("img");
+    image.src = "assets/hero-report.webp";
+    image.alt = "Пример отчёта Авточек: пробег, повреждения и рекомендуемая проверка";
+    image.className = "hero-report-image";
+    image.width = 260;
+    image.height = 245;
+    image.decoding = "async";
+    image.loading = "eager";
+    image.fetchPriority = "high";
+    hero.replaceChildren(image);
+    hero.classList.add("hero-visual-image");
+    hero.setAttribute("aria-label", "Пример отчёта Авточек");
+  }
+
+  const servicesGrid = document.querySelector("#report .services-grid");
+  if (servicesGrid && !document.querySelector(".report-showcase-layout")) {
+    const layout = document.createElement("div");
+    layout.className = "report-showcase-layout";
+
+    const figure = document.createElement("figure");
+    figure.className = "report-overview-figure";
+
+    const image = document.createElement("img");
+    image.src = "assets/report-overview.webp";
+    image.alt = "Пример экрана отчёта с оценкой состояния, данными автомобиля и отмеченными зонами кузова";
+    image.className = "report-overview-image";
+    image.width = 320;
+    image.height = 288;
+    image.decoding = "async";
+    image.loading = "lazy";
+
+    const caption = document.createElement("figcaption");
+    caption.textContent = "Пример структуры исходных данных, которые Авточек переводит и собирает в понятный отчёт.";
+
+    figure.append(image, caption);
+    servicesGrid.before(layout);
+    layout.append(figure, servicesGrid);
+  }
+}
+
 function normalizeVin(value) {
   return value
     .toUpperCase()
@@ -188,6 +327,7 @@ document.querySelectorAll('a[href="#vin-help"]').forEach((link) => {
 
 if (window.location.hash === "#vin-help") openVinHelp();
 
+installReportVisuals();
 initTheme();
 
 wireVinForm({
