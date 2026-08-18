@@ -5,7 +5,8 @@ const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 function getSavedTheme() {
   try {
-    return localStorage.getItem(THEME_STORAGE_KEY);
+    const saved = localStorage.getItem(THEME_STORAGE_KEY);
+    return saved === "dark" || saved === "light" ? saved : null;
   } catch (_) {
     return null;
   }
@@ -13,18 +14,23 @@ function getSavedTheme() {
 
 function applyTheme(theme, { persist = false } = {}) {
   const resolvedTheme = theme === "dark" ? "dark" : "light";
-  document.documentElement.dataset.theme = resolvedTheme;
+  const root = document.documentElement;
+  const isDark = resolvedTheme === "dark";
+
+  root.dataset.theme = resolvedTheme;
+  root.style.colorScheme = resolvedTheme;
 
   const toggle = document.getElementById("themeToggle");
   if (toggle) {
-    const isDark = resolvedTheme === "dark";
     toggle.setAttribute("aria-pressed", String(isDark));
     toggle.setAttribute("aria-label", isDark ? "Включить светлую тему" : "Включить тёмную тему");
     toggle.title = isDark ? "Светлая тема" : "Тёмная тема";
   }
 
   const themeColor = document.querySelector('meta[name="theme-color"]');
-  if (themeColor) themeColor.setAttribute("content", resolvedTheme === "dark" ? "#0f1412" : "#ffffff");
+  if (themeColor) {
+    themeColor.setAttribute("content", isDark ? "#0f1412" : "#ffffff");
+  }
 
   if (persist) {
     try {
@@ -34,10 +40,12 @@ function applyTheme(theme, { persist = false } = {}) {
 }
 
 function initTheme() {
-  const currentTheme = document.documentElement.dataset.theme || (darkModeQuery.matches ? "dark" : "light");
-  applyTheme(currentTheme);
+  const savedTheme = getSavedTheme();
+  const initialTheme = savedTheme || document.documentElement.dataset.theme || (darkModeQuery.matches ? "dark" : "light");
+  applyTheme(initialTheme);
 
-  document.getElementById("themeToggle")?.addEventListener("click", () => {
+  const toggle = document.getElementById("themeToggle");
+  toggle?.addEventListener("click", () => {
     const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     applyTheme(nextTheme, { persist: true });
   });
