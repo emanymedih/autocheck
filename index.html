@@ -4,48 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Авточек — проверка истории автомобиля по VIN." />
-  <title>Авточек — история автомобиля по VIN</title>
+  <title>Авточек — проверка автомобиля по VIN</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a class="brand" href="#top" aria-label="Авточек — главная">
-        <span class="brand-mark">А</span>
-        <span class="brand-name">АВТОЧЕК</span>
+        <span>А</span><span>В</span><span>Т</span><span>О</span><span>Ч</span><span>Е</span><span>К</span>
       </a>
 
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#vin">Проверка авто <span>⌄</span></a>
-        <a href="#about">Что проверяем</a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#check">Проверка авто <span class="chevron">⌄</span></a>
         <a href="#how">Как работает</a>
-        <a href="#markets">Рынки <span>⌄</span></a>
+        <a href="#business">Бизнес</a>
+        <a href="#about">Полезное <span class="chevron">⌄</span></a>
       </nav>
 
       <div class="header-actions">
-        <a href="#vin" class="icon-link" aria-label="Проверить VIN">⌕</a>
-        <span class="header-divider"></span>
-        <span class="region-switcher">Китай <b>⌄</b></span>
-        <span class="header-divider"></span>
-        <a href="#vin" class="login-link">Войти</a>
+        <button class="icon-button" type="button" aria-label="Поиск">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.2 4.2"></path></svg>
+        </button>
+        <span class="divider"></span>
+        <button class="country-button" type="button">Китай <span class="chevron">⌄</span></button>
+        <span class="divider"></span>
+        <a class="login-link" href="#">Войти</a>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero" id="vin">
-      <div class="container hero-grid">
+    <section class="hero" id="check">
+      <div class="hero-inner">
         <div class="hero-copy">
-          <p class="hero-kicker">ПРОВЕРКА АВТОМОБИЛЯ ИЗ КИТАЯ</p>
-          <h1>История автомобиля в одном отчёте.</h1>
-          <p class="hero-text">
-            Введите VIN и получите понятную картину по найденным событиям: пробегу,
-            обслуживанию, ремонтам, страховым случаям и другим доступным данным.
+          <p class="hero-kicker">АВТОЧЕК · ПРОВЕРКА АВТОМОБИЛЯ</p>
+          <h1>Вся история автомобиля в одном отчёте.</h1>
+          <p class="hero-description">
+            Введите VIN и получите важную информацию о пробеге, ремонтах,
+            страховых событиях и других записях, найденных по автомобилю.
           </p>
 
           <form class="vin-form" id="vinForm" novalidate>
-            <label class="vin-field" for="vinInput">
-              <span>Введите VIN автомобиля</span>
+            <div class="vin-field">
+              <label for="vinInput">Введите VIN автомобиля</label>
               <input
                 id="vinInput"
                 name="vin"
@@ -57,152 +58,167 @@
                 placeholder="LYVUE25D5MB718839"
                 aria-describedby="vinError"
               />
-            </label>
-            <button class="primary-button" type="submit">
-              <span>Проверить</span>
-              <b aria-hidden="true">→</b>
+            </div>
+            <button class="check-button" type="submit">
+              <span>Проверить авто</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
             </button>
             <p class="form-error" id="vinError" role="alert"></p>
           </form>
 
           <div class="result-card" id="resultCard" hidden>
-            <div>
-              <span>VIN принят</span>
-              <strong id="resultVin">—</strong>
-            </div>
-            <p>Следующим шагом здесь появится карточка найденного автомобиля.</p>
+            <span class="result-kicker">VIN принят</span>
+            <strong id="resultVin">—</strong>
+            <p>Следующим этапом здесь появится карточка автомобиля и переход к формированию отчёта.</p>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Пример содержания будущего отчёта">
-          <div class="visual-halo"></div>
-
-          <div class="report-card card-mileage">
-            <span class="report-icon good">✓</span>
-            <div>
-              <strong>Пробег</strong>
-              <small>Последняя запись</small>
+        <div class="hero-visual" aria-label="Пример структуры будущего отчёта Авточек">
+          <div class="visual-orbit"></div>
+          <div class="report-stack">
+            <div class="report-card report-card-top">
+              <span class="report-icon report-icon-green">✓</span>
+              <div>
+                <strong>Пробег</strong>
+                <small>Последняя запись</small>
+              </div>
+              <b>67 802 км</b>
             </div>
-            <b>67 802 км</b>
+
+            <div class="report-card report-card-main">
+              <span class="report-icon report-icon-red">!</span>
+              <div>
+                <strong>Страховые события</strong>
+                <small>Найдены записи в истории</small>
+              </div>
+              <b>2</b>
+            </div>
+
+            <div class="report-card report-card-mid">
+              <span class="report-icon report-icon-amber">↺</span>
+              <div>
+                <strong>Обслуживание</strong>
+                <small>Сервисные визиты и ремонты</small>
+              </div>
+              <b>11</b>
+            </div>
+
+            <div class="report-card report-card-bottom">
+              <span class="report-icon report-icon-blue">◇</span>
+              <div>
+                <strong>История кузова</strong>
+                <small>Детали найденных работ</small>
+              </div>
+              <b>Есть</b>
+            </div>
           </div>
 
-          <div class="report-card card-damage">
-            <span class="report-icon warning">!</span>
-            <div>
-              <strong>Кузовной ремонт</strong>
-              <small>Найдены события в истории</small>
-            </div>
-          </div>
-
-          <div class="report-card card-service">
-            <span class="report-icon neutral">•</span>
-            <div>
-              <strong>Обслуживание</strong>
-              <small>Хронология сервисных записей</small>
-            </div>
-          </div>
-
-          <div class="report-card card-insurance">
-            <span class="report-icon neutral">₽</span>
-            <div>
-              <strong>Страховые события</strong>
-              <small>Даты, суммы и детали</small>
-            </div>
-          </div>
-
-          <div class="car-illustration" aria-hidden="true">
-            <div class="car-body"></div>
-            <div class="car-window"></div>
-            <div class="car-wheel car-wheel-left"></div>
-            <div class="car-wheel car-wheel-right"></div>
+          <div class="car-badge" aria-hidden="true">
+            <svg class="car-svg" viewBox="0 0 240 130">
+              <path class="car-body" d="M28 82c5-18 16-30 31-36l27-10c12-5 20-17 33-18h38c16 0 24 10 35 22l16 17c15 4 24 13 27 25l3 14H26l2-14z" />
+              <path class="car-window" d="M91 39c10-4 18-14 29-14h33c12 0 20 7 29 18l9 10H74l17-14z" />
+              <circle class="car-wheel" cx="72" cy="97" r="18" />
+              <circle class="car-wheel" cx="190" cy="97" r="18" />
+              <circle class="car-hub" cx="72" cy="97" r="7" />
+              <circle class="car-hub" cx="190" cy="97" r="7" />
+            </svg>
+            <div class="car-badge-label">Проверка по VIN</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Что покажет Авточек</p>
-          <h2>Основные данные по истории автомобиля</h2>
-        </div>
+    <section class="services-section" id="about">
+      <div class="content-container">
+        <p class="section-eyebrow">ВОЗМОЖНОСТИ ОТЧЁТА</p>
+        <h2>Что можно проверить в Авточек:</h2>
 
-        <div class="benefit-grid">
-          <article class="benefit-card">
-            <span class="benefit-icon">01</span>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon danger">!</div>
             <h3>Повреждения и ремонты</h3>
-            <p>Покажем найденные записи о кузовных работах, ДТП и заменённых деталях.</p>
+            <p>Покажем найденные сведения о кузовных работах и страховых событиях.</p>
           </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">02</span>
+          <article class="service-card">
+            <div class="service-icon success">↗</div>
             <h3>Пробег</h3>
-            <p>Соберём значения по датам и отметим подозрительные разрывы или снижение пробега.</p>
+            <p>Соберём последовательность значений и подсветим возможные расхождения.</p>
           </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">03</span>
-            <h3>Страховые события</h3>
-            <p>Если данные доступны, покажем периоды, суммы и характер страхового ремонта.</p>
-          </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">04</span>
+          <article class="service-card">
+            <div class="service-icon blue">⌁</div>
             <h3>Обслуживание</h3>
-            <p>Соберём найденные сервисные записи, работы и заменённые расходные материалы.</p>
+            <p>Соберём доступные сервисные записи, работы и заменённые детали.</p>
           </article>
-          <article class="benefit-card">
-            <span class="benefit-icon">05</span>
-            <h3>Риски</h3>
-            <p>Выделим события, которые требуют дополнительной проверки перед покупкой.</p>
+          <article class="service-card">
+            <div class="service-icon amber">◎</div>
+            <h3>Страховые события</h3>
+            <p>Покажем даты, суммы и детали урегулирований, когда они доступны.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon violet">◇</div>
+            <h3>История автомобиля</h3>
+            <p>Объединим найденные события в одну понятную хронологию.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="how">
-      <div class="container how-grid">
-        <div>
-          <p class="section-kicker">Как работает</p>
-          <h2>Один VIN. Дальше всё делает система.</h2>
+    <section class="why-section" id="how">
+      <div class="content-container why-grid">
+        <div class="why-visual">
+          <div class="mini-report">
+            <span>История автомобиля</span>
+            <strong>12 записей</strong>
+            <div class="mini-line long"></div>
+            <div class="mini-line"></div>
+            <div class="mini-line short"></div>
+          </div>
+          <div class="mini-car">AUTO</div>
         </div>
-
-        <div class="steps">
-          <div class="step">
-            <span>1</span>
-            <div><h3>Введите VIN</h3><p>17-значный номер автомобиля.</p></div>
-          </div>
-          <div class="step">
-            <span>2</span>
-            <div><h3>Авточек собирает данные</h3><p>Пользователь не выбирает внутренние источники и поставщиков.</p></div>
-          </div>
-          <div class="step">
-            <span>3</span>
-            <div><h3>Получите единый отчёт</h3><p>Хронология, риски и объяснения на русском языке.</p></div>
+        <div class="why-copy">
+          <p class="section-eyebrow">ПЕРЕД ПОКУПКОЙ</p>
+          <h2>Почему проверка истории важна.</h2>
+          <div class="why-points">
+            <div><strong>Понимайте реальный пробег</strong><p>Последовательность записей помогает заметить странные изменения одометра.</p></div>
+            <div><strong>Видите прошлые ремонты</strong><p>Даже аккуратно восстановленный кузов может оставить цифровой след.</p></div>
+            <div><strong>Принимайте решение на фактах</strong><p>История автомобиля даёт дополнительные аргументы перед осмотром и покупкой.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="markets">
-      <div class="container markets-grid">
-        <div>
-          <p class="section-kicker">Рынки</p>
-          <h2>Первым запускаем Китай</h2>
-          <p class="markets-copy">Архитектура продукта рассчитана на подключение новых стран без изменения основного сценария для пользователя.</p>
+    <section class="steps-section" id="business">
+      <div class="content-container">
+        <p class="section-eyebrow">КАК ЭТО РАБОТАЕТ</p>
+        <h2>Быстрый путь к отчёту Авточек.</h2>
+        <div class="steps-grid">
+          <article><span>1</span><h3>Введите VIN</h3><p>Укажите 17-значный VIN нужного автомобиля.</p></article>
+          <article><span>2</span><h3>Мы собираем данные</h3><p>Авточек запускает внутренний сценарий проверки по подключённым источникам.</p></article>
+          <article><span>3</span><h3>Получите единый отчёт</h3><p>Смотрите хронологию, риски и пояснения на русском языке.</p></article>
         </div>
+      </div>
+    </section>
 
-        <div class="markets-list">
-          <div class="market-row active"><span>Китай</span><strong>Доступен</strong></div>
-          <div class="market-row"><span>Япония</span><strong>Скоро</strong></div>
-          <div class="market-row"><span>Южная Корея</span><strong>Скоро</strong></div>
-          <div class="market-row"><span>США</span><strong>Скоро</strong></div>
+    <section class="bottom-check">
+      <div class="content-container bottom-check-inner">
+        <div>
+          <p class="section-eyebrow">АВТОЧЕК</p>
+          <h2>Проверьте автомобиль перед покупкой.</h2>
         </div>
+        <a class="bottom-button" href="#check">Ввести VIN <span>→</span></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© Авточек</span>
-      <span>Прототип стартовой страницы</span>
+    <div class="content-container footer-inner">
+      <div class="footer-brand">АВТОЧЕК</div>
+      <div class="footer-links">
+        <a href="#about">Что проверяем</a>
+        <a href="#how">Как работает</a>
+        <a href="#">Поддержка</a>
+      </div>
+      <span>© 2026 Авточек</span>
     </div>
   </footer>
 
