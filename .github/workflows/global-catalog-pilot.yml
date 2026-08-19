@@ -1,0 +1,52 @@
+name: Global catalog pilot
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/global-catalog-pilot.trigger"
+
+permissions:
+  contents: write
+
+jobs:
+  import-global-catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: collector
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm test
+      - name: Import 20 export listings
+        run: npm run import:che168-global -- --limit 20 --pages 2 --concurrency 3
+      - name: Validate public snapshot
+        run: |
+          node -e 'const fs=require("fs"); const p=JSON.parse(fs.readFileSync("data/global-public-catalog.json","utf8")); if (!Array.isArray(p.items) || p.items.length < 10) { throw new Error(`Expected at least 10 imported vehicles, got ${p.items?.length || 0}`); } console.log(`Imported ${p.items.length} public vehicles`);'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: global-catalog-pilot
+          path: |
+            collector/data/global-catalog.json
+            collector/data/global-public-catalog.json
+          retention-days: 7
+      - name: Publish sanitized pilot snapshot
+        working-directory: .
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector/data/global-public-catalog.json
+          if git diff --cached --quiet; then
+            echo "Public snapshot unchanged"
+            exit 0
+          fi
+          git commit -m "Refresh global catalog pilot snapshot"
+          git push
