@@ -36,11 +36,57 @@ function normalizeStatus(value) {
   return "unknown";
 }
 
-function normalizePhotos(value, separator = "|") {
+function tryJson(value) {
+  if (typeof value !== "string") return null;
+  const source = value.trim();
+  if (!source.startsWith("[") && !source.startsWith("{")) return null;
+  try { return JSON.parse(source); } catch (_) { return null; }
+}
+
+function normalizeTextList(value, separator = "|") {
   if (Array.isArray(value)) return value.map(clean).filter(Boolean);
+  const parsed = tryJson(value);
+  if (Array.isArray(parsed)) return parsed.map((item) => clean(typeof item === "object" ? item?.label ?? item?.name ?? item?.value : item)).filter(Boolean);
   const text = clean(value);
   if (!text) return [];
   return text.split(separator).map((item) => item.trim()).filter(Boolean);
+}
+
+function normalizePhotos(value, separator = "|") {
+  return normalizeTextList(value, separator);
+}
+
+function normalizeDetailItems(value, { itemSeparator = "|", partSeparator = "::" } = {}) {
+  const normalizeObject = (item) => {
+    if (!item || typeof item !== "object") return null;
+    const label = clean(item.label ?? item.name ?? item.title);
+    const text = clean(item.text ?? item.value ?? item.description);
+    const status = clean(item.status ?? item.state ?? item.tone);
+    if (!label && !text) return null;
+    return { label: label || "Сведения", text: text || "Уточняется", status };
+  };
+
+  if (Array.isArray(value)) return value.map((item) => typeof item === "object" ? normalizeObject(item) : normalizeDetailItems(String(item), { itemSeparator, partSeparator })[0]).filter(Boolean);
+  const parsed = tryJson(value);
+  if (Array.isArray(parsed)) return parsed.map(normalizeObject).filter(Boolean);
+
+  const text = clean(value);
+  if (!text) return [];
+  return text.split(itemSeparator).map((chunk) => {
+    const parts = chunk.split(partSeparator).map((part) => part.trim());
+    const label = clean(parts[0]);
+    const description = clean(parts[1]);
+    const status = clean(parts[2]);
+    if (!label && !description) return null;
+    return { label: label || "Сведения", text: description || "Уточняется", status };
+  }).filter(Boolean);
+}
+
+function normalizeExtraSpecs(value, { itemSeparator = "|", partSeparator = "::" } = {}) {
+  return normalizeDetailItems(value, { itemSeparator, partSeparator }).map((item) => ({
+    label: item.label,
+    value: item.text
+  }));
 }
 
 function stableVehicleId(providerId, sourceListingId) {
@@ -48,7 +94,7 @@ function stableVehicleId(providerId, sourceListingId) {
   return `av_${digest}`;
 }
 
-export function normalizeListing(raw, { providerId, photoSeparator = "|" } = {}) {
+export function normalizeListing(raw, { providerId, photoSeparator = "|", detailSeparator = "|", detailPartSeparator = "::" } = {}) {
   if (!providerId) throw new Error("providerId is required");
 
   const sourceListingId = clean(raw.source_listing_id);
@@ -61,6 +107,7 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|" } = {})
 
   const now = new Date().toISOString();
   const sourceUpdatedAt = clean(raw.updated_at);
+  const detailOptions = { itemSeparator: detailSeparator, partSeparator: detailPartSeparator };
 
   return {
     id: stableVehicleId(providerId, sourceListingId),
@@ -81,6 +128,11 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|" } = {})
     registration: clean(raw.registration),
     transfers: integerValue(raw.transfers),
     vin: normalizeVin(raw.vin),
+    description: clean(raw.description),
+    features: normalizeTextList(raw.features, detailSeparator),
+    listingFacts: normalizeDetailItems(raw.listing_facts, detailOptions),
+    conditionChecks: normalizeDetailItems(raw.condition_checks, detailOptions),
+    extraSpecs: normalizeExtraSpecs(raw.extra_specs, detailOptions),
     photos: normalizePhotos(raw.photo_urls, photoSeparator),
     status: normalizeStatus(raw.status),
     sourceUpdatedAt,
@@ -114,6 +166,11 @@ export function toPublicVehicle(vehicle) {
     registration: vehicle.registration,
     transfers: vehicle.transfers,
     vin: vehicle.vin,
+    description: vehicle.description || null,
+    features: Array.isArray(vehicle.features) ? vehicle.features : [],
+    listingFacts: Array.isArray(vehicle.listingFacts) ? vehicle.listingFacts : [],
+    conditionChecks: Array.isArray(vehicle.conditionChecks) ? vehicle.conditionChecks : [],
+    extraSpecs: Array.isArray(vehicle.extraSpecs) ? vehicle.extraSpecs : [],
     photos: vehicle.photos,
     status: vehicle.status,
     updatedAt: vehicle.sourceUpdatedAt || vehicle.lastSeenAt
