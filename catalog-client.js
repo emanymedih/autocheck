@@ -1,5 +1,6 @@
 (() => {
   const API_BASE = window.AVTOCHECK_CATALOG_API || "/api";
+  const STATIC_SNAPSHOT_URL = "collector/data/global-public-catalog.json";
   const SESSION_KEY = "avtocheck-selected-vehicle";
   const PAGE_SIZE = 24;
   const CONTROL_IDS = [
@@ -20,7 +21,10 @@
   ];
 
   let controls = {};
+  let baseOptions = { brands: [], bodies: [], engines: [] };
   let liveVehicles = [];
+  let staticSnapshot = null;
+  let sourceMode = null;
   let captureBound = false;
   let liveMode = false;
   let currentPage = 1;
@@ -41,6 +45,20 @@
 
   function escapeHtml(value) {
     return String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[char]);
+  }
+
+  function text(value) {
+    return String(value ?? "").trim();
+  }
+
+  function lower(value) {
+    return text(value).toLocaleLowerCase("ru-RU");
+  }
+
+  function finiteNumber(value) {
+    if (value === null || value === undefined || value === "") return null;
+    const number = Number(value);
+    return Number.isFinite(number) ? number : null;
   }
 
   function safePhoto(url) {
@@ -120,14 +138,24 @@
     return clone;
   }
 
+  function optionValues(select) {
+    if (!select) return [];
+    return [...select.options].map((option) => option.value).filter(Boolean);
+  }
+
   function collectControls() {
     CONTROL_IDS.forEach((id) => { controls[id] = replaceControl(id); });
+    baseOptions = {
+      brands: optionValues(controls.catalogBrand),
+      bodies: optionValues(controls.catalogBody),
+      engines: optionValues(controls.catalogEngine)
+    };
   }
 
   function openVehicle(id, request = false) {
     const vehicle = liveVehicles.find((item) => item.id === id);
     if (!vehicle) return;
-    try { sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...vehicle, entry: "catalog-api" })); } catch (_) {}
+    try { sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...vehicle, entry: sourceMode === "snapshot" ? "catalog-snapshot" : "catalog-api" })); } catch (_) {}
     const params = new URLSearchParams({ id: vehicle.id });
     if (request && vehicle.status === "active") params.set("action", "report");
     window.location.href = `vehicle.html?${params.toString()}`;
@@ -161,6 +189,15 @@
     return `<option value="">${escapeHtml(firstLabel)}</option>${(values || []).map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("")}`;
   }
 
+  function uniqueSorted(values) {
+    return [...new Set(values.map(text).filter(Boolean))].sort((a, b) => a.localeCompare(b, "ru"));
+  }
+
+  function numericRange(values) {
+    const numbers = values.map(finiteNumber).filter((value) => value !== null);
+    return numbers.length ? { min: Math.min(...numbers), max: Math.max(...numbers) } : { min: null, max: null };
+  }
+
   function setSelectOptions(select, values, firstLabel, preferredValue = "") {
     if (!select) return;
     select.innerHTML = optionList(values, firstLabel);
@@ -190,6 +227,39 @@
       };
       [...controls.catalogStatus.options].forEach((option) => { if (labels[option.value]) option.textContent = labels[option.value]; });
     }
+  }
+
+  function staticFacets(items) {
+    const active = items.filter((vehicle) => vehicle.status === "active");
+    const source = active.length ? active : items;
+    const statusCounts = items.reduce((acc, vehicle) => {
+      const key = vehicle.status || "unknown";
+      acc[key] = (acc[key] || 0) + 1;
+      return acc;
+    }, {});
+
+    return {
+      brands: uniqueSorted([...baseOptions.brands, ...source.map((vehicle) => vehicle.brand)]),
+      cities: uniqueSorted(source.map((vehicle) => vehicle.city)),
+      bodies: uniqueSorted([...baseOptions.bodies, ...source.map((vehicle) => vehicle.body)]),
+      engines: uniqueSorted([...baseOptions.engines, ...source.map((vehicle) => vehicle.energyType)]),
+      year: numericRange(source.map((vehicle) => vehicle.year)),
+      price: numericRange(source.map((vehicle) => vehicle.price)),
+      mileage: numericRange(source.map((vehicle) => vehicle.mileage)),
+      statusCounts: {
+        active: statusCounts.active || 0,
+        inactive: statusCounts.inactive || 0,
+        unknown: statusCounts.unknown || 0
+      }
+    };
+  }
+
+  function updatePricePlaceholders(items) {
+    const currencies = uniqueSorted(items.map((vehicle) => vehicle.currency));
+    const symbols = { CNY: "¥", USD: "$", EUR: "€", RUB: "₽" };
+    const suffix = currencies.length === 1 ? `, ${symbols[currencies[0]] || currencies[0]}` : "";
+    if (controls.catalogPriceMin) controls.catalogPriceMin.placeholder = `Цена от${suffix}`;
+    if (controls.catalogPriceMax) controls.catalogPriceMax.placeholder = `Цена до${suffix}`;
   }
 
   function restoreFiltersFromUrl() {
@@ -288,7 +358,9 @@
       intro.after(state);
     }
     const date = updatedAt ? new Date(updatedAt) : null;
-    state.textContent = date && !Number.isNaN(date.getTime()) ? `Каталог синхронизирован ${date.toLocaleString("ru-RU")}` : "Каталог загружен из базы Авточек";
+    state.textContent = date && !Number.isNaN(date.getTime())
+      ? `Каталог Авточек обновлён ${date.toLocaleString("ru-RU")}`
+      : "Каталог Авточек загружен";
   }
 
   function renderPayload(payload) {
@@ -312,6 +384,114 @@
     updateLiveState(payload.updatedAt);
   }
 
+  function compareNullableNumbers(a, b, direction = 1) {
+    const left = finiteNumber(a);
+    const right = finiteNumber(b);
+    if (left === null && right === null) return 0;
+    if (left === null) return 1;
+    if (right === null) return -1;
+    return (left - right) * direction;
+  }
+
+  function staticPayload(items, params, updatedAt) {
+    let result = [...items];
+    const status = params.get("status") || "active";
+    const brand = params.get("brand") || "";
+    const city = params.get("city") || "";
+    const body = params.get("body") || "";
+    const engine = lower(params.get("engine"));
+    const q = lower(params.get("q"));
+    const yearMin = finiteNumber(params.get("year_min"));
+    const yearMax = finiteNumber(params.get("year_max"));
+    const priceMin = finiteNumber(params.get("price_min"));
+    const priceMax = finiteNumber(params.get("price_max"));
+    const mileageMin = finiteNumber(params.get("mileage_min"));
+    const mileageMax = finiteNumber(params.get("mileage_max"));
+    const sort = params.get("sort") || "updated-desc";
+    const pageSize = Math.max(1, Number.parseInt(params.get("page_size") || String(PAGE_SIZE), 10) || PAGE_SIZE);
+    const requestedPage = Math.max(1, Number.parseInt(params.get("page") || "1", 10) || 1);
+
+    if (status !== "all") result = result.filter((vehicle) => (vehicle.status || "unknown") === status);
+    if (brand) result = result.filter((vehicle) => vehicle.brand === brand);
+    if (city) result = result.filter((vehicle) => vehicle.city === city);
+    if (body) result = result.filter((vehicle) => vehicle.body === body);
+    if (engine) {
+      result = result.filter((vehicle) => {
+        const energyType = lower(vehicle.energyType);
+        const engineValue = lower(vehicle.engine);
+        return energyType === engine || energyType.includes(engine) || engineValue.includes(engine);
+      });
+    }
+    if (yearMin !== null) result = result.filter((vehicle) => finiteNumber(vehicle.year) !== null && finiteNumber(vehicle.year) >= yearMin);
+    if (yearMax !== null) result = result.filter((vehicle) => finiteNumber(vehicle.year) !== null && finiteNumber(vehicle.year) <= yearMax);
+    if (priceMin !== null) result = result.filter((vehicle) => finiteNumber(vehicle.price) !== null && finiteNumber(vehicle.price) >= priceMin);
+    if (priceMax !== null) result = result.filter((vehicle) => finiteNumber(vehicle.price) !== null && finiteNumber(vehicle.price) <= priceMax);
+    if (mileageMin !== null) result = result.filter((vehicle) => finiteNumber(vehicle.mileage) !== null && finiteNumber(vehicle.mileage) >= mileageMin);
+    if (mileageMax !== null) result = result.filter((vehicle) => finiteNumber(vehicle.mileage) !== null && finiteNumber(vehicle.mileage) <= mileageMax);
+    if (q) {
+      result = result.filter((vehicle) => lower([
+        vehicle.title,
+        vehicle.brand,
+        vehicle.model,
+        vehicle.trim,
+        vehicle.body,
+        vehicle.energyType,
+        vehicle.engine,
+        vehicle.city
+      ].filter(Boolean).join(" ")).includes(q));
+    }
+
+    if (sort === "year-desc") result.sort((a, b) => compareNullableNumbers(a.year, b.year, -1));
+    if (sort === "year-asc") result.sort((a, b) => compareNullableNumbers(a.year, b.year, 1));
+    if (sort === "price-asc") result.sort((a, b) => compareNullableNumbers(a.price, b.price, 1));
+    if (sort === "price-desc") result.sort((a, b) => compareNullableNumbers(a.price, b.price, -1));
+    if (sort === "mileage-asc") result.sort((a, b) => compareNullableNumbers(a.mileage, b.mileage, 1));
+    if (sort === "mileage-desc") result.sort((a, b) => compareNullableNumbers(a.mileage, b.mileage, -1));
+    if (sort === "updated-desc") result.sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")));
+
+    const total = result.length;
+    const totalPages = Math.max(1, Math.ceil(total / pageSize));
+    const page = Math.min(requestedPage, totalPages);
+    const offset = (page - 1) * pageSize;
+
+    return {
+      items: result.slice(offset, offset + pageSize),
+      total,
+      page,
+      pageSize,
+      totalPages,
+      hasPrevious: page > 1,
+      hasNext: page < totalPages,
+      updatedAt
+    };
+  }
+
+  async function loadStaticSnapshot() {
+    if (staticSnapshot) return staticSnapshot;
+    const response = await fetch(STATIC_SNAPSHOT_URL, { cache: "no-store", headers: { accept: "application/json" } });
+    if (!response.ok) throw new Error(`snapshot_http_${response.status}`);
+    const payload = await response.json();
+    const items = Array.isArray(payload.items) ? payload.items : [];
+    if (!items.length) throw new Error("snapshot_empty");
+    staticSnapshot = { items, updatedAt: payload.updatedAt || null };
+    return staticSnapshot;
+  }
+
+  async function renderFromSnapshot(params, scroll) {
+    const snapshot = await loadStaticSnapshot();
+    sourceMode = "snapshot";
+    liveMode = true;
+    document.querySelector(".catalog-demo-note")?.remove();
+    applyFacets(staticFacets(snapshot.items));
+    restoreFiltersFromUrl();
+    updatePricePlaceholders(snapshot.items);
+    const payload = staticPayload(snapshot.items, params, snapshot.updatedAt);
+    currentPage = payload.page;
+    syncUrl(params);
+    renderPayload(payload);
+    if (scroll) document.querySelector(".catalog-filter-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   async function loadVehicles({ page = currentPage, scroll = false } = {}) {
     const root = document.getElementById("catalogRoot");
     if (!root) return;
@@ -321,20 +501,35 @@
 
     if (liveMode) root.innerHTML = `<div class="catalog-loading">Обновляем выборку автомобилей…</div>`;
 
+    if (sourceMode === "snapshot") {
+      try {
+        await renderFromSnapshot(params, scroll);
+      } catch (_) {
+        root.innerHTML = `<div class="catalog-grid-empty">Каталог временно недоступен. Попробуйте обновить страницу.</div>`;
+      }
+      return;
+    }
+
     try {
       const response = await fetch(`${API_BASE}/vehicles?${params.toString()}`, { headers: { accept: "application/json" } });
       if (!response.ok) throw new Error(`catalog_http_${response.status}`);
       const payload = await response.json();
       if (serial !== requestSerial) return;
 
+      sourceMode = "api";
       liveMode = true;
       document.querySelector(".catalog-demo-note")?.remove();
       syncUrl(params);
       renderPayload(payload);
       if (scroll) document.querySelector(".catalog-filter-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (_) {
-      if (!liveMode) return;
-      root.innerHTML = `<div class="catalog-grid-empty">Каталог временно недоступен. Попробуйте обновить страницу.</div>`;
+      if (serial !== requestSerial) return;
+      try {
+        await renderFromSnapshot(params, scroll);
+      } catch (_) {
+        if (!liveMode) return;
+        root.innerHTML = `<div class="catalog-grid-empty">Каталог временно недоступен. Попробуйте обновить страницу.</div>`;
+      }
     }
   }
 
@@ -385,6 +580,7 @@
 
   async function init() {
     if (!document.getElementById("catalogRoot")) return;
+    if (new URL(window.location.href).searchParams.get("pilot") === "1") return;
     ensureStyles();
     collectControls();
     restoreFiltersFromUrl();
