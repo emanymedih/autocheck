@@ -1,3 +1,5 @@
+@import url("site-typography.css?v=20260819-2");
+
 #cars-preview.home-live-loading .catalog-demo-note::before,
 #cars-preview.home-live-ready .catalog-demo-note::before {
   background: var(--brand);
