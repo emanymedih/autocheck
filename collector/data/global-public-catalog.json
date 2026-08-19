@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T15:05:34.489Z",
+  "updatedAt": "2026-08-19T15:27:17.355Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -1127,7 +1127,7 @@
       "registration": "2021/05/19",
       "transfers": null,
       "vin": null,
-      "description": "Original condition, check Dr. SS",
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -1181,6 +1181,77 @@
       "updatedAt": "2026-08-19T13:57:15+08:00"
     },
     {
+      "id": "av_8c5fbeb12d2fbf961a2a",
+      "title": "Toyota Crown Lufang 2024 Crown Landfang HEV 2.5 CVT AWD Luxury Edition",
+      "brand": "Toyota",
+      "model": "Crown Lufang",
+      "trim": "2024 Crown Landfang HEV 2.5 CVT AWD Luxury Edition",
+      "year": 2024,
+      "mileage": 52000,
+      "city": null,
+      "price": null,
+      "priceText": "¥2*****",
+      "fobPriceText": "$3****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Гибрид (HEV)",
+      "engine": "2.5L 189PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/09/20",
+      "transfers": null,
+      "vin": null,
+      "description": "Есть упоминания окрашенных кузовных элементов. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:57:05",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024"
+        },
+        {
+          "label": "Топливо",
+          "value": "Hybrid"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.5L(2487CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "139 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_8c5fbeb12d2fbf961a2a.jpg",
+        "https://img.jytche.com/user/2820721/car/image/6a85b51227bf0/1787147538125t3031_718403_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2820721/car/image/6a85b51227bf0/1787147538127k8147_478947.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2820721/car/image/6a85b51227bf0/1787147538129N1947_415758.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2820721/car/image/6a85b592dbf69/1787147666864d4856_669150.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2820721/car/image/6a85b51227bf0/1787147538130V5115_418169.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T13:57:05+08:00"
+    },
+    {
       "id": "av_487ace4d0a77b4ce4fe4",
       "title": "AITO 2022 AITO M5 EV All-Wheel-Drive Performance Version",
       "brand": "AITO",
@@ -1190,8 +1261,8 @@
       "mileage": 40000,
       "city": null,
       "price": null,
-      "priceText": null,
-      "fobPriceText": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
       "currency": "CNY",
       "body": "SUV",
       "energyType": "Электро",
@@ -1202,7 +1273,7 @@
       "registration": "2023/01/15",
       "transfers": null,
       "vin": null,
-      "description": "The price will be rechecked after further inspection.",
+      "description": "Цена будет уточнена после дополнительного осмотра.",
       "features": [],
       "listingFacts": [
         {
@@ -1216,6 +1287,14 @@
         {
           "label": "Дата производства",
           "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Pure Electric"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "New Energy"
         },
         {
           "label": "Привод",
@@ -1266,7 +1345,7 @@
       "registration": "2023/07/13",
       "transfers": null,
       "vin": null,
-      "description": "The Yihai corporate account vehicle is for non-commercial use with no restrictions. It’s in excellent condition, requiring only one touch-up paint job. The exterior needs some investment to improve its appearance. It passed the CheckDoc inspection with an S-grade rating. Pickup available in Beijing, at the nearest location. Genuine used car source, dedicated to wholesale sales.",
+      "description": "Автомобиль оформлен на юрлицо и использовался некоммерчески; ограничений продавец не заявляет. Состояние хорошее: требуется один локальный подкрас, внешний вид можно немного освежить. По проверке CheckDoc указана оценка S. Забрать автомобиль можно в Пекине или на ближайшей площадке. Продавец заявляет реальный автомобиль из наличия, ориентированный на оптовую продажу.",
       "features": [],
       "listingFacts": [
         {
@@ -1331,7 +1410,7 @@
       "registration": "2018/01/26",
       "transfers": null,
       "vin": null,
-      "description": "Original factory paint on the entire vehicle; excellent condition.",
+      "description": "Доработки и расходники: Original factory paint on the enшины vehicle. Автомобиль заявлен в отличном состоянии.",
       "features": [],
       "listingFacts": [
         {
@@ -1390,6 +1469,78 @@
       "updatedAt": "2026-08-19T14:15:26+08:00"
     },
     {
+      "id": "av_db431498dc16df2c1051",
+      "title": "Wuling 2016 Rongguang V 1.5 Utility Model 5 Seater",
+      "brand": "Wuling",
+      "model": "Rongguang V 1.5 Utility Model 5 Seater",
+      "trim": null,
+      "year": 2016,
+      "mileage": 70000,
+      "city": null,
+      "price": null,
+      "priceText": "¥2****",
+      "fobPriceText": "$3***",
+      "currency": "CNY",
+      "body": "Минивэн / фургон",
+      "energyType": "Бензин",
+      "engine": "1.5L 112PS L4",
+      "transmission": "Manual",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2019/06/03",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании есть сведения о пробеге; их нужно сверить с отчётом. Поставщик также перечисляет оснащение автомобиля. Состояние автомобиля продавец оценивает как хорошее. В карточке есть сведения о страховке. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:56:19",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2018"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "1.5L(1485CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "82 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China V"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_db431498dc16df2c1051.jpg",
+        "https://img.jytche.com/user/1247087/car/image/6a85b5a80ee60/1787147687454e3588_79274_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1247087/car/image/6a85b5a80ee60/1787147687469X5154_43975.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1247087/car/image/6a85b5a80ee60/1787147687473U10676_64852.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1247087/car/image/6a85b5a80ee60/1787147687475P5698_62815_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1247087/car/image/6a85b5a80ee60/1787147687477r10486_91790.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1247087/car/image/6a85b5a80ee60/1787147687463b1643_38135.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T13:56:19+08:00"
+    },
+    {
       "id": "av_507a690d53b58c077477",
       "title": "Honda 2022 10th-Gen Accord Hybrid 2.0 CVT Sharp Leader Edition",
       "brand": "Honda",
@@ -1411,7 +1562,7 @@
       "registration": "2023/04/19",
       "transfers": null,
       "vin": null,
-      "description": "Paint job, original paint otherwise",
+      "description": "В описании продавца указан заводской окрас кузова.",
       "features": [],
       "listingFacts": [
         {
@@ -1491,7 +1642,7 @@
       "registration": "2017/05/11",
       "transfers": null,
       "vin": null,
-      "description": "Produced in 2017, registered in 2017; BMW M4 ZCP right rear fender, replaced at 4S shop with damage record documented, repaired and replaced by 4S; all body lines and details in good condition; odometer shows over 80,000 kilometers, but there is evidence of odometer adjustment to around 40,000 kilometers in the vehicle system; upgraded with titanium alloy turbo pipes; four nearly new Michelin PS4S tires, 265mm front and 295mm rear; upgraded to 19th-generation Night Black underglow tail lights; EVO chassis unit; SSR racing short springs; HSR racing front suspension; carbon fiber front bumper, side skirts, and rear spoiler; all fluids replaced on August 12; interior wear minimal, vehicle in excellent condition; comprehensive insurance valid until June next year.",
+      "description": "Автомобиль выпущен и впервые зарегистрирован в 2017 году. BMW M4 ZCP: правое заднее крыло заменено у официального дилера, повреждение отражено в истории. Геометрия кузова и наружные элементы в хорошем состоянии. На одометре более 80 000 км, но в системе автомобиля есть признаки корректировки пробега примерно до 40 000 км — это важный момент для проверки. Установлены титановые патрубки турбонаддува, почти новые Michelin PS4S размером 265 мм спереди и 295 мм сзади, затемнённые задние фонари Night Black, блок шасси EVO, короткие спортивные пружины SSR, передняя подвеска HSR, карбоновые передний бампер, пороги и задний спойлер. 12 августа заменены все технические жидкости. Салон с минимальным износом, автомобиль в отличном состоянии. Полис каско действует до июня следующего года.",
       "features": [],
       "listingFacts": [
         {
@@ -1545,6 +1696,81 @@
       "updatedAt": "2026-08-19T13:55:55+08:00"
     },
     {
+      "id": "av_5de2f151deaee71079a3",
+      "title": "Land Rover 2017 Range Rover Evoque 2.0T PURE Style Edition",
+      "brand": "Land Rover",
+      "model": "Range Rover Evoque 2.0T PURE Style Edition",
+      "trim": null,
+      "year": 2017,
+      "mileage": 68000,
+      "city": null,
+      "price": null,
+      "priceText": "¥6****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 241PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2017/12/19",
+      "transfers": null,
+      "vin": null,
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:55:41",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2017"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1999CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "177 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China V"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_5de2f151deaee71079a3.jpg",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439131X1226_64090_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439136X9274_60360_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439137Q10221_73042_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439137A2557_74171_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439138a10861_62556.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439139E7192_67837.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439140T9271_66355.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439141y7035_67694.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/580998/car/image/6a85b4afc6258/1787147439141L466_83535.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T13:55:41+08:00"
+    },
+    {
       "id": "av_44be9c3176a9074f2213",
       "title": "NIO 2024 EC7 75 kWh",
       "brand": "NIO",
@@ -1566,7 +1792,7 @@
       "registration": "2025/07/10",
       "transfers": null,
       "vin": null,
-      "description": "original paint, untouched",
+      "description": "Кузов в заводском окрасе, без окрашенных элементов.",
       "features": [],
       "listingFacts": [
         {
@@ -1646,7 +1872,7 @@
       "registration": "2023/11/20",
       "transfers": null,
       "vin": null,
-      "description": "Manufactured in August 2023, the vehicle retains its original paint in perfect condition. The odometer reading is only 33,000 kilometers. If the actual condition does not match the description, all related costs will be refunded. It is equipped with a panoramic sunroof, 360-degree camera system, large-screen navigation, seat heating, ACC adaptive cruise control, speed limit control, lane departure warning, lane keeping assist, leather and fabric mixed seats, one-key start, automatic air conditioning, and other top-tier features. Please send me a purchase order if interested.",
+      "description": "Кузов в основном заявлен в заводском окрасе. В описании есть сведения о пробеге; их нужно сверить с отчётом. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -1737,7 +1963,7 @@
       "registration": "2017/02/09",
       "transfers": null,
       "vin": null,
-      "description": "Three sides require repainting; the rest is in original paint condition.",
+      "description": "Три кузовных элемента требуют окраски, остальная часть кузова — в заводском окрасе.",
       "features": [],
       "listingFacts": [
         {
@@ -1816,7 +2042,7 @@
       "registration": "2021/07/15",
       "transfers": null,
       "vin": null,
-      "description": "Original vehicle, original paint, as shown, checked via Chaboshi at S grade, extremely attractive. The screws used for chassis modification have been touched.",
+      "description": "В описании продавца указан заводской окрас кузова. Доработки и расходники: The screws used for chassis modification have been touched.",
       "features": [],
       "listingFacts": [
         {
@@ -1901,7 +2127,7 @@
       "registration": "2023/03/28",
       "transfers": null,
       "vin": null,
-      "description": "Original vehicle, direct from owner, eligible for third-party title transfer, with paint repainted on two panels",
+      "description": "Автомобиль от владельца, документы позволяют обычное переоформление. Два кузовных элемента окрашивались.",
       "features": [],
       "listingFacts": [
         {
@@ -1980,7 +2206,7 @@
       "registration": "2024/08/06",
       "transfers": null,
       "vin": null,
-      "description": "original paint, untouched",
+      "description": "Кузов в заводском окрасе, без окрашенных элементов.",
       "features": [],
       "listingFacts": [
         {
@@ -2057,7 +2283,7 @@
       "registration": "2025/08/18",
       "transfers": null,
       "vin": null,
-      "description": "Left front door: Painted",
+      "description": "Левая передняя дверь окрашивалась.",
       "features": [],
       "listingFacts": [
         {
@@ -2130,7 +2356,7 @@
       "registration": "2024/05/18",
       "transfers": null,
       "vin": null,
-      "description": "original paint",
+      "description": "Кузов в заводском окрасе.",
       "features": [],
       "listingFacts": [
         {
@@ -2202,7 +2428,7 @@
       "registration": "2024/05/08",
       "transfers": null,
       "vin": null,
-      "description": "NIO EC7 2024 model, 75kWh battery version for lease  \nSold in May 2024, infrared mileage reading, personal original owner vehicle, original paint job, no accidents recorded. Optional upgrades: Nebula Red paint, Nomi robot, 21-inch wheels",
+      "description": "В описании продавца указан заводской окрас кузова. Оснащение и доработки: Nebula Red paint, Nomi robot, 21-дюймовые колёса.",
       "features": [],
       "listingFacts": [
         {
@@ -2277,7 +2503,7 @@
       "registration": "2024/11/26",
       "transfers": null,
       "vin": null,
-      "description": "For urgent sale – first come, first served. Those interested can reach out to discuss. 2024 NIO EC7 model, 75KWH battery capacity. Produced in July 2024, registered in November 2024. Total mileage: 34,000 kilometers. Equipped with champagne-colored car wrap. Original owner vehicle. Compulsory insurance valid until November 2026. 1 set of keys. Original paint finish intact. Damage: scratches on the rear bumper, right fender beam, 2 wheel hubs, left rear fender, and left rear door anti-scrape strip.",
+      "description": "Кузов в основном заявлен в заводском окрасе. В описании есть сведения о пробеге; их нужно сверить с отчётом. В карточке есть сведения о страховке. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -2357,7 +2583,7 @@
       "registration": "2024/05/29",
       "transfers": null,
       "vin": null,
-      "description": "Original paint with car wrap, top-tier quality",
+      "description": "В описании продавца указан заводской окрас кузова.",
       "features": [],
       "listingFacts": [
         {
@@ -2441,7 +2667,7 @@
       "registration": "2024/08/01",
       "transfers": null,
       "vin": null,
-      "description": "2024 model NIO EC7, produced in 2024. Battery is fully purchased with a capacity of 75 kWh. Equipped with 22-inch wheels, red calipers, sunroof, premium audio system, and rear comfort features. Original paint on metal parts, inspected at Dr. Check and rated at S grade, with car coating applied.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -2521,7 +2747,7 @@
       "registration": "2024/12/11",
       "transfers": null,
       "vin": null,
-      "description": "NIO EC7 2024 model, 75kWh battery version for lease  \nRegistered in December 2024, black exterior with beige interior, personal original owner vehicle, 24,000 kilometers driven safely, original paint finish. Optional upgrades: 21-inch wheels, nomi",
+      "description": "В описании продавца указан заводской окрас кузова. Оснащение и доработки: 21-дюймовые колёса, nomi.",
       "features": [],
       "listingFacts": [
         {
@@ -2601,7 +2827,7 @@
       "registration": "2025/03/06",
       "transfers": null,
       "vin": null,
-      "description": "Original paint in original condition, with one title transfer recorded.",
+      "description": "Кузов в заводском окрасе. В истории указано одно переоформление.",
       "features": [],
       "listingFacts": [
         {
@@ -2679,7 +2905,7 @@
       "registration": "2024/01/31",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, original condition, seat heating, electric seats under upgrade. If you’re interested, feel free to contact me for details.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -2756,7 +2982,7 @@
       "registration": "2023/07/04",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, keyless entry, one-button start, tire pressure monitoring, lane departure warning, active braking, forward collision warning, engine start-stop system, automatic parking, hill start assist, front and rear parking sensors, 360-degree panoramic camera, ACC adaptive cruise control, electric sunroof, panoramic sunroof, sensor-driven wipers, touch LCD screen, seat heating, power driver’s seat, rear air vents, L2 assisted driving, satellite navigation, heated and foldable rearview mirrors, touch LCD screen",
+      "description": "В описании продавца указан заводской окрас кузова.",
       "features": [],
       "listingFacts": [
         {
@@ -2839,7 +3065,7 @@
       "registration": "2017/02/21",
       "transfers": null,
       "vin": null,
-      "description": "几个表面需要重新涂漆，查博士正在处理这个问题。那辆汽车也被寄售了。",
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -2915,7 +3141,7 @@
       "registration": "2021/05/26",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, no accidents recorded, with car coating applied",
+      "description": "Кузов заявлен в заводском окрасе, без серьёзного кузовного ремонта.",
       "features": [],
       "listingFacts": [
         {
@@ -2979,7 +3205,7 @@
       "registration": "2023/05/22",
       "transfers": null,
       "vin": null,
-      "description": "Original owner, can pass through three previous owners, with paint job.",
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3052,7 +3278,7 @@
       "registration": "2024/08/02",
       "transfers": null,
       "vin": null,
-      "description": "Original version with original paint, sold as-is, Chadee S",
+      "description": "Автомобиль в исходной конфигурации и заводском окрасе, продаётся как есть. По проверке Chaboshi указана оценка S.",
       "features": [],
       "listingFacts": [
         {
@@ -3132,7 +3358,7 @@
       "registration": "2024/12/20",
       "transfers": null,
       "vin": null,
-      "description": "Rent original paint for Dr. Che’s S model",
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3208,7 +3434,7 @@
       "registration": "2024/06/29",
       "transfers": null,
       "vin": null,
-      "description": "NIO EC7 2024 model, 75kWh battery leasing version. Registered in 2024, black exterior with brown interior. Has been driven safely for 22,000 kilometers, original paint with invisible car coating.",
+      "description": "Кузов в основном заявлен в заводском окрасе. В описании есть сведения о пробеге; их нужно сверить с отчётом. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3288,7 +3514,7 @@
       "registration": "2023/12/01",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, original condition. Feel free to contact me if you want the details.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3366,7 +3592,7 @@
       "registration": "2023/06/09",
       "transfers": null,
       "vin": null,
-      "description": "【Vehicle Condition】Original paint, unchanged from factory condition",
+      "description": "Кузов заявлен в заводском окрасе, без серьёзного кузовного ремонта.",
       "features": [],
       "listingFacts": [
         {
@@ -3442,7 +3668,7 @@
       "registration": "2023/08/07",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, original condition. Manufactured in July 2023. No additional investment required.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3509,7 +3735,7 @@
       "registration": "2017/01/26",
       "transfers": null,
       "vin": null,
-      "description": "No major traffic accidents; it has been disassembled.",
+      "description": "Крупных ДТП продавец не заявляет, но отдельные элементы автомобиля разбирались.",
       "features": [],
       "listingFacts": [
         {
@@ -3581,7 +3807,7 @@
       "registration": "2017/09/27",
       "transfers": null,
       "vin": null,
-      "description": "Excellent vehicle condition, suitable for all inspections.",
+      "description": "Автомобиль заявлен в отличном состоянии и готов к независимой проверке.",
       "features": [],
       "listingFacts": [
         {
@@ -3658,7 +3884,7 @@
       "registration": "2021/01/26",
       "transfers": null,
       "vin": null,
-      "description": "Genuine original vehicle, 0 accidents, 0 prior investments, with paint repainted on 2 sides",
+      "description": "Серьёзных ДТП продавец не заявляет.",
       "features": [],
       "listingFacts": [
         {
@@ -3736,7 +3962,7 @@
       "registration": "2021/10/09",
       "transfers": null,
       "vin": null,
-      "description": "2021 model Tank 300 Off-road Edition 2.0T Conqueror, registered in October 2021. Original paint, first-hand ownership. Over 50,000 yuan spent on modifications, including a bullbar, spotlights, electric winch. The rear lights are four-lens headlamps. Equipped with a roof rack, rooftop spotlight, rooftop tent with side ladder, auxiliary fuel tank, and a 3-kilowatt onboard power supply that supports external power output. fitted with 5 set of AT tires and 5 anti-slip rings, as well as a shock absorber spring kit that raises the vehicle by 2.5 inches.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3811,7 +4037,7 @@
       "registration": "2021/06/23",
       "transfers": null,
       "vin": null,
-      "description": "A locally sold new car with an actual mileage of 93,000 kilometers. The two right doors have been replaced, and there is sheet metal work on the inner side without any cutting. It cannot pass the third-party inspection. The rest of the body is in original paint condition. It features modified tires and rims, a front bumper, nitrogen suspension for increased ride height, a roof rack, side steps, and insurance valid until next June. The accident history has been uploaded.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Указана замена отдельных деталей — это стоит проверить по истории. В описании есть сведения о пробеге; их нужно сверить с отчётом. В карточке есть сведения о страховке. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -3894,7 +4120,7 @@
       "registration": "2022/01/28",
       "transfers": null,
       "vin": null,
-      "description": "Original paint on metal parts",
+      "description": "Металлические кузовные элементы в заводском окрасе.",
       "features": [],
       "listingFacts": [
         {
@@ -3959,7 +4185,7 @@
       "registration": "2022/11/11",
       "transfers": null,
       "vin": null,
-      "description": "Failed inspection; front bumper replaced, right front fender painted, right front and rear doors painted",
+      "description": "Есть упоминания окрашенных кузовных элементов. Указана замена отдельных деталей — это стоит проверить по истории. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4039,7 +4265,7 @@
       "registration": "2022/09/30",
       "transfers": null,
       "vin": null,
-      "description": "New arrival: 2022 first-hand personal Honda URV 370 Premium Edition, featuring a panoramic sunroof, dual electric leather seats, electric tailgate. The vehicle has no accident history at all, with only minor repainting on three areas. It has been driven for just over 30,000 kilometers as a new car. Now it’s available for around just over ten thousand yuan to take home. Interested buyers are welcome to come by; we can arrange a third-party inspection anytime!",
+      "description": "Серьёзных ДТП продавец не заявляет. Есть упоминания окрашенных кузовных элементов. В описании есть сведения о пробеге; их нужно сверить с отчётом. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4106,7 +4332,7 @@
       "registration": "2025/06/09",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, original condition, approved by all three parties instantly.",
+      "description": "Кузов в заводском окрасе, состояние близкое к исходному. Продавец заявляет готовность к независимой проверке.",
       "features": [],
       "listingFacts": [
         {
@@ -4173,7 +4399,7 @@
       "registration": "2023/06/26",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, original condition. Manufactured in June 2023. No additional investment required. Comes with usage notes.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4248,7 +4474,7 @@
       "registration": "2024/07/05",
       "transfers": null,
       "vin": null,
-      "description": "original paint, untouched",
+      "description": "Кузов в заводском окрасе, без окрашенных элементов.",
       "features": [],
       "listingFacts": [
         {
@@ -4330,7 +4556,7 @@
       "registration": "2017/01/21",
       "transfers": null,
       "vin": null,
-      "description": "The seller is the original owner with a clean vehicle history. For the configuration details, please refer to the photos. It comes with the original red interior, and the two sides have been repainted.",
+      "description": "Есть упоминания окрашенных кузовных элементов. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4411,7 +4637,7 @@
       "registration": "2017/02/28",
       "transfers": null,
       "vin": null,
-      "description": "The vehicle condition is superior to third-party tests; the entire vehicle is original.",
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4491,7 +4717,7 @@
       "registration": "2016/09/19",
       "transfers": null,
       "vin": null,
-      "description": "Original model, in excellent condition. Full documentation of the vehicle’s history. Doctor’s Grade S status. Two areas with painted repairs, but overall, the car is in top condition. Interior is like new. Keyless entry system, compass, luggage rack, 20-inch sports wheels, BOSE audio system, four new tires. Insurance has expired, and it’s time for a vehicle inspection.",
+      "description": "Есть упоминания окрашенных кузовных элементов. Поставщик также перечисляет оснащение автомобиля. Состояние автомобиля продавец оценивает как хорошее. В карточке есть сведения о страховке. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4568,7 +4794,7 @@
       "registration": "2021/05/25",
       "transfers": null,
       "vin": null,
-      "description": "Original paint, no rework",
+      "description": "Кузов в заводском окрасе, без следов кузовного ремонта.",
       "features": [],
       "listingFacts": [
         {
@@ -4648,7 +4874,7 @@
       "registration": "2023/04/17",
       "transfers": null,
       "vin": null,
-      "description": "Replace the front bumper, headlight, and fender after an accident",
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4724,7 +4950,7 @@
       "registration": "2021/04/21",
       "transfers": null,
       "vin": null,
-      "description": "Honda UR-V 2.0T FWD Premium Edition, registered in April 2021, original local purchase, 70,000 kilometers driven, Dr. Check S-grade quality assessment, compulsory traffic insurance and third-party liability insurance valid until April 2027! Excellent vehicle at a competitive price.",
+      "description": "В описании есть сведения о пробеге; их нужно сверить с отчётом. В карточке есть сведения о страховке. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4799,7 +5025,7 @@
       "registration": "2024/06/24",
       "transfers": null,
       "vin": null,
-      "description": "034052 Mazda CX-50 Xingye\n【Vehicle Name】Mazda CX-50 Xingye, 2023 model, 2.0L, Leading Edition\n【Drive Type】2WD\n【Color】White\n【Manufacturing Date】January 2024\n【Mileage】Over 25,000 kilometers\n【Engine Displacement】2.0\n【Keys】One set\n【Vehicle Condition】Original paint, in original condition\n【Vehicle Price】Offer expired\n【Configuration Details】High-quality pre-owned vehicle with keyless entry, one-touch start, leather seats, front and rear seat heating added, ACC adaptive cruise control, power seats, 360-degree panoramic imaging, steering wheel controls, panoramic sunroof, large-screen navigation, reverse camera, and other features",
+      "description": "Кузов заявлен в заводском окрасе, без серьёзного кузовного ремонта.",
       "features": [],
       "listingFacts": [
         {
@@ -4888,7 +5114,7 @@
       "registration": "2024/04/10",
       "transfers": null,
       "vin": null,
-      "description": "It can be transferred through a third party as a consigned vehicle. The fender has been replaced, and one of the steel struts has been painted.",
+      "description": "Есть упоминания окрашенных кузовных элементов. Указана замена отдельных деталей — это стоит проверить по истории. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -4964,7 +5190,7 @@
       "registration": "2017/08/25",
       "transfers": null,
       "vin": null,
-      "description": "In excellent condition, passes three-party inspection instantly, original vehicle, from first-hand owner",
+      "description": "Автомобиль заявлен в отличном состоянии.",
       "features": [],
       "listingFacts": [
         {
@@ -5015,6 +5241,326 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-05T06:10:34+08:00"
+    },
+    {
+      "id": "av_eb2b331dfba1d930004c",
+      "title": "Mazda 2023 CX-50 Xingye 2.0 Lingxing Version",
+      "brand": "Mazda",
+      "model": "CX-50 Xingye 2.0 Lingxing Version",
+      "trim": null,
+      "year": 2023,
+      "mileage": 24000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0L 155PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2023/07/07",
+      "transfers": null,
+      "vin": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-07 03:35:22",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023/06"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1998CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "114 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_eb2b331dfba1d930004c.jpg",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681693z922_459109_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681694h3557_404360_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681695f2566_341272_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681695F1150_403831.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681696v10763_377328.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681697n5208_315095.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681698R2241_427850.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681698G6089_400538.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/527592/car/image/6a755251a42e8/1786073681699f7823_367798.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-07T03:35:22+08:00"
+    },
+    {
+      "id": "av_fcbf4418f491d8806a74",
+      "title": "Porsche Cayenne (Imported) 2016 Cayenne S 3.6T",
+      "brand": "Porsche",
+      "model": "Cayenne (Imported)",
+      "trim": "2016 Cayenne S 3.6T",
+      "year": 2016,
+      "mileage": 67000,
+      "city": null,
+      "price": null,
+      "priceText": "¥2*****",
+      "fobPriceText": "$3****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.6T 420PS V6",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2017/02/08",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании есть сведения о пробеге; их нужно сверить с отчётом. Поставщик также перечисляет оснащение автомобиля. Состояние автомобиля продавец оценивает как хорошее. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-16 16:01:32",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-19 04:19:25",
+          "status": "info"
+        },
+        {
+          "label": "Осмотр",
+          "text": "На площадке для автомобиля указан отчёт осмотра.",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2017"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "3.6T(3604CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "309 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Euro V"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_fcbf4418f491d8806a74.jpg",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab655d2d/1786895030214_073_app_D_248.32K-248.32K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895032169_510_app_O_305.44K-305.44K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895032499_943_app_M_269.80K-269.80K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895030346_157_app_B_233.98K-233.98K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895030758_492_app_N_179.42K-179.42K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895030347_834_app_D_228.51K-228.51K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab655d2d/1786895030217_996_app_Y_208.85K-208.85K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895030539_571_app_X_224.88K-224.88K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dab674365/1786895034258_161_app_A_1.49M-2.39M.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5730314/car/image/6a81dac3062e2/1786895042889_788_app_T_345.31K-345.31K.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T04:19:25+08:00"
+    },
+    {
+      "id": "av_fba807cf9b88a8809464",
+      "title": "Porsche Cayenne (Imported) 2016 Cayenne S 3.6T",
+      "brand": "Porsche",
+      "model": "Cayenne (Imported)",
+      "trim": "2016 Cayenne S 3.6T",
+      "year": 2016,
+      "mileage": 130000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.6T 420PS V6",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2017/12/05",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании есть сведения о пробеге; их нужно сверить с отчётом. Состояние автомобиля продавец оценивает как хорошее. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2025-06-02 14:43:14",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-06-16 02:43:38",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2017"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "3.6T(3604CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "309 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Euro V"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_fba807cf9b88a8809464.jpg",
+        "https://img.jytche.com/user/300970/car/image/parse202510238691/1761200983214_348_app_O.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510231375/1761200983318_596_app_N.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/68f9cb57174c1/1761200983208_390_app_P.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/68f9cb5734977/1761200983329_736_app_E.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/68f9cb5744c1b/1761200983340_697_app_A.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510231685/1761200983333_223_app_I.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510238233/1761200983339_324_app_W.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510232313/1761200983229_044_app_L.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510234577/1761200983508_173_app_E.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/68f9cb575b739/1761200983515_310_app_L.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510239890/1761200983249_216_app_R.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/68f9cb5744c1b/1761200983419_594_app_W.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/300970/car/image/parse202510239978/1761200983254_733_app_W.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-06-16T02:43:38+08:00"
+    },
+    {
+      "id": "av_b6aa62cba8e5cd8c872c",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 110000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/02/23",
+      "transfers": null,
+      "vin": null,
+      "description": "Есть упоминания окрашенных кузовных элементов. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 09:34:30",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_b6aa62cba8e5cd8c872c.jpg",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921139G858_665248_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921143a6763_650186.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921145I12531_638647.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921146n3356_586169.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921147f2440_519387.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921148J2846_582515.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921149k9360_354427.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921150x5358_286008_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2559966/car/image/6a85781164961/1787131921151k6456_473677_parse.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T09:34:30+08:00"
     }
   ]
 }
