@@ -1,0 +1,2 @@
+listing_id,title,brand,model,trim,year,mileage_km,city,price_cny,body,engine,transmission,body_color,interior_color,registration,transfers,vin,status,updated_at,photo_urls,source_url
+sample-001,Example Vehicle,Example,Model,Trim,2022,30000,Shanghai,200000,Sedan,2.0T,Automatic,Black,Black,03.2022,1,,active,2026-08-19T00:00:00Z,https://example.invalid/1.jpg|https://example.invalid/2.jpg,https://example.invalid/listing/sample-001
