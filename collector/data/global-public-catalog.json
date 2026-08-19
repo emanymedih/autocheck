@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T18:56:33.224Z",
+  "updatedAt": "2026-08-19T19:12:06.960Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -1184,6 +1184,246 @@
       "listingPlatform": "Autohome Global",
       "sellerName": null,
       "updatedAt": "2026-08-19T18:56:33.223Z"
+    },
+    {
+      "id": "av_5449a0ba2286497aeb87",
+      "title": "Ledao Ledao L90 2025 2WD Base Model",
+      "brand": null,
+      "model": "Ledao Ledao L90",
+      "trim": "Ledao Ledao L90 2025 2WD Base Model",
+      "year": 2025,
+      "mileage": 20000,
+      "city": "Чэнду",
+      "price": 20110,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2025.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2300 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5145*1998*1766 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/7A/50/1400x0_c42_autohomecar__Chto52qC1YWAZiQgAA7PlsNh3jU489.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
+    },
+    {
+      "id": "av_296a157f5694bbaf520f",
+      "title": "Toyota GR YARIS 2024 GR Evolution Edition",
+      "brand": "Toyota",
+      "model": "GR YARIS",
+      "trim": "2024 GR Evolution Edition",
+      "year": 2024,
+      "mileage": 2000,
+      "city": "Сямынь",
+      "price": 57190,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Хэтчбек",
+      "energyType": "Бензин",
+      "engine": "1.6T 280HP L3",
+      "transmission": "6-speed manual",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2026.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "3"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1285 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "3995*1805*1455 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M06/77/38/1400x0_c42_autohomecar__Chto52qCldCAa26yAAM7wv_9qcg760.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.224Z"
+    },
+    {
+      "id": "av_df1c036d048a063f8e5c",
+      "title": "Zunjie MPV 2026 Model Base Version",
+      "brand": "Zunjie",
+      "model": "MPV",
+      "trim": "2026 Model Base Version",
+      "year": 2026,
+      "mileage": 1000,
+      "city": "Zibo",
+      "price": 63360,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 156 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2026.07",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2870 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5359*2009*1859 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/EE/D9/1400x0_c42_autohomecar__ChxpV2p1yYiAIVmpAAtxphuWp20068.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.224Z"
+    },
+    {
+      "id": "av_60112131faacfc3702d4",
+      "title": "Lexus RC F 2015 F 5.0L Peak Edition",
+      "brand": "Lexus",
+      "model": "RC F",
+      "trim": "2015 F 5.0L Peak Edition",
+      "year": 2015,
+      "mileage": 49000,
+      "city": "Шэньчжэнь",
+      "price": 85930,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "5.0L 477hp V8",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2016.04",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive (RWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1840 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4705*1845*1390 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/DC/BE/1400x0_c42_autohomecar__ChxpV2oqbVeAONCyAAeCKYUg64w976.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.224Z"
     },
     {
       "id": "av_0ae38a66eb9bc832974e",
@@ -4361,6 +4601,14 @@
           "value": "2022"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
           "label": "Привод",
           "value": "Front-Wheel Drive"
         },
@@ -5643,244 +5891,152 @@
       "updatedAt": "2026-08-19T09:34:30+08:00"
     },
     {
-      "id": "av_5449a0ba2286497aeb87",
-      "title": "Ledao Ledao L90 2025 2WD Base Model",
-      "brand": null,
-      "model": "Ledao Ledao L90",
-      "trim": "Ledao Ledao L90 2025 2WD Base Model",
-      "year": 2025,
-      "mileage": 20000,
-      "city": "Чэнду",
-      "price": 20110,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "id": "av_b1a850696cea9e6043a0",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 100000,
+      "city": null,
+      "price": null,
+      "priceText": "¥9****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "SUV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2025.08",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2300 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5145*1998*1766 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/7A/50/1400x0_c42_autohomecar__Chto52qC1YWAZiQgAA7PlsNh3jU489.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T18:56:33.222Z"
-    },
-    {
-      "id": "av_296a157f5694bbaf520f",
-      "title": "Toyota GR YARIS 2024 GR Evolution Edition",
-      "brand": "Toyota",
-      "model": "GR YARIS",
-      "trim": "2024 GR Evolution Edition",
-      "year": 2024,
-      "mileage": 2000,
-      "city": "Сямынь",
-      "price": 57190,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Хэтчбек",
       "energyType": "Бензин",
-      "engine": "1.6T 280HP L3",
-      "transmission": "6-speed manual",
-      "bodyColor": "White",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2026.01",
+      "registration": "2021/04/27",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 11:13:24",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "4"
-        },
-        {
-          "label": "Дверей",
-          "value": "3"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1285 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "3995*1805*1455 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M06/77/38/1400x0_c42_autohomecar__Chto52qCldCAa26yAAM7wv_9qcg760.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_b1a850696cea9e6043a0.jpg",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670336n1545_617861.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670337s6416_556033.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670338f5058_594668.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670339d8928_350553.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670340E6111_279305.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670341m9440_493564.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670341B4804_500086.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3310723/car/image/6a858a9e500e1/1787136670342V6451_558301.jpg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T18:56:33.224Z"
+      "updatedAt": "2026-08-19T11:13:24+08:00"
     },
     {
-      "id": "av_df1c036d048a063f8e5c",
-      "title": "Zunjie MPV 2026 Model Base Version",
-      "brand": "Zunjie",
-      "model": "MPV",
-      "trim": "2026 Model Base Version",
-      "year": 2026,
-      "mileage": 1000,
-      "city": "Zibo",
-      "price": 63360,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "MPV",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 156 HP",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Blue",
-      "interiorColor": null,
-      "registration": "2026.07",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "7"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2870 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5359*2009*1859 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/EE/D9/1400x0_c42_autohomecar__ChxpV2p1yYiAIVmpAAtxphuWp20068.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T18:56:33.224Z"
-    },
-    {
-      "id": "av_60112131faacfc3702d4",
-      "title": "Lexus RC F 2015 F 5.0L Peak Edition",
-      "brand": "Lexus",
-      "model": "RC F",
-      "trim": "2015 F 5.0L Peak Edition",
-      "year": 2015,
-      "mileage": 49000,
-      "city": "Шэньчжэнь",
-      "price": 85930,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
+      "id": "av_6ddc20e2df350eca7649",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 74200,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
       "energyType": "Бензин",
-      "engine": "5.0L 477hp V8",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "White",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2016.04",
+      "registration": "2022/06/14",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Доработки и расходники: Honda UR-V 2020 model, 370TURBO version, сзади-колёса drive, Premium Edition.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-18 08:37:24",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Rear-Wheel Drive (RWD)"
+          "value": "Front-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
         },
         {
-          "label": "Мест",
-          "value": "4"
-        },
-        {
-          "label": "Дверей",
-          "value": "2"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1840 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4705*1845*1390 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/DC/BE/1400x0_c42_autohomecar__ChxpV2oqbVeAONCyAAeCKYUg64w976.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_6ddc20e2df350eca7649.jpg",
+        "https://img.jytche.com/user/2456568/car/image/6a841994e2789/1787042196661_056_app_G_193.42K-193.42K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a84199532ea6/1787042196942_158_app_J_175.65K-175.65K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a841994e2789/1787042196863_483_app_W_199.27K-199.27K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a84199532ea6/1787042197103_847_app_E_211.62K-211.62K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a84199532ea6/1787042197388_782_app_M_144.74K-144.74K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a84199532ea6/1787042197659_063_app_V_183.35K-183.35K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a84199532ea6/1787042197923_767_app_P_172.24K-172.24K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2456568/car/image/6a84199532ea6/1787042198269_565_app_L_265.73K-265.73K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T18:56:33.224Z"
+      "updatedAt": "2026-08-18T08:37:24+08:00"
     }
   ]
 }
