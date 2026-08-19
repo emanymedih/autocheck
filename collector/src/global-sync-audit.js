@@ -90,6 +90,7 @@ export function buildSyncAudit({
   const invalidItems = (currentItems || []).filter((item) => !item?.id || !item?.title || !item?.status).length;
 
   const checks = {
+    importCompleted: importResult.success !== false,
     minimumItems: current.map.size >= minItems,
     errorRate: errorRate <= maxErrorRate,
     uniqueIds: current.duplicates.length === 0,
@@ -126,7 +127,8 @@ export function buildSyncAudit({
       startedAt: importResult.startedAt || null,
       finishedAt: importResult.finishedAt || null,
       pagesVisited: Number(importResult.pagesVisited || 0),
-      targetListings: Number(importResult.targetListings || 0)
+      targetListings: Number(importResult.targetListings || 0),
+      importSucceeded: importResult.success !== false
     },
     changes: {
       added,
