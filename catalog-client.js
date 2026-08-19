@@ -32,8 +32,8 @@
   let debounceTimer = null;
 
   const nf = new Intl.NumberFormat("ru-RU");
-  const formatPrice = (value, currency = "CNY") => {
-    if (!Number.isFinite(Number(value))) return "Цена уточняется";
+  const formatPrice = (value, currency = "CNY", priceText = "") => {
+    if (!Number.isFinite(Number(value))) return text(priceText) || "Цена не раскрыта";
     const formatted = nf.format(Number(value));
     if (currency === "CNY") return `${formatted} ¥`;
     if (currency === "USD") return `$${formatted}`;
@@ -114,7 +114,7 @@
   function cardMarkup(vehicle) {
     const photo = safePhoto(vehicle.photos?.[0]);
     const media = photo
-      ? `<img class="catalog-live-photo" src="${photo}" alt="${escapeHtml(vehicle.title || "Автомобиль")}" loading="lazy" decoding="async">`
+      ? `<img class="catalog-live-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(vehicle.title || "Автомобиль")}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
       : `<div class="catalog-live-placeholder">Фотография ожидается</div>`;
     const meta = [vehicle.year, vehicle.energyType, vehicle.mileage !== null && vehicle.mileage !== undefined ? formatMileage(vehicle.mileage) : null, vehicle.city].filter(Boolean);
     const active = vehicle.status === "active";
@@ -124,7 +124,7 @@
       <div class="catalog-card-body">
         <h3>${escapeHtml(vehicle.title || [vehicle.brand, vehicle.model].filter(Boolean).join(" ") || "Автомобиль")}</h3>
         <div class="catalog-card-meta">${meta.map((item) => `<span>${escapeHtml(String(item))}</span>`).join("")}</div>
-        <div class="catalog-card-price">${formatPrice(vehicle.price, vehicle.currency)}</div>
+        <div class="catalog-card-price">${escapeHtml(formatPrice(vehicle.price, vehicle.currency, vehicle.priceText))}</div>
         <div class="catalog-card-actions"><button class="catalog-card-request" type="button" data-request-report="${escapeHtml(vehicle.id)}" ${active ? "" : "disabled"}>${active ? "Запросить отчёт" : "Недоступно для заказа"}</button><button class="catalog-card-open" type="button" data-open-vehicle="${escapeHtml(vehicle.id)}" aria-label="Открыть карточку">→</button></div>
       </div>
     </article>`;
