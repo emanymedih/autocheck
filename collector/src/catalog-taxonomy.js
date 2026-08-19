@@ -59,7 +59,7 @@ const BRAND_ALIASES = new Map(Object.entries({
   "小米汽车": "Xiaomi", "xiaomi": "Xiaomi",
   "零跑": "Leapmotor", "零跑汽车": "Leapmotor", "leapmotor": "Leapmotor",
   "腾势": "Denza", "denza": "Denza",
-  "方程豹": "Fangchengbao", "fangchengbao": "Fangchengbao",
+  "方程豹": "Fangchengbao", "fangchengbao": "Fangchengbao", "fang cheng bao": "Fangchengbao",
   "阿维塔": "AVATR", "avatr": "AVATR",
   "深蓝汽车": "Deepal", "深蓝": "Deepal", "deepal": "Deepal",
   "埃安": "Aion", "广汽埃安": "Aion", "aion": "Aion",
@@ -120,10 +120,10 @@ const ENERGY_ALIASES = new Map(Object.entries({
   "汽油": "Бензин", "gasoline": "Бензин", "petrol": "Бензин", "бензин": "Бензин",
   "柴油": "Дизель", "diesel": "Дизель", "дизель": "Дизель",
   "油电混合": "Гибрид (HEV)", "hev": "Гибрид (HEV)", "hybrid": "Гибрид (HEV)", "гибрид": "Гибрид (HEV)",
-  "插电式混合动力": "Подключаемый гибрид (PHEV)", "插电混动": "Подключаемый гибрид (PHEV)", "phev": "Подключаемый гибрид (PHEV)",
-  "纯电动": "Электро", "纯电": "Электро", "ev": "Электро", "bev": "Электро", "electric": "Электро", "электро": "Электро",
-  "增程式": "Гибрид с увеличителем запаса хода (EREV)", "增程": "Гибрид с увеличителем запаса хода (EREV)", "erev": "Гибрид с увеличителем запаса хода (EREV)", "range extender": "Гибрид с увеличителем запаса хода (EREV)",
-  "汽油+48v轻混系统": "Мягкий гибрид 48V", "48v轻混": "Мягкий гибрид 48V", "mhev": "Мягкий гибрид 48V", "mild hybrid": "Мягкий гибрид 48V",
+  "插电式混合动力": "Подключаемый гибрид (PHEV)", "插电混动": "Подключаемый гибрид (PHEV)", "phev": "Подключаемый гибрид (PHEV)", "plug-in hybrid": "Подключаемый гибрид (PHEV)",
+  "纯电动": "Электро", "纯电": "Электро", "ev": "Электро", "bev": "Электро", "electric": "Электро", "pure electric": "Электро", "электро": "Электро",
+  "增程式": "Гибрид с увеличителем запаса хода (EREV)", "增程": "Гибрид с увеличителем запаса хода (EREV)", "erev": "Гибрид с увеличителем запаса хода (EREV)", "range extender": "Гибрид с увеличителем запаса хода (EREV)", "extended range": "Гибрид с увеличителем запаса хода (EREV)",
+  "汽油+48v轻混系统": "Мягкий гибрид 48V", "48v轻混": "Мягкий гибрид 48V", "mhev": "Мягкий гибрид 48V", "mild hybrid": "Мягкий гибрид 48V", "gasoline+48v": "Мягкий гибрид 48V", "gasoline + 48v": "Мягкий гибрид 48V",
   "天然气": "Газ", "cng": "Газ", "lng": "Газ", "gas": "Газ", "газ": "Газ",
   "甲醇": "Метанол", "methanol": "Метанол", "метанол": "Метанол"
 }).map(([alias, canonical]) => [key(alias), canonical]));
@@ -141,11 +141,24 @@ export function canonicalBody(value) {
 export function canonicalEnergyType(value) {
   const raw = String(value ?? "").trim();
   if (!raw) return null;
-  const direct = ENERGY_ALIASES.get(key(raw));
-  if (direct) return direct;
   const normalized = key(raw);
-  for (const [alias, canonical] of ENERGY_ALIASES.entries()) {
-    if (normalized.includes(alias)) return canonical;
+  const direct = ENERGY_ALIASES.get(normalized);
+  if (direct) return direct;
+
+  const specificPatterns = [
+    [/插电|plug[- ]?in|\bphev\b/i, "Подключаемый гибрид (PHEV)"],
+    [/增程|extended range|range extender|\berev\b/i, "Гибрид с увеличителем запаса хода (EREV)"],
+    [/48v|mild hybrid|\bmhev\b/i, "Мягкий гибрид 48V"],
+    [/纯电|pure electric|\bbev\b|^ev$/i, "Электро"],
+    [/油电|\bhev\b|^hybrid$|гибрид/i, "Гибрид (HEV)"],
+    [/柴油|diesel|дизель/i, "Дизель"],
+    [/汽油|gasoline|petrol|бензин/i, "Бензин"],
+    [/天然气|\bcng\b|\blng\b|^gas$|газ/i, "Газ"],
+    [/甲醇|methanol|метанол/i, "Метанол"]
+  ];
+
+  for (const [pattern, canonical] of specificPatterns) {
+    if (pattern.test(raw)) return canonical;
   }
   return "Прочее";
 }
