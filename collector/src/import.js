@@ -48,7 +48,9 @@ if (!args.provider || !args.file || !args.mapping) {
       try {
         normalized.push(normalizeListing(raw, {
           providerId: args.provider,
-          photoSeparator: mapping.photoSeparator || "|"
+          photoSeparator: mapping.photoSeparator || "|",
+          detailSeparator: mapping.detailSeparator || "|",
+          detailPartSeparator: mapping.detailPartSeparator || "::"
         }));
       } catch (error) {
         errors.push({ row: index + 2, message: error.message });
