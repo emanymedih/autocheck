@@ -1,3 +1,5 @@
+@import url("site-typography.css?v=20260819-2");
+
 /* Vehicle detail typography calibrated against the supplied marketplace reference.
    Loaded after vehicle.css so this file owns only type scale/readability adjustments. */
 
