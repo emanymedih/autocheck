@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T13:57:26.464Z",
+  "updatedAt": "2026-08-19T14:29:47.320Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -1106,1418 +1106,1508 @@
       "updatedAt": "2026-08-19T10:55:46.378Z"
     },
     {
-      "id": "av_68e584e73da0b018c26e",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1299760/car/image/6a85a09c9e5dc/1787142300399_936_app_V_453.40K-453.40K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2515743/car/image/6a8555b0ecea9/1787123120754k12270_473656_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2939847/car/image/6a8519c1b80b1/1787107777769_543_app_P_296.90K-296.90K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5792285/car/image/6a8401f2c72b7/1787036146201i3789_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3537471/car/image/6a83efe22a1c0/1787031521809_210_app_L_236.10K-236.10K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2757422/car/image/6a82cf51639b1/1786957649464_115_app_I_624.26K-1.20M_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2973798/car/image/6a82c05f9cddc/1786953823836K8708_89389_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3504786/car/image/6a8021095b41c/1786781961403_472_app_E_468.26K-468.26K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2468899/car/image/6a7fe05db81cf/1786765404859r163_45131_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1091549/car/image/6a7706b8484f2/1786185400355_833_app_C_543.26K-543.22K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.460Z"
-    },
-    {
-      "id": "av_0ae38a66eb9bc832974e",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1153869/car/image/6a857a9c14612/1787132572172k5274_492516_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2816749/car/image/6a855044a0caf/1787121732580_743_app_B_323.49K-323.49K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1841856/car/image/6a853def997ee/1787117039962_021_app_G_355.96K-355.96K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/939814/car/image/6a853a0799517/1787116039663_636_app_Y_477.77K-477.77K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6791492/car/image/6a852ca7346d3/1787112614266i4488_109489_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1214154/car/image/6a85118504feb/1787105669144U4581_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6721587/car/image/6a850f282e050/1787105063621_478_app_B_171.83K-171.83K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1214154/car/image/6a850e4e427b4/1787104846288f847_429834_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/277186/car/image/6a84588813018/1787058312018T9382_496747_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1383467/car/image/6a84342e698ae/1787049006422_338_app_V_495.91K-495.91K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.461Z"
-    },
-    {
-      "id": "av_a7da92d03ae8333b4193",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1348264/car/image/6a8567928d3f9/1787127698609_980_app_K_497.68K-497.68K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6647653/car/image/6a8465becd065/1787061694051_441_app_U_383.88K-383.88K.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4563427/car/image/6a83043c8f0ec/1786971196596_366_app_I_184.23K-184.23K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6357301/car/image/6a82cb6475b85/1786956644420V3374_66194_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/992405/car/image/6a82936df149e/1786942317935_913_app_K_382.54K-382.54K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1361984/car/image/6a800a45edbae/1786776134371F3447_70623_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3565593/car/image/6a7ed53cd5c03/1786697020620_418_app_D_189.24K-189.24K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1409884/car/image/6a72ac2a7c121/1785900074534_280_app_T_142.27K-142.27K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/683472/car/image/6a5210ac55acf/1783763115170_332_app_G_385.95K-385.95K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4419496/car/image/6a21764eee93e/1780577870973_888_app_G_523.22K-626.79K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_8c5fbeb12d2fbf961a2a",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/657639/car/image/6a825cb93707b/1786928313235r120_378841_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5438086/car/image/6a7d656de7a54/1786602861675U8210_91250_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5438427/car/image/6a7997947b3a6/1786353556195_708_app_J_564.34K-675.35K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4378841/car/image/6a770000ebc2a/1786183680983_886_app_Y_430.63K-430.63K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/49714/car/image/6a76a94bbc2bf/1786161483934a5848_478361_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6621271/car/image/6a7553c25768d/1786074050486_607_app_F_529.86K-1.01M_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6979094/car/image/6a6c0e64dad3a/1785466468937_094_app_P_670.27K-959.92K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1389625/car/image/6a6b0df1d9869/1785400817893_113_app_B_249.43K-249.43K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6196125/car/image/6a66bd0498cb0/1785117956661_852_app_N_470.89K-470.89K.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2351943/car/image/6a5c459fea58a/1784432031981_490_app_N_380.83K-380.83K.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_2b9fd2981e4a020c3af0",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/852262/car/image/6a828790d9354/1786939280857P11727_72323_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1398002/car/image/6a82828c85a6a/1786937996203e9488_23763_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/845534/car/image/6a81761a2d09f/1786869274159D3452_430994_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2329591/car/image/6a7e84ad17caa/1786676396358G11018_65772_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1210688/car/image/6a7d354c39027/1786590540246L8913_413535_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4812178/car/image/6a7c4c90bb508/1786530960800O4707_763784_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/606269/car/image/6a781c5c1ee43/1786256476187_224_app_V_520.09K-520.31K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1471048/car/image/6a75b982ab857/1786100098743_227_app_M_194.85K-194.85K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5185743/car/image/6a7184e206a50/1785824481610_788_app_S_431.32K-431.32K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1086047/car/image/6a7055c5e9b8d/1785746886005N8375_683835_parse.jpg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_487ace4d0a77b4ce4fe4",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1542122/car/image/6a83e5ec89495/1787028972597_429_app_Q_353.07K-353.07K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5399335/car/image/6a82d8355e803/1786959925416_805_app_Y_378.25K-378.25K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2233624/car/image/6a805c05bfb5c/1786797060626_079_app_X_488.19K-488.19K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/835251/car/image/6a4b6db86f199/1783328183709C10952_1072106_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2653705/car/image/6a7419be15c26/1785993661178_774_app_N_214.65K-214.65K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1307870/car/image/6a740de7d9851/1785990631086_464_app_Q_306.51K-306.51K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6467587/car/image/6a716a12d9c00/1785817618805_735_app_W_404.54K-404.54K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1858339/car/image/6a6ddc8bd87a9/1785584779808_548_app_H_299.63K-299.63K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6327790/car/image/6a6aee2681425/1785392677666y8229_45362.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/531069/car/image/6a69d28cf19dc/1785320077037n473_1871138_parse.jpg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
       "id": "av_ea54437a75cc7358c793",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
+      "title": "Toyota Avalon 2022 Asian Dragon 2.0 CVT Luxury Edition",
+      "brand": "Toyota",
+      "model": "Avalon",
+      "trim": "2022 Asian Dragon 2.0 CVT Luxury Edition",
+      "year": 2022,
+      "mileage": 143000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "2.0L 178PS L4",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2023/07/13",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "The Yihai corporate account vehicle is for non-commercial use with no restrictions. It’s in excellent condition, requiring only one touch-up paint job. The exterior needs some investment to improve its appearance. It passed the CheckDoc inspection with an S-grade rating. Pickup available in Beijing, at the nearest location. Genuine used car source, dedicated to wholesale sales.",
       "features": [],
       "listingFacts": [
         {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:56:53",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2023"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "131 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/932074/car/image/6a855dcb8021e/1787125195551l6314_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1089309/car/image/6a85264b4009f/1787110986052_814_app_J_230.74K-230.74K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2126081/car/image/6a85166806cba/1787106918117_517_app_M_208.68K-208.68K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4894778/car/image/6a82d52130694/1786959137145E572_464929_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4894778/car/image/6a82d415ab14f/1786958869670D4095_502495_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4894778/car/image/6a82d24cccce0/1786958412811E12006_455905_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1740040/car/image/6a82c4e75d707/1786954983407_866_app_H_585.12K-698.97K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5105049/car/image/6a82a56f0efa3/1786946927101_505_app_C_619.76K-747.24K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6075779/car/image/6a827bb5079b7/1786936244978l8210_127812_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5003442/car/image/6a815eabe0467/1786863275829x1343_126662_parse.jpg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774131i897_197837_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774134D7493_159382_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774138Y9844_154589_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774139c1562_73446.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774140Q5304_105105_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774141i1308_73725.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774142I2061_91953.jpg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_9d0a1018b4226e0c00e7",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1482904/car/image/6a85aec47296b/1787145924452z10898_195380_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/902733/car/image/6a854d27eb28e/1787120934521W9798_79446_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1249069/car/image/6a8454b680f06/1787057334576_449_app_S_283.70K-283.70K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3620021/car/image/6a845025eac96/1787056165260_019_app_F_336.22K-336.22K_parse.png?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6409506/car/image/6a82d0d181fe1/1786958033935_170_app_F_209.41K-209.41K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2289404/car/image/6a82a380ca6ed/1786946432952_209_app_E_365.81K-365.81K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1523141/car/image/6a805b10a254c/1786796815968_564_app_G_208.83K-208.83K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6514715/car/image/6a7ff1f7d2b55/1786769911051_067_app_C_745.99K-754.74K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/39757/car/image/6a7f0a58d4a25/1786710617059f7222_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1344876/car/image/6a7ec85ad9922/1786693931919_689_app_A_349.99K-349.99K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_87e8242ecfcc29410fc4",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1282970/car/image/6a857b7f3f297/1787132799307_444_app_R_570.04K-1.09M_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/223451/car/image/6a8579d20b550/1787132370069f6050_457827_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/407348/car/image/6a8557cde1cd3/1787123661829L9974_526482_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1377002/car/image/6a855806ed762/1787123719730_879_app_I_189.01K-189.01K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2958541/car/image/6a851f9eafaeb/1787109279590h8415_58828_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/344951/car/image/6a840969c747a/1787038057823_273_app_L_423.47K-423.47K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/37873/car/image/6a8255851d064/1786926468451_764_app_P_244.70K-244.70K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/37873/car/image/6a8256439cf5b/1786926658945_093_app_X_222.99K-222.99K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2330364/car/image/6a805063377de/1786794082919t11418_753032_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1734717/car/image/6a8047193ead9/1786791705275_672_app_N_494.27K-494.27K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_92884cc6cfcc8f2063e2",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/907175/car/image/6a85a656778e8/1787143766462_303_app_M_500.15K-500.15K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2580605/car/image/6a852ff94c981/1787113465377_838_app_L_509.91K-509.91K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6493945/car/image/6a7844b0a7833/1786266800713_941_app_X_211.87K-211.87K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2133827/car/image/6a8462165e500/1787060758458_353_app_X_1.12M-196.14K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5191254/car/image/6a8414d651e1d/1787040982502y5853_259604_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1389879/car/image/6a83f044760ad/1787031620506_624_app_Q_333.06K-333.06K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5710538/car/image/6a82d64688e36/1786959430539_132_app_A_1.83M-373.04K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3129926/car/image/6a82bad81fa06/1786952407930H3585.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2875593/car/image/6a82a7df2b2a5/1786947551196Y6263_565205_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2083927/car/image/6a817e72922f6/1786871409965_725_app_G_311.09K-311.09K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.462Z"
-    },
-    {
-      "id": "av_ec54570e82d5d8e0dc0b",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/445227/car/image/6a841df87491e/1787043320439_143_app_E_461.12K-461.12K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1269466/car/image/6a7fe1b312b8f/1786765747062_608_app_P_330.77K-330.77K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5796727/car/image/6a7fd3a2929c4/1786762145841_250_app_P_1.73M-294.70K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1866874/car/image/6a7ed663d0015/1786697315861_173_app_U_243.20K-243.20K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5684351/car/image/6a7d8fc20f1cd/1786613698060_279_app_R_784.49K-1.50M_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1347085/car/image/6a7d4fe620171/1786597350435G4293_71192_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2049823/car/image/6a7d3021431fb/1786589217326_547_app_U_287.79K-287.79K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/109053/car/image/6a7c161eabba4/1786517023032t5873_109896_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4831034/car/image/6a79938e7f3ca/1786352526469X10323_202696_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2923970/car/image/6a794fa20636d/1786335137720_216_app_J_157.70K-157.70K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
-    },
-    {
-      "id": "av_db431498dc16df2c1051",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/585565/car/image/6a8282842afd6/1786937988197_108_app_M_310.60K-310.60K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1941669/car/image/6a814e87c9e27/1786859143873T1853_546485_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2858160/car/image/6a801d229db85/1786780962430_321_app_H_360.10K-360.10K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1160124/car/image/6a7edefe49994/1786699518312_113_app_H_475.64K-475.64K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4680788/car/image/6a7d50302d947/1786597424055M7845_67961_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2540289/car/image/6a7d4ada7e2e4/1786596058628_223_app_T_303.14K-303.14K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/267787/car/image/6a76c97dedc65/1786169726027_980_app_B_430.86K-430.86K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/770984/car/image/6a758bc38de65/1786088386737_651_app_U_335.56K-335.56K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/770984/car/image/6a757c7a273b7/1786084473329_238_app_H_252.91K-252.91K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3752068/car/image/6a729dd508f61/1785896403966q6726_74000_parse.jpg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
-    },
-    {
-      "id": "av_1ad04db2e0133feed4db",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/1463598/car/image/6a84250da8b58/1787045134190_462_app_M_516.39K-763.32K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3890157/car/image/6a831efbb782d/1786978044064_279_app_V_351.39K-351.39K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/350728/car/image/6a83c88a8972c/1787021450576o4862_718496_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4790326/car/image/6a8301c8cf796/1786970569482_721_app_A_421.40K-421.40K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/455036/car/image/6a82ac632c8c3/1786948707241_700_app_W_662.89K-952.01K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1678194/car/image/6a817734b7688/1786869556542_316_app_N_267.03K-267.03K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2998055/car/image/6a81708986b15/1786867849633_688_app_O_285.39K-285.39K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/733768/car/image/6a812bc279681/1786850242211O5684_124330_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1459702/car/image/6a7fe8e2a30d8/1786767586816_994_app_E_425.42K-425.42K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2542359/car/image/6a7fbe380ed60/1786756664133_981_app_V_1019.72K-1.94M_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
-    },
-    {
-      "id": "av_507a690d53b58c077477",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
-      "features": [],
-      "listingFacts": [
-        {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
-          "status": "info"
-        }
-      ],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
-        },
-        {
-          "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
-        }
-      ],
-      "photos": [
-        "https://img.jytche.com/user/130268/car/image/6a85b42362c6d/1787147299423o6720_522930_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/897994/car/image/6a85aa75907e2/1787144820551_154_app_L_118.09K-118.09K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/25816/car/image/6a859d4ceed38/1787141452798k339_165885_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/104172/car/image/6a8531e0b4fe4/1787113951871_344_app_Q_132.39K-132.39K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1340129/car/image/6a8525ff3d5d6/1787110911262M214_540408_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6759940/car/image/6a8521cabe40b/1787109834809_773_app_F_358.45K-358.45K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4723535/car/image/6a851b398844a/1787108153754W1367_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1050200/car/image/6a846f9837bd9/1787064216143K1596_199859.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2602804/car/image/6a8433e2e64d9/1787048930834_042_app_Y_314.97K-314.97K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6590059/car/image/6a8423d61f0b2/1787044822153_671_app_D_418.66K-418.66K_parse.jpeg?x-oss-process=style/thumbnail"
-      ],
-      "status": "active",
-      "listingPlatform": "SeekAuto",
-      "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-08-19T13:56:53+08:00"
     },
     {
       "id": "av_df38be6ad83a2b63e58c",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
+      "title": "BMW M4 (Imported) 2017 M4 Coupe 3.0T Fan-Limited Edition",
+      "brand": "BMW",
+      "model": "M4 (Imported)",
+      "trim": "2017 M4 Coupe 3.0T Fan-Limited Edition",
+      "year": 2017,
+      "mileage": 80000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "3.0T 450PS L6",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2017/05/11",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "Produced in 2017, registered in 2017; BMW M4 ZCP right rear fender, replaced at 4S shop with damage record documented, repaired and replaced by 4S; all body lines and details in good condition; odometer shows over 80,000 kilometers, but there is evidence of odometer adjustment to around 40,000 kilometers in the vehicle system; upgraded with titanium alloy turbo pipes; four nearly new Michelin PS4S tires, 265mm front and 295mm rear; upgraded to 19th-generation Night Black underglow tail lights; EVO chassis unit; SSR racing short springs; HSR racing front suspension; carbon fiber front bumper, side skirts, and rear spoiler; all fluids replaced on August 12; interior wear minimal, vehicle in excellent condition; comprehensive insurance valid until June next year.",
       "features": [],
       "listingFacts": [
         {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:55:55",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2017"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "Rear-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "331 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Euro VI"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/905505/car/image/6a3bf5b4e86a9/1782314420929_080_app_G_408.71K-408.71K.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2156940/car/image/6a1fd9a46ff6d/1780472228382I9846_80328_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/361465/car/image/69ca39f51e835/1774860789127_659_app_V_376.16K-376.16K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1726607/car/image/69b7984a94d40/1773639754569w12532_71671_parse.jpg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147282272_170_app_N_615.67K-1.17M_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b3fcb4ef5/1787147260741_104_app_G_405.73K-405.73K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147282352_846_app_F_861.31K-1.64M_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147282579_207_app_V_762.36K-1.45M.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147282657_383_app_G_155.36K-155.36K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147282841_760_app_K_187.08K-187.08K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283006_081_app_U_147.70K-147.70K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283186_856_app_M_196.47K-196.47K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283273_907_app_T_226.46K-226.46K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283476_302_app_D_564.03K-974.42K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283470_738_app_A_212.75K-212.75K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283693_552_app_K_254.57K-254.57K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147283891_273_app_K_240.04K-240.04K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147284061_393_app_E_163.43K-163.43K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147284413_222_app_L_823.08K-1.56M_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b4122655a/1787147284468_909_app_V_268.45K-268.45K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1830994/car/image/6a85b3fce0b0c/1787147260926_513_app_O_230.18K-230.18K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-08-19T13:55:55+08:00"
     },
     {
-      "id": "av_47ef091894ed6fab7d99",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
+      "id": "av_44be9c3176a9074f2213",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
       "trim": null,
-      "year": null,
-      "mileage": null,
+      "year": 2024,
+      "mileage": 23000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2025/07/10",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "original paint, untouched",
       "features": [],
       "listingFacts": [
         {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
+          "label": "Дата объявления",
+          "text": "2026-06-10 01:32:43",
           "status": "info"
         },
         {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "label": "Обновлено на площадке",
+          "text": "2026-08-01 02:18:05",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2024/09"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/7115396/car/image/6a8586ed39725/1787135725008_175_app_N_295.85K-295.85K.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1752454/car/image/6a8519c209115/1787107779654_675_app_N_3.64M-695.31K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5540888/car/image/6a83f7cf82077/1787033551556_904_app_M_486.69K-486.69K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1915031/car/image/6a83f73b58517/1787033403164_222_app_W_397.92K-397.92K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/554589/car/image/6a81752d85011/1786869037566_056_app_A_448.23K-448.23K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3653776/car/image/6a7daa6923437/1786620521161_997_app_C_284.92K-284.92K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4035669/car/image/6a7d7a6ecc072/1786608238865_221_app_L_405.32K-405.32K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6611949/car/image/6a75a812441b7/1786095634318_623_app_L_411.24K-411.24K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1207499/car/image/6a70715273b20/1785753938498N5977_454118_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/898201/car/image/6a7019f4bcfcf/1785731572809a6093_311006_parse.jpg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068912_015_app_Y_3.40M-165.05K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068835_544_app_B_3.64M-200.61K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068799_899_app_K_3.69M-218.99K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068903_157_app_N_15.84M-135.07K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068969_194_app_M_14.62M-163.40K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055069078_721_app_Q_14.76M-165.05K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055069129_270_app_J_15.80M-161.20K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055069082_352_app_C_663.59K-347.74K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-08-01T02:18:05+08:00"
     },
     {
-      "id": "av_81761834e718cf730cc6",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
+      "id": "av_7a4b71292dfb5f49efc0",
+      "title": "Mazda 2023 CX-50 Xingye 2.0 Lingxing Version",
+      "brand": "Mazda",
+      "model": "CX-50 Xingye 2.0 Lingxing Version",
       "trim": null,
-      "year": null,
-      "mileage": null,
+      "year": 2023,
+      "mileage": 33000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0L 155PS L4",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2023/11/20",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "Manufactured in August 2023, the vehicle retains its original paint in perfect condition. The odometer reading is only 33,000 kilometers. If the actual condition does not match the description, all related costs will be refunded. It is equipped with a panoramic sunroof, 360-degree camera system, large-screen navigation, seat heating, ACC adaptive cruise control, speed limit control, lane departure warning, lane keeping assist, leather and fabric mixed seats, one-key start, automatic air conditioning, and other top-tier features. Please send me a purchase order if interested.",
       "features": [],
       "listingFacts": [
         {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
+          "label": "Дата объявления",
+          "text": "2026-07-12 09:09:23",
           "status": "info"
         },
         {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "label": "Обновлено на площадке",
+          "text": "2026-08-17 01:33:06",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2023"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "114 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/1779967/car/image/6a8520ad461a4/1787109549296_805_app_C_407.97K-407.97K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2336658/car/image/6a851ed5535ad/1787109077370_166_app_W_469.10K-469.10K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2657925/car/image/6a8564ed540f8/1787127021037J9693_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5604680/car/image/6a851d629ace6/1787108706665_208_app_R_322.12K-322.12K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1799909/car/image/6a858c7cd2f3b/1787137148833w7816_411016.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/227187/car/image/6a841bd491544/1787042772607_865_app_B_412.55K-412.55K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/54222/car/image/6a84070d8d3d5/1787037452831P8150_88667_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1219884/car/image/6a83f6aed066b/1787033262871c3524_767567_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1675143/car/image/6a828b5deda75/1786940253998_244_app_M_490.37K-490.37K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/4347176/car/image/6a82871bee85a/1786939164025_908_app_I_412.59K-412.59K_parse.jpeg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/5817795/car/image/6a5357d2f3975/1783846866016_121_app_E_244.14K-244.14K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d311e33/1783846866102_530_app_G_271.90K-271.90K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d32e226/1783846866209_061_app_V_295.39K-295.39K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d316bca/1783846866113_005_app_G_270.40K-270.40K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d31c6ea/1783846866141_406_app_T_218.00K-218.00K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d33c524/1783846866266_605_app_G_217.30K-217.30K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866365_703_app_V_243.46K-243.46K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d324139/1783846866198_489_app_A_205.37K-205.37K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d33c524/1783846866344_578_app_E_227.79K-227.79K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866433_794_app_H_147.50K-147.50K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866806_034_app_M_263.04K-263.04K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866812_947_app_U_189.95K-189.95K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866633_177_app_H_208.18K-208.18K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866767_570_app_F_181.39K-181.39K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866706_554_app_N_121.96K-121.96K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d33c524/1783846866347_532_app_U_139.75K-139.75K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d33c524/1783846866295_611_app_U_199.76K-199.76K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d324139/1783846866167_831_app_D_252.11K-252.11K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a5357d3464ce/1783846866543_896_app_A_231.83K-231.83K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5817795/car/image/6a7a9ffd2f377/1786421243868_740_app_M_168.56K-168.56K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-08-17T01:33:06+08:00"
     },
     {
-      "id": "av_269dc7f8be9fdb8547d7",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
-      "trim": null,
-      "year": null,
-      "mileage": null,
+      "id": "av_8becae20a0a6376504a4",
+      "title": "Porsche Cayenne (Imported) 2016 Cayenne S 3.6T",
+      "brand": "Porsche",
+      "model": "Cayenne (Imported)",
+      "trim": "2016 Cayenne S 3.6T",
+      "year": 2016,
+      "mileage": 93000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.6T 420PS V6",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2017/02/09",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "Three sides require repainting; the rest is in original paint condition.",
       "features": [],
       "listingFacts": [
         {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
+          "label": "Дата объявления",
+          "text": "2026-07-09 02:15:55",
           "status": "info"
         },
         {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "label": "Обновлено на площадке",
+          "text": "2026-07-09 09:12:18",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2017"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "309 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Euro V"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/2582578/car/image/6a8580df4acb5/1787134174243_263_app_F_394.31K-394.31K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1703098/car/image/6a8571a834e9d/1787130280572_718_app_Q_346.47K-346.47K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5355618/car/image/6a855264ca78f/1787122275743_786_app_B_402.56K-402.56K_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/7254330/car/image/6a854c7681093/1787120758331_157_app_L_664.36K-801.11K.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5026048/car/image/6a8538082b66f/1787115527748_618_app_L_305.19K-305.19K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/381077/car/image/6a850c15275fe/1787104277086_203_app_B_442.26K-442.26K_parse.png?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/832611/car/image/6a844e9ed6b00/1787055774903_322_app_M_218.59K-218.59K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2925432/car/image/6a844c714c53c/1787055217409_082_app_T_1.23M-204.50K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2216559/car/image/6a843f7504866/1787051892460_685_app_L_58.70K-58.70K.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1186776/car/image/6a83cfa7d6990/1787023271918_991_app_T_1.23M-212.75K_parse.jpeg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec8a3bd/1783563245112_894_app_I_444.67K-444.67K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec942c7/1783563245167_200_app_E_552.50K-687.91K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec942c7/1783563245192_703_app_Y_542.57K-676.71K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec942c7/1783563245157_053_app_C_433.01K-433.01K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec8e813/1783563245129_732_app_S_354.43K-354.43K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec90db2/1783563245143_415_app_X_373.75K-373.75K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec67762/1783563244968_499_app_H_500.86K-500.86K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3720392/car/image/6a4f03ec84aae/1783563245097_973_app_G_475.96K-475.96K_parse.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-07-09T09:12:18+08:00"
     },
     {
-      "id": "av_5de2f151deaee71079a3",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
+      "id": "av_da9a38469d201c21fd1e",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
       "trim": null,
-      "year": null,
-      "mileage": null,
+      "year": 2021,
+      "mileage": 51000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2021/07/15",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "Original vehicle, original paint, as shown, checked via Chaboshi at S grade, extremely attractive. The screws used for chassis modification have been touched.",
       "features": [],
       "listingFacts": [
         {
+          "label": "Дата объявления",
+          "text": "2026-06-18 06:37:12",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-07-10 07:34:08",
+          "status": "info"
+        },
+        {
           "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
-          "status": "info"
-        },
-        {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "text": "На площадке для автомобиля указан отчёт осмотра.",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2021"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/394270/car/image/6a8573fb9ecd4/1787130875687v5535_975281_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3766603/car/image/6a7d4b269fb19/1786596134682_610_app_W_326.14K-326.14K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/957573/car/image/6a753cb924565/1786068133419_603_app_O_457.78K-457.78K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1353200/car/image/6a6f3587d2cb9/1785673095894_028_app_F_324.72K-324.72K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2561307/car/image/6a6b2715556e6/1785407253810Z6212_74063_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6097688/car/image/6a6adf85a1198/1785388933659_260_app_S_437.60K-437.60K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2078074/car/image/6a671ed9d2c2e/1785143001883_478_app_B_526.56K-630.11K.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/1220817/car/image/6a5683d46280c/1784054740022_667_app_J_282.64K-282.64K.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/189210/car/image/6a45e9eea8e3e/1782966766719Q1509_549179.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/190589/car/image/6a3f401947629/1782530073313D6122_760174.jpg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336581X10184_313868_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336588w4494_364188_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336589Q6899_556198_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336589r2426_473842.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336590T9867_499616.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336591a2204_396693.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336592A1091_367825_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336593o3514_429781_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/50437/car/image/6a3390f070aaa/1781764336593M7922_417249.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-07-10T07:34:08+08:00"
     },
     {
-      "id": "av_70accd56ac182e7722f0",
-      "title": "seekauto",
-      "brand": null,
-      "model": "seekauto",
+      "id": "av_f2e5f997c903190ee17a",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
       "trim": null,
-      "year": null,
-      "mileage": null,
+      "year": 2020,
+      "mileage": 45000,
       "city": null,
       "price": null,
       "currency": "CNY",
-      "body": "Brand : svg]:px-3 w-[305px] justify-between overflow-hidden cursor-pointer text-xs text-muted-foreground\" role=\"combobox\" aria-expanded=\"false\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_4j6aivb_\" data-state=\"closed\">Brand Series : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_8j6aivb_\" data-state=\"closed\">Series Model : svg]:px-3 w-[305px] justify-between overflow-hidden text-xs text-muted-foreground opacity-50 cursor-not-allowed\" role=\"combobox\" aria-expanded=\"false\" disabled=\"\" type=\"button\" aria-haspopup=\"dialog\" aria-controls=\"radix-_R_cj6aivb_\" data-state=\"closed\">Model Year : Min - Max",
-      "energyType": "Прочее",
-      "engine": "Emission Standard",
-      "transmission": "Transmission",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
       "bodyColor": null,
       "interiorColor": null,
-      "registration": null,
+      "registration": "2023/03/28",
       "transfers": null,
       "vin": null,
-      "description": "Dear overseas car dealer partners: Since all vehicle listings on the platform are independently posted by domestic car dealers, there may be discrepancies between the vehicle information description and the actual vehicle condition, and the vehicle conditions may not be standardized. To protect your transaction rights, please note the following: [R Year/month] is a registration date in China. [P Year/month] is a manufacture data provided by database provider in China. The vehicle information displayed on this page (including vehicle model, configuration, mileage, price, etc.) is only initial information provided unilaterally by domestic car dealers and does not constitute the platform&#x27;s final commitment to the vehicle status; Please be sure to contact the car dealer directly through the platform&#x27;s direct chat system to verify key information such as the specific configuration, actual vehicle condition, maintenance records and completeness of procedures of the vehicle in detail; It is recommended that you request professional",
+      "description": "Original vehicle, direct from owner, eligible for third-party title transfer, with paint repainted on two panels",
       "features": [],
       "listingFacts": [
         {
-          "label": "Осмотр",
-          "text": "На площадке указана возможность просмотра отчёта осмотра.",
+          "label": "Дата объявления",
+          "text": "2026-07-07 06:12:20",
           "status": "info"
         },
         {
-          "label": "Страховые случаи",
-          "text": "На площадке указана возможность проверки страховых обращений.",
-          "status": "info"
-        },
-        {
-          "label": "Сервис",
-          "text": "На площадке указана возможность проверки сервисной истории 4S.",
+          "label": "Обновлено на площадке",
+          "text": "2026-07-13 09:00:58",
           "status": "info"
         }
       ],
       "conditionChecks": [],
       "extraSpecs": [
         {
-          "label": "Рабочий объём",
-          "value": "Engine"
-        },
-        {
-          "label": "Экологический стандарт",
-          "value": "Transmission"
+          "label": "Дата производства",
+          "value": "2023"
         },
         {
           "label": "Привод",
-          "value": "Drive Disp. : Min - Max Port : Drive Keyword : New In"
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://img.jytche.com/user/1017653/car/image/6a85796deaf5d/1787132268980_846_app_W_285.59K-285.59K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5322129/car/image/6a8535e863fae/1787114984436_120_app_V_628.28K-762.59K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2362726/car/image/6a851d95938f0/1787108757626_356_app_F_472.45K-472.45K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/918388/car/image/6a850045dc09d/1787101253961_314_app_N_398.60K-398.60K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/6402576/car/image/6a8432f2cfc49/1787048690954_593_app_H_1.47M-297.31K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/2247527/car/image/6a83bfe9bad68/1787019241792_503_app_T_307.12K-307.12K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/223727/car/image/6a83b520d6653/1787016480896_242_app_P_641.01K-923.13K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/15651/car/image/6a8272ce86403/1786933966566J3242_530786_parse.jpg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/5389602/car/image/6a819c43c4b90/1786879043827_009_app_N_369.29K-369.29K_parse.jpeg?x-oss-process=style/thumbnail",
-        "https://img.jytche.com/user/3098117/car/image/6a7fd65a4e294/1786762842370j3454_668614_parse.jpg?x-oss-process=style/thumbnail"
+        "https://img.jytche.com/user/551357/car/image/6a4c97a1de578/1783404449925A8836_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c97a7bedfc/1783404455786T5092.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c97ad30ece/1783404461209V10257_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c97b37d6fe/1783404467528c538.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c979848861/1783404440314A7192_335296.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c979848861/1783404440315Y3200_268865.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c979848861/1783404440316x6047_376242_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/551357/car/image/6a4c979848861/1783404440317F11011_220664.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "unknown",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-07-13T09:00:58+08:00"
+    },
+    {
+      "id": "av_cfc49b0179a43d1ecae8",
+      "title": "Volkswagen 2025 ID.3 Smart Version Ultimate Intelligence Edition",
+      "brand": "Volkswagen",
+      "model": "ID.3 Smart Version Ultimate Intelligence Edition",
+      "trim": null,
+      "year": 2025,
+      "mileage": 31000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "Седан",
+      "energyType": "Электро",
+      "engine": "New Energy 170PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/08/06",
+      "transfers": null,
+      "vin": null,
+      "description": "original paint, untouched",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-07-13 09:01:16",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-07-13 11:42:04",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024/07"
+        },
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "125 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/1940397/car/image/6a54ceb173da2/1783942833513O3699.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1940397/car/image/6a54a8b13dd5a/1783933105271c9382.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1940397/car/image/6a54a8b53c8be/1783933109267U3521.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1940397/car/image/6a54a8a68640b/1783933094567Y6245_251450.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1940397/car/image/6a54a8a68640b/1783933094568d1009_400234.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1940397/car/image/6a54a8a68640b/1783933094569m1576_294635.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "unknown",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-07-13T11:42:04+08:00"
+    },
+    {
+      "id": "av_bde28eeb676182e1d325",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 10000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2025/08/18",
+      "transfers": null,
+      "vin": null,
+      "description": "Left front door: Painted",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-18 05:27:11",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f00a3b9/1787029487861_739_app_V_375.40K-375.40K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f01e0f7/1787029487948_762_app_C_341.18K-341.18K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f00a3b9/1787029487918_447_app_X_335.99K-335.99K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f01e0f7/1787029488210_246_app_Y_280.91K-280.91K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f01e0f7/1787029488496_725_app_Y_343.27K-343.27K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f01e0f7/1787029488706_763_app_F_204.05K-204.05K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6293554/car/image/6a83e7f01e0f7/1787029488918_765_app_S_164.89K-164.89K_parse.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:57:26.463Z"
+      "updatedAt": "2026-08-18T05:27:11+08:00"
+    },
+    {
+      "id": "av_54b4224f6fc269e535cd",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 53000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/05/18",
+      "transfers": null,
+      "vin": null,
+      "description": "original paint",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-18 03:30:22",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024/03"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/1575677/car/image/6a83d14d5b8b8/1787023692561_612_app_S_229.98K-229.98K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1575677/car/image/6a83d14d21473/1787023692305_192_app_H_269.91K-269.91K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1575677/car/image/6a83d14d21473/1787023692307_160_app_Q_160.33K-160.33K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1575677/car/image/6a83d14d21473/1787023692304_729_app_A_106.97K-106.97K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1575677/car/image/6a83d14d21473/1787023692308_362_app_N_115.16K-115.16K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1575677/car/image/6a83d14d21473/1787023692303_969_app_E_335.28K-335.28K.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-18T03:30:22+08:00"
+    },
+    {
+      "id": "av_19e1b852b0d2545cacbc",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 14000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/05/08",
+      "transfers": null,
+      "vin": null,
+      "description": "NIO EC7 2024 model, 75kWh battery version for lease  \nSold in May 2024, infrared mileage reading, personal original owner vehicle, original paint job, no accidents recorded. Optional upgrades: Nebula Red paint, Nomi robot, 21-inch wheels",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-08 04:43:09",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023/12"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c04750c/1786163903636_145_app_Y_202.98K-202.98K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c0587b5/1786163903708_582_app_N_173.58K-173.58K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c047eb6/1786163903641_403_app_A_206.48K-206.48K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c0608eb/1786163903736_503_app_X_197.96K-197.96K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c067c1b/1786163903768_966_app_A_162.21K-162.21K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c063150/1786163903748_612_app_X_191.95K-191.95K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c063c82/1786163903753_419_app_V_229.66K-229.66K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c06a52f/1786163903774_382_app_U_183.52K-183.52K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a76b2c06e9df/1786163903785_849_app_E_176.28K-176.28K_parse.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-08T04:43:09+08:00"
+    },
+    {
+      "id": "av_0c26caf050c7ed2f6448",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 34000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/11/26",
+      "transfers": null,
+      "vin": null,
+      "description": "For urgent sale – first come, first served. Those interested can reach out to discuss. 2024 NIO EC7 model, 75KWH battery capacity. Produced in July 2024, registered in November 2024. Total mileage: 34,000 kilometers. Equipped with champagne-colored car wrap. Original owner vehicle. Compulsory insurance valid until November 2026. 1 set of keys. Original paint finish intact. Damage: scratches on the rear bumper, right fender beam, 2 wheel hubs, left rear fender, and left rear door anti-scrape strip.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-07 08:52:25",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-09 12:11:56",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672107E6487_74020_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672096f12045_84656.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672099j2276_61158.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672100x8_46631_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672102U7435_71965.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672105O8540_57754_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672108e11488_54968.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672110Z4586_51972.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/299803/car/image/6a759c8080c41/1786092672111m1503_64988.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-09T12:11:56+08:00"
+    },
+    {
+      "id": "av_9f19b9f0b0779abd29c9",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 14000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/05/29",
+      "transfers": null,
+      "vin": null,
+      "description": "Original paint with car wrap, top-tier quality",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-06 03:54:06",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/4230913/car/image/6a74048dc7501/1785988237863_437_app_K_197.82K-197.82K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048dc8204/1785988237864_873_app_A_231.89K-231.89K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e08c1b/1785988238075_065_app_J_279.74K-279.74K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238136_075_app_X_203.86K-203.86K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048dc8204/1785988237938_633_app_P_260.14K-260.14K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048dc8204/1785988238055_908_app_V_298.62K-298.62K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238163_940_app_M_273.52K-273.52K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238276_179_app_A_273.86K-273.86K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238397_166_app_J_287.65K-287.65K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238533_254_app_C_291.61K-291.61K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238659_712_app_B_249.92K-249.92K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238790_078_app_J_272.53K-272.53K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988239015_423_app_T_208.52K-208.52K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988239246_036_app_G_213.53K-213.53K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988239385_774_app_W_297.57K-297.57K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988239391_537_app_U_372.36K-372.36K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988238890_217_app_Q_199.04K-199.04K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4230913/car/image/6a74048e1a969/1785988239125_739_app_P_152.36K-152.36K.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-06T03:54:06+08:00"
+    },
+    {
+      "id": "av_b07128d95c48d20ce9dc",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 50000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/08/01",
+      "transfers": null,
+      "vin": null,
+      "description": "2024 model NIO EC7, produced in 2024. Battery is fully purchased with a capacity of 75 kWh. Equipped with 22-inch wheels, red calipers, sunroof, premium audio system, and rear comfort features. Original paint on metal parts, inspected at Dr. Check and rated at S grade, with car coating applied.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-07-28 10:27:45",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-02 04:09:13",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094512U1852_257773.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094518l10606_195100.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094521p2013_184952.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094523n8987_210540_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094525l1123_116111.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094529O7812_157683.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094538h11954_142769.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094542W8614_220056.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1725564/car/image/6a6882b050485/1785234094544d12295_678251.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-02T04:09:13+08:00"
+    },
+    {
+      "id": "av_499294ab1e4d756f79b1",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 24000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/12/11",
+      "transfers": null,
+      "vin": null,
+      "description": "NIO EC7 2024 model, 75kWh battery version for lease  \nRegistered in December 2024, black exterior with beige interior, personal original owner vehicle, 24,000 kilometers driven safely, original paint finish. Optional upgrades: 21-inch wheels, nomi",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-07-11 08:06:06",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-15 02:52:36",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024/12"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a720bb4/1783756197886_868_app_Y_198.75K-198.75K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a730865/1783756197941_563_app_Y_187.70K-187.70K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a7374b0/1783756197968_642_app_O_201.65K-201.65K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a733ab3/1783756197958_513_app_C_194.13K-194.13K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a73c4d1/1783756197985_272_app_F_179.05K-179.05K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a74a5f0/1783756198045_058_app_K_206.82K-206.82K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a7511c8/1783756198080_382_app_Y_190.38K-190.38K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a733c64/1783756197954_249_app_P_153.86K-153.86K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2717205/car/image/6a51f5a750bd4/1783756198082_456_app_U_189.15K-189.15K.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-15T02:52:36+08:00"
+    },
+    {
+      "id": "av_71246596c3a90010fbb9",
+      "title": "NIO 2024 EC7 75 kWh",
+      "brand": "NIO",
+      "model": "EC7 75 kWh",
+      "trim": null,
+      "year": 2024,
+      "mileage": 14000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": "New Energy 653PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2025/03/06",
+      "transfers": null,
+      "vin": null,
+      "description": "Original paint in original condition, with one title transfer recorded.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-07-06 08:25:05",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-07-22 13:38:53",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024/11"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "480 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b031c85/1783326128072_370_app_K_310.34K-310.34K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b0367fa/1783326128083_958_app_O_314.77K-314.77K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b055a4e/1783326128225_206_app_S_299.39K-299.39K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b053a18/1783326128224_134_app_P_334.20K-334.20K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b04a0bf/1783326128171_984_app_J_292.62K-292.62K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b04cf5b/1783326128176_640_app_I_262.21K-262.21K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1341867/car/image/6a4b65b0506c7/1783326128203_980_app_U_301.28K-301.28K.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-07-22T13:38:53+08:00"
+    },
+    {
+      "id": "av_338d2e21cb8cda43a160",
+      "title": "Mazda 2023 CX-50 Xingye 2.0 Lingxing Version",
+      "brand": "Mazda",
+      "model": "CX-50 Xingye 2.0 Lingxing Version",
+      "trim": null,
+      "year": 2023,
+      "mileage": 31000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0L 155PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/01/31",
+      "transfers": null,
+      "vin": null,
+      "description": "Original paint, original condition, seat heating, electric seats under upgrade. If you’re interested, feel free to contact me for details.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-16 07:04:05",
+          "status": "info"
+        },
+        {
+          "label": "Осмотр",
+          "text": "На площадке для автомобиля указан отчёт осмотра.",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024/01"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "114 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/147838/car/image/6a815e16c7882/1786863126393i1674_121057_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/147838/car/image/6a815e16c7882/1786863126396j9951_77453.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/147838/car/image/6a815e16c7882/1786863126399d3548_67126.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/147838/car/image/6a815e16c7882/1786863126402O8479_74475_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/147838/car/image/6a815e473d8ff/1786863174814E3034_73855.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/147838/car/image/6a815e16c7882/1786863126405Z7287_79476.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-16T07:04:05+08:00"
+    },
+    {
+      "id": "av_14c42af5148c6372af94",
+      "title": "Mazda 2023 CX-50 Xingye 2.0 Lingxing Version",
+      "brand": "Mazda",
+      "model": "CX-50 Xingye 2.0 Lingxing Version",
+      "trim": null,
+      "year": 2023,
+      "mileage": 38000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0L 155PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2023/07/04",
+      "transfers": null,
+      "vin": null,
+      "description": "Original paint, keyless entry, one-button start, tire pressure monitoring, lane departure warning, active braking, forward collision warning, engine start-stop system, automatic parking, hill start assist, front and rear parking sensors, 360-degree panoramic camera, ACC adaptive cruise control, electric sunroof, panoramic sunroof, sensor-driven wipers, touch LCD screen, seat heating, power driver’s seat, rear air vents, L2 assisted driving, satellite navigation, heated and foldable rearview mirrors, touch LCD screen",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-04 05:01:48",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-12 08:40:11",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023/06"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "114 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb0c43d/1785818811056_639_app_B_394.05K-394.05K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb10541/1785818811073_326_app_O_323.62K-323.62K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb1a57e/1785818811121_909_app_A_393.26K-393.26K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb19864/1785818811110_624_app_I_431.09K-431.09K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb0f343/1785818811068_450_app_Y_315.54K-315.54K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb24e51/1785818811159_051_app_G_392.27K-392.27K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb17589/1785818811101_141_app_U_402.16K-402.16K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb35596/1785818811231_743_app_S_462.92K-462.92K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb3c586/1785818811264_016_app_W_642.86K-817.42K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb3c586/1785818811258_100_app_K_453.37K-453.37K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb4394c/1785818811287_734_app_L_486.57K-486.57K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb40e92/1785818811273_696_app_Y_326.85K-326.85K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb523b3/1785818811343_190_app_R_467.94K-467.94K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb5b54b/1785818811386_640_app_U_392.27K-392.27K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb59cc4/1785818811375_987_app_U_403.95K-403.95K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb10541/1785818811077_965_app_S_480.35K-480.35K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb10541/1785818811092_162_app_E_271.62K-271.62K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb19864/1785818811117_080_app_D_412.57K-412.57K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb365dc/1785818811230_380_app_I_336.35K-336.35K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5097952/car/image/6a716ebb357d3/1785818811232_942_app_E_500.01K-500.01K.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-12T08:40:11+08:00"
+    },
+    {
+      "id": "av_af8ea9c11590cfa79109",
+      "title": "Porsche Cayenne (Imported) 2016 Cayenne S 3.6T",
+      "brand": "Porsche",
+      "model": "Cayenne (Imported)",
+      "trim": "2016 Cayenne S 3.6T",
+      "year": 2016,
+      "mileage": 130000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.6T 420PS V6",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2017/02/21",
+      "transfers": null,
+      "vin": null,
+      "description": "几个表面需要重新涂漆，查博士正在处理这个问题。那辆汽车也被寄售了。",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-04-05 10:18:25",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-05-05 23:40:08",
+          "status": "info"
+        },
+        {
+          "label": "Осмотр",
+          "text": "На площадке для автомобиля указан отчёт осмотра.",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2017"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "309 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Euro V"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/2477773/car/image/69d2332ed861d/1775383342940_919_app_D_531.60K-1.01M.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332f032b2/1775383343030_223_app_S_467.72K-467.72K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332ed861d/1775383343004_229_app_A_555.41K-1.06M.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332f032b2/1775383343143_142_app_T_494.38K-494.38K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332f032b2/1775383343440_249_app_I_344.61K-344.61K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332f032b2/1775383343694_005_app_E_294.83K-294.83K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332f032b2/1775383343968_208_app_A_352.82K-352.82K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2477773/car/image/69d2332f032b2/1775383344250_734_app_Q_357.68K-357.68K_parse.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-05-05T23:40:08+08:00"
+    },
+    {
+      "id": "av_3fc983b2e497b57e0b8a",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 45000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2021/05/26",
+      "transfers": null,
+      "vin": null,
+      "description": "Original paint, no accidents recorded, with car coating applied",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 08:45:20",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/3308669/car/image/6a856cd214b7d/1787129042110_111_app_D_242.31K-242.31K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3308669/car/image/6a856cd222b0f/1787129042280_547_app_F_239.57K-239.57K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3308669/car/image/6a856cd22695e/1787129042223_522_app_N_284.20K-284.20K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3308669/car/image/6a856cd2575c5/1787129042377_113_app_W_235.04K-235.04K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3308669/car/image/6a856cd214b7d/1787129042129_482_app_S_220.65K-220.65K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3308669/car/image/6a856cd214b7d/1787129042191_395_app_Q_242.48K-242.48K.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T08:45:20+08:00"
+    },
+    {
+      "id": "av_4e6385f2ce521288db79",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 60000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2023/05/22",
+      "transfers": null,
+      "vin": null,
+      "description": "Original owner, can pass through three previous owners, with paint job.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-18 01:55:55",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121487R12391_426053_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121489U819_391232_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121490Y7971_408224_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121492s1252_408199_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121493B12083_391205.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121494J6595_450461_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2331925/car/image/6a83bb8979302/1787018121495H3997_484011_parse.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-18T01:55:55+08:00"
+    },
+    {
+      "id": "av_9f880697e05ce7291904",
+      "title": "Volkswagen 2025 ID.3 Smart Version Ultimate Intelligence Edition",
+      "brand": "Volkswagen",
+      "model": "ID.3 Smart Version Ultimate Intelligence Edition",
+      "trim": null,
+      "year": 2025,
+      "mileage": 40000,
+      "city": null,
+      "price": null,
+      "currency": "CNY",
+      "body": "Седан",
+      "energyType": "Электро",
+      "engine": "New Energy 170PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/08/02",
+      "transfers": null,
+      "vin": null,
+      "description": "Original version with original paint, sold as-is, Chadee S",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-07-30 05:05:30",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-07-31 03:36:20",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024"
+        },
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "125 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/1297091/car/image/6a6ace536d360/1785384531483_761_app_F_493.76K-493.76K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace53a097c/1785384531693_620_app_G_414.47K-414.47K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace536d360/1785384531525_179_app_C_379.62K-379.62K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace536d360/1785384531655_405_app_C_416.60K-416.60K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace53a097c/1785384531763_361_app_A_267.28K-267.28K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace53a097c/1785384531859_787_app_Q_271.96K-271.96K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace53a097c/1785384532123_889_app_F_279.17K-279.17K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace53a097c/1785384532310_368_app_R_280.12K-280.12K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1297091/car/image/6a6ace53a097c/1785384532514_189_app_N_238.48K-238.48K.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-07-31T03:36:20+08:00"
     }
   ]
 }
