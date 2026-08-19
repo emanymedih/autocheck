@@ -52,13 +52,17 @@
     const singleCurrency = currencies.size === 1 ? [...currencies][0] : null;
     const min = document.getElementById("catalogPriceMin");
     const max = document.getElementById("catalogPriceMax");
-    if (min) min.placeholder = singleCurrency ? `Цена от, ${singleCurrency}` : "Цена от";
-    if (max) max.placeholder = singleCurrency ? `Цена до, ${singleCurrency}` : "Цена до";
+    const minPlaceholder = singleCurrency ? `Цена от, ${singleCurrency}` : "Цена от";
+    const maxPlaceholder = singleCurrency ? `Цена до, ${singleCurrency}` : "Цена до";
+    if (min && min.placeholder !== minPlaceholder) min.placeholder = minPlaceholder;
+    if (max && max.placeholder !== maxPlaceholder) max.placeholder = maxPlaceholder;
 
     document.querySelectorAll(".catalog-card[data-live-vehicle='1']").forEach((card) => {
       const vehicle = vehicleById.get(card.dataset.vehicleId);
       const price = card.querySelector(".catalog-card-price");
-      if (vehicle && price) price.textContent = formatPrice(vehicle);
+      if (!vehicle || !price) return;
+      const formatted = formatPrice(vehicle);
+      if (price.textContent !== formatted) price.textContent = formatted;
     });
   }
 
