@@ -9,10 +9,13 @@ import { normalizeListing, toPublicVehicle } from "./normalizer.js";
 import { JsonCatalogStore } from "./store/json-store.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT_DIR = path.resolve(__dirname, "../..");
 const PROVIDER_ID = "seekauto-public";
 const PUBLIC_PLATFORM = "SeekAuto";
 const DEFAULT_STORE = path.resolve(__dirname, "../.state/seekauto-catalog.json");
 const DEFAULT_PUBLIC = path.resolve(__dirname, "../data/global-public-catalog.json");
+const THUMBNAIL_DIR = path.resolve(ROOT_DIR, "assets/catalog-thumbs");
+const THUMBNAIL_PUBLIC_PREFIX = "assets/catalog-thumbs";
 const DEFAULT_BOOTSTRAP_IDS = [
   "SC45956390F3F",
   "SC46097597YKB",
@@ -58,6 +61,81 @@ function bootstrapEntries(value, locale) {
 async function writeJson(filePath, value) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+}
+
+async function fileExists(filePath) {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch (_) {
+    return false;
+  }
+}
+
+function imageExtension(value) {
+  try {
+    const pathname = new URL(value).pathname.toLowerCase();
+    const match = pathname.match(/\.(jpe?g|png|webp)$/);
+    if (!match) return "jpg";
+    return match[1] === "jpeg" ? "jpg" : match[1];
+  } catch (_) {
+    return "jpg";
+  }
+}
+
+async function cacheSeekAutoThumbnail(vehicle, timeoutMs = 15000) {
+  if (vehicle?.listingPlatform !== PUBLIC_PLATFORM) return vehicle;
+  const photos = Array.isArray(vehicle?.photos) ? vehicle.photos.filter(Boolean) : [];
+  const source = photos.find((value) => /^https:\/\/img\.jytche\.com\//i.test(String(value)));
+  if (!source) return vehicle;
+
+  const extension = imageExtension(source);
+  const relativePath = `${THUMBNAIL_PUBLIC_PREFIX}/${vehicle.id}.${extension}`;
+  const absolutePath = path.resolve(ROOT_DIR, relativePath);
+
+  if (!(await fileExists(absolutePath))) {
+    try {
+      const response = await fetch(source, {
+        method: "GET",
+        redirect: "follow",
+        headers: {
+          accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+          referer: "https://www.seekauto.com/",
+          "user-agent": "Mozilla/5.0 (compatible; AvtocheckCatalogSync/1.0)"
+        },
+        signal: AbortSignal.timeout(timeoutMs)
+      });
+      if (!response.ok) return vehicle;
+      const contentType = String(response.headers.get("content-type") || "").toLowerCase();
+      if (contentType && !contentType.startsWith("image/")) return vehicle;
+      const body = Buffer.from(await response.arrayBuffer());
+      if (!body.length || body.length > 8 * 1024 * 1024) return vehicle;
+      await fs.mkdir(THUMBNAIL_DIR, { recursive: true });
+      await fs.writeFile(absolutePath, body);
+    } catch (_) {
+      return vehicle;
+    }
+  }
+
+  return {
+    ...vehicle,
+    photos: [relativePath, ...photos.filter((value) => value !== relativePath)]
+  };
+}
+
+async function cacheSeekAutoThumbnails(vehicles, { concurrency = 2, timeoutMs = 15000 } = {}) {
+  const results = new Array(vehicles.length);
+  let cursor = 0;
+  async function worker() {
+    while (true) {
+      const index = cursor++;
+      if (index >= vehicles.length) return;
+      results[index] = await cacheSeekAutoThumbnail(vehicles[index], timeoutMs);
+    }
+  }
+  const count = Math.max(1, Math.min(Number(concurrency) || 1, vehicles.length || 1));
+  await Promise.all(Array.from({ length: count }, () => worker()));
+  return results;
 }
 
 function chooseStaleRechecks(storeData, discoveredIds, limit) {
@@ -138,13 +216,16 @@ async function writePublicSnapshot(store, filePath) {
   const rejected = managedAll.length - managed.length;
   if (!managed.length) throw new Error("SeekAuto quality gate rejected every managed listing");
 
+  const managedWithThumbnails = await cacheSeekAutoThumbnails(managed, { concurrency: 2, timeoutMs: 15000 });
+  const cachedThumbnails = managedWithThumbnails.filter((vehicle) => String(vehicle?.photos?.[0] || "").startsWith(`${THUMBNAIL_PUBLIC_PREFIX}/`)).length;
+
   const existing = await readJson(filePath, { updatedAt: null, items: [] });
   const existingWithoutSeekAuto = (Array.isArray(existing.items) ? existing.items : [])
     .filter((vehicle) => vehicle?.listingPlatform !== PUBLIC_PLATFORM);
   const byKey = new Map();
   let duplicates = 0;
 
-  for (const vehicle of [...existingWithoutSeekAuto, ...managed]) {
+  for (const vehicle of [...existingWithoutSeekAuto, ...managedWithThumbnails]) {
     if (!vehicle?.id) continue;
     const key = publicVehicleKey(vehicle);
     if (byKey.has(key)) duplicates += 1;
@@ -153,7 +234,7 @@ async function writePublicSnapshot(store, filePath) {
 
   const items = [...byKey.values()];
   await writeJson(filePath, { updatedAt: data.updatedAt || new Date().toISOString(), items });
-  return { items: items.length, managed: managed.length, rejected, duplicates };
+  return { items: items.length, managed: managedWithThumbnails.length, rejected, duplicates, cachedThumbnails };
 }
 
 async function main() {
@@ -251,6 +332,7 @@ async function main() {
     completeSnapshot: false,
     publicItems: publicSummary.items,
     publicSeekAutoItems: publicSummary.managed,
+    cachedThumbnails: publicSummary.cachedThumbnails,
     qualityRejected: publicSummary.rejected,
     publicDuplicatesRemoved: publicSummary.duplicates,
     errors: [...discovery.errors, ...detail.errors],
