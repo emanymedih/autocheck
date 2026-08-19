@@ -2,19 +2,22 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   SeekAutoCatalogProvider,
+  SeekAutoListingProvider,
   extractSeekAutoHydration,
+  parseSeekAutoDetailData,
   parseSeekAutoDetailHtml,
-  parseSeekAutoDiscoveryHtml,
-  seekAutoHomeUrl
+  parseSeekAutoRecommendationsData,
+  seekAutoProxyDetailUrl,
+  seekAutoProxyRecommendsUrl
 } from "../src/providers/seekauto-provider.js";
 import { normalizeListing, toPublicVehicle } from "../src/normalizer.js";
 
-function response(url, html, status = 200) {
+function response(url, payload, status = 200) {
   return {
     ok: status >= 200 && status < 300,
     status,
     url,
-    async text() { return html; }
+    async text() { return typeof payload === "string" ? payload : JSON.stringify(payload); }
   };
 }
 
@@ -23,15 +26,7 @@ function hydrationScript(detail, id = detail.car_code) {
   return `<script>self.__next_f.push(${JSON.stringify([1, decoded])})</script>`;
 }
 
-function detailPage(detail, { sold = false } = {}) {
-  return `<!doctype html><html><head><title>${detail.name || "seekauto"} | seekauto</title></head><body>
-    <div>Ref No #${detail.car_code}</div>
-    ${hydrationScript(detail)}
-    ${sold ? "<div>This vehicle has been sold and is no longer listed for sale.</div>" : ""}
-  </body></html>`;
-}
-
-const activeHydration = {
+const activeDetail = {
   car_code: "SC043375C6Y08",
   inner_car_id: 0,
   name: "NIO 2024 EC7 75 kWh",
@@ -61,44 +56,8 @@ const activeHydration = {
   car_status: 99
 };
 
-const activeDetail = detailPage(activeHydration);
-const soldHydration = {
-  ...activeHydration,
-  car_code: "SC661642651SG",
-  name: "Tank 2021 Tank 300 2.0T Off-Road Edition Conqueror",
-  built_date: "2021",
-  plate_date: "2021/07/15",
-  mileage: 51000,
-  price: "2*****",
-  fuel_type: "Gasoline",
-  emission: "China VI",
-  engine: "2.0T 227PS L4",
-  max_power: 167,
-  car_status: 0
-};
-const soldDetail = detailPage(soldHydration, { sold: true });
-
-test("SeekAuto discovery finds detail links and serialized SC identifiers", () => {
-  const html = `<!doctype html><html><body>
-    <div>In Stock 677906</div>
-    <a href="/en/car/detail/SC043375C6Y08">NIO 2024 EC7 75 kWh</a>
-    <script>window.__DATA__={"carCode":"SC45956390F3F"};</script>
-  </body></html>`;
-  const parsed = parseSeekAutoDiscoveryHtml(html, { pageUrl: seekAutoHomeUrl() });
-  assert.equal(parsed.advertisedCount, 677906);
-  assert.deepEqual(parsed.entries.map((item) => item.listingId), ["SC043375C6Y08", "SC45956390F3F"]);
-  assert.equal(parsed.entries[0].title, "NIO 2024 EC7 75 kWh");
-});
-
-test("SeekAuto extracts the target car from Next hydration instead of related-card markup", () => {
-  const hydration = extractSeekAutoHydration(activeDetail, "SC043375C6Y08");
-  assert.equal(hydration.car_code, "SC043375C6Y08");
-  assert.equal(hydration.name, "NIO 2024 EC7 75 kWh");
-  assert.equal(hydration.mileage, 23000);
-});
-
-test("SeekAuto detail parser keeps source CNY, vehicle facts, target photos and platform", () => {
-  const raw = parseSeekAutoDetailHtml(activeDetail, "https://www.seekauto.com/en/car/detail/SC043375C6Y08");
+test("SeekAuto detail JSON maps target vehicle into canonical source data", () => {
+  const raw = parseSeekAutoDetailData(activeDetail);
   assert.equal(raw.source_listing_id, "SC043375C6Y08");
   assert.equal(raw.brand, "NIO");
   assert.equal(raw.model, "EC7 75 kWh");
@@ -109,6 +68,7 @@ test("SeekAuto detail parser keeps source CNY, vehicle facts, target photos and 
   assert.equal(raw.currency, "CNY");
   assert.equal(raw.energy_type, "Pure Electric");
   assert.equal(raw.transmission, "Automatic");
+  assert.equal(raw.body, "SUV");
   assert.equal(raw.photo_urls.length, 2);
   assert.match(raw.photo_urls[0], /^https:\/\/img\.jytche\.com\/user\/5483756\/car\/image\//);
   assert.equal(raw.listing_platform, "SeekAuto");
@@ -120,44 +80,96 @@ test("SeekAuto detail parser keeps source CNY, vehicle facts, target photos and 
   assert.equal(normalized.energyType, "Электро");
   assert.equal(publicVehicle.listingPlatform, "SeekAuto");
   assert.equal(publicVehicle.currency, "CNY");
+  assert.equal(publicVehicle.price, 268000);
+  assert.equal(Object.hasOwn(publicVehicle, "source"), false);
 });
 
-test("SeekAuto masked source prices are not guessed and sold cards become inactive", () => {
-  const raw = parseSeekAutoDetailHtml(soldDetail, "https://www.seekauto.com/en/car/detail/SC661642651SG");
-  assert.equal(raw.status, "inactive");
+test("SeekAuto masked source prices stay null instead of being inferred", () => {
+  const raw = parseSeekAutoDetailData({ ...activeDetail, price: "2*****", currency_price: "$3****" });
   assert.equal(raw.price, null);
-  assert.equal(raw.mileage_km, 51000);
-  assert.equal(raw.energy_type, "Gasoline");
+  assert.equal(raw.currency, "CNY");
 });
 
-test("SeekAuto refuses a generic server shell without the target hydration payload", () => {
-  const shell = `<html><head><title>seekauto</title></head><body>
-    <div>Vehicle Information</div><div>Engine</div><div>Transmission</div>
-    <img src="https://img.jytche.com/user/other/car/image/related.jpg">
-  </body></html>`;
-  assert.throws(
-    () => parseSeekAutoDetailHtml(shell, "https://www.seekauto.com/en/car/detail/SC043375C6Y08"),
-    /hydration payload is missing/
-  );
+test("SeekAuto recommendation JSON yields stable listing codes for graph discovery", () => {
+  const parsed = parseSeekAutoRecommendationsData({
+    total: 3,
+    list: [
+      { car_code: "SC27589737BSU", name: "NIO 2024 EC7 75 kWh" },
+      { car_code: "SC45932075ZEV", name: "NIO 2024 EC7 75 kWh" },
+      { car_code: "SC27589737BSU", name: "duplicate" }
+    ]
+  });
+  assert.equal(parsed.total, 3);
+  assert.deepEqual(parsed.entries.map((item) => item.listingId), ["SC27589737BSU", "SC45932075ZEV"]);
 });
 
-test("SeekAuto provider reads discovered cards through public Next-rendered detail pages", async () => {
-  const home = `<!doctype html><html><body>
-    <div>In Stock 677906</div>
-    <a href="/en/car/detail/SC043375C6Y08">NIO 2024 EC7 75 kWh</a>
-  </body></html>`;
+test("SeekAuto still understands the public Next hydration payload as a fallback", () => {
+  const html = `<html><body>${hydrationScript(activeDetail)}</body></html>`;
+  const hydration = extractSeekAutoHydration(html, "SC043375C6Y08");
+  assert.equal(hydration.car_code, "SC043375C6Y08");
+  const raw = parseSeekAutoDetailHtml(html, "https://www.seekauto.com/en/car/detail/SC043375C6Y08");
+  assert.equal(raw.title, "NIO 2024 EC7 75 kWh");
+  assert.equal(raw.mileage_km, 23000);
+});
+
+test("SeekAuto listing provider reads the public JSON proxy endpoint", async () => {
   const fetchImpl = async (url) => {
     const value = String(url);
-    if (value === seekAutoHomeUrl()) return response(value, home);
-    if (value.includes("SC043375C6Y08")) return response(value, activeDetail);
-    return response(value, "not found", 404);
+    assert.equal(value, seekAutoProxyDetailUrl("SC043375C6Y08"));
+    return response(value, activeDetail);
+  };
+  const provider = new SeekAutoListingProvider({ listingId: "SC043375C6Y08", fetchImpl });
+  const [row] = await provider.read();
+  assert.equal(row.source_listing_id, "SC043375C6Y08");
+  assert.equal(row.mileage_km, 23000);
+});
+
+test("SeekAuto catalog provider grows a valid inventory through recommendation graph", async () => {
+  const recommendationPayload = {
+    total: 2,
+    list: [
+      { car_code: "SC27589737BSU", name: "NIO 2024 EC7 75 kWh" },
+      { car_code: "SC45932075ZEV", name: "NIO 2024 EC7 75 kWh" }
+    ]
+  };
+  const detailById = new Map([
+    ["SC043375C6Y08", activeDetail],
+    ["SC27589737BSU", { ...activeDetail, car_code: "SC27589737BSU", mileage: 10000 }],
+    ["SC45932075ZEV", { ...activeDetail, car_code: "SC45932075ZEV", mileage: 53000 }]
+  ]);
+
+  const fetchImpl = async (url) => {
+    const value = String(url);
+    if (value === seekAutoProxyRecommendsUrl("SC043375C6Y08")) return response(value, recommendationPayload);
+    const detailMatch = value.match(/\/cars\/(SC[A-Z0-9]+)\/detail$/);
+    if (detailMatch && detailById.has(detailMatch[1])) return response(value, detailById.get(detailMatch[1]));
+    return response(value, { message: "not found" }, 404);
   };
 
-  const provider = new SeekAutoCatalogProvider({ fetchImpl, maxListings: 10, detailConcurrency: 2 });
+  const provider = new SeekAutoCatalogProvider({
+    fetchImpl,
+    maxListings: 3,
+    detailConcurrency: 2,
+    seedListingIds: ["SC043375C6Y08"],
+    maxRecommendationRequests: 3
+  });
   const result = await provider.read();
-  assert.equal(result.rows.length, 1);
-  assert.equal(result.meta.discoveredListings, 1);
-  assert.equal(result.meta.importedListings, 1);
-  assert.equal(result.meta.advertisedInventoryCount, 677906);
-  assert.equal(result.meta.completeSnapshot, false);
+  assert.equal(result.meta.discoveredListings, 3);
+  assert.equal(result.meta.importedListings, 3);
+  assert.equal(result.meta.failedListings, 0);
+  assert.deepEqual(result.rows.map((row) => row.source_listing_id), ["SC043375C6Y08", "SC27589737BSU", "SC45932075ZEV"]);
+});
+
+test("SeekAuto detail HTTP errors retain status for stale-listing handling", async () => {
+  const fetchImpl = async (url) => response(String(url), { message: "not found" }, 404);
+  const provider = new SeekAutoCatalogProvider({
+    fetchImpl,
+    maxListings: 1,
+    seedListingIds: ["SC043375C6Y08"]
+  });
+  const detail = await provider.readEntries([{ listingId: "SC043375C6Y08", scope: "stale_recheck" }]);
+  assert.equal(detail.rows.length, 0);
+  assert.equal(detail.errors.length, 1);
+  assert.equal(detail.errors[0].status, 404);
+  assert.equal(detail.errors[0].scope, "stale_recheck");
 });
