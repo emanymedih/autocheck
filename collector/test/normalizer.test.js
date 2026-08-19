@@ -84,6 +84,32 @@ test("detail fields become reusable public data blocks", () => {
   assert.deepEqual(publicVehicle.extraSpecs[1], { label: "Мощность", value: "245 л.с." });
 });
 
+test("supplier description is published in buyer-friendly Russian while raw text stays private", () => {
+  const sourceDescription = "Produced in 2017, registered in 2017; BMW M4 ZCP right rear fender, replaced at 4S shop with damage record documented, repaired and replaced by 4S; all body lines and details in good condition; odometer shows over 80,000 kilometers, but there is evidence of odometer adjustment to around 40,000 kilometers in the vehicle system; upgraded with titanium alloy turbo pipes; four nearly new Michelin PS4S tires, 265mm front and 295mm rear; upgraded to 19th-generation Night Black underglow tail lights; EVO chassis unit; SSR racing short springs; HSR racing front suspension; carbon fiber front bumper, side skirts, and rear spoiler; all fluids replaced on August 12; interior wear minimal, vehicle in excellent condition; comprehensive insurance valid until June next year.";
+  const vehicle = normalizeListing({
+    ...raw,
+    source_listing_id: "m4-description",
+    title: "BMW M4",
+    description: sourceDescription
+  }, { providerId: "seekauto-public" });
+
+  const publicVehicle = toPublicVehicle(vehicle);
+  assert.match(publicVehicle.description, /правое заднее крыло заменено/i);
+  assert.match(publicVehicle.description, /признаки корректировки пробега/i);
+  assert.match(publicVehicle.description, /Michelin PS4S/i);
+  assert.equal(publicVehicle.description.includes("Produced in 2017"), false);
+  assert.equal(vehicle.source.description, sourceDescription);
+  assert.equal(JSON.stringify(publicVehicle).includes(sourceDescription), false);
+});
+
+test("unknown foreign supplier prose never leaks raw into the public card", () => {
+  const sourceDescription = "Dealer note about unusual custom work that is not covered by the phrasebook.";
+  const vehicle = normalizeListing({ ...raw, source_listing_id: "fallback-description", description: sourceDescription }, { providerId: "seekauto-public" });
+  const publicVehicle = toPublicVehicle(vehicle);
+  assert.match(publicVehicle.description, /Поставщик передал дополнительное описание/i);
+  assert.equal(publicVehicle.description.includes("Dealer note"), false);
+});
+
 test("Chinese source brand body and energy values normalize to public taxonomy", () => {
   const vehicle = normalizeListing({
     ...raw,
