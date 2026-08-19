@@ -31,7 +31,7 @@ test("sync audit reports added updated missing and sold transitions", () => {
   const audit = buildSyncAudit({
     baselineItems: baseline,
     currentItems: current,
-    importResult: { discoveredListings: 4, importedListings: 4, errors: [], normalizationErrors: [] },
+    importResult: { success: true, discoveredListings: 4, importedListings: 4, errors: [], normalizationErrors: [] },
     minItems: 4,
     maxMissingRate: 1
   });
@@ -53,7 +53,7 @@ test("sync audit blocks publication when current inventory collapses", () => {
   const audit = buildSyncAudit({
     baselineItems: baseline,
     currentItems: current,
-    importResult: { discoveredListings: 3, importedListings: 3, errors: [], normalizationErrors: [] },
+    importResult: { success: true, discoveredListings: 3, importedListings: 3, errors: [], normalizationErrors: [] },
     minItems: 10,
     maxMissingRate: 0.7
   });
@@ -68,6 +68,7 @@ test("sync audit blocks duplicate ids and excessive source errors", () => {
   const audit = buildSyncAudit({
     currentItems: current,
     importResult: {
+      success: true,
       discoveredListings: 10,
       importedListings: 2,
       errors: Array.from({ length: 4 }, () => ({ message: "failed" })),
@@ -80,4 +81,16 @@ test("sync audit blocks duplicate ids and excessive source errors", () => {
   assert.equal(audit.healthy, false);
   assert.equal(audit.checks.uniqueIds, false);
   assert.equal(audit.checks.errorRate, false);
+});
+
+test("sync audit blocks publication without explicit successful import result", () => {
+  const current = Array.from({ length: 40 }, (_, index) => vehicle(`car-${index}`));
+  const audit = buildSyncAudit({
+    currentItems: current,
+    importResult: {},
+    minItems: 35
+  });
+
+  assert.equal(audit.healthy, false);
+  assert.equal(audit.checks.importCompleted, false);
 });
