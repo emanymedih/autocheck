@@ -1,0 +1,316 @@
+/* Vehicle detail typography calibrated against the supplied marketplace reference.
+   Loaded after vehicle.css so this file owns only type scale/readability adjustments. */
+
+.vehicle-page,
+.vehicle-page button,
+.vehicle-page input,
+.vehicle-page select,
+.vehicle-page textarea {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reference proportions: compact header, readable 300px information rail, large photo. */
+.vehicle-reference-grid {
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 20px;
+}
+
+.vehicle-breadcrumbs {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.vehicle-demo-note {
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.vehicle-reference-title h1 {
+  max-width: 720px;
+  font-size: 30px;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  font-weight: 700;
+}
+
+.vehicle-reference-title p {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.vehicle-reference-price strong {
+  font-size: 31px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.vehicle-reference-price span {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.vehicle-history-box {
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 10px 12px;
+  padding: 15px;
+}
+
+.vehicle-history-icon {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+}
+
+.vehicle-history-box strong {
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.vehicle-history-box span:not(.vehicle-history-icon) {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.38;
+  font-weight: 400;
+}
+
+.vehicle-history-action {
+  min-height: 42px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.vehicle-reference-section {
+  margin-top: 20px;
+}
+
+.vehicle-reference-section h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.vehicle-info-table {
+  gap: 9px;
+}
+
+.vehicle-info-row {
+  grid-template-columns: minmax(0, 105px) minmax(0, 1fr);
+  gap: 9px;
+}
+
+.vehicle-info-row span {
+  font-size: 15px;
+  line-height: 1.38;
+  font-weight: 400;
+}
+
+.vehicle-info-row strong {
+  font-size: 15px;
+  line-height: 1.38;
+  font-weight: 500;
+}
+
+.vehicle-source-card {
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.vehicle-source-label {
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.vehicle-source-card strong {
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.vehicle-source-card > span:not(.vehicle-source-label):not(.vehicle-source-status) {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.vehicle-source-status {
+  margin-top: 9px !important;
+  padding: 6px 9px;
+  font-size: 12px !important;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.vehicle-quick-specs {
+  gap: 13px;
+}
+
+.vehicle-quick-spec {
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.vehicle-quick-icon {
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+}
+
+.vehicle-quick-spec span {
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.vehicle-quick-spec strong {
+  margin-top: 3px;
+  font-size: 15px;
+  line-height: 1.34;
+  font-weight: 500;
+}
+
+.vehicle-all-specs {
+  min-height: 44px;
+  margin-top: 18px;
+  padding-inline: 17px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.vehicle-gallery-label,
+.vehicle-gallery-counter,
+.vehicle-gallery-more-label,
+.vehicle-gallery-caption {
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+/* Secondary information below the fold follows the same readable scale. */
+.vehicle-panel h2 {
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.vehicle-panel-lead {
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.vehicle-spec span {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.vehicle-spec strong {
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.vehicle-fact strong {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.vehicle-fact span {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.vehicle-feature {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.vehicle-empty-state {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.vehicle-report-box .section-eyebrow {
+  font-size: 12px;
+}
+
+.vehicle-report-box h2 {
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.vehicle-report-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.vehicle-report-step strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.vehicle-report-step span {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.vehicle-report-button {
+  min-height: 50px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.vehicle-request-state {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1040px) {
+  .vehicle-reference-grid {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .vehicle-reference-title h1 {
+    font-size: 26px;
+    line-height: 1.12;
+  }
+
+  .vehicle-reference-price strong {
+    font-size: 27px;
+  }
+
+  .vehicle-reference-title p,
+  .vehicle-info-row span,
+  .vehicle-info-row strong,
+  .vehicle-quick-spec strong {
+    font-size: 14px;
+  }
+
+  .vehicle-reference-section h2 {
+    font-size: 21px;
+  }
+}
