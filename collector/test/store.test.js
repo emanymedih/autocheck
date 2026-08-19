@@ -19,3 +19,31 @@ test("snapshot import deactivates listings missing from the next snapshot", asyn
   const data = await store.read();
   assert.equal(data.vehicles.find((item) => item.source.listingId === "2").status, "inactive");
 });
+
+test("stale probe deactivates a listing only after the configured number of misses", async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "avtocheck-store-"));
+  const store = new JsonCatalogStore(path.join(dir, "catalog.json"));
+  await store.upsertMany([listing("1")], { providerId: "dealer-a" });
+
+  const first = await store.markMissing(["1"], { providerId: "dealer-a", deactivateAfterMisses: 2 });
+  assert.equal(first.marked, 1);
+  assert.equal(first.deactivated, 0);
+  assert.equal((await store.read()).vehicles[0].status, "active");
+
+  const second = await store.markMissing(["1"], { providerId: "dealer-a", deactivateAfterMisses: 2 });
+  assert.equal(second.deactivated, 1);
+  const data = await store.read();
+  assert.equal(data.vehicles[0].status, "inactive");
+  assert.equal(data.vehicles[0].sync.missingRuns, 2);
+});
+
+test("observing a listing resets its stale miss counter", async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "avtocheck-store-"));
+  const store = new JsonCatalogStore(path.join(dir, "catalog.json"));
+  await store.upsertMany([listing("1")], { providerId: "dealer-a" });
+  await store.markMissing(["1"], { providerId: "dealer-a", deactivateAfterMisses: 3 });
+  await store.upsertMany([listing("1")], { providerId: "dealer-a" });
+  const data = await store.read();
+  assert.equal(data.vehicles[0].sync.missingRuns, 0);
+  assert.equal(data.vehicles[0].status, "active");
+});
