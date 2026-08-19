@@ -3,6 +3,7 @@ import { canonicalBody, canonicalBrand, canonicalEnergyType } from "./catalog-ta
 
 const ACTIVE_VALUES = new Set(["active", "available", "in_stock", "instock", "在售", "可售", "1", "true", "yes"]);
 const INACTIVE_VALUES = new Set(["inactive", "sold", "unavailable", "removed", "下架", "已售", "0", "false", "no"]);
+const ALLOWED_CURRENCIES = new Set(["CNY", "USD", "EUR", "RUB"]);
 
 function clean(value) {
   if (value === null || value === undefined) return null;
@@ -35,6 +36,19 @@ function normalizeStatus(value) {
   if (ACTIVE_VALUES.has(status)) return "active";
   if (INACTIVE_VALUES.has(status)) return "inactive";
   return "unknown";
+}
+
+function normalizeCurrency(raw) {
+  const explicit = clean(raw.currency)?.toUpperCase();
+  if (explicit && ALLOWED_CURRENCIES.has(explicit)) return explicit;
+  if (raw.price_usd !== null && raw.price_usd !== undefined && raw.price_usd !== "") return "USD";
+  if (raw.price_eur !== null && raw.price_eur !== undefined && raw.price_eur !== "") return "EUR";
+  if (raw.price_rub !== null && raw.price_rub !== undefined && raw.price_rub !== "") return "RUB";
+  return "CNY";
+}
+
+function normalizedPrice(raw) {
+  return integerValue(raw.price ?? raw.price_cny ?? raw.price_usd ?? raw.price_eur ?? raw.price_rub);
 }
 
 function tryJson(value) {
@@ -119,8 +133,8 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
     year: integerValue(raw.year),
     mileage: integerValue(raw.mileage_km),
     city: clean(raw.city),
-    price: integerValue(raw.price_cny),
-    currency: "CNY",
+    price: normalizedPrice(raw),
+    currency: normalizeCurrency(raw),
     body: canonicalBody(clean(raw.body)),
     energyType: canonicalEnergyType(clean(raw.energy_type ?? raw.powertrain ?? raw.energy)),
     engine: clean(raw.engine),
