@@ -27,6 +27,7 @@
   }
 
   function formatPrice(value, currency = "CNY") {
+    if (value === null || value === undefined || value === "") return "Цена уточняется";
     const number = Number(value);
     if (!Number.isFinite(number)) return "Цена уточняется";
     const formatted = nf.format(number);
@@ -39,6 +40,7 @@
   }
 
   function formatMileage(value) {
+    if (value === null || value === undefined || value === "") return "Пробег уточняется";
     const number = Number(value);
     return Number.isFinite(number) ? `${nf.format(number)} км` : "Пробег уточняется";
   }
@@ -124,6 +126,12 @@
     return values.slice(0, 4);
   }
 
+  function normalizeVehiclePayload(payload) {
+    if (payload?.vehicle && typeof payload.vehicle === "object") return payload.vehicle;
+    if (payload?.item && typeof payload.item === "object") return payload.item;
+    return payload && typeof payload === "object" ? payload : {};
+  }
+
   function cardMarkup(vehicle) {
     const photo = safePhoto(vehicle?.photos?.[0]);
     const title = clean(vehicle?.title) || [vehicle?.brand, vehicle?.model].filter(Boolean).join(" ") || "Автомобиль";
@@ -165,9 +173,9 @@
     if (!cache.has(id)) {
       cache.set(id, fetch(`/api/vehicles/${encodeURIComponent(id)}`, {
         headers: { accept: "application/json" }
-      }).then((response) => {
+      }).then(async (response) => {
         if (!response.ok) throw new Error(`vehicle_http_${response.status}`);
-        return response.json();
+        return normalizeVehiclePayload(await response.json());
       }));
     }
     return cache.get(id);
