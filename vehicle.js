@@ -1,18 +1,38 @@
 const VEHICLE_REFERENCE = {
   id: "cn-demo-003",
   title: "Audi A6L",
+  brand: "Audi",
+  model: "A6L",
   year: 2022,
   trim: "45 TFSI",
   city: "Линьи",
   price: 252800,
+  currency: "CNY",
   registration: "03.2022",
   engine: "2.0T",
   transmission: "Автомат",
+  body: "Седан",
   bodyColor: "Чёрный",
   interiorColor: "Тёмный",
   transfers: 1,
-  reportAvailability: "unknown",
-  photoCount: 15
+  vin: null,
+  status: "active",
+  description: "Демонстрационная карточка показывает, как Авточек собирает данные предложения в единую структуру.",
+  listingFacts: [
+    { label: "История владения", text: "В референсной карточке указано одно переоформление.", status: "info" },
+    { label: "Обслуживание", text: "В описании заявлены сервисные записи.", status: "info" },
+    { label: "Кузов", text: "В референсных данных указана замена правой передней двери.", status: "warning" }
+  ],
+  conditionChecks: [
+    { label: "Силовая структура", text: "В референсной карточке серьёзные повреждения силовой структуры не заявлены.", status: "ok" },
+    { label: "Проверка на затопление", text: "Перед покупкой требуется сверка с полным отчётом.", status: "info" },
+    { label: "Проверка на пожар", text: "В референсном осмотре критические признаки не заявлены.", status: "ok" }
+  ],
+  features: ["Круговой обзор 360°", "Auto Hold", "Круиз-контроль", "Парктроники", "Голосовое управление"],
+  extraSpecs: [],
+  photos: [],
+  photoCount: 15,
+  reportAvailability: "unknown"
 };
 
 const GALLERY_VIEWS = ["front", "side", "rear", "interior"];
@@ -22,12 +42,31 @@ let activeGalleryIndex = 0;
 let activeVehicle = VEHICLE_REFERENCE;
 let isLiveVehicle = false;
 
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[char]);
+}
+
 function safePhoto(url) {
   if (!url) return null;
   try {
     const parsed = new URL(url, window.location.href);
     return ["http:", "https:"].includes(parsed.protocol) ? parsed.href : null;
   } catch (_) { return null; }
+}
+
+function formatPrice(value, currency = "CNY") {
+  if (!Number.isFinite(Number(value))) return "Цена уточняется";
+  const formatted = new Intl.NumberFormat("ru-RU").format(Number(value));
+  return currency === "CNY" ? `${formatted} ¥` : `${formatted} ${currency || ""}`.trim();
+}
+
+function formatMileage(value) {
+  return Number.isFinite(Number(value)) ? `${new Intl.NumberFormat("ru-RU").format(Number(value))} км` : null;
+}
+
+function setText(id, value, fallback = "Уточняется") {
+  const element = document.getElementById(id);
+  if (element) element.textContent = value !== null && value !== undefined && value !== "" ? String(value) : fallback;
 }
 
 function vehicleVisual(view = "front", { main = false } = {}) {
@@ -49,12 +88,13 @@ function currentPhotos() {
 function photoMarkup(url, { main = false, index = 0 } = {}) {
   const safe = safePhoto(url);
   if (!safe) return null;
-  return `<img src="${safe}" alt="${activeVehicle.title || "Автомобиль"}, фото ${index + 1}" style="width:100%;height:100%;object-fit:cover;display:block" decoding="async">${main ? `<span class="vehicle-gallery-label">Фото ${index + 1}</span>` : ""}`;
+  return `<img src="${safe}" alt="${escapeHtml(activeVehicle.title || "Автомобиль")}, фото ${index + 1}" style="width:100%;height:100%;object-fit:cover;display:block" decoding="async">${main ? `<span class="vehicle-gallery-label">Фото ${index + 1}</span>` : ""}`;
 }
 
 function galleryLength() {
   const photos = currentPhotos();
-  return photos.length || GALLERY_VIEWS.length;
+  if (isLiveVehicle) return Math.max(photos.length, 1);
+  return GALLERY_VIEWS.length;
 }
 
 function renderMainGalleryView(index) {
@@ -64,73 +104,189 @@ function renderMainGalleryView(index) {
   if (!main) return;
 
   const photos = currentPhotos();
-  const content = photos.length
-    ? photoMarkup(photos[activeGalleryIndex], { main: true, index: activeGalleryIndex })
-    : vehicleVisual(GALLERY_VIEWS[activeGalleryIndex], { main: true });
+  let content;
+  if (photos.length) {
+    content = photoMarkup(photos[activeGalleryIndex], { main: true, index: activeGalleryIndex });
+  } else if (isLiveVehicle) {
+    content = `<div class="vehicle-gallery-empty vehicle-gallery-empty-main">Фотографии по этой машине пока не переданы</div>`;
+  } else {
+    content = vehicleVisual(GALLERY_VIEWS[activeGalleryIndex], { main: true });
+  }
 
-  const prev = document.getElementById("vehicleGalleryPrev");
-  const next = document.getElementById("vehicleGalleryNext");
-  const photoCount = photos.length || activeVehicle.photoCount || total;
-  main.innerHTML = `${content}${prev?.outerHTML || ""}${next?.outerHTML || ""}<span class="vehicle-gallery-counter" id="vehicleGalleryCounter">${activeGalleryIndex + 1} / ${photoCount}</span>`;
+  const hasMultiple = photos.length > 1 || (!isLiveVehicle && GALLERY_VIEWS.length > 1);
+  const photoCount = photos.length || (isLiveVehicle ? 0 : activeVehicle.photoCount || total);
+  main.innerHTML = `${content}${hasMultiple ? `<button class="vehicle-gallery-nav prev" id="vehicleGalleryPrev" type="button" aria-label="Предыдущее фото">←</button><button class="vehicle-gallery-nav next" id="vehicleGalleryNext" type="button" aria-label="Следующее фото">→</button>` : ""}<span class="vehicle-gallery-counter" id="vehicleGalleryCounter">${photoCount ? `${activeGalleryIndex + 1} / ${photoCount}` : "Фото нет"}</span>`;
 
   document.getElementById("vehicleGalleryPrev")?.addEventListener("click", () => renderMainGalleryView(activeGalleryIndex - 1));
   document.getElementById("vehicleGalleryNext")?.addEventListener("click", () => renderMainGalleryView(activeGalleryIndex + 1));
-
   document.querySelectorAll("[data-gallery-index]").forEach((tile) => tile.classList.toggle("is-active", Number(tile.dataset.galleryIndex) === activeGalleryIndex));
 }
 
 function installVehicleVisuals() {
   const ids = ["vehicleVisualTwo", "vehicleVisualThree", "vehicleVisualFour", "vehicleVisualFive"];
   const photos = currentPhotos();
+
   ids.forEach((id, index) => {
     const target = document.getElementById(id);
     if (!target) return;
     target.dataset.galleryIndex = String(index);
-    const content = photos.length ? photoMarkup(photos[index], { index }) : vehicleVisual(GALLERY_VIEWS[index]);
-    const moreLabel = id === "vehicleVisualFive" ? `<span class="vehicle-gallery-more-label">Все фото <strong>${photos.length || activeVehicle.photoCount || 15}</strong></span>` : "";
-    target.innerHTML = `${content || vehicleVisual(GALLERY_VIEWS[index])}${moreLabel}`;
-    target.onclick = () => renderMainGalleryView(index);
+    const hasPhoto = Boolean(photos[index]);
+    const content = hasPhoto
+      ? photoMarkup(photos[index], { index })
+      : (isLiveVehicle ? `<div class="vehicle-gallery-empty">${photos.length ? "Дополнительное фото отсутствует" : "Фото отсутствует"}</div>` : vehicleVisual(GALLERY_VIEWS[index]));
+    const totalPhotos = photos.length || (!isLiveVehicle ? activeVehicle.photoCount || 15 : 0);
+    const moreLabel = id === "vehicleVisualFive" && totalPhotos > 4 ? `<span class="vehicle-gallery-more-label">Все фото <strong>${totalPhotos}</strong></span>` : "";
+
+    target.innerHTML = `${content}${moreLabel}`;
+    target.disabled = isLiveVehicle && !hasPhoto;
+    target.setAttribute("aria-label", hasPhoto ? `Открыть фото ${index + 1}` : "Фотография отсутствует");
+    target.onclick = hasPhoto || !isLiveVehicle ? () => renderMainGalleryView(index) : null;
   });
+
   renderMainGalleryView(0);
+  const count = photos.length || (!isLiveVehicle ? activeVehicle.photoCount || 15 : 0);
+  setText("vehiclePhotoCountLabel", count ? `${count} ${count === 1 ? "фотография" : "фотографий"}` : "Фотографии пока не переданы", "Фотографии пока не переданы");
+  setText("vehicleGallerySourceLabel", isLiveVehicle ? "Фотографии из каталога Авточек" : "Демонстрационная галерея", "Галерея Авточек");
 }
 
-function formatPrice(value) {
-  return Number.isFinite(Number(value)) ? `${new Intl.NumberFormat("ru-RU").format(Number(value))} ¥` : "Цена уточняется";
+function statusView(status) {
+  if (status === "active") return { sale: "В продаже", availability: "Можно запросить отчёт", tone: "ready", disabled: false };
+  if (status === "inactive") return { sale: "Снято с продажи", availability: "Заказ по карточке закрыт", tone: "inactive", disabled: true };
+  return { sale: "Статус уточняется", availability: "Доступность отчёта проверим", tone: "unknown", disabled: false };
 }
 
-function setText(selector, value) {
-  const element = document.querySelector(selector);
-  if (element && value !== null && value !== undefined && value !== "") element.textContent = String(value);
+function renderSpecs(vehicle) {
+  const root = document.getElementById("vehicleSpecGrid");
+  if (!root) return;
+  const specs = [
+    ["Модель", vehicle.title || [vehicle.brand, vehicle.model].filter(Boolean).join(" ")],
+    ["Год", vehicle.year],
+    ["Пробег", formatMileage(vehicle.mileage)],
+    ["Первая регистрация", vehicle.registration],
+    ["Переоформлений", vehicle.transfers],
+    ["Кузов", vehicle.body],
+    ["Двигатель", vehicle.engine],
+    ["Коробка передач", vehicle.transmission],
+    ["Цвет кузова", vehicle.bodyColor],
+    ["Цвет салона", vehicle.interiorColor],
+    ["VIN", vehicle.vin]
+  ];
+
+  if (Array.isArray(vehicle.extraSpecs)) {
+    vehicle.extraSpecs.forEach((item) => {
+      if (item?.label && item?.value) specs.push([item.label, item.value]);
+    });
+  }
+
+  const available = specs.filter(([, value]) => value !== null && value !== undefined && value !== "");
+  root.innerHTML = available.length
+    ? available.map(([label, value]) => `<div class="vehicle-spec"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("")
+    : `<div class="vehicle-empty-state">Характеристики по этой карточке пока не переданы.</div>`;
 }
 
-function applyLiveVehicle(vehicle) {
-  activeVehicle = { ...vehicle, photoCount: vehicle.photos?.length || 0 };
-  isLiveVehicle = true;
-  document.title = `${vehicle.title || "Автомобиль"} — Авточек`;
-  setText(".vehicle-breadcrumbs span:last-child", vehicle.title);
-  setText(".vehicle-summary h1", vehicle.title);
-  setText(".vehicle-trim", [vehicle.year, vehicle.trim].filter(Boolean).join(" · "));
+function detailIcon(status, index) {
+  if (status === "ok" || status === "success") return "✓";
+  if (status === "warning" || status === "danger") return "!";
+  if (status === "info") return "i";
+  return String(index + 1);
+}
 
-  const price = document.querySelector(".vehicle-price");
-  if (price) price.innerHTML = `${formatPrice(vehicle.price)} <small>цена в каталоге</small>`;
+function renderDetailItems(rootId, items, emptyText) {
+  const root = document.getElementById(rootId);
+  if (!root) return;
+  const valid = Array.isArray(items) ? items.filter((item) => item && (item.label || item.text)) : [];
+  root.innerHTML = valid.length
+    ? valid.map((item, index) => `<div class="vehicle-fact"><span class="vehicle-fact-icon ${escapeHtml(item.status || "")}">${detailIcon(item.status, index)}</span><div><strong>${escapeHtml(item.label || "Сведения")}</strong><span>${escapeHtml(item.text || "Уточняется")}</span></div></div>`).join("")
+    : `<div class="vehicle-empty-state">${escapeHtml(emptyText)}</div>`;
+}
 
-  const summaryValues = [vehicle.registration || "Уточняется", vehicle.city || "Уточняется", vehicle.engine || "Уточняется", vehicle.transmission || "Уточняется"];
-  document.querySelectorAll(".vehicle-summary-grid strong").forEach((element, index) => { if (summaryValues[index]) element.textContent = summaryValues[index]; });
+function renderFeatures(features) {
+  const root = document.getElementById("vehicleFeatures");
+  if (!root) return;
+  const valid = Array.isArray(features) ? features.filter(Boolean) : [];
+  root.innerHTML = valid.length
+    ? valid.map((feature) => `<span class="vehicle-feature">${escapeHtml(feature)}</span>`).join("")
+    : `<div class="vehicle-empty-state">Данные об оснащении по этой карточке пока не переданы.</div>`;
+}
 
-  const specValues = [vehicle.title || [vehicle.brand, vehicle.model].filter(Boolean).join(" "), vehicle.year, vehicle.registration || "Уточняется", vehicle.transfers ?? "Уточняется", vehicle.engine || "Уточняется", vehicle.transmission || "Уточняется", vehicle.bodyColor || "Уточняется", vehicle.interiorColor || "Уточняется", vehicle.vin || "Уточняется системой"];
-  document.querySelectorAll(".vehicle-spec strong").forEach((element, index) => { if (specValues[index] !== undefined) element.textContent = String(specValues[index] ?? "Уточняется"); });
+function renderVehicle(vehicle, { live = false } = {}) {
+  activeVehicle = {
+    ...vehicle,
+    photos: Array.isArray(vehicle.photos) ? vehicle.photos : [],
+    listingFacts: Array.isArray(vehicle.listingFacts) ? vehicle.listingFacts : [],
+    conditionChecks: Array.isArray(vehicle.conditionChecks) ? vehicle.conditionChecks : [],
+    features: Array.isArray(vehicle.features) ? vehicle.features : [],
+    extraSpecs: Array.isArray(vehicle.extraSpecs) ? vehicle.extraSpecs : []
+  };
+  isLiveVehicle = live;
+  activeGalleryIndex = 0;
 
-  const note = document.querySelector(".vehicle-demo-note");
-  if (note) note.textContent = "Данные из каталога Авточек";
+  const title = activeVehicle.title || [activeVehicle.brand, activeVehicle.model].filter(Boolean).join(" ") || "Автомобиль";
+  document.title = `${title} — Авточек`;
+  setText("vehicleBreadcrumbTitle", title, "Автомобиль");
+  setText("vehicleTitle", title, "Автомобиль");
+  setText("vehicleDataNote", live ? "Данные из каталога Авточек" : "Демонстрационная карточка на референсных данных");
 
-  const panels = document.querySelectorAll(".vehicle-main-column .vehicle-panel");
-  [1, 2, 3].forEach((index) => { if (panels[index]) panels[index].hidden = true; });
+  const trimParts = [activeVehicle.year, activeVehicle.trim, activeVehicle.body, formatMileage(activeVehicle.mileage)].filter(Boolean);
+  setText("vehicleTrim", trimParts.join(" · "), "Характеристики уточняются");
+  setText("vehiclePrice", formatPrice(activeVehicle.price, activeVehicle.currency), "Цена уточняется");
+
+  if (activeVehicle.updatedAt) {
+    const date = new Date(activeVehicle.updatedAt);
+    setText("vehiclePriceContext", Number.isNaN(date.getTime()) ? "Актуальная цена из каталога Авточек" : `Обновлено ${date.toLocaleString("ru-RU")}`);
+  } else {
+    setText("vehiclePriceContext", live ? "Актуальная цена из каталога Авточек" : "Референсная цена предложения");
+  }
+
+  setText("vehicleRegistration", activeVehicle.registration);
+  setText("vehicleCity", activeVehicle.city);
+  setText("vehicleEngine", activeVehicle.engine);
+  setText("vehicleTransmission", activeVehicle.transmission);
+  setText("vehicleDescription", activeVehicle.description || "Характеристики, которые доступны по текущему предложению.");
+
+  const status = statusView(activeVehicle.status);
+  const availabilityChip = document.getElementById("vehicleAvailabilityChip");
+  const saleChip = document.getElementById("vehicleSaleStatusChip");
+  if (availabilityChip) {
+    availabilityChip.textContent = status.availability;
+    availabilityChip.className = `vehicle-chip ${status.tone}`;
+  }
+  if (saleChip) saleChip.textContent = status.sale;
+
+  ["requestVehicleReport", "requestVehicleReportSecondary"].forEach((id) => {
+    const button = document.getElementById(id);
+    if (!button) return;
+    button.disabled = status.disabled;
+    button.textContent = status.disabled ? "Автомобиль снят с продажи" : "Запросить отчёт";
+  });
+
+  renderSpecs(activeVehicle);
+  renderDetailItems("vehicleFacts", activeVehicle.listingFacts, "Дополнительные сведения из карточки продажи пока не переданы.");
+  renderDetailItems("vehicleCondition", activeVehicle.conditionChecks, "Результаты предварительного осмотра по этой карточке пока не переданы.");
+  renderFeatures(activeVehicle.features);
   installVehicleVisuals();
 }
 
-async function loadRequestedVehicle() {
-  const params = new URLSearchParams(window.location.search);
-  const requestedId = params.get("id");
+function renderUnavailable(requestedId) {
+  renderVehicle({
+    id: requestedId,
+    title: "Автомобиль недоступен",
+    status: "inactive",
+    photos: [],
+    listingFacts: [],
+    conditionChecks: [],
+    features: [],
+    extraSpecs: []
+  }, { live: true });
+  setText("vehicleDataNote", "Карточка отсутствует в текущем каталоге");
+  const state = document.getElementById("vehicleRequestState");
+  if (state) {
+    state.hidden = false;
+    state.textContent = "Карточка могла быть снята с продажи или временно отсутствовать в каталоге.";
+  }
+}
+
+async function loadRequestedVehicle(requestedId) {
   if (!requestedId) return null;
 
   try {
@@ -147,10 +303,19 @@ async function loadRequestedVehicle() {
 }
 
 function openReportRequest() {
+  const status = statusView(activeVehicle.status);
   const state = document.getElementById("vehicleRequestState");
+  if (status.disabled) {
+    if (state) {
+      state.hidden = false;
+      state.textContent = "Автомобиль снят с продажи. Новый заказ отчёта из этой карточки сейчас недоступен.";
+    }
+    return;
+  }
+
   if (state) {
     state.hidden = false;
-    state.innerHTML = `<strong>Автомобиль зафиксирован для проверки.</strong><br>Следующий backend-шаг: проверить доступность отчёта и вернуть пользователю цену до оплаты.`;
+    state.innerHTML = `<strong>Автомобиль зафиксирован для проверки.</strong><br>Следующий backend-шаг: проверить доступность отчёта и вернуть цену до оплаты.`;
     state.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -160,15 +325,20 @@ function openReportRequest() {
 }
 
 async function initVehiclePage() {
-  installVehicleVisuals();
-  const requested = await loadRequestedVehicle();
-  if (requested) applyLiveVehicle(requested);
+  const params = new URLSearchParams(window.location.search);
+  const requestedId = params.get("id");
+
+  if (requestedId) {
+    const requested = await loadRequestedVehicle(requestedId);
+    if (requested) renderVehicle(requested, { live: true });
+    else renderUnavailable(requestedId);
+  } else {
+    renderVehicle(VEHICLE_REFERENCE, { live: false });
+  }
 
   document.getElementById("requestVehicleReport")?.addEventListener("click", openReportRequest);
   document.getElementById("requestVehicleReportSecondary")?.addEventListener("click", openReportRequest);
-
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("action") === "report") requestAnimationFrame(openReportRequest);
+  if (params.get("action") === "report" && activeVehicle.status !== "inactive") requestAnimationFrame(openReportRequest);
 }
 
 initVehiclePage();
