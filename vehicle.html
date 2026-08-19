@@ -47,8 +47,8 @@
 
   <main class="vehicle-page">
     <div class="content-container">
-      <div class="vehicle-breadcrumbs"><a href="cars.html">Автомобили</a><span>→</span><span>Audi A6L</span></div>
-      <span class="vehicle-demo-note">Демонстрационная карточка на референсных данных</span>
+      <div class="vehicle-breadcrumbs"><a href="cars.html">Автомобили</a><span>→</span><span id="vehicleBreadcrumbTitle">Автомобиль</span></div>
+      <span class="vehicle-demo-note" id="vehicleDataNote">Загружаем данные автомобиля</span>
 
       <section class="vehicle-layout" aria-labelledby="vehicleTitle">
         <div class="vehicle-gallery-shell">
@@ -56,39 +56,37 @@
             <div class="vehicle-gallery-main" id="vehicleMainVisual">
               <button class="vehicle-gallery-nav prev" id="vehicleGalleryPrev" type="button" aria-label="Предыдущее фото">←</button>
               <button class="vehicle-gallery-nav next" id="vehicleGalleryNext" type="button" aria-label="Следующее фото">→</button>
-              <span class="vehicle-gallery-counter" id="vehicleGalleryCounter">1 / 15</span>
+              <span class="vehicle-gallery-counter" id="vehicleGalleryCounter">1 / 1</span>
             </div>
-            <button class="vehicle-gallery-tile is-active" id="vehicleVisualTwo" type="button" data-gallery-view="front" aria-label="Основной ракурс"></button>
-            <button class="vehicle-gallery-tile" id="vehicleVisualThree" type="button" data-gallery-view="side" aria-label="Вид сбоку"></button>
-            <button class="vehicle-gallery-tile" id="vehicleVisualFour" type="button" data-gallery-view="rear" aria-label="Вид сзади"></button>
-            <button class="vehicle-gallery-tile vehicle-gallery-more" id="vehicleVisualFive" type="button" data-gallery-view="interior" aria-label="Интерьер и остальные фотографии">
-              <span class="vehicle-gallery-more-label">Все фото <strong>15</strong></span>
-            </button>
+            <button class="vehicle-gallery-tile is-active" id="vehicleVisualTwo" type="button" aria-label="Фото 1"></button>
+            <button class="vehicle-gallery-tile" id="vehicleVisualThree" type="button" aria-label="Фото 2"></button>
+            <button class="vehicle-gallery-tile" id="vehicleVisualFour" type="button" aria-label="Фото 3"></button>
+            <button class="vehicle-gallery-tile vehicle-gallery-more" id="vehicleVisualFive" type="button" aria-label="Фото 4 и остальные фотографии"></button>
           </div>
           <div class="vehicle-gallery-caption">
-            <span>15 фотографий в исходной карточке</span>
-            <span>Галерея подготовлена под загрузку реальных фото через API Авточек</span>
+            <span id="vehiclePhotoCountLabel">Фотографии загружаются</span>
+            <span id="vehicleGallerySourceLabel">Галерея Авточек</span>
           </div>
         </div>
 
         <aside class="vehicle-summary">
-          <div class="vehicle-status-row"><span class="vehicle-chip ready">Можно запросить отчёт</span><span class="vehicle-chip">В продаже</span></div>
-          <h1 id="vehicleTitle">Audi A6L</h1>
-          <p class="vehicle-trim">2022 · 45 TFSI · спортивная комплектация</p>
+          <div class="vehicle-status-row"><span class="vehicle-chip ready" id="vehicleAvailabilityChip">Проверяем доступность отчёта</span><span class="vehicle-chip" id="vehicleSaleStatusChip">Статус уточняется</span></div>
+          <h1 id="vehicleTitle">Автомобиль</h1>
+          <p class="vehicle-trim" id="vehicleTrim">Характеристики загружаются</p>
 
           <div class="vehicle-purchase-box">
             <span class="vehicle-price-label">Цена автомобиля</span>
-            <div class="vehicle-price">252 800 ¥</div>
-            <span class="vehicle-price-context">Референсная цена предложения</span>
+            <div class="vehicle-price" id="vehiclePrice">Цена уточняется</div>
+            <span class="vehicle-price-context" id="vehiclePriceContext">Актуальная цена из каталога Авточек</span>
             <button class="vehicle-report-button vehicle-report-button-primary" id="requestVehicleReport" type="button">Запросить отчёт</button>
-            <p class="vehicle-report-note">Сначала Авточек проверит доступность и покажет стоимость отчёта. Оплата исходного отчёта запускается после подтверждённой оплаты клиента.</p>
+            <p class="vehicle-report-note">Авточек проверит доступность и покажет стоимость отчёта перед оплатой.</p>
           </div>
 
           <div class="vehicle-summary-grid">
-            <div><span>Регистрация</span><strong>03.2022</strong></div>
-            <div><span>Город</span><strong>Линьи</strong></div>
-            <div><span>Двигатель</span><strong>2.0T</strong></div>
-            <div><span>Коробка</span><strong>Автомат</strong></div>
+            <div><span>Регистрация</span><strong id="vehicleRegistration">Уточняется</strong></div>
+            <div><span>Город</span><strong id="vehicleCity">Уточняется</strong></div>
+            <div><span>Двигатель</span><strong id="vehicleEngine">Уточняется</strong></div>
+            <div><span>Коробка</span><strong id="vehicleTransmission">Уточняется</strong></div>
           </div>
           <div class="vehicle-request-state" id="vehicleRequestState" hidden></div>
         </aside>
@@ -96,49 +94,28 @@
 
       <section class="vehicle-content">
         <div class="vehicle-main-column">
-          <article class="vehicle-panel">
+          <article class="vehicle-panel" id="vehicleSpecsPanel">
             <h2>Основные данные</h2>
-            <p class="vehicle-panel-lead">Поля, которые пользователь должен видеть ещё до заказа истории автомобиля.</p>
-            <div class="vehicle-spec-grid">
-              <div class="vehicle-spec"><span>Модель</span><strong>Audi A6L</strong></div>
-              <div class="vehicle-spec"><span>Год</span><strong>2022</strong></div>
-              <div class="vehicle-spec"><span>Первая регистрация</span><strong>Март 2022</strong></div>
-              <div class="vehicle-spec"><span>Переоформлений</span><strong>1</strong></div>
-              <div class="vehicle-spec"><span>Объём двигателя</span><strong>2.0T</strong></div>
-              <div class="vehicle-spec"><span>Коробка передач</span><strong>Автоматическая</strong></div>
-              <div class="vehicle-spec"><span>Цвет кузова</span><strong>Чёрный</strong></div>
-              <div class="vehicle-spec"><span>Цвет салона</span><strong>Тёмный</strong></div>
-              <div class="vehicle-spec"><span>VIN</span><strong>Уточняется системой</strong></div>
-            </div>
+            <p class="vehicle-panel-lead" id="vehicleDescription">Характеристики, которые доступны по текущему предложению.</p>
+            <div class="vehicle-spec-grid" id="vehicleSpecGrid"></div>
           </article>
 
-          <article class="vehicle-panel">
+          <article class="vehicle-panel" id="vehicleFactsPanel">
             <h2>Что известно до отчёта</h2>
-            <p class="vehicle-panel-lead">Это предварительные сведения из карточки продажи. Они помогают понять предложение, но не заменяют отчёт Авточек.</p>
-            <div class="vehicle-facts">
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">1</span><div><strong>История владения</strong><span>В карточке указана личная эксплуатация и одно переоформление.</span></div></div>
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">2</span><div><strong>Обслуживание</strong><span>Заявлено обслуживание в авторизованной сервисной сети.</span></div></div>
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">3</span><div><strong>Кузов</strong><span>Указана замена правой передней двери. Остальные панели описаны как сохранившие заводское состояние окраски.</span></div></div>
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">4</span><div><strong>Оснащение</strong><span>Заявлены заводские 20-дюймовые колёса, сиденья с ромбовидной прострочкой и вентиляция передних сидений.</span></div></div>
-            </div>
+            <p class="vehicle-panel-lead">Предварительные сведения из карточки продажи. Авточек показывает их отдельно от будущей истории автомобиля.</p>
+            <div class="vehicle-facts" id="vehicleFacts"></div>
           </article>
 
-          <article class="vehicle-panel">
+          <article class="vehicle-panel" id="vehicleConditionPanel">
             <h2>Предварительное состояние</h2>
-            <p class="vehicle-panel-lead">Отдельный слой карточки. Здесь показываются доступные результаты предварительного осмотра с обязательной оговоркой об их происхождении.</p>
-            <div class="vehicle-facts">
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">✓</span><div><strong>Силовая структура</strong><span>В референсной карточке указано отсутствие признаков серьёзного ДТП по проверенным силовым элементам.</span></div></div>
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">~</span><div><strong>Проверка на затопление</strong><span>Общий итог отмечен как без признаков затопления, при этом в подкатегории присутствуют два замечания. В Авточек такие детали должны показываться отдельно от общего вывода.</span></div></div>
-              <div class="vehicle-fact"><span class="vehicle-fact-icon">✓</span><div><strong>Проверка на пожар</strong><span>В референсном осмотре основные контрольные признаки отмечены как пройденные.</span></div></div>
-            </div>
+            <p class="vehicle-panel-lead">Результаты предварительного осмотра, если поставщик карточки передаёт такие данные.</p>
+            <div class="vehicle-facts" id="vehicleCondition"></div>
           </article>
 
-          <article class="vehicle-panel">
+          <article class="vehicle-panel" id="vehicleFeaturesPanel">
             <h2>Оснащение</h2>
-            <p class="vehicle-panel-lead">Из карточки продажи можно нормализовать полезные для покупателя опции.</p>
-            <div class="vehicle-features">
-              <span class="vehicle-feature">Круговой обзор 360°</span><span class="vehicle-feature">Auto Hold</span><span class="vehicle-feature">Круиз-контроль</span><span class="vehicle-feature">Парктроники</span><span class="vehicle-feature">Голосовое управление</span><span class="vehicle-feature">Подключённые сервисы</span><span class="vehicle-feature">Центральный дисплей</span><span class="vehicle-feature">Помощь на дороге</span>
-            </div>
+            <p class="vehicle-panel-lead">Опции и оборудование, переданные вместе с карточкой автомобиля.</p>
+            <div class="vehicle-features" id="vehicleFeatures"></div>
           </article>
         </div>
 
@@ -149,7 +126,7 @@
             <p>Все действия проходят внутри Авточек.</p>
             <div class="vehicle-report-steps">
               <div class="vehicle-report-step"><i>1</i><div><strong>Фиксируем автомобиль</strong><span>В заказ попадает внутренний vehicle_id и актуальная карточка.</span></div></div>
-              <div class="vehicle-report-step"><i>2</i><div><strong>Проверяем доступность</strong><span>Backend определяет, можно ли получить историю этой машины и сколько это стоит.</span></div></div>
+              <div class="vehicle-report-step"><i>2</i><div><strong>Проверяем доступность</strong><span>Backend определяет доступность истории и стоимость проверки.</span></div></div>
               <div class="vehicle-report-step"><i>3</i><div><strong>После оплаты получаем историю</strong><span>Исходные данные переводятся, нормализуются и собираются в единый отчёт.</span></div></div>
             </div>
             <button class="vehicle-report-button" id="requestVehicleReportSecondary" type="button">Запросить отчёт</button>
