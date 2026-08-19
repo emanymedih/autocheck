@@ -26,10 +26,35 @@
     }
   }
 
-  function formatPrice(value, currency = "CNY") {
-    if (value === null || value === undefined || value === "") return "Цена уточняется";
+  function photoCandidates(value) {
+    const source = safePhoto(value);
+    if (!source) return [];
+    try {
+      const url = new URL(source);
+      const candidates = [];
+      if (url.hostname.toLowerCase() === "img.jytche.com") {
+        const thumbnail = new URL(url.href);
+        thumbnail.searchParams.set("x-oss-process", "style/thumbnail");
+        candidates.push(thumbnail.href);
+
+        const normal = new URL(url.href);
+        normal.searchParams.set("x-oss-process", "style/normal");
+        candidates.push(normal.href);
+
+        const raw = new URL(url.href);
+        raw.search = "";
+        candidates.push(raw.href);
+      }
+      candidates.push(source);
+      return [...new Set(candidates)];
+    } catch (_) {
+      return [source];
+    }
+  }
+
+  function formatPrice(value, currency = "CNY", priceText = "") {
     const number = Number(value);
-    if (!Number.isFinite(number)) return "Цена уточняется";
+    if (!Number.isFinite(number)) return clean(priceText) || "Цена не раскрыта";
     const formatted = nf.format(number);
     const code = clean(currency).toUpperCase();
     if (code === "USD") return `$${formatted}`;
@@ -116,14 +141,15 @@
   }
 
   function vehicleSpecs(vehicle) {
-    const drive = translateDrive(extraSpec(vehicle, "Привод"));
-    const values = [
-      compactEngine(vehicle?.engine) || clean(vehicle?.energyType),
-      clean(vehicle?.body),
-      drive,
-      translateTransmission(vehicle?.transmission)
-    ].filter(Boolean);
-    return values.slice(0, 4);
+    const rows = [
+      ["Двигатель", compactEngine(vehicle?.engine) || clean(vehicle?.energyType)],
+      ["Кузов", clean(vehicle?.body)],
+      ["Привод", translateDrive(extraSpec(vehicle, "Привод"))],
+      ["Коробка", translateTransmission(vehicle?.transmission)],
+      ["Регистрация", clean(vehicle?.registration)],
+      ["Мощность", extraSpec(vehicle, "Максимальная мощность")]
+    ].filter(([, value]) => value);
+    return rows.slice(0, 6);
   }
 
   function normalizeVehiclePayload(payload) {
@@ -133,23 +159,27 @@
   }
 
   function cardMarkup(vehicle) {
-    const photo = safePhoto(vehicle?.photos?.[0]);
+    const candidates = photoCandidates(vehicle?.photos?.[0]);
     const title = clean(vehicle?.title) || [vehicle?.brand, vehicle?.model].filter(Boolean).join(" ") || "Автомобиль";
     const color = translateColor(vehicle?.bodyColor);
     const specs = vehicleSpecs(vehicle);
     const active = vehicle?.status === "active";
     const status = clean(vehicle?.status) || "unknown";
     const platform = platformName(vehicle);
-    const media = photo
-      ? `<img class="catalog-live-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">`
+    const description = clean(vehicle?.description);
+    const sourcePrice = formatPrice(vehicle?.price, vehicle?.currency, vehicle?.priceText);
+    const fob = clean(vehicle?.fobPriceText);
+    const media = candidates.length
+      ? `<img class="catalog-live-photo" src="${escapeHtml(candidates[0])}" data-photo-candidates="${escapeHtml(JSON.stringify(candidates))}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
       : `<div class="catalog-live-placeholder">Фотография ожидается</div>`;
 
     return `<div class="catalog-card-media">${media}<span class="catalog-card-status ${escapeHtml(status)}">${escapeHtml(statusLabel(status))}</span></div>
       <div class="catalog-card-body">
         <div class="catalog-card-main">
           <h3>${escapeHtml(title)}</h3>
-          <div class="catalog-card-color">${color ? escapeHtml(color) : "Характеристики автомобиля"}</div>
-          <div class="catalog-card-specs">${specs.map((item) => `<span title="${escapeHtml(item)}">${escapeHtml(item)}</span>`).join("")}</div>
+          <div class="catalog-card-color">${color ? escapeHtml(color) : "Данные предложения"}</div>
+          <div class="catalog-card-specs">${specs.map(([label, value]) => `<span title="${escapeHtml(`${label}: ${value}`)}"><small>${escapeHtml(label)}</small>${escapeHtml(value)}</span>`).join("")}</div>
+          ${description ? `<p class="catalog-card-description">${escapeHtml(description)}</p>` : ""}
           <div class="catalog-card-source">
             <span class="catalog-card-source-mark" aria-hidden="true">●</span>
             <strong>Площадка: ${escapeHtml(platform)}</strong>
@@ -159,14 +189,33 @@
         <aside class="catalog-card-side">
           <div class="catalog-card-year">${vehicle?.year ? escapeHtml(vehicle.year) : "Год уточняется"}</div>
           <div class="catalog-card-mileage">${escapeHtml(formatMileage(vehicle?.mileage))}</div>
-          <div class="catalog-card-price">${escapeHtml(formatPrice(vehicle?.price, vehicle?.currency))}</div>
-          <div class="catalog-card-price-note">Цена площадки</div>
+          <div class="catalog-card-price">${escapeHtml(sourcePrice)}</div>
+          <div class="catalog-card-price-note">${fob ? `FOB: ≈ ${escapeHtml(fob)}` : "Цена площадки"}</div>
           <div class="catalog-card-actions">
             <button class="catalog-card-request" type="button" data-request-report="${escapeHtml(vehicle?.id)}" ${active ? "" : "disabled"}>${active ? "Запросить отчёт" : "Недоступно"}</button>
             <button class="catalog-card-open" type="button" data-open-vehicle="${escapeHtml(vehicle?.id)}" aria-label="Открыть карточку">→</button>
           </div>
         </aside>
       </div>`;
+  }
+
+  function installPhotoFallback(card) {
+    const image = card.querySelector("img.catalog-live-photo");
+    if (!image) return;
+    let candidates = [];
+    try { candidates = JSON.parse(image.dataset.photoCandidates || "[]"); } catch (_) {}
+    let index = Math.max(0, candidates.indexOf(image.src));
+    image.addEventListener("error", () => {
+      index += 1;
+      if (index < candidates.length) {
+        image.src = candidates[index];
+        return;
+      }
+      const placeholder = document.createElement("div");
+      placeholder.className = "catalog-live-placeholder";
+      placeholder.textContent = "Фото временно недоступно";
+      image.replaceWith(placeholder);
+    });
   }
 
   async function loadVehicle(id) {
@@ -195,6 +244,7 @@
       card.innerHTML = cardMarkup(vehicle);
       card.classList.add("catalog-card-v2");
       card.setAttribute("aria-label", clean(vehicle?.title) || "Автомобиль");
+      installPhotoFallback(card);
     } catch (_) {
       card.classList.add("catalog-card-v2-fallback");
     } finally {
