@@ -71,13 +71,22 @@
         <div class="catalog-filter-panel">
           <div class="catalog-toolbar catalog-toolbar-primary">
             <input id="catalogSearch" type="search" placeholder="Марка, модель, кузов или двигатель" aria-label="Поиск по автомобилям" />
-            <select id="catalogBrand" aria-label="Марка"><option value="">Все марки</option></select>
+            <select id="catalogBrand" aria-label="Марка">
+              <option value="">Все марки</option>
+              <option>Aion</option><option>AITO</option><option>Alfa Romeo</option><option>Aston Martin</option><option>Audi</option><option>AVATR</option><option>Baojun</option><option>Bentley</option><option>Bestune</option><option>BMW</option><option>Buick</option><option>BYD</option><option>Changan</option><option>Changan Qiyuan</option><option>Chery</option><option>Chery Fulwin</option><option>Chevrolet</option><option>Citroen</option><option>Deepal</option><option>Denza</option><option>Dongfeng</option><option>Exeed</option><option>Fangchengbao</option><option>Ferrari</option><option>Fiat</option><option>Ford</option><option>GAC Trumpchi</option><option>Geely</option><option>Geely Galaxy</option><option>Genesis</option><option>GMC</option><option>Haval</option><option>Honda</option><option>Hongqi</option><option>Hyundai</option><option>IM Motors</option><option>Infiniti</option><option>Jaguar</option><option>Jeep</option><option>Jetta</option><option>Jetour</option><option>Kia</option><option>Land Rover</option><option>Leapmotor</option><option>Lexus</option><option>Li Auto</option><option>Lynk &amp; Co</option><option>Maserati</option><option>Mazda</option><option>McLaren</option><option>Mercedes-Benz</option><option>MG</option><option>MINI</option><option>Mitsubishi</option><option>Neta</option><option>NIO</option><option>Nissan</option><option>ORA</option><option>Peugeot</option><option>Polestar</option><option>Porsche</option><option>RAM</option><option>Roewe</option><option>SERES</option><option>Skoda</option><option>smart</option><option>Subaru</option><option>Tank</option><option>Tesla</option><option>Toyota</option><option>Volkswagen</option><option>Volvo</option><option>WEY</option><option>Wuling</option><option>Xiaomi</option><option>XPeng</option><option>Zeekr</option>
+            </select>
             <select id="catalogCity" aria-label="Город"><option value="">Все города</option></select>
-            <select id="catalogBody" aria-label="Кузов"><option value="">Все кузова</option></select>
+            <select id="catalogBody" aria-label="Кузов">
+              <option value="">Все кузова</option>
+              <option>Седан</option><option>Хэтчбек</option><option>Лифтбек</option><option>Универсал</option><option>SUV</option><option>Кроссовер</option><option>MPV</option><option>Купе / спорткар</option><option>Кабриолет</option><option>Пикап</option><option>Минивэн / фургон</option><option>Другое</option>
+            </select>
           </div>
 
           <div class="catalog-toolbar catalog-toolbar-secondary">
-            <select id="catalogEngine" aria-label="Двигатель"><option value="">Все двигатели</option></select>
+            <select id="catalogEngine" aria-label="Тип силовой установки">
+              <option value="">Любая силовая установка</option>
+              <option>Бензин</option><option>Дизель</option><option>Гибрид (HEV)</option><option>Подключаемый гибрид (PHEV)</option><option>Электро</option><option>Гибрид с увеличителем запаса хода (EREV)</option><option>Мягкий гибрид 48V</option><option>Газ</option><option>Метанол</option><option>Прочее</option>
+            </select>
             <input id="catalogYearMin" type="number" inputmode="numeric" placeholder="Год от" aria-label="Год от" />
             <input id="catalogYearMax" type="number" inputmode="numeric" placeholder="Год до" aria-label="Год до" />
             <input id="catalogPriceMin" type="number" inputmode="numeric" placeholder="Цена от, ¥" aria-label="Цена от" />
