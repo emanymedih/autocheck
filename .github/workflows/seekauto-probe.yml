@@ -34,15 +34,38 @@ jobs:
           exit 0
       - name: Probe public SeekAuto page assets
         run: node src/probe-seekauto.js
+      - name: Probe normalized SeekAuto catalog records
+        run: |
+          set +e
+          npm run sync:seekauto -- \
+            --limit 20 \
+            --concurrency 4 \
+            --recheck 1 \
+            --store .state/seekauto-diagnostic-store.json \
+            --public data/seekauto-diagnostic-public.json \
+            --result data/seekauto-diagnostic-result.json \
+            > data/seekauto-sync-log.txt 2>&1
+          code=$?
+          echo "exit_code=$code" >> data/seekauto-sync-log.txt
+          exit 0
       - name: Commit probe report
         working-directory: .
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector/data/seekauto-probe.json collector/data/seekauto-test-log.txt
+          git add \
+            collector/data/seekauto-probe.json \
+            collector/data/seekauto-test-log.txt \
+            collector/data/seekauto-sync-log.txt
+          if [ -f collector/data/seekauto-diagnostic-public.json ]; then
+            git add collector/data/seekauto-diagnostic-public.json
+          fi
+          if [ -f collector/data/seekauto-diagnostic-result.json ]; then
+            git add collector/data/seekauto-diagnostic-result.json
+          fi
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "Capture SeekAuto integration diagnostics"
+          git commit -m "Capture SeekAuto live data diagnostics"
           git pull --rebase origin main
           git push origin HEAD:main
