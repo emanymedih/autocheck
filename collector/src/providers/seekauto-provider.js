@@ -2,13 +2,8 @@ import { CATALOG_BRANDS } from "../catalog-taxonomy.js";
 
 const SEEK_HOSTS = new Set(["seekauto.com", "www.seekauto.com"]);
 const DEFAULT_BASE = "https://www.seekauto.com";
+const IMAGE_BASE = "https://img.jytche.com";
 const DEFAULT_LOCALE = "en";
-const DETAIL_STOP_LABELS = [
-  "R Year / Month", "P Year / Month", "Mileage", "Displacement", "Engine", "Emission Standard",
-  "Transmission", "Gearbox", "Fuel", "Maximum power(kW)", "Drive", "Body Type", "Exterior Color",
-  "Interior Color", "Seller’s Vehicle Description", "Seller's Vehicle Description", "Listing Date",
-  "Vehicle Information", "Configuration List", "Inspection Report", "Insurance Claims Record", "4S Maintenance Record"
-];
 const SORTED_BRANDS = [...CATALOG_BRANDS].sort((a, b) => b.length - a.length);
 
 function decodeEntities(value) {
@@ -38,34 +33,20 @@ function flatText(html) {
   return stripTags(html).replace(/\s+/g, " ").trim();
 }
 
-function escapeRegex(value) {
-  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function attribute(tag, name) {
-  const match = String(tag).match(new RegExp(`${escapeRegex(name)}\\s*=\\s*(["'])(.*?)\\1`, "i"));
-  return match ? decodeEntities(match[2]).trim() : null;
-}
-
-function titleText(html) {
-  const match = String(html).match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
-  return match ? stripTags(match[1]).replace(/\s+/g, " ").trim() : null;
-}
-
-function h1Text(html) {
-  const matches = [...String(html).matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)]
-    .map((match) => stripTags(match[1]).replace(/\s+/g, " ").trim())
-    .filter(Boolean);
-  return matches.find((value) => !/welcome|seekauto|used cars/i.test(value)) || null;
+function clean(value) {
+  if (value === null || value === undefined) return null;
+  const text = String(value).trim();
+  return text || null;
 }
 
 function cleanVehicleTitle(value) {
-  return String(value ?? "")
+  const title = String(value ?? "")
     .replace(/\s*[·•]\s*\d{4}[/-]\d{1,2}(?:[/-]\d{1,2})?\s*\|\s*seekauto.*$/i, "")
     .replace(/\s*\|\s*seekauto.*$/i, "")
     .replace(/\s+-\s*seekauto.*$/i, "")
     .replace(/\s+/g, " ")
     .trim();
+  return /^(?:seekauto|used cars?|car detail)$/i.test(title) ? "" : title;
 }
 
 function normalizeDetailUrl(raw, baseUrl = DEFAULT_BASE, locale = DEFAULT_LOCALE) {
@@ -84,49 +65,14 @@ function normalizeDetailUrl(raw, baseUrl = DEFAULT_BASE, locale = DEFAULT_LOCALE
   }
 }
 
-function imageUrl(raw, baseUrl = DEFAULT_BASE) {
-  if (!raw || /^data:/i.test(raw)) return null;
-  try {
-    const url = new URL(decodeEntities(raw), baseUrl);
-    if (!/^https?:$/.test(url.protocol)) return null;
-    if (url.hostname.toLowerCase() !== "img.jytche.com") return null;
-    if (!/\/car\/image\//i.test(url.pathname)) return null;
-    return url.href;
-  } catch (_) {
-    return null;
-  }
-}
-
 function toInteger(value) {
-  const cleaned = String(value ?? "").replace(/[^0-9.-]/g, "");
+  if (value === null || value === undefined || value === "") return null;
+  const source = String(value).trim();
+  if (!source || source.includes("*")) return null;
+  const cleaned = source.replace(/[^0-9.-]/g, "");
   if (!cleaned) return null;
   const number = Number(cleaned);
   return Number.isFinite(number) ? Math.round(number) : null;
-}
-
-function exactCurrencyAmount(text, symbol) {
-  const match = String(text ?? "").match(new RegExp(`${escapeRegex(symbol)}\\s*([0-9*.,]+)`));
-  if (!match || match[1].includes("*")) return null;
-  return toInteger(match[1]);
-}
-
-function labeledValue(text, label) {
-  const stopPattern = DETAIL_STOP_LABELS
-    .filter((item) => item !== label)
-    .map(escapeRegex)
-    .sort((a, b) => b.length - a.length)
-    .join("|");
-  const pattern = new RegExp(`${escapeRegex(label)}\\s*:?\\s*(.+?)(?=\\s+(?:${stopPattern})\\s*:?|$)`, "i");
-  const match = String(text ?? "").match(pattern);
-  return match?.[1]?.trim() || null;
-}
-
-function firstMatching(text, patterns) {
-  for (const pattern of patterns) {
-    const match = String(text ?? "").match(pattern);
-    if (match?.[1]) return match[1].trim();
-  }
-  return null;
 }
 
 function sourceDateToIso(value) {
@@ -137,7 +83,7 @@ function sourceDateToIso(value) {
 
 function inferIdentity(title) {
   const source = cleanVehicleTitle(title);
-  const brand = SORTED_BRANDS.find((candidate) => new RegExp(`^${escapeRegex(candidate)}(?:\\s|$)`, "i").test(source)) || null;
+  const brand = SORTED_BRANDS.find((candidate) => new RegExp(`^${candidate.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:\\s|$)`, "i").test(source)) || null;
   if (!brand) {
     return {
       brand: null,
@@ -147,7 +93,8 @@ function inferIdentity(title) {
     };
   }
 
-  const rest = source.replace(new RegExp(`^${escapeRegex(brand)}\\s*`, "i"), "").trim();
+  const escapedBrand = brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const rest = source.replace(new RegExp(`^${escapedBrand}\\s*`, "i"), "").trim();
   const yearMatch = rest.match(/\b((?:19|20)\d{2})\b/);
   if (!yearMatch) return { brand, model: rest || null, trim: null, titleYear: null };
 
@@ -162,44 +109,99 @@ function inferIdentity(title) {
   };
 }
 
-function extractVehiclePhotos(html, sourceUrl) {
-  const result = [];
-  const seen = new Set();
-  const imageRegex = /<img\b[^>]*>/gi;
-  let match;
+function inlineScripts(html) {
+  return [...String(html ?? "").matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)]
+    .map((match) => match[1])
+    .filter(Boolean);
+}
 
-  const push = (raw) => {
-    const url = imageUrl(raw, sourceUrl);
-    if (!url || seen.has(url)) return;
-    seen.add(url);
-    result.push(url);
-  };
-
-  while ((match = imageRegex.exec(String(html ?? "")))) {
-    const tag = match[0];
-    ["src", "data-src", "data-original", "data-lazy-src"].forEach((name) => push(attribute(tag, name)));
-    const srcset = attribute(tag, "srcset");
-    if (srcset) {
-      const candidates = srcset.split(",").map((item) => item.trim().split(/\s+/)[0]).filter(Boolean);
-      if (candidates.length) push(candidates[candidates.length - 1]);
+function balancedJsonObject(text, start) {
+  let depth = 0;
+  let quoted = false;
+  let escaped = false;
+  for (let index = start; index < text.length; index += 1) {
+    const char = text[index];
+    if (quoted) {
+      if (escaped) escaped = false;
+      else if (char === "\\") escaped = true;
+      else if (char === '"') quoted = false;
+      continue;
+    }
+    if (char === '"') {
+      quoted = true;
+      continue;
+    }
+    if (char === "{") depth += 1;
+    if (char === "}") {
+      depth -= 1;
+      if (depth === 0) return text.slice(start, index + 1);
     }
   }
-
-  return result.slice(0, 60);
+  return null;
 }
 
-function sellerDescription(text) {
-  const match = String(text ?? "").match(/Seller[’']s Vehicle Description\s*(.+?)(?=\s+(?:Dear overseas car dealer partners|Inspection Report|Insurance Claims Record|4S Maintenance Record|Same brand\/model|Same price\/year|$))/i);
-  return match?.[1]?.trim() || null;
+export function extractSeekAutoHydration(html, expectedListingId = null) {
+  const expected = clean(expectedListingId)?.toUpperCase() || null;
+  for (const script of inlineScripts(html)) {
+    if (!script.includes("initialCarDetail")) continue;
+    const pushMatch = script.match(/self\.__next_f\.push\((\[[\s\S]*\])\)\s*;?$/);
+    if (!pushMatch) continue;
+    try {
+      const payload = JSON.parse(pushMatch[1]);
+      const decoded = typeof payload?.[1] === "string" ? payload[1] : "";
+      const marker = '"initialCarDetail":';
+      const markerIndex = decoded.indexOf(marker);
+      if (markerIndex < 0) continue;
+      const objectStart = decoded.indexOf("{", markerIndex + marker.length);
+      if (objectStart < 0) continue;
+      const objectText = balancedJsonObject(decoded, objectStart);
+      if (!objectText) continue;
+      const detail = JSON.parse(objectText);
+      const carCode = clean(detail?.car_code)?.toUpperCase() || null;
+      if (expected && carCode && carCode !== expected) continue;
+      return detail;
+    } catch (_) {
+      // A page can contain several React Server Component chunks; inspect the next one.
+    }
+  }
+  return null;
 }
 
-function detailFacts(text, listingDate) {
+function hydrationPhotoUrl(raw) {
+  const value = clean(raw);
+  if (!value) return null;
+  try {
+    const url = /^https?:\/\//i.test(value)
+      ? new URL(value)
+      : new URL(`/${value.replace(/^\/+/, "")}`, IMAGE_BASE);
+    if (url.hostname.toLowerCase() !== "img.jytche.com") return null;
+    if (!/\/car\/image\//i.test(url.pathname)) return null;
+    if (!url.search) url.searchParams.set("x-oss-process", "style/normal");
+    return url.href;
+  } catch (_) {
+    return null;
+  }
+}
+
+function hydrationPhotos(detail) {
+  const values = Array.isArray(detail?.images) ? detail.images : [];
+  return [...new Set(values.map(hydrationPhotoUrl).filter(Boolean))].slice(0, 60);
+}
+
+function detailFacts(detail) {
   const facts = [];
-  if (listingDate) facts.push({ label: "Дата объявления", text: listingDate, status: "info" });
-  if (/Inspection Report/i.test(text)) facts.push({ label: "Осмотр", text: "На площадке указана возможность просмотра отчёта осмотра.", status: "info" });
-  if (/Insurance Claims Record/i.test(text)) facts.push({ label: "Страховые случаи", text: "На площадке указана возможность проверки страховых обращений.", status: "info" });
-  if (/4S Maintenance Record/i.test(text)) facts.push({ label: "Сервис", text: "На площадке указана возможность проверки сервисной истории 4S.", status: "info" });
+  if (clean(detail?.first_audited_at)) facts.push({ label: "Дата объявления", text: clean(detail.first_audited_at), status: "info" });
+  if (clean(detail?.last_audited_at) && detail.last_audited_at !== detail.first_audited_at) {
+    facts.push({ label: "Обновлено на площадке", text: clean(detail.last_audited_at), status: "info" });
+  }
+  if (Number(detail?.is_detection_report) === 1 || (Array.isArray(detail?.reports) && detail.reports.length)) {
+    facts.push({ label: "Осмотр", text: "На площадке для автомобиля указан отчёт осмотра.", status: "info" });
+  }
   return facts;
+}
+
+function sellerName(detail) {
+  return clean(detail?.seller_name ?? detail?.dealer_name ?? detail?.shop_name ?? detail?.merchant_name ?? detail?.company_name);
 }
 
 export function seekAutoHomeUrl(locale = DEFAULT_LOCALE) {
@@ -210,7 +212,8 @@ export function seekAutoHomeUrl(locale = DEFAULT_LOCALE) {
 export function seekAutoDetailUrl(listingId, locale = DEFAULT_LOCALE) {
   const normalized = String(listingId ?? "").trim().toUpperCase();
   if (!/^SC[A-Z0-9]+$/.test(normalized)) throw new Error(`Invalid SeekAuto listing id: ${listingId}`);
-  return new URL(`/${locale}/car/detail/${normalized}`, DEFAULT_BASE).href;
+  const safeLocale = /^[a-z]{2}(?:-[a-z]{2})?$/i.test(locale) ? locale.toLowerCase() : DEFAULT_LOCALE;
+  return new URL(`/${safeLocale}/car/detail/${normalized}`, DEFAULT_BASE).href;
 }
 
 export function parseSeekAutoDiscoveryHtml(html, { pageUrl = seekAutoHomeUrl(), locale = DEFAULT_LOCALE } = {}) {
@@ -260,48 +263,59 @@ export function parseSeekAutoDetailHtml(html, sourceUrl, { fallbackTitle = null 
   const listingId = listingMatch[1].toUpperCase();
   const text = flatText(html);
   const sold = /This vehicle has been sold|no longer listed for sale|已售|车辆已售/i.test(text);
-  const pageTitle = cleanVehicleTitle(titleText(html));
-  const heading = cleanVehicleTitle(h1Text(html));
-  const title = pageTitle || heading || cleanVehicleTitle(fallbackTitle) || null;
-  if (!title && !sold) throw new Error(`Could not parse SeekAuto title ${listingId}`);
+  const detail = extractSeekAutoHydration(html, listingId);
 
-  const rawTitle = title || `Автомобиль ${listingId}`;
+  if (!detail) {
+    if (!sold || !cleanVehicleTitle(fallbackTitle)) {
+      throw new Error(`SeekAuto hydration payload is missing for ${listingId}`);
+    }
+    const inactiveTitle = cleanVehicleTitle(fallbackTitle);
+    const identity = inferIdentity(inactiveTitle);
+    return {
+      source_listing_id: listingId,
+      title: inactiveTitle,
+      brand: identity.brand,
+      model: identity.model,
+      trim: identity.trim,
+      year: identity.titleYear,
+      mileage_km: null,
+      city: null,
+      price: null,
+      currency: "CNY",
+      body: null,
+      energy_type: null,
+      engine: null,
+      transmission: null,
+      body_color: null,
+      registration: null,
+      description: "Карточка автомобиля отмечена как снятая с продажи.",
+      listing_facts: [],
+      condition_checks: [],
+      extra_specs: [],
+      photo_urls: [],
+      status: "inactive",
+      listing_platform: "SeekAuto",
+      seller_name: null,
+      source_url: url.href,
+      checked_at: new Date().toISOString(),
+      updated_at: null
+    };
+  }
+
+  const rawTitle = cleanVehicleTitle(detail.name || fallbackTitle);
+  if (!rawTitle) throw new Error(`SeekAuto vehicle name is missing for ${listingId}`);
   const identity = inferIdentity(rawTitle);
-  const registration = firstMatching(text, [
-    /R Year\s*\/\s*Month\s*:?\s*(\d{4}[/-]\d{1,2}(?:[/-]\d{1,2})?)/i,
-    /(\d{4}[/-]\d{1,2}(?:[/-]\d{1,2})?)\s*R Year\s*\/\s*Month/i
-  ]);
-  const production = firstMatching(text, [
-    /P Year\s*\/\s*Month\s*:?\s*(\d{4}(?:[/-]\d{1,2})?)/i,
-    /(\d{4}(?:[/-]\d{1,2})?)\s*P Year\s*\/\s*Month/i
-  ]);
-  const mileageRaw = firstMatching(text, [
-    /Mileage\s*:?\s*([\d,]+)\s*km\b/i,
-    /([\d,]+)\s*km\s*Mileage\b/i
-  ]);
-  const listingDateRaw = firstMatching(text, [/(?:Listing Date)\s*:?\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})/i]);
-  const sourceUpdatedAt = sourceDateToIso(listingDateRaw);
-  const engine = labeledValue(text, "Engine");
-  const transmission = labeledValue(text, "Transmission") || labeledValue(text, "Gearbox");
-  const fuel = labeledValue(text, "Fuel");
-  const drive = labeledValue(text, "Drive");
-  const displacement = labeledValue(text, "Displacement");
-  const emission = labeledValue(text, "Emission Standard");
-  const power = labeledValue(text, "Maximum power(kW)");
-  const body = labeledValue(text, "Body Type");
-  const bodyColor = labeledValue(text, "Exterior Color");
-  const description = sellerDescription(text);
-  const photos = extractVehiclePhotos(html, sourceUrl);
-  const cnyPrice = exactCurrencyAmount(text, "¥");
-  const titleYear = identity.titleYear;
-  const year = production?.match(/((?:19|20)\d{2})/)?.[1] || titleYear || registration?.slice(0, 4) || null;
-  const energyType = fuel || (/new energy/i.test(String(displacement || "")) ? "New Energy" : null);
-
+  const productionYear = clean(detail.built_date)?.match(/((?:19|20)\d{2})/)?.[1] || null;
+  const registrationYear = clean(detail.plate_date)?.match(/((?:19|20)\d{2})/)?.[1] || null;
+  const status = sold ? "inactive" : Number(detail.car_status) === 99 || detail.car_status === null || detail.car_status === undefined ? "active" : "unknown";
+  const lastUpdated = sourceDateToIso(detail.last_audited_at) || sourceDateToIso(detail.first_audited_at);
+  const photos = hydrationPhotos(detail);
+  const power = toInteger(detail.max_power);
+  const drive = clean(detail.drive_type);
   const extraSpecs = [
-    ["Рабочий объём", displacement],
-    ["Экологический стандарт", emission],
-    ["Максимальная мощность", power ? `${power} кВт` : null],
-    ["Привод", drive]
+    ["Привод", drive],
+    ["Максимальная мощность", power !== null ? `${power} кВт` : null],
+    ["Экологический стандарт", clean(detail.emission)]
   ].filter(([, value]) => value).map(([label, value]) => ({ label, value }));
 
   return {
@@ -310,28 +324,29 @@ export function parseSeekAutoDetailHtml(html, sourceUrl, { fallbackTitle = null 
     brand: identity.brand,
     model: identity.model,
     trim: identity.trim,
-    year,
-    mileage_km: mileageRaw ? toInteger(mileageRaw) : null,
-    city: null,
-    price: cnyPrice,
+    year: productionYear || identity.titleYear || registrationYear,
+    mileage_km: toInteger(detail.mileage),
+    city: clean(detail.city ?? detail.location ?? detail.location_name),
+    price: toInteger(detail.price),
     currency: "CNY",
-    body,
-    energy_type: energyType,
-    engine,
-    transmission,
-    body_color: bodyColor,
-    registration,
-    description: description || (sold ? "Карточка автомобиля отмечена как снятая с продажи." : null),
-    listing_facts: detailFacts(text, listingDateRaw),
+    body: clean(detail.category_type),
+    energy_type: clean(detail.fuel_type || detail.emission),
+    engine: clean(detail.engine),
+    transmission: clean(detail.gearbox),
+    body_color: clean(detail.body_color ?? detail.exterior_color),
+    interior_color: clean(detail.interior_color),
+    registration: clean(detail.plate_date),
+    description: clean(detail.description) || (sold ? "Карточка автомобиля отмечена как снятая с продажи." : null),
+    listing_facts: detailFacts(detail),
     condition_checks: [],
     extra_specs: extraSpecs,
     photo_urls: photos,
-    status: sold ? "inactive" : "active",
+    status,
     listing_platform: "SeekAuto",
-    seller_name: null,
+    seller_name: sellerName(detail),
     source_url: url.href,
     checked_at: new Date().toISOString(),
-    updated_at: sourceUpdatedAt
+    updated_at: lastUpdated
   };
 }
 
@@ -395,7 +410,7 @@ export class SeekAutoCatalogProvider {
     detailConcurrency = 4
   } = {}) {
     if (typeof fetchImpl !== "function") throw new Error("fetch implementation is required");
-    this.locale = locale;
+    this.locale = /^[a-z]{2}(?:-[a-z]{2})?$/i.test(locale) ? locale.toLowerCase() : DEFAULT_LOCALE;
     this.fetchImpl = fetchImpl;
     this.timeoutMs = timeoutMs;
     this.maxListings = Math.max(1, Number(maxListings) || 60);
@@ -434,11 +449,12 @@ export class SeekAutoCatalogProvider {
         const [row] = await provider.read();
         return row || null;
       } catch (error) {
+        const statusMatch = String(error.message || "").match(/HTTP\s+(\d{3})/i);
         detailErrors.push({
           scope: entry.scope || "listing",
           listingId: entry.listingId,
           url: entry.url,
-          status: Number(error.status) || String(error.message || "").match(/HTTP\s+(\d{3})/i)?.[1] || null,
+          status: Number(error.status) || (statusMatch ? Number(statusMatch[1]) : null),
           message: error.message
         });
         return null;
