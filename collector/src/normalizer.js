@@ -4,6 +4,11 @@ import { canonicalBody, canonicalBrand, canonicalEnergyType } from "./catalog-ta
 const ACTIVE_VALUES = new Set(["active", "available", "in_stock", "instock", "在售", "可售", "1", "true", "yes"]);
 const INACTIVE_VALUES = new Set(["inactive", "sold", "unavailable", "removed", "下架", "已售", "0", "false", "no"]);
 const ALLOWED_CURRENCIES = new Set(["CNY", "USD", "EUR", "RUB"]);
+const PUBLIC_PLATFORM_BY_PROVIDER = new Map([
+  ["che168-global-pilot", "Autohome Global"],
+  ["che168-pilot", "Che168"],
+  ["che168-dealer-pilot", "Che168"]
+]);
 
 function clean(value) {
   if (value === null || value === undefined) return null;
@@ -151,6 +156,8 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
     extraSpecs: normalizeExtraSpecs(raw.extra_specs, detailOptions),
     photos: normalizePhotos(raw.photo_urls, photoSeparator),
     status: normalizeStatus(raw.status),
+    listingPlatform: clean(raw.listing_platform),
+    sellerName: clean(raw.seller_name),
     sourceUpdatedAt,
     firstSeenAt: now,
     lastSeenAt: now,
@@ -192,6 +199,8 @@ export function toPublicVehicle(vehicle) {
     extraSpecs: Array.isArray(vehicle.extraSpecs) ? vehicle.extraSpecs : [],
     photos: vehicle.photos,
     status: vehicle.status,
+    listingPlatform: vehicle.listingPlatform || PUBLIC_PLATFORM_BY_PROVIDER.get(vehicle.source?.providerId) || null,
+    sellerName: vehicle.sellerName || null,
     updatedAt: vehicle.sourceUpdatedAt || vehicle.lastSeenAt
   };
 }
