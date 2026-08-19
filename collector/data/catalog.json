@@ -1,5 +1,103 @@
 {
   "version": 1,
-  "updatedAt": null,
-  "vehicles": []
+  "updatedAt": "2026-08-19T07:14:00.000Z",
+  "vehicles": [
+    {
+      "id": "av_c177e6649a193b987ae8",
+      "title": "Audi A3",
+      "brand": "Audi",
+      "model": "A3",
+      "trim": "2024 A3L Limousine 35 TFSI",
+      "year": 2024,
+      "mileage": 7000,
+      "city": "Шаосин",
+      "price": 158800,
+      "currency": "CNY",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "1.4L",
+      "transmission": "Автомат",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "12.2023",
+      "transfers": 0,
+      "vin": null,
+      "description": "Продавец указывает, что автомобиль находится в Суйфэньхэ, доступна доставка по России. В объявлении заявлены заводская окраска, честный пробег и возможность сторонней проверки.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Местонахождение по описанию",
+          "text": "Продавец указывает наличие автомобиля в Суйфэньхэ.",
+          "status": "info"
+        },
+        {
+          "label": "Доставка",
+          "text": "В объявлении заявлена возможность доставки по территории России.",
+          "status": "info"
+        },
+        {
+          "label": "Окраска",
+          "text": "Продавец заявляет заводскую окраску. Состояние требует подтверждения отчётом или осмотром.",
+          "status": "info"
+        },
+        {
+          "label": "Сторонняя проверка",
+          "text": "В объявлении заявлена возможность проверки автомобиля третьей стороной.",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Регион регистрации",
+          "value": "Шаосин"
+        },
+        {
+          "label": "Экостандарт",
+          "value": "China VI"
+        },
+        {
+          "label": "Фотографий",
+          "value": "25"
+        }
+      ],
+      "photos": [
+        "https://2sc2.autoimg.cn/escimg/g33/M06/DC/BA/f_720x540_0_q87_autohomecar__ChxpVmoqSK-AGdPlAAGJtZLhCEU470.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M0B/DC/BA/f_720x540_0_q87_autohomecar__ChxpVmoqSK-AYErlAAFJc8kj5Z8201.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M01/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSK6AR9yVAAGMukFQRCU881.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M00/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSK6AUhlhAAF5o9vbEo4283.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M01/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSK-ARA-gAAHbCwiCOPg006.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M06/DC/BA/f_720x540_0_q87_autohomecar__ChxpVmoqSK-AO7POAAKbHziZpd4793.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M00/DC/BA/f_720x540_0_q87_autohomecar__ChxpVmoqSLCATeikAAHNATLlZbU763.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M03/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSLCAN4QvAAGsoRYed0U129.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M04/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSLCAOrlhAAHI3zlLMDQ491.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M03/DC/CF/f_720x540_0_q87_autohomecar__Chto52oqSLCAHciFAAHCjNjZq9I945.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M09/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLCAZiglAAFiR-Q9FRE089.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M02/DC/CF/f_720x540_0_q87_autohomecar__Chto52oqSLGASMF-AAD1Idkax1I400.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M05/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSLGAOLkyAAFRdiyAFqg374.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M05/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSLGAW6MQAAFVZcFBLU0295.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M0A/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLGAIrVBAAKXTUYC2KA141.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M0B/DC/BA/f_720x540_0_q87_autohomecar__ChxpVWoqSLKAYCH_AAFF8Rt8j7A759.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M01/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLOAKhOGAAHIE4la7YA005.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M05/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLSAEV_rAAFsrpObriE715.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M08/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLWAJmwyAAFLbqUf0KI018.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M0A/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLaALweTAAGzWOCx6ac687.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M04/DC/CF/f_720x540_0_q87_autohomecar__Chto52oqSLeAdfrnAACXwsvIuD8852.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M03/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLiAO7WjAAETD-9tyi0088.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M0A/DC/BB/f_720x540_0_q87_autohomecar__ChxpVWoqSLmAZPycAAEn1ZyC58g380.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M09/DC/BB/f_720x540_0_q87_autohomecar__ChxpVmoqSLuAfViEAAEnMABMtg4006.jpg",
+        "https://2sc2.autoimg.cn/escimg/g33/M07/DC/CF/f_720x540_0_q87_autohomecar__Chto52oqSLuAGdlcAAM1rhIVKtg260.jpg"
+      ],
+      "status": "active",
+      "sourceUpdatedAt": null,
+      "firstSeenAt": "2026-08-19T07:14:00.000Z",
+      "lastSeenAt": "2026-08-19T07:14:00.000Z",
+      "source": {
+        "providerId": "che168-pilot",
+        "listingId": "58736709",
+        "dealerId": "123615",
+        "url": "https://s.che168.com/dealer/123615/58736709.html?pvareaid=106453"
+      }
+    }
+  ]
 }
