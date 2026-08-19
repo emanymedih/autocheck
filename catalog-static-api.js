@@ -38,7 +38,7 @@
 
   function formatPrice(vehicle) {
     const value = numberValue(vehicle?.price);
-    if (value === null) return "Цена уточняется";
+    if (value === null) return clean(vehicle?.priceText) || "Цена не раскрыта";
     const currency = clean(vehicle?.currency).toUpperCase() || "CNY";
     if (currency === "CNY") return `${nf.format(value)} ¥`;
     if (currency === "USD") return `$${nf.format(value)}`;
