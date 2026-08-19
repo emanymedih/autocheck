@@ -10,6 +10,7 @@
     "import:che168-dealer": "node src/import-che168-dealer.js",
     "import:che168-global": "node src/import-che168-global.js",
     "sync:che168-global": "node src/sync-che168-global.js",
+    "sync:seekauto": "node src/sync-seekauto.js",
     "audit:global-sync": "node src/global-sync-audit.js",
     "test": "node --test"
   },
