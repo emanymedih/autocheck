@@ -62,8 +62,34 @@ function safePhoto(url) {
   } catch (_) { return null; }
 }
 
-function formatPrice(value, currency = "CNY") {
-  if (value === null || value === undefined || value === "" || !Number.isFinite(Number(value))) return "Цена уточняется";
+function photoCandidates(url) {
+  const source = safePhoto(url);
+  if (!source) return [];
+  try {
+    const parsed = new URL(source);
+    const values = [];
+    if (parsed.hostname.toLowerCase() === "img.jytche.com") {
+      const normal = new URL(parsed.href);
+      normal.searchParams.set("x-oss-process", "style/normal");
+      values.push(normal.href);
+
+      const raw = new URL(parsed.href);
+      raw.search = "";
+      values.push(raw.href);
+
+      const thumb = new URL(parsed.href);
+      thumb.searchParams.set("x-oss-process", "style/thumbnail");
+      values.push(thumb.href);
+    }
+    values.push(source);
+    return [...new Set(values)];
+  } catch (_) {
+    return [source];
+  }
+}
+
+function formatPrice(value, currency = "CNY", priceText = "") {
+  if (value === null || value === undefined || value === "" || !Number.isFinite(Number(value))) return clean(priceText) || "Цена не раскрыта";
   const formatted = nf.format(Number(value));
   const code = clean(currency).toUpperCase();
   if (code === "USD") return `$${formatted}`;
@@ -166,9 +192,27 @@ function currentPhotos() {
 }
 
 function photoMarkup(url, { index = 0 } = {}) {
-  const safe = safePhoto(url);
-  if (!safe) return "";
-  return `<img src="${escapeHtml(safe)}" alt="${escapeHtml(activeVehicle.title || "Автомобиль")}, фото ${index + 1}" decoding="async">`;
+  const candidates = photoCandidates(url);
+  if (!candidates.length) return "";
+  return `<img src="${escapeHtml(candidates[0])}" data-photo-candidates="${escapeHtml(JSON.stringify(candidates))}" alt="${escapeHtml(activeVehicle.title || "Автомобиль")}, фото ${index + 1}" decoding="async" referrerpolicy="no-referrer">`;
+}
+
+function installPhotoFallbacks(root) {
+  root?.querySelectorAll?.("img[data-photo-candidates]").forEach((image) => {
+    if (image.dataset.photoFallbackBound === "1") return;
+    image.dataset.photoFallbackBound = "1";
+    let candidates = [];
+    try { candidates = JSON.parse(image.dataset.photoCandidates || "[]"); } catch (_) {}
+    let index = Math.max(0, candidates.indexOf(image.src));
+    image.addEventListener("error", () => {
+      index += 1;
+      if (index < candidates.length) {
+        image.src = candidates[index];
+        return;
+      }
+      image.style.visibility = "hidden";
+    });
+  });
 }
 
 function galleryLength() {
@@ -190,6 +234,7 @@ function renderMainGalleryView(index) {
   const hasMultiple = photos.length > 1 || (!isLiveVehicle && GALLERY_VIEWS.length > 1);
   const photoCount = photos.length || (isLiveVehicle ? 0 : activeVehicle.photoCount || GALLERY_VIEWS.length);
   main.innerHTML = `${content}${hasMultiple ? `<button class="vehicle-gallery-nav prev" id="vehicleGalleryPrev" type="button" aria-label="Предыдущее фото">←</button><button class="vehicle-gallery-nav next" id="vehicleGalleryNext" type="button" aria-label="Следующее фото">→</button>` : ""}<span class="vehicle-gallery-counter">${photoCount ? `${activeGalleryIndex + 1} / ${photoCount}` : "Фото нет"}</span>`;
+  installPhotoFallbacks(main);
   document.getElementById("vehicleGalleryPrev")?.addEventListener("click", () => renderMainGalleryView(activeGalleryIndex - 1));
   document.getElementById("vehicleGalleryNext")?.addEventListener("click", () => renderMainGalleryView(activeGalleryIndex + 1));
   document.querySelectorAll("[data-gallery-index]").forEach((tile) => tile.classList.toggle("is-active", Number(tile.dataset.galleryIndex) === activeGalleryIndex));
@@ -208,6 +253,7 @@ function installVehicleVisuals() {
         ? `<span class="vehicle-gallery-more-label">Ещё ${sourceItems.length - visible.length} фото</span>` : "";
       return `<button class="vehicle-gallery-tile ${index === 0 ? "is-active" : ""}" type="button" data-gallery-index="${index}" aria-label="Открыть фото ${index + 1}">${content}${more}</button>`;
     }).join("");
+    installPhotoFallbacks(thumbs);
     thumbs.querySelectorAll("[data-gallery-index]").forEach((button) => button.addEventListener("click", () => renderMainGalleryView(Number(button.dataset.galleryIndex))));
   }
   renderMainGalleryView(0);
@@ -227,6 +273,7 @@ function renderOwnership(vehicle) {
   if (!root) return;
   const rows = [
     ["Год выпуска", vehicle.year],
+    ["Дата производства", extraSpec(vehicle, "Дата производства")],
     ["Пробег", formatMileage(vehicle.mileage)],
     ["Регистрация", vehicle.registration],
     ["Переоформления", vehicle.transfers],
@@ -247,6 +294,8 @@ function renderQuickSpecs(vehicle) {
     ["☷", "Комплектация", Array.isArray(vehicle.features) && vehicle.features.length ? `${vehicle.features.length} опций` : null],
     ["⌁", "Силовая установка", vehicle.energyType],
     ["⚙", "Двигатель", compactEngine(vehicle.engine)],
+    ["⚡", "Мощность", extraSpec(vehicle, "Максимальная мощность")],
+    ["⛽", "Топливо", extraSpec(vehicle, "Топливо")],
     ["⇄", "Коробка", translateTransmission(vehicle.transmission)],
     ["↔", "Привод", drive],
     ["◉", "Руль", steering],
@@ -274,6 +323,8 @@ function renderSpecs(vehicle) {
     ["Коробка передач", translateTransmission(vehicle.transmission)],
     ["Цвет кузова", translateColor(vehicle.bodyColor)],
     ["Цвет салона", translateColor(vehicle.interiorColor)],
+    ["Цена площадки", formatPrice(vehicle.price, vehicle.currency, vehicle.priceText)],
+    ["FOB", vehicle.fobPriceText ? `≈ ${vehicle.fobPriceText}` : null],
     ["VIN", vehicle.vin],
     ["Площадка", platformName(vehicle)]
   ];
@@ -336,11 +387,14 @@ function renderVehicle(vehicle, { live = false } = {}) {
   setText("vehicleDataNote", live ? "Актуальное предложение из каталога" : "Демонстрационная карточка");
   const trimParts = [activeVehicle.trim, activeVehicle.energyType, activeVehicle.body].filter(Boolean);
   setText("vehicleTrim", trimParts.join(" · "), "Характеристики автомобиля");
-  setText("vehiclePrice", formatPrice(activeVehicle.price, activeVehicle.currency), "Цена уточняется");
+  setText("vehiclePrice", formatPrice(activeVehicle.price, activeVehicle.currency, activeVehicle.priceText), "Цена уточняется");
+  const contextParts = [];
+  if (activeVehicle.fobPriceText) contextParts.push(`FOB ≈ ${activeVehicle.fobPriceText}`);
   if (activeVehicle.updatedAt) {
     const date = new Date(activeVehicle.updatedAt);
-    setText("vehiclePriceContext", Number.isNaN(date.getTime()) ? "Цена площадки" : `Цена площадки · обновлено ${date.toLocaleString("ru-RU")}`);
-  } else setText("vehiclePriceContext", "Цена площадки");
+    if (!Number.isNaN(date.getTime())) contextParts.push(`обновлено ${date.toLocaleString("ru-RU")}`);
+  }
+  setText("vehiclePriceContext", contextParts.length ? `Цена площадки · ${contextParts.join(" · ")}` : "Цена площадки");
   setText("vehiclePlatform", platformName(activeVehicle), "Площадка продажи");
   setText("vehicleSeller", sellerLine(activeVehicle), "Международный каталог");
   setText("vehicleDescription", activeVehicle.description || "Характеристики, которые доступны по текущему предложению.");
