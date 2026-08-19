@@ -64,22 +64,51 @@
           <p class="section-eyebrow">АВТОМОБИЛИ С ДОСТУПНОЙ ПРОВЕРКОЙ</p>
           <h1 id="catalogTitle">Выберите автомобиль. Историю запросим через Авточек.</h1>
         </div>
-        <p>Здесь будут собраны актуальные предложения автомобилей с пробегом. Карточка остаётся внутри Авточек: пользователь выбирает машину, просматривает её данные и запускает заказ отчёта в одном интерфейсе.</p>
+        <p>Здесь собраны предложения автомобилей с пробегом. Карточка остаётся внутри Авточек: пользователь выбирает машину, просматривает её данные и запускает заказ отчёта в одном интерфейсе.</p>
       </section>
 
       <section aria-label="Фильтры каталога">
-        <div class="catalog-toolbar">
-          <input id="catalogSearch" type="search" placeholder="Марка, модель или кузов" aria-label="Поиск по автомобилям" />
-          <select id="catalogCity" aria-label="Город"><option value="">Все города</option></select>
-          <select id="catalogSort" aria-label="Сортировка">
-            <option value="year">Сначала новее</option>
-            <option value="price-asc">Цена: по возрастанию</option>
-            <option value="price-desc">Цена: по убыванию</option>
-            <option value="mileage">Меньше пробег</option>
-          </select>
+        <div class="catalog-filter-panel">
+          <div class="catalog-toolbar catalog-toolbar-primary">
+            <input id="catalogSearch" type="search" placeholder="Марка, модель, кузов или двигатель" aria-label="Поиск по автомобилям" />
+            <select id="catalogBrand" aria-label="Марка"><option value="">Все марки</option></select>
+            <select id="catalogCity" aria-label="Город"><option value="">Все города</option></select>
+            <select id="catalogBody" aria-label="Кузов"><option value="">Все кузова</option></select>
+          </div>
+
+          <div class="catalog-toolbar catalog-toolbar-secondary">
+            <select id="catalogEngine" aria-label="Двигатель"><option value="">Все двигатели</option></select>
+            <input id="catalogYearMin" type="number" inputmode="numeric" placeholder="Год от" aria-label="Год от" />
+            <input id="catalogYearMax" type="number" inputmode="numeric" placeholder="Год до" aria-label="Год до" />
+            <input id="catalogPriceMin" type="number" inputmode="numeric" placeholder="Цена от, ¥" aria-label="Цена от" />
+            <input id="catalogPriceMax" type="number" inputmode="numeric" placeholder="Цена до, ¥" aria-label="Цена до" />
+            <input id="catalogMileageMin" type="number" inputmode="numeric" placeholder="Пробег от, км" aria-label="Пробег от" />
+            <input id="catalogMileageMax" type="number" inputmode="numeric" placeholder="Пробег до, км" aria-label="Пробег до" />
+            <select id="catalogStatus" aria-label="Статус">
+              <option value="active">В продаже</option>
+              <option value="all">Все статусы</option>
+              <option value="inactive">Снято с продажи</option>
+              <option value="unknown">Статус уточняется</option>
+            </select>
+            <select id="catalogSort" aria-label="Сортировка">
+              <option value="updated-desc">Сначала обновлённые</option>
+              <option value="year-desc">Сначала новее</option>
+              <option value="year-asc">Сначала старше</option>
+              <option value="price-asc">Цена: по возрастанию</option>
+              <option value="price-desc">Цена: по убыванию</option>
+              <option value="mileage-asc">Меньше пробег</option>
+              <option value="mileage-desc">Больше пробег</option>
+            </select>
+            <button id="catalogReset" class="catalog-filter-reset" type="button">Сбросить</button>
+          </div>
         </div>
-        <p class="catalog-count" id="catalogCount">Найдено: 0</p>
+
+        <div class="catalog-results-head">
+          <p class="catalog-count" id="catalogCount">Найдено: 0</p>
+          <p class="catalog-page-summary" id="catalogPageSummary"></p>
+        </div>
         <div class="catalog-grid" id="catalogRoot" aria-live="polite"></div>
+        <nav class="catalog-pagination" id="catalogPagination" aria-label="Страницы каталога" hidden></nav>
       </section>
     </div>
   </main>
