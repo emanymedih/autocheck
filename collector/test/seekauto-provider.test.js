@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   SeekAutoCatalogProvider,
+  extractSeekAutoHydration,
   parseSeekAutoDetailHtml,
   parseSeekAutoDiscoveryHtml,
   seekAutoHomeUrl
@@ -17,44 +18,65 @@ function response(url, html, status = 200) {
   };
 }
 
-const activeDetail = `<!doctype html><html><head>
-  <title>NIO 2024 EC7 75 kWh · 2025/07/10 | seekauto</title>
-</head><body>
-  <div>Ref No #SC043375C6Y08</div>
-  <h1>NIO 2024 EC7 75 kWh</h1>
-  <div>Listing Date: 2026-06-10 01:32:43</div>
-  <div>FOB (USD) ≈$3**** ¥268,000</div>
-  <div>Vehicle Information Configuration List</div>
-  <div>R Year / Month <span>2025/07/10</span></div>
-  <div>Mileage <span>23000km</span></div>
-  <div>P Year / Month <span>2024/09</span></div>
-  <div>Displacement <span>New Energy</span></div>
-  <div>Engine <span>New Energy 653PS</span></div>
-  <div>Emission Standard <span>Pure Electric</span></div>
-  <div>Transmission <span>Automatic</span></div>
-  <div>Fuel <span>Pure Electric</span></div>
-  <div>Maximum power(kW) <span>480</span></div>
-  <div>Drive <span>All-Wheel Drive</span></div>
-  <div>Seller’s Vehicle Description <span>original paint, untouched</span></div>
-  <div>Inspection Report View Insurance Claims Record View 4S Maintenance Record View</div>
-  <div>Dear overseas car dealer partners:</div>
-  <img src="https://img.jytche.com/user/1/car/image/a/one.jpg?x-oss-process=style/thumbnail">
-  <img data-src="https://img.jytche.com/user/1/car/image/a/two.jpg">
-  <img src="https://www.seekauto.com/logo.svg">
-</body></html>`;
+function hydrationScript(detail, id = detail.car_code) {
+  const decoded = `5:["$","$L18",null,{"id":${JSON.stringify(id)},"lng":"en","initialCarDetail":${JSON.stringify(detail)}}]`;
+  return `<script>self.__next_f.push(${JSON.stringify([1, decoded])})</script>`;
+}
 
-const soldDetail = `<!doctype html><html><head>
-  <title>TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror · 2021/07/15 | seekauto</title>
-</head><body>
-  <div>Ref No #SC661642651SG</div>
-  <div>This vehicle has been sold and is no longer listed for sale.</div>
-  <div>R Year / Month 2021/07/15</div>
-  <div>Mileage 51000km</div>
-  <div>P Year / Month 2021</div>
-  <div>Engine 2.0T 227PS L4</div>
-  <div>Transmission Automatic</div>
-  <div>Fuel Gasoline</div>
-</body></html>`;
+function detailPage(detail, { sold = false } = {}) {
+  return `<!doctype html><html><head><title>${detail.name || "seekauto"} | seekauto</title></head><body>
+    <div>Ref No #${detail.car_code}</div>
+    ${hydrationScript(detail)}
+    ${sold ? "<div>This vehicle has been sold and is no longer listed for sale.</div>" : ""}
+  </body></html>`;
+}
+
+const activeHydration = {
+  car_code: "SC043375C6Y08",
+  inner_car_id: 0,
+  name: "NIO 2024 EC7 75 kWh",
+  model_id: 78180,
+  description: "original paint, untouched",
+  plate_date: "2025/07/10",
+  built_date: "2024/09",
+  category_type: "SUV",
+  gearbox: "Automatic",
+  fuel_type: "Pure Electric",
+  drive_type: "All-Wheel Drive",
+  price: "268000",
+  currency_price: "$37,000",
+  mileage: 23000,
+  capacity: "New Energy",
+  emission: "Pure Electric",
+  max_power: 480,
+  is_detection_report: 1,
+  images: [
+    "user/5483756/car/image/a/one.jpg",
+    "user/5483756/car/image/a/two.jpg"
+  ],
+  reports: [],
+  first_audited_at: "2026-06-10 01:32:43",
+  last_audited_at: "2026-08-01 02:18:05",
+  engine: "New Energy 653PS",
+  car_status: 99
+};
+
+const activeDetail = detailPage(activeHydration);
+const soldHydration = {
+  ...activeHydration,
+  car_code: "SC661642651SG",
+  name: "Tank 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+  built_date: "2021",
+  plate_date: "2021/07/15",
+  mileage: 51000,
+  price: "2*****",
+  fuel_type: "Gasoline",
+  emission: "China VI",
+  engine: "2.0T 227PS L4",
+  max_power: 167,
+  car_status: 0
+};
+const soldDetail = detailPage(soldHydration, { sold: true });
 
 test("SeekAuto discovery finds detail links and serialized SC identifiers", () => {
   const html = `<!doctype html><html><body>
@@ -68,7 +90,14 @@ test("SeekAuto discovery finds detail links and serialized SC identifiers", () =
   assert.equal(parsed.entries[0].title, "NIO 2024 EC7 75 kWh");
 });
 
-test("SeekAuto detail parser keeps source CNY, vehicle facts, photos and platform", () => {
+test("SeekAuto extracts the target car from Next hydration instead of related-card markup", () => {
+  const hydration = extractSeekAutoHydration(activeDetail, "SC043375C6Y08");
+  assert.equal(hydration.car_code, "SC043375C6Y08");
+  assert.equal(hydration.name, "NIO 2024 EC7 75 kWh");
+  assert.equal(hydration.mileage, 23000);
+});
+
+test("SeekAuto detail parser keeps source CNY, vehicle facts, target photos and platform", () => {
   const raw = parseSeekAutoDetailHtml(activeDetail, "https://www.seekauto.com/en/car/detail/SC043375C6Y08");
   assert.equal(raw.source_listing_id, "SC043375C6Y08");
   assert.equal(raw.brand, "NIO");
@@ -81,8 +110,10 @@ test("SeekAuto detail parser keeps source CNY, vehicle facts, photos and platfor
   assert.equal(raw.energy_type, "Pure Electric");
   assert.equal(raw.transmission, "Automatic");
   assert.equal(raw.photo_urls.length, 2);
+  assert.match(raw.photo_urls[0], /^https:\/\/img\.jytche\.com\/user\/5483756\/car\/image\//);
   assert.equal(raw.listing_platform, "SeekAuto");
   assert.equal(raw.status, "active");
+  assert.equal(raw.description, "original paint, untouched");
 
   const normalized = normalizeListing(raw, { providerId: "seekauto-public" });
   const publicVehicle = toPublicVehicle(normalized);
@@ -91,7 +122,7 @@ test("SeekAuto detail parser keeps source CNY, vehicle facts, photos and platfor
   assert.equal(publicVehicle.currency, "CNY");
 });
 
-test("SeekAuto masked prices are not guessed and sold cards become inactive", () => {
+test("SeekAuto masked source prices are not guessed and sold cards become inactive", () => {
   const raw = parseSeekAutoDetailHtml(soldDetail, "https://www.seekauto.com/en/car/detail/SC661642651SG");
   assert.equal(raw.status, "inactive");
   assert.equal(raw.price, null);
@@ -99,7 +130,18 @@ test("SeekAuto masked prices are not guessed and sold cards become inactive", ()
   assert.equal(raw.energy_type, "Gasoline");
 });
 
-test("SeekAuto provider reads discovered cards through the public detail pages", async () => {
+test("SeekAuto refuses a generic server shell without the target hydration payload", () => {
+  const shell = `<html><head><title>seekauto</title></head><body>
+    <div>Vehicle Information</div><div>Engine</div><div>Transmission</div>
+    <img src="https://img.jytche.com/user/other/car/image/related.jpg">
+  </body></html>`;
+  assert.throws(
+    () => parseSeekAutoDetailHtml(shell, "https://www.seekauto.com/en/car/detail/SC043375C6Y08"),
+    /hydration payload is missing/
+  );
+});
+
+test("SeekAuto provider reads discovered cards through public Next-rendered detail pages", async () => {
   const home = `<!doctype html><html><body>
     <div>In Stock 677906</div>
     <a href="/en/car/detail/SC043375C6Y08">NIO 2024 EC7 75 kWh</a>
