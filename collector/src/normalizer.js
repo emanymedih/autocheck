@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { localizeSupplierDescription } from "../../description-localizer.mjs";
 import { canonicalBody, canonicalBrand, canonicalEnergyType } from "./catalog-taxonomy.js";
 
 const ACTIVE_VALUES = new Set(["active", "available", "in_stock", "instock", "在售", "可售", "1", "true", "yes"]);
@@ -128,6 +129,7 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
 
   const now = new Date().toISOString();
   const sourceUpdatedAt = clean(raw.updated_at);
+  const sourceDescription = clean(raw.description);
   const detailOptions = { itemSeparator: detailSeparator, partSeparator: detailPartSeparator };
 
   return {
@@ -152,7 +154,7 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
     registration: clean(raw.registration),
     transfers: integerValue(raw.transfers),
     vin: normalizeVin(raw.vin),
-    description: clean(raw.description),
+    description: sourceDescription ? localizeSupplierDescription(sourceDescription) : null,
     features: normalizeTextList(raw.features, detailSeparator),
     listingFacts: normalizeDetailItems(raw.listing_facts, detailOptions),
     conditionChecks: normalizeDetailItems(raw.condition_checks, detailOptions),
@@ -169,12 +171,14 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
       listingId: sourceListingId,
       dealerId: clean(raw.source_dealer_id),
       url: clean(raw.source_url),
+      description: sourceDescription,
       checkedAt: clean(raw.checked_at) || now
     }
   };
 }
 
 export function toPublicVehicle(vehicle) {
+  const sourceDescription = vehicle?.source?.description || vehicle?.description || null;
   return {
     id: vehicle.id,
     title: vehicle.title,
@@ -197,7 +201,7 @@ export function toPublicVehicle(vehicle) {
     registration: vehicle.registration,
     transfers: vehicle.transfers,
     vin: vehicle.vin,
-    description: vehicle.description || null,
+    description: sourceDescription ? localizeSupplierDescription(sourceDescription) : null,
     features: Array.isArray(vehicle.features) ? vehicle.features : [],
     listingFacts: Array.isArray(vehicle.listingFacts) ? vehicle.listingFacts : [],
     conditionChecks: Array.isArray(vehicle.conditionChecks) ? vehicle.conditionChecks : [],
