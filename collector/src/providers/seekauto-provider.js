@@ -49,6 +49,16 @@ function toInteger(value) {
   return Number.isFinite(number) ? Math.round(number) : null;
 }
 
+function sourcePriceText(value, currency = "CNY") {
+  const source = clean(value);
+  if (!source) return null;
+  const code = String(currency || "").trim().toUpperCase();
+  if (code === "CNY") return /[¥￥]/.test(source) ? source.replace(/￥/g, "¥") : `¥${source}`;
+  if (code === "USD") return source.startsWith("$") ? source : `$${source}`;
+  if (code === "EUR") return source.startsWith("€") ? source : `€${source}`;
+  return source;
+}
+
 function sourceDateToIso(value) {
   const match = String(value ?? "").match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})/);
   if (!match) return null;
@@ -231,6 +241,8 @@ export function parseSeekAutoDetailData(detail, { sourceUrl = null } = {}) {
   const updatedAt = sourceDateToIso(detail.last_audited_at) || sourceDateToIso(detail.first_audited_at);
   const extraSpecs = [
     ["Дата производства", productionDate],
+    ["Топливо", clean(detail.fuel_type)],
+    ["Рабочий объём / тип", clean(detail.capacity)],
     ["Привод", drive],
     ["Максимальная мощность", power !== null ? `${power} кВт` : null],
     ["Экологический стандарт", clean(detail.emission)]
@@ -246,6 +258,8 @@ export function parseSeekAutoDetailData(detail, { sourceUrl = null } = {}) {
     mileage_km: toInteger(detail.mileage),
     city: clean(detail.city ?? detail.location ?? detail.location_name),
     price: toInteger(detail.price),
+    price_text: sourcePriceText(detail.price, "CNY"),
+    fob_price_text: sourcePriceText(detail.currency_price, "USD"),
     currency: "CNY",
     body: clean(detail.category_type),
     energy_type: energySource(detail),
@@ -321,6 +335,8 @@ export function parseSeekAutoDetailHtml(html, sourceUrl, { fallbackTitle = null 
     mileage_km: null,
     city: null,
     price: null,
+    price_text: null,
+    fob_price_text: null,
     currency: "CNY",
     body: null,
     energy_type: null,
