@@ -88,9 +88,10 @@ export function buildSyncAudit({
   const errorRate = failed / denominator;
   const missingRate = baseline.map.size ? missing.length / baseline.map.size : 0;
   const invalidItems = (currentItems || []).filter((item) => !item?.id || !item?.title || !item?.status).length;
+  const importSucceeded = importResult.success === true;
 
   const checks = {
-    importCompleted: importResult.success !== false,
+    importCompleted: importSucceeded,
     minimumItems: current.map.size >= minItems,
     errorRate: errorRate <= maxErrorRate,
     uniqueIds: current.duplicates.length === 0,
@@ -128,7 +129,7 @@ export function buildSyncAudit({
       finishedAt: importResult.finishedAt || null,
       pagesVisited: Number(importResult.pagesVisited || 0),
       targetListings: Number(importResult.targetListings || 0),
-      importSucceeded: importResult.success !== false
+      importSucceeded
     },
     changes: {
       added,
