@@ -53,31 +53,43 @@
 
 Все публичные блоки формируются из `VehiclePublicDTO`. Статические сведения Audi используются только как демонстрационный fallback при открытии страницы без `vehicle_id`.
 
-Расширенные поля Collector:
-- `description`;
-- `features`;
-- `listing_facts`;
-- `condition_checks`;
-- `extra_specs`.
+### Single-listing pilot
 
-### Первый живой автомобиль — выполнен pilot
+Подключена одна реально опубликованная карточка Audi A3 через `Che168PilotProvider`.
 
-Подключена одна реально опубликованная карточка Audi A3 через отдельный single-listing adapter.
+Проверена цепочка:
 
-Сделано:
-- `Che168PilotProvider` для одной detail URL;
-- парсинг `dealer_id` и `listing_id`;
-- цена, пробег, год, первая регистрация, коробка, двигатель, город регистрации и переоформления;
-- извлечение массива фотографий;
-- внутренний `vehicle_id`;
-- сохранение source linkage только в backend-модели;
-- sanitized public snapshot без provider name, source URL, dealer ID и listing ID;
-- opt-in режим `cars.html?pilot=1` для проверки карточки на статическом frontend;
-- переход `pilot catalog → vehicle.html` через публичный объект автомобиля.
+`detail URL → Provider → Normalizer → Catalog Store → PublicVehicleDTO → cars.html → vehicle.html`.
 
-Текущий pilot проверяет цепочку:
+### Dealer inventory pilot adapter
 
-`живая URL-карточка → Provider → Normalizer → Catalog Store → PublicVehicleDTO → cars.html → vehicle.html`.
+Добавлен `Che168DealerInventoryProvider`.
+
+Он умеет:
+- принимать `dealer_id`;
+- начинать discovery со страницы `/dealer/carlist.html?dealerid={dealer_id}`;
+- находить detail URL формата `/dealer/{dealer_id}/{listing_id}.html`;
+- находить ссылки пагинации внутри dealer inventory;
+- дедуплицировать `listing_id`;
+- ограничивать pilot параметром `--limit`;
+- загружать detail cards с ограниченной concurrency;
+- передавать каждую карточку существующему `Che168PilotProvider`;
+- собирать ошибки по inventory pages и individual listings;
+- вычислять `completeDiscovery` и `completeSnapshot`;
+- запрещать массовую деактивацию при частичном обходе, лимите страниц или ошибках detail-card.
+
+Команда первого массового pilot:
+
+```bash
+cd collector
+npm run import:che168-dealer -- --dealer 123615 --limit 20 --max-pages 10 --concurrency 3
+```
+
+При таком ограниченном запуске Collector выполняет только upsert найденных машин. Snapshot-deactivation выключена автоматически.
+
+Полный snapshot включается только после подтверждения объявленного количества inventory и успешной загрузки всех найденных detail cards.
+
+Добавлены unit tests для discovery, пагинации и snapshot safety. Добавлен GitHub Actions workflow `Collector tests`.
 
 ## Частично реализовано
 
@@ -96,21 +108,26 @@
 - пагинация;
 - data-driven detail fields;
 - single-listing HTML pilot adapter;
+- dealer inventory HTML pilot adapter;
+- защита от ложной массовой деактивации;
 - первая реальная карточка и реальные фотографии в pilot-контуре.
 
 Для рабочего production-варианта:
-1. получить разрешённый постоянный feed/API хотя бы одного продавца;
-2. заменить JSON store на PostgreSQL;
-3. добавить автоматический scheduler;
-4. добавить import jobs и audit log;
-5. добавить retries и контроль частичных ошибок;
-6. подключить object storage/CDN для фотографий;
-7. проверить цикл `создание → обновление цены → обновление фото → снятие с продажи`;
-8. отказаться от HTML pilot как основного канала после появления партнёрского feed.
+1. выполнить разрешённый dealer pilot на 10–20 живых машин;
+2. проверить фактическую пагинацию dealer `123615`;
+3. сверить parsed data с исходными карточками;
+4. получить разрешённый постоянный feed/API продавца;
+5. заменить JSON store на PostgreSQL;
+6. добавить scheduler;
+7. добавить import jobs и audit log;
+8. добавить retries и контроль частичных ошибок;
+9. подключить object storage/CDN для фотографий;
+10. проверить цикл `создание → обновление цены → обновление фото → снятие с продажи`;
+11. после появления партнёрского feed вывести HTML pilot из production-контура.
 
 ### Каталог Авточек
 
-Frontend и API-контракт готовы. Одна настоящая карточка доступна в pilot-режиме.
+Frontend и API-контракт готовы. Одна настоящая карточка доступна в pilot-режиме. Dealer adapter готов наполнить Store набором настоящих карточек после разрешённого запуска.
 
 Для production-варианта:
 1. подключить backend по стабильному URL;
@@ -121,10 +138,10 @@ Frontend и API-контракт готовы. Одна настоящая ка�
 
 ### Карточка автомобиля
 
-Основная data-driven логика готова и уже принимает первую реальную карточку.
+Основная data-driven логика готова и принимает реальную карточку.
 
 Для production-варианта:
-1. расширить DTO после получения первого полного dealer feed;
+1. расширить DTO после получения полного dealer feed;
 2. согласовать поля разных продавцов;
 3. добавить нормализацию единиц и комплектаций;
 4. построить media pipeline;
@@ -159,7 +176,7 @@ Frontend и API-контракт готовы. Одна настоящая ка�
 
 ## Пока отсутствует
 
-- реальный постоянный feed китайских машин;
+- разрешённый постоянный feed китайских машин;
 - PostgreSQL;
 - scheduler Collector;
 - production media storage/CDN;
@@ -181,23 +198,21 @@ Frontend и API-контракт готовы. Одна настоящая ка�
 
 ## Следующая план-задача
 
-### P0 — перейти от одной живой карточки к живому inventory продавца
+### P0 — выполнить dealer pilot и доказать повторную синхронизацию
 
 Критерий готовности:
 
-`разрешённый dealer feed → автоматический импорт → PostgreSQL → реальные фото → реальные фильтры → vehicle.html → повторная синхронизация → изменение цены/статуса отображается на Авточек`.
+`dealer inventory → discovery → 10–20 detail cards → Normalizer → Catalog Store → Авточек → повторный запуск → корректное обновление цены/статуса`.
 
 Подзадачи:
-1. повторно проверить pilot-карточку и зафиксировать изменение или сохранение состояния;
-2. получить inventory feed хотя бы на 20–100 автомобилей одного продавца;
-3. сделать provider mapping или API adapter;
-4. импортировать весь набор;
-5. сверить 10 карточек вручную;
-6. повторить snapshot;
-7. проверить снятие автомобиля;
-8. перенести store в PostgreSQL;
-9. поставить синхронизацию по расписанию;
-10. добавить import log и alert по ошибкам;
-11. после стабильного цикла перейти к `Report Availability`.
+1. запустить `--dealer 123615 --limit 20` в среде с разрешённым доступом к source pages;
+2. сохранить audit результата: pages visited, listing IDs, success/fail;
+3. вручную сверить минимум 10 машин;
+4. повторить запуск спустя интервал;
+5. сравнить цену, пробег, фотографии и статус;
+6. отдельно выполнить полный discovery без `--limit`;
+7. убедиться, что `completeSnapshot=true` достигается только при полном подтверждённом inventory;
+8. после этого подключить PostgreSQL и scheduler;
+9. параллельно запросить у продавца прямой feed/API.
 
-Это следующий рубеж ядра: после него Catalog Collector становится постоянно работающим продуктовым контуром.
+Следующий рубеж ядра: доказанный многокарточный dealer sync с безопасным snapshot.
