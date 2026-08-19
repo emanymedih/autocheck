@@ -200,7 +200,11 @@ function chooseStaleRechecks(storeData, discoveredIds, limit) {
     .filter((vehicle) => vehicle.status !== "inactive")
     .filter((vehicle) => !discoveredIds.has(String(vehicle.source?.listingId || "")))
     .filter((vehicle) => vehicle.source?.url)
-    .sort((a, b) => String(a.source?.checkedAt || a.lastSeenAt || "").localeCompare(String(b.source?.checkedAt || b.lastSeenAt || "")))
+    .sort((a, b) => {
+      const missingDelta = Number(b.sync?.missingRuns || 0) - Number(a.sync?.missingRuns || 0);
+      if (missingDelta) return missingDelta;
+      return String(a.source?.checkedAt || a.lastSeenAt || "").localeCompare(String(b.source?.checkedAt || b.lastSeenAt || ""));
+    })
     .slice(0, limit)
     .map((vehicle) => ({
       listingId: String(vehicle.source.listingId),
@@ -233,11 +237,28 @@ function dedupeNormalizedListings(vehicles) {
   return { vehicles: [...byKey.values()], duplicates };
 }
 
+function publicVehicleKey(vehicle) {
+  const vin = String(vehicle?.vin || "").trim().toUpperCase();
+  if (/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) return `vin:${vin}`;
+  return `id:${String(vehicle?.id || "")}`;
+}
+
 async function writePublicSnapshot(store, filePath) {
   const data = await store.read();
   const normalized = data.vehicles.filter((vehicle) => vehicle.source?.providerId === PROVIDER_ID);
-  const { vehicles, duplicates } = dedupeNormalizedListings(normalized);
-  const items = vehicles.map(toPublicVehicle);
+  const managed = dedupeNormalizedListings(normalized).vehicles.map(toPublicVehicle);
+  const existing = await readJson(filePath, { updatedAt: null, items: [] });
+  const byKey = new Map();
+  let duplicates = 0;
+
+  for (const vehicle of [...(Array.isArray(existing.items) ? existing.items : []), ...managed]) {
+    if (!vehicle?.id) continue;
+    const key = publicVehicleKey(vehicle);
+    if (byKey.has(key)) duplicates += 1;
+    byKey.set(key, vehicle);
+  }
+
+  const items = [...byKey.values()];
   await writeJson(filePath, { updatedAt: data.updatedAt, items });
   return { items: items.length, duplicates };
 }
