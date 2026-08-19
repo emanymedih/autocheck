@@ -1,4 +1,4 @@
-name: Global catalog pilot
+name: Global catalog sync
 
 on:
   workflow_dispatch:
@@ -17,9 +17,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  import-global-catalog:
+  sync-global-catalog:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     defaults:
       run:
         working-directory: collector
@@ -30,16 +30,32 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Restore private collector state
+        uses: actions/cache@v4
+        with:
+          path: collector/.state
+          key: global-catalog-state-${{ github.run_id }}
+          restore-keys: |
+            global-catalog-state-
+
       - run: npm install
       - run: npm test
 
       - name: Save current public catalog as baseline
         run: cp data/global-public-catalog.json data/global-public-catalog.baseline.json
 
-      - name: Import 50 export listings
-        id: live-import
+      - name: Synchronize next export inventory pages
+        id: live-sync
         continue-on-error: true
-        run: npm run import:che168-global -- --limit 50 --pages 4 --concurrency 3 --result data/global-import-result.json
+        run: >-
+          npm run sync:che168-global --
+          --pages 8
+          --limit 500
+          --concurrency 4
+          --recheck 24
+          --missing-threshold 2
+          --result data/global-import-result.json
 
       - name: Build diff and apply health gate
         run: >-
@@ -59,7 +75,6 @@ jobs:
         with:
           name: global-catalog-sync
           path: |
-            collector/data/global-catalog.json
             collector/data/global-public-catalog.baseline.json
             collector/data/global-public-catalog.json
             collector/data/global-import-result.json
@@ -75,7 +90,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git restore collector/data/global-catalog.json
           rm -f collector/data/global-public-catalog.baseline.json
           rm -f collector/data/global-import-result.json
           rm -f collector/data/global-sync-report.json
