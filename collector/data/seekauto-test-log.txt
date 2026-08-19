@@ -6,182 +6,182 @@ TAP version 13
 # Subtest: filters active inventory by brand price mileage and body
 ok 1 - filters active inventory by brand price mileage and body
   ---
-  duration_ms: 3.068215
+  duration_ms: 3.383344
   ...
 # Subtest: supports status filter and normal page pagination
 ok 2 - supports status filter and normal page pagination
   ---
-  duration_ms: 1.256198
+  duration_ms: 1.912781
   ...
 # Subtest: supports electric and hybrid powertrain filters
 ok 3 - supports electric and hybrid powertrain filters
   ---
-  duration_ms: 0.661567
+  duration_ms: 0.711472
   ...
 # Subtest: builds source-backed catalog facets and status counts
 ok 4 - builds source-backed catalog facets and status counts
   ---
-  duration_ms: 13.9275
+  duration_ms: 14.055252
   ...
 # Subtest: normalizes global export energy types into Avtocheck filters
 ok 5 - normalizes global export energy types into Avtocheck filters
   ---
-  duration_ms: 3.909517
+  duration_ms: 2.496634
   ...
 # Subtest: normalizes English export body types
 ok 6 - normalizes English export body types
   ---
-  duration_ms: 0.314748
+  duration_ms: 0.254316
   ...
 # Subtest: inventory parser finds listing links, pagination and advertised inventory count
 ok 7 - inventory parser finds listing links, pagination and advertised inventory count
   ---
-  duration_ms: 5.271201
+  duration_ms: 6.05807
   ...
 # Subtest: dealer provider marks limited pilot import as incomplete snapshot
 ok 8 - dealer provider marks limited pilot import as incomplete snapshot
   ---
-  duration_ms: 6.699511
+  duration_ms: 6.969387
   ...
 # Subtest: dealer provider allows snapshot only when full advertised inventory is discovered and every detail succeeds
 ok 9 - dealer provider allows snapshot only when full advertised inventory is discovered and every detail succeeds
   ---
-  duration_ms: 3.705906
+  duration_ms: 3.041183
   ...
 # Subtest: global catalog parser discovers export detail URLs and inventory count
 ok 10 - global catalog parser discovers export detail URLs and inventory count
   ---
-  duration_ms: 4.284928
+  duration_ms: 6.347933
   ...
 # Subtest: global detail parser extracts USD price, vehicle details, photos and inspection claims
 ok 11 - global detail parser extracts USD price, vehicle details, photos and inspection claims
   ---
-  duration_ms: 7.893042
+  duration_ms: 12.358245
   ...
 # Subtest: sold global detail becomes inactive and can use title from discovery
 ok 12 - sold global detail becomes inactive and can use title from discovery
   ---
-  duration_ms: 6.714099
+  duration_ms: 9.023842
   ...
 # Subtest: global provider imports a limited multi-card pilot and never applies a full snapshot
 ok 13 - global provider imports a limited multi-card pilot and never applies a full snapshot
   ---
-  duration_ms: 5.747562
+  duration_ms: 9.466491
   ...
 # Subtest: validates a single Che168 detail URL
 ok 14 - validates a single Che168 detail URL
   ---
-  duration_ms: 2.131885
+  duration_ms: 1.475733
   ...
 # Subtest: parses a live-card shaped Che168 document into canonical raw fields
 ok 15 - parses a live-card shaped Che168 document into canonical raw fields
   ---
-  duration_ms: 3.937008
+  duration_ms: 2.715995
   ...
 # Subtest: normalizer keeps source linkage private for the pilot card
 ok 16 - normalizer keeps source linkage private for the pilot card
   ---
-  duration_ms: 3.920798
+  duration_ms: 2.428326
   ...
 # Subtest: sync audit reports added updated missing and sold transitions
 ok 17 - sync audit reports added updated missing and sold transitions
   ---
-  duration_ms: 3.477229
+  duration_ms: 3.574983
   ...
 # Subtest: sync audit blocks publication when current inventory collapses
 ok 18 - sync audit blocks publication when current inventory collapses
   ---
-  duration_ms: 0.506698
+  duration_ms: 0.556792
   ...
 # Subtest: sync audit blocks duplicate ids and excessive source errors
 ok 19 - sync audit blocks duplicate ids and excessive source errors
   ---
-  duration_ms: 1.834759
+  duration_ms: 1.249099
   ...
 # Subtest: sync audit blocks publication without explicit successful import result
 ok 20 - sync audit blocks publication without explicit successful import result
   ---
-  duration_ms: 0.621631
+  duration_ms: 0.653504
   ...
 # Subtest: normalizer creates stable internal id and public DTO hides source fields
 ok 21 - normalizer creates stable internal id and public DTO hides source fields
   ---
-  duration_ms: 4.621688
+  duration_ms: 3.503408
   ...
 # Subtest: preserves explicit USD source price
 ok 22 - preserves explicit USD source price
   ---
-  duration_ms: 0.369931
+  duration_ms: 0.285805
   ...
 # Subtest: publishes marketplace label without exposing source URL or listing id
 ok 23 - publishes marketplace label without exposing source URL or listing id
   ---
-  duration_ms: 0.43335
+  duration_ms: 0.275175
   ...
 # Subtest: global provider gets a public marketplace label even without an explicit source field
 ok 24 - global provider gets a public marketplace label even without an explicit source field
   ---
-  duration_ms: 0.333804
+  duration_ms: 0.248826
   ...
 # Subtest: invalid VIN is not exposed as VIN
 ok 25 - invalid VIN is not exposed as VIN
   ---
-  duration_ms: 0.519241
+  duration_ms: 0.354564
   ...
 # Subtest: detail fields become reusable public data blocks
 ok 26 - detail fields become reusable public data blocks
   ---
-  duration_ms: 0.547584
+  duration_ms: 1.345559
   ...
 # Subtest: Chinese source brand body and energy values normalize to public taxonomy
 ok 27 - Chinese source brand body and energy values normalize to public taxonomy
   ---
-  duration_ms: 1.985541
+  duration_ms: 0.408665
   ...
 # Subtest: SeekAuto discovery finds detail links and serialized SC identifiers
 ok 28 - SeekAuto discovery finds detail links and serialized SC identifiers
   ---
-  duration_ms: 4.759094
+  duration_ms: 7.400093
   ...
 # Subtest: SeekAuto extracts the target car from Next hydration instead of related-card markup
 ok 29 - SeekAuto extracts the target car from Next hydration instead of related-card markup
   ---
-  duration_ms: 0.592568
+  duration_ms: 0.9773
   ...
 # Subtest: SeekAuto detail parser keeps source CNY, vehicle facts, target photos and platform
 ok 30 - SeekAuto detail parser keeps source CNY, vehicle facts, target photos and platform
   ---
-  duration_ms: 4.024823
+  duration_ms: 5.42215
   ...
 # Subtest: SeekAuto masked source prices are not guessed and sold cards become inactive
 ok 31 - SeekAuto masked source prices are not guessed and sold cards become inactive
   ---
-  duration_ms: 1.277027
+  duration_ms: 1.65659
   ...
 # Subtest: SeekAuto refuses a generic server shell without the target hydration payload
 ok 32 - SeekAuto refuses a generic server shell without the target hydration payload
   ---
-  duration_ms: 0.445984
+  duration_ms: 0.525453
   ...
 # Subtest: SeekAuto provider reads discovered cards through public Next-rendered detail pages
 ok 33 - SeekAuto provider reads discovered cards through public Next-rendered detail pages
   ---
-  duration_ms: 2.146121
+  duration_ms: 3.108329
   ...
 # Subtest: snapshot import deactivates listings missing from the next snapshot
 ok 34 - snapshot import deactivates listings missing from the next snapshot
   ---
-  duration_ms: 18.523371
+  duration_ms: 13.058446
   ...
 # Subtest: stale probe deactivates a listing only after the configured number of misses
 ok 35 - stale probe deactivates a listing only after the configured number of misses
   ---
-  duration_ms: 4.38204
+  duration_ms: 5.684626
   ...
 # Subtest: observing a listing resets its stale miss counter
 ok 36 - observing a listing resets its stale miss counter
   ---
-  duration_ms: 4.177418
+  duration_ms: 5.207678
   ...
 1..36
 # tests 36
@@ -191,5 +191,5 @@ ok 36 - observing a listing resets its stale miss counter
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 303.588452
+# duration_ms 306.094457
 exit_code=0
