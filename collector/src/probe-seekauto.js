@@ -23,6 +23,54 @@ function inlineScripts(html) {
   return [...html.matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)].map((match) => match[1]).filter(Boolean);
 }
 
+function balancedJsonObject(text, start) {
+  let depth = 0;
+  let quoted = false;
+  let escaped = false;
+  for (let index = start; index < text.length; index += 1) {
+    const char = text[index];
+    if (quoted) {
+      if (escaped) escaped = false;
+      else if (char === "\\") escaped = true;
+      else if (char === '"') quoted = false;
+      continue;
+    }
+    if (char === '"') {
+      quoted = true;
+      continue;
+    }
+    if (char === "{") depth += 1;
+    if (char === "}") {
+      depth -= 1;
+      if (depth === 0) return text.slice(start, index + 1);
+    }
+  }
+  return null;
+}
+
+function hydrationDetail(html) {
+  for (const script of inlineScripts(html)) {
+    if (!script.includes("initialCarDetail")) continue;
+    const pushMatch = script.match(/self\.__next_f\.push\((\[[\s\S]*\])\)\s*;?$/);
+    if (!pushMatch) continue;
+    try {
+      const payload = JSON.parse(pushMatch[1]);
+      const decoded = typeof payload?.[1] === "string" ? payload[1] : "";
+      const marker = '"initialCarDetail":';
+      const markerIndex = decoded.indexOf(marker);
+      if (markerIndex < 0) continue;
+      const objectStart = decoded.indexOf("{", markerIndex + marker.length);
+      if (objectStart < 0) continue;
+      const objectText = balancedJsonObject(decoded, objectStart);
+      if (!objectText) continue;
+      return JSON.parse(objectText);
+    } catch (_) {
+      // Keep probing other RSC chunks.
+    }
+  }
+  return null;
+}
+
 function candidates(text) {
   const urls = [];
   for (const match of text.matchAll(/https?:\\?\/\\?\/[A-Za-z0-9._~:/?#\[\]@!$&'()*+,;=%\\-]+/g)) {
@@ -72,6 +120,7 @@ const page = await fetchText(TARGET);
 const scripts = scriptSources(page.text, page.url);
 const inline = inlineScripts(page.text);
 const pageCandidates = candidates(page.text);
+const hydration = hydrationDetail(page.text);
 const assets = [];
 
 for (const url of scripts.slice(0, 60)) {
@@ -99,6 +148,7 @@ const report = {
   finishedAt: new Date().toISOString(),
   target: TARGET,
   pageBytes: page.text.length,
+  hydration,
   scripts,
   pageCandidates,
   inlineCandidates,
@@ -106,4 +156,4 @@ const report = {
 };
 await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
 await fs.writeFile(OUTPUT, `${JSON.stringify(report, null, 2)}\n`, "utf8");
-console.log(JSON.stringify({ scripts: scripts.length, inline: inline.length, interestingAssets: assets.length, output: OUTPUT }, null, 2));
+console.log(JSON.stringify({ scripts: scripts.length, inline: inline.length, hydrationKeys: Object.keys(hydration || {}), interestingAssets: assets.length, output: OUTPUT }, null, 2));
