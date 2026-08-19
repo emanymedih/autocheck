@@ -32,3 +32,19 @@ test("invalid VIN is not exposed as VIN", () => {
   const vehicle = normalizeListing({ ...raw, vin: "INVALIDVIN" }, { providerId: "dealer-a" });
   assert.equal(vehicle.vin, null);
 });
+
+test("detail fields become reusable public data blocks", () => {
+  const vehicle = normalizeListing({
+    ...raw,
+    features: "Круиз-контроль|Камера 360",
+    listing_facts: "Владение::Один владелец|Сервис::Есть сервисные записи",
+    condition_checks: "Кузов::Есть окрашенные элементы::warning|Пожар::Признаки не заявлены::ok",
+    extra_specs: "Привод::Полный|Мощность::245 л.с."
+  }, { providerId: "dealer-a" });
+
+  const publicVehicle = toPublicVehicle(vehicle);
+  assert.deepEqual(publicVehicle.features, ["Круиз-контроль", "Камера 360"]);
+  assert.equal(publicVehicle.listingFacts[0].label, "Владение");
+  assert.equal(publicVehicle.conditionChecks[0].status, "warning");
+  assert.deepEqual(publicVehicle.extraSpecs[1], { label: "Мощность", value: "245 л.с." });
+});
