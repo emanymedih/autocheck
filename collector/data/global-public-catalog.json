@@ -1,4 +1,1125 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-08-19T10:51:41.697Z",
+  "items": [
+    {
+      "id": "av_ab2bdab2a4f25e90b5d6",
+      "title": "Chevrolet Camaro 2017 2.0T RS",
+      "brand": null,
+      "model": "Chevrolet Camaro",
+      "trim": "Chevrolet Camaro 2017 2.0T RS",
+      "year": 2017,
+      "mileage": 82000,
+      "city": "Сучжоу",
+      "price": 25090,
+      "currency": "USD",
+      "body": "Hardtop Coupe",
+      "energyType": "Бензин",
+      "engine": "2.0T 275HP L4",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2019.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive (RWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1570 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4786*1897*1356 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M04/A2/62/1400x0_c42_autohomecar__ChtpWGlTJ6yAWeE2AAqsHmv2z5o999.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.694Z"
+    },
+    {
+      "id": "av_b8a63a4644b6b0443e57",
+      "title": "Cadillac Kaiweide 2026 Model All-Wheel Drive Base Version",
+      "brand": null,
+      "model": "Cadillac Kaiweide",
+      "trim": "Cadillac Kaiweide 2026 Model All-Wheel Drive Base Version",
+      "year": 2026,
+      "mileage": 4300,
+      "city": "Чанша",
+      "price": 58370,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2860 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5222*2026*1799 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M04/68/8C/1400x0_c42_autohomecar__ChxpWGqBmaWAbQPPAAmg0wqdCCg334.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.695Z"
+    },
+    {
+      "id": "av_eca777a2fe95507359e3",
+      "title": "Audi Audi A7L 2024 45TFSI S-line Dream Edition Crystal Package",
+      "brand": "Audi",
+      "model": "A7L",
+      "trim": "2024 45TFSI S-line Dream Edition Crystal Package",
+      "year": 2023,
+      "mileage": 69000,
+      "city": "Чжэнчжоу",
+      "price": 31470,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "2.0T 245 horsepower L4",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2024.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1855 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5076*1908*1429 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/8A/12/1400x0_c42_autohomecar__ChxpWGqE5UiAI7WEAAXFJ0Qa-PI594.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.695Z"
+    },
+    {
+      "id": "av_69010a116debf794a5f2",
+      "title": "Zunjie Zunjie V800",
+      "brand": null,
+      "model": "Zunjie Zunjie V800",
+      "trim": "Zunjie Zunjie V800",
+      "year": 2026,
+      "mileage": 100,
+      "city": "Шэньчжэнь",
+      "price": 153700,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 173 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "--",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "3190 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5495*2006*1850 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M06/48/13/1400x0_c42_autohomecar__ChxpV2p-3FKAEaNQAAaeW9amI1Y486.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.695Z"
+    },
+    {
+      "id": "av_4afd7a357deed76871ae",
+      "title": "Genesis Genesis G70 2024 2.0T Hunting Edition AWD Luxury Shooting Brake",
+      "brand": null,
+      "model": "Genesis Genesis G70",
+      "trim": "Genesis Genesis G70 2024 2.0T Hunting Edition AWD Luxury Shooting Brake",
+      "year": 2023,
+      "mileage": 8000,
+      "city": "Чанша",
+      "price": 36740,
+      "currency": "USD",
+      "body": "Station Wagon",
+      "energyType": "Бензин",
+      "engine": "2.0T 245 horsepower L4",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2025.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "- кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4700*1850*1400 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M05/BF/5F/1400x0_c42_autohomecar__ChxpWGpwjWaAWpNxAAJjvog7keo729.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.695Z"
+    },
+    {
+      "id": "av_51801d05634b45f2caf0",
+      "title": "Daolangge Chevrolet Tahoe 2025 2.7T Highland Edition",
+      "brand": null,
+      "model": "Daolangge Chevrolet Tahoe",
+      "trim": "Daolangge Chevrolet Tahoe 2025 2.7T Highland Edition",
+      "year": 2024,
+      "mileage": 35000,
+      "city": "Ханчжоу",
+      "price": 95010,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.7T 303HP L4",
+      "transmission": "10-speed automatic manual transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2025.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2658 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5382*2058*1940 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/58/2C/1400x0_c42_autohomecar__ChxpV2qANsqAXSA9AAnxKeRx0_I340.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.695Z"
+    },
+    {
+      "id": "av_7e3f73ce4578e961e809",
+      "title": "Maserati GranTurismo 2023 3.0T Modena",
+      "brand": null,
+      "model": "Maserati GranTurismo",
+      "trim": "Maserati GranTurismo 2023 3.0T Modena",
+      "year": 2023,
+      "mileage": 15000,
+      "city": "Ханчжоу",
+      "price": 163380,
+      "currency": "USD",
+      "body": "Hardtop Coupe",
+      "energyType": "Бензин",
+      "engine": "3.0T 490HP V6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2024.11",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1850 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4960*1957*1409 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M05/35/44/1400x0_c42_autohomecar__ChxpWGp9X8uAOJPMAAbxiVTGjMo669.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.695Z"
+    },
+    {
+      "id": "av_f162a6f5e5c4facb604e",
+      "title": "DS DS 9 2022 45THP Opera Light Edition",
+      "brand": null,
+      "model": "DS DS 9",
+      "trim": "DS DS 9 2022 45THP Opera Light Edition",
+      "year": 2022,
+      "mileage": 20000,
+      "city": "Сучжоу",
+      "price": 19370,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "1.6T 215HP L4",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2023.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1615 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4933*1855*1468 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/1D/22/1400x0_c42_autohomecar__ChxpV2p66k6AA5r6ABGe3NhBqro058.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_ea15f31ef57a2e5fd129",
+      "title": "Audi Audi E5 Sportback 2025 Model 220kw 2WD Version",
+      "brand": "Audi",
+      "model": "E5 Sportback",
+      "trim": "2025 Model 220kw 2WD Version",
+      "year": 2025,
+      "mileage": 14000,
+      "city": "Jining",
+      "price": 26400,
+      "currency": "USD",
+      "body": "Station Wagon",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Champagne",
+      "interiorColor": null,
+      "registration": "2025.12",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2225 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4881*1960*1479 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M0A/68/29/1400x0_c42_autohomecar__Chto52qBMZGAdECcAA9YoTFu-E0455.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_33626fdf34c9fbbb94d1",
+      "title": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "brand": null,
+      "model": "Lotus Cars EMIRA",
+      "trim": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "year": 2021,
+      "mileage": 13000,
+      "city": "Шэньчжэнь",
+      "price": 72470,
+      "currency": "USD",
+      "body": "Hardtop Coupe",
+      "energyType": "Бензин",
+      "engine": "2.0T 405HP L4",
+      "transmission": "8-Speed Wet Dual Clutch",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2023.09",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1460 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4413*1896*1235 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M01/8E/E4/1400x0_c42_autohomecar__ChxpVmnw1uaAC1PDAAIQIo9QjMA757.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_8ee4b55b72b484732b9e",
+      "title": "Audi Audi Q8 2021 Model 55 TFSI Luxury Dynamic",
+      "brand": "Audi",
+      "model": "Q8",
+      "trim": "2021 Model 55 TFSI Luxury Dynamic",
+      "year": 2020,
+      "mileage": 78000,
+      "city": "Guiyang",
+      "price": 31470,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Мягкий гибрид 48V",
+      "engine": "3.0T 340hp V6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2021.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2225 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5006*1995*1695 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/3A/5B/1400x0_c42_autohomecar__Chto52p9bGWAY7FjAAWnkPNJWAs055.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_092e687b3c1d15e71f18",
+      "title": "Audi Audi A5L Sportback 2025 Model 2.0T Luxury",
+      "brand": "Audi",
+      "model": "A5L Sportback",
+      "trim": "2025 Model 2.0T Luxury",
+      "year": 2025,
+      "mileage": 10000,
+      "city": "Shijiazhuang",
+      "price": 29960,
+      "currency": "USD",
+      "body": "Лифтбек",
+      "energyType": "Бензин",
+      "engine": "2.0T 204HP L4",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2025.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1810 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4903*1883*1447 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/14/26/1400x0_c42_autohomecar__Chto52p5gyCAfX42ABIQmPFvMfw838.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_3d4579ed3d7e9d46c0d5",
+      "title": "Genesis Genesis GV70 2025 2.5T 2WD Luxury Edition",
+      "brand": null,
+      "model": "Genesis Genesis GV70",
+      "trim": "Genesis Genesis GV70 2025 2.5T 2WD Luxury Edition",
+      "year": 2024,
+      "mileage": 10000,
+      "city": "Сучжоу",
+      "price": 28600,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.5T 304HP L4",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2025.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive (RWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1913 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4715*1910*1645 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/5A/66/1400x0_c42_autohomecar__ChxpVWqAJlyAdaJHAA8wdQXQ_0E602.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_fbdd30953599e60a3a8e",
+      "title": "Ferrari Ferrari 458 2011 4.5L Italia",
+      "brand": null,
+      "model": "Ferrari Ferrari 458",
+      "trim": "Ferrari Ferrari 458 2011 4.5L Italia",
+      "year": 2010,
+      "mileage": 87000,
+      "city": "Шэньчжэнь",
+      "price": 85930,
+      "currency": "USD",
+      "body": "Hardtop Coupe",
+      "energyType": "Бензин",
+      "engine": "4.5L 570HP V8",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2011.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1380 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4527*1937*1213 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M01/73/9C/1400x0_c42_autohomecar__ChtpWGqC2biAOF3wAAgEpXekBEk196.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_ccaf38a9443096e98ca1",
+      "title": "Mercedes-Benz Mercedes-Benz GLE L 2026 Model Concept Rendering",
+      "brand": "Mercedes-Benz",
+      "model": "GLE L",
+      "trim": "2026 Model Concept Rendering",
+      "year": 2026,
+      "mileage": 10,
+      "city": "Чунцин",
+      "price": 70920,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Мягкий гибрид 48V",
+      "engine": "2.0T 258hp L4",
+      "transmission": "--",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "--",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2377 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5051*2018*1784 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M05/6F/A1/1400x0_c42_autohomecar__ChtpWGqChgOAdPrsAAu1_9mP94g235.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_add4b0df7eb8598fe851",
+      "title": "Li Auto Li L8",
+      "brand": "Li Auto",
+      "model": "Li L8",
+      "trim": null,
+      "year": 2026,
+      "mileage": 200,
+      "city": "Нанкин",
+      "price": 54280,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 156 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.07",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2740 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5135 *2000 *1800 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M03/18/72/1400x0_c42_autohomecar__Chto52p5-N-AVnGmAAHNUkH8vC0200.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_56fc4a5463ae36712842",
+      "title": "Tesla Cyber Off-Road Traveler 2024 Rear-Wheel Drive",
+      "brand": "Tesla",
+      "model": "Cyber Off-Road Traveler",
+      "trim": "2024 Rear-Wheel Drive",
+      "year": 2024,
+      "mileage": 2000,
+      "city": "Ханчжоу",
+      "price": 264740,
+      "currency": "USD",
+      "body": "Pickup Truck",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2026.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "- кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5683*2201*1791 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/33/B2/1400x0_c42_autohomecar__ChxpWGp9PFiARkdmAA3GQax-0sE241.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_c17e8b59c58ac6911005",
+      "title": "Abarth Abarth 595 2021 Competizione",
+      "brand": null,
+      "model": "Abarth Abarth 595",
+      "trim": "Abarth Abarth 595 2021 Competizione",
+      "year": 2021,
+      "mileage": 15000,
+      "city": "Шанхай",
+      "price": 36010,
+      "currency": "USD",
+      "body": "--",
+      "energyType": "Прочее",
+      "engine": null,
+      "transmission": "--",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2023.03",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "--"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "--"
+        },
+        {
+          "label": "Дверей",
+          "value": "--"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "-- кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "-- Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/2E/4E/1400x0_c42_autohomecar__ChxpVWp8OqeADK3UAAsV1NLBy14911.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.696Z"
+    },
+    {
+      "id": "av_4da0167c780ec67029af",
+      "title": "Hongqi Hongqi Guoyao 2022 4.0T Premium Flagship 4-Seater",
+      "brand": null,
+      "model": "Hongqi Hongqi Guoyao",
+      "trim": "Hongqi Hongqi Guoyao 2022 4.0T Premium Flagship 4-Seater",
+      "year": 2022,
+      "mileage": 51000,
+      "city": "Чэнду",
+      "price": 88960,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "4.0T 360 HP V8",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2023.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "3100 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5695*2095*1985 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/8C/A8/1400x0_c42_autohomecar__ChxpV2qFIBKAD1KoAAMSik9BPss467.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.697Z"
+    },
+    {
+      "id": "av_34350fbf455c0bfe646d",
+      "title": "GAC Trumpchi Trumpchi E8 2024 Glory Series 2.0L Glory Edition",
+      "brand": null,
+      "model": "GAC Trumpchi Trumpchi E8",
+      "trim": "GAC Trumpchi Trumpchi E8 2024 Glory Series 2.0L Glory Edition",
+      "year": 2024,
+      "mileage": 35000,
+      "city": "Сямынь",
+      "price": 18130,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Гибрид (HEV)",
+      "engine": "2.0L 140HP L4",
+      "transmission": "2-speed DHT",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2024.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2005 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4920*1900*1760 Autohome has 20 years of experience in the automotive distribution industry and a vast inventory of used cars. Leveraging end-to-end digital and intelligent safeguards, we make cross-border transactions safer and more reliable. NYSE: ATHM HKEX: 2518 Quick Links Home Used Cars Country Guide How to Buy Success Stories About Us FAQs Privacy Policy Categories Hatchback Sedan SUV MPV Pickup Fastback Wagon Hardtop Coupe Contact Us Paul мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/89/13/1400x0_c42_autohomecar__ChxpVWqEOlmAXH0IAA0h1Qe6zmI081.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "updatedAt": "2026-08-19T10:51:41.697Z"
+    }
+  ]
 }
