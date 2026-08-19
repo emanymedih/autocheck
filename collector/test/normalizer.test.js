@@ -43,6 +43,26 @@ test("preserves explicit USD source price", () => {
   assert.equal(toPublicVehicle(vehicle).currency, "USD");
 });
 
+test("publishes marketplace label without exposing source URL or listing id", () => {
+  const vehicle = normalizeListing({
+    ...raw,
+    source_listing_id: "global-42",
+    listing_platform: "Autohome Global",
+    seller_name: "Export Dealer"
+  }, { providerId: "che168-global-pilot" });
+
+  const publicVehicle = toPublicVehicle(vehicle);
+  assert.equal(publicVehicle.listingPlatform, "Autohome Global");
+  assert.equal(publicVehicle.sellerName, "Export Dealer");
+  assert.equal("source" in publicVehicle, false);
+  assert.equal(JSON.stringify(publicVehicle).includes("global-42"), false);
+});
+
+test("global provider gets a public marketplace label even without an explicit source field", () => {
+  const vehicle = normalizeListing({ ...raw, source_listing_id: "global-43" }, { providerId: "che168-global-pilot" });
+  assert.equal(toPublicVehicle(vehicle).listingPlatform, "Autohome Global");
+});
+
 test("invalid VIN is not exposed as VIN", () => {
   const vehicle = normalizeListing({ ...raw, vin: "INVALIDVIN" }, { providerId: "dealer-a" });
   assert.equal(vehicle.vin, null);
