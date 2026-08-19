@@ -1,8 +1,49 @@
 {
-  "startedAt": "2026-08-19T14:00:34.416Z",
-  "finishedAt": "2026-08-19T14:00:42.324Z",
+  "startedAt": "2026-08-19T14:04:04.766Z",
+  "finishedAt": "2026-08-19T14:04:11.580Z",
   "target": "https://www.seekauto.com/en/car/detail/SC043375C6Y08",
-  "pageBytes": 204588,
+  "pageBytes": 203332,
+  "hydration": {
+    "car_code": "SC043375C6Y08",
+    "inner_car_id": 0,
+    "name": "NIO 2024 EC7 75 kWh",
+    "model_id": 78180,
+    "description": "original paint, untouched",
+    "origin_description": "",
+    "plate_date": "2025/07/10",
+    "built_date": "2024/09",
+    "category_type": "SUV",
+    "gearbox_value": 2,
+    "gearbox": "Automatic",
+    "fuel_type": "Pure Electric",
+    "drive_type": "All-Wheel Drive",
+    "price": "2*****",
+    "currency_price": "$$3****",
+    "mileage": 23000,
+    "capacity": "New Energy",
+    "emission": "Pure Electric",
+    "max_power": 480,
+    "is_detection_report": 0,
+    "images": [
+      "user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055068912_015_app_Y_3.40M-165.05K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055068835_544_app_B_3.64M-200.61K_parse.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055068799_899_app_K_3.69M-218.99K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055068903_157_app_N_15.84M-135.07K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055068969_194_app_M_14.62M-163.40K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055069078_721_app_Q_14.76M-165.05K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055069129_270_app_J_15.80M-161.20K.jpeg",
+      "user/5483756/car/image/6a28be5c0241b/1781055069082_352_app_C_663.59K-347.74K.jpeg"
+    ],
+    "reports": [],
+    "first_audited_at": "2026-06-10 01:32:43",
+    "last_audited_at": "2026-08-01 02:18:05",
+    "is_reduced_price": 0,
+    "is_collect": 0,
+    "new_in": 0,
+    "engine": "New Energy 653PS ",
+    "car_status": 99
+  },
   "scripts": [
     "https://www.seekauto.com/_next/static/chunks/236f7e5abd6f09ff.js",
     "https://www.seekauto.com/_next/static/chunks/f149126afa40b97d.js",
@@ -19,21 +60,15 @@
     "https://www.seekauto.com/_next/static/chunks/db5a6a78801e204d.js",
     "https://www.seekauto.com/_next/static/chunks/0af02aa09fe821b6.js",
     "https://www.seekauto.com/_next/static/chunks/96081e9f617b9fc1.js",
-    "https://static.addtoany.com/menu/page.js",
     "https://www.seekauto.com/_next/static/chunks/6124fb34304961a3.js",
     "https://www.seekauto.com/_next/static/chunks/b1769ca28bd1fd92.js",
     "https://www.seekauto.com/_next/static/chunks/bc25eb97a5363f83.js",
+    "https://static.addtoany.com/menu/page.js",
     "https://www.seekauto.com/_next/static/chunks/a6dad97d9634a72d.js",
     "https://www.seekauto.com/_next/static/chunks/711d597b816a80c1.js"
   ],
   "pageCandidates": {
     "urls": [
-      "https://beian.mps.gov.cn/#/query/webSearch?code=35018302000303",
-      "https://www.seekauto.com/en/car/detail/SC043375C6Y08\\",
-      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg\\",
-      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg?x-oss-process=style/normal",
-      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg?x-oss-process=style/thumbnail",
-      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068912_015_app_Y_3.40M-165.05K.jpeg?x-oss-process=style/thumbnail",
       "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068835_544_app_B_3.64M-200.61K_parse.jpeg?x-oss-process=style/thumbnail",
       "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068799_899_app_K_3.69M-218.99K.jpeg?x-oss-process=style/thumbnail",
       "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068903_157_app_N_15.84M-135.07K.jpeg?x-oss-process=style/thumbnail",
@@ -60,14 +95,20 @@
       "https://img.jytche.com/user/633206/car/image/6a49ff549e057/1783234388594_073_app_N_291.92K-291.92K.jpg?x-oss-process=style/thumbnail",
       "https://img.jytche.com/user/2717205/car/image/6a420ebaed22e/1782714042864_410_app_G_222.41K-222.41K_parse.jpeg?x-oss-process=style/thumbnail",
       "https://www.seekauto.com/en/car/detail/SC043375C6Y08",
-      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg"
+      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg",
+      "https://beian.mps.gov.cn/#/query/webSearch?code=35018302000303",
+      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg?x-oss-process=style/normal",
+      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg?x-oss-process=style/thumbnail",
+      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068912_015_app_Y_3.40M-165.05K.jpeg?x-oss-process=style/thumbnail",
+      "https://www.seekauto.com/en/car/detail/SC043375C6Y08\\",
+      "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055068908_160_app_N_3.36M-218.99K.jpeg\\"
     ],
     "paths": [
       "/en/login?redirect=%2Fen%2Fcar%2Fdetail%2FSC043375C6Y08",
       "/en/car/list"
     ],
     "snippets": [
-      "\",\\\"$L17\\\",\\\"18\\\",{}]]\\n\"])</script><script>self.__next_f.push([1,\"5:[\\\"$\\\",\\\"$L18\\\",null,{\\\"id\\\":\\\"SC043375C6Y08\\\",\\\"lng\\\":\\\"en\\\",\\\"initialCarDetail\\\":{\\\"car_code\\\":\\\"SC043375C6Y08\\\",\\\"inner_car_id\\\":0,\\\"name\\\":\\\"NIO 2024 EC7 75 kWh\\\",\\\"model_id\\\":78180,\\\"description\\\":\\\"original paint, untouched\\\",\\\"origin_description\\\":\\\"\\\",\\\"plate_date\\\":\\\"2025/07/10\\\",\\\"built_da",
+      "\\\"lng\\\":\\\"en\\\"}]]}]]}]\\n\"])</script><script>self.__next_f.push([1,\"5:[\\\"$\\\",\\\"$L17\\\",null,{\\\"id\\\":\\\"SC043375C6Y08\\\",\\\"lng\\\":\\\"en\\\",\\\"initialCarDetail\\\":{\\\"car_code\\\":\\\"SC043375C6Y08\\\",\\\"inner_car_id\\\":0,\\\"name\\\":\\\"NIO 2024 EC7 75 kWh\\\",\\\"model_id\\\":78180,\\\"description\\\":\\\"original paint, untouched\\\",\\\"origin_description\\\":\\\"\\\",\\\"plate_date\\\":\\\"2025/07/10\\\",\\\"built_da",
       "gap-[10px] mt-[20px] items-stretch\"><div class=\"shrink-0 w-[376px] rounded-[8px] overflow-hidden\"><img src=\"/images/frame_2759@3x.png\" alt=\"vehicle inspection report\" width=\"376\" height=\"365\" class=\"w-full h-full object-cover\"/></div><div class=\"flex-1 flex flex-col gap-[10px] min-w-0\"><div class=\"relative w-[300px] overflow-hidden rounded-[8px] h-[110px] cursor-no",
       "</div></div><div class=\"flex justify-between mt-[20px]\"><div class=\"flex items-center gap-[10px]\"><div class=\"text-black text-xl font-bold\">Vehicle Information</div><div class=\"text-[#E14023] text-[10px] flex items-center gap-[4px] px-[4px] h-[20px] leading-[20px] border border-solid border-[#E14023] rounded-[4px] box-border bg-[#FEF4F2] cursor-pointer\" type=\"butto",
       "py-[12px] bg-white flex-1\">All-Wheel Drive</div></div></div></div><div class=\"mt-[30px]\"><div class=\"text-black text-xl font-bold\">Seller’s Vehicle Description</div><div class=\"text-black text-xs mt-[10px] p-[20px] rounded-[8px] bg-[#f8f8f8]\"><div>original paint, untouched</div></div></div><div class=\"mt-[10px] py-[20px] text-xs text-black border-t border-solid bor",
@@ -118,7 +159,16 @@
   },
   "inlineCandidates": [
     {
-      "index": 9,
+      "index": 8,
+      "bytes": 11302,
+      "urls": [],
+      "paths": [],
+      "snippets": [
+        "self.__next_f.push([1,\"5:[\\\"$\\\",\\\"$L17\\\",null,{\\\"id\\\":\\\"SC043375C6Y08\\\",\\\"lng\\\":\\\"en\\\",\\\"initialCarDetail\\\":{\\\"car_code\\\":\\\"SC043375C6Y08\\\",\\\"inner_car_id\\\":0,\\\"name\\\":\\\"NIO 2024 EC7 75 kWh\\\",\\\"model_id\\\":78180,\\\"description\\\":\\\"original paint, untouched\\\",\\\"origin_description\\\":\\\"\\\",\\\"plate_date\\\":\\\"2025/07/10\\\",\\\"built_da"
+      ]
+    },
+    {
+      "index": 10,
       "bytes": 2131,
       "urls": [
         "https://www.seekauto.com/en/car/detail/SC043375C6Y08\\",
@@ -126,15 +176,6 @@
       ],
       "paths": [],
       "snippets": []
-    },
-    {
-      "index": 10,
-      "bytes": 11302,
-      "urls": [],
-      "paths": [],
-      "snippets": [
-        "self.__next_f.push([1,\"5:[\\\"$\\\",\\\"$L18\\\",null,{\\\"id\\\":\\\"SC043375C6Y08\\\",\\\"lng\\\":\\\"en\\\",\\\"initialCarDetail\\\":{\\\"car_code\\\":\\\"SC043375C6Y08\\\",\\\"inner_car_id\\\":0,\\\"name\\\":\\\"NIO 2024 EC7 75 kWh\\\",\\\"model_id\\\":78180,\\\"description\\\":\\\"original paint, untouched\\\",\\\"origin_description\\\":\\\"\\\",\\\"plate_date\\\":\\\"2025/07/10\\\",\\\"built_da"
-      ]
     }
   ],
   "assets": [
