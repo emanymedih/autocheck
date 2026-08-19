@@ -1,0 +1,8 @@
+
+> avtocheck-catalog-collector@0.1.0 sync:seekauto
+> node src/sync-seekauto.js --limit 20 --concurrency 4 --recheck 1 --store .state/seekauto-diagnostic-store.json --public data/seekauto-diagnostic-public.json --result data/seekauto-diagnostic-result.json
+
+Error: No SeekAuto listings survived detail loading
+    at main (file:///home/runner/work/autocheck/autocheck/collector/src/sync-seekauto.js:198:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+exit_code=1
