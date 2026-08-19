@@ -1,3 +1,5 @@
+import { CATALOG_BODIES, CATALOG_BRANDS, CATALOG_ENERGY_TYPES } from "./catalog-taxonomy.js";
+
 const ALLOWED_STATUSES = new Set(["active", "inactive", "unknown", "all"]);
 const ALLOWED_SORTS = new Set([
   "updated-desc",
@@ -95,7 +97,13 @@ export function filterAndPaginateVehicles(vehicles, searchParams) {
   if (query.city) result = result.filter((vehicle) => vehicle.city === query.city);
   if (query.brand) result = result.filter((vehicle) => vehicle.brand === query.brand);
   if (query.body) result = result.filter((vehicle) => vehicle.body === query.body);
-  if (query.engine) result = result.filter((vehicle) => lower(vehicle.engine).includes(query.engine));
+  if (query.engine) {
+    result = result.filter((vehicle) => {
+      const energyType = lower(vehicle.energyType);
+      const engine = lower(vehicle.engine);
+      return energyType === query.engine || energyType.includes(query.engine) || engine.includes(query.engine);
+    });
+  }
 
   if (query.year !== null) result = result.filter((vehicle) => finiteNumber(vehicle.year) === query.year);
   if (query.yearMin !== null) result = result.filter((vehicle) => finiteNumber(vehicle.year) !== null && finiteNumber(vehicle.year) >= query.yearMin);
@@ -112,6 +120,7 @@ export function filterAndPaginateVehicles(vehicles, searchParams) {
       vehicle.model,
       vehicle.trim,
       vehicle.body,
+      vehicle.energyType,
       vehicle.engine,
       vehicle.city
     ].filter(Boolean).join(" ")).includes(query.q));
@@ -155,10 +164,10 @@ export function buildVehicleFacets(vehicles) {
   }, {});
 
   return {
-    brands: uniqueSorted(source.map((vehicle) => vehicle.brand)),
+    brands: uniqueSorted([...CATALOG_BRANDS, ...source.map((vehicle) => vehicle.brand)]),
     cities: uniqueSorted(source.map((vehicle) => vehicle.city)),
-    bodies: uniqueSorted(source.map((vehicle) => vehicle.body)),
-    engines: uniqueSorted(source.map((vehicle) => vehicle.engine)),
+    bodies: uniqueSorted([...CATALOG_BODIES, ...source.map((vehicle) => vehicle.body)]),
+    engines: uniqueSorted([...CATALOG_ENERGY_TYPES, ...source.map((vehicle) => vehicle.energyType)]),
     year: numericRange(source.map((vehicle) => vehicle.year)),
     price: numericRange(source.map((vehicle) => vehicle.price)),
     mileage: numericRange(source.map((vehicle) => vehicle.mileage)),
