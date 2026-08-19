@@ -217,7 +217,7 @@
     if (detailMatch) {
       const id = decodeURIComponent(detailMatch[1]);
       const vehicle = vehicleById.get(id);
-      return vehicle ? jsonResponse(vehicle) : jsonResponse({ error: "vehicle_not_found" }, 404);
+      return vehicle ? jsonResponse({ vehicle }) : jsonResponse({ error: "vehicle_not_found" }, 404);
     }
 
     if (path.endsWith("/api/vehicles")) {
