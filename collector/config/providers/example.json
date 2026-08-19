@@ -1,6 +1,8 @@
 {
   "sheet": 1,
   "photoSeparator": "|",
+  "detailSeparator": "|",
+  "detailPartSeparator": "::",
   "columns": {
     "source_listing_id": "listing_id",
     "title": "title",
@@ -19,6 +21,11 @@
     "registration": "registration",
     "transfers": "transfers",
     "vin": "vin",
+    "description": "description",
+    "features": "features",
+    "listing_facts": "listing_facts",
+    "condition_checks": "condition_checks",
+    "extra_specs": "extra_specs",
     "status": "status",
     "updated_at": "updated_at",
     "photo_urls": "photo_urls",
