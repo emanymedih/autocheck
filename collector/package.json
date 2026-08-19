@@ -7,6 +7,7 @@
     "start": "node src/server.js",
     "import": "node src/import.js",
     "import:che168-pilot": "node src/import-che168-pilot.js",
+    "import:che168-dealer": "node src/import-che168-dealer.js",
     "test": "node --test"
   },
   "engines": {
