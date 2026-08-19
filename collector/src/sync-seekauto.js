@@ -10,6 +10,7 @@ import { JsonCatalogStore } from "./store/json-store.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROVIDER_ID = "seekauto-public";
+const PUBLIC_PLATFORM = "SeekAuto";
 const DEFAULT_STORE = path.resolve(__dirname, "../.state/seekauto-catalog.json");
 const DEFAULT_PUBLIC = path.resolve(__dirname, "../data/global-public-catalog.json");
 const DEFAULT_BOOTSTRAP_IDS = [
@@ -108,6 +109,18 @@ function publicVehicleKey(vehicle) {
   return `id:${String(vehicle?.id || "")}`;
 }
 
+function isPublishableSeekAuto(vehicle) {
+  const title = String(vehicle?.title || "").trim();
+  if (!title || /^(?:seekauto|used cars?|car detail)$/i.test(title)) return false;
+  if (!vehicle?.id) return false;
+  if (!vehicle?.year && !vehicle?.registration) return false;
+  if (vehicle?.mileage === null || vehicle?.mileage === undefined) return false;
+  if (!Array.isArray(vehicle?.photos) || vehicle.photos.length === 0) return false;
+  const meaningful = [vehicle.brand, vehicle.model, vehicle.body, vehicle.energyType, vehicle.engine, vehicle.transmission]
+    .filter((value) => String(value || "").trim()).length;
+  return meaningful >= 2;
+}
+
 async function readJson(filePath, fallback) {
   try {
     return JSON.parse(await fs.readFile(filePath, "utf8"));
@@ -120,12 +133,18 @@ async function readJson(filePath, fallback) {
 async function writePublicSnapshot(store, filePath) {
   const data = await store.read();
   const normalized = data.vehicles.filter((vehicle) => vehicle.source?.providerId === PROVIDER_ID);
-  const managed = dedupeNormalizedListings(normalized).vehicles.map(toPublicVehicle);
+  const managedAll = dedupeNormalizedListings(normalized).vehicles.map(toPublicVehicle);
+  const managed = managedAll.filter(isPublishableSeekAuto);
+  const rejected = managedAll.length - managed.length;
+  if (!managed.length) throw new Error("SeekAuto quality gate rejected every managed listing");
+
   const existing = await readJson(filePath, { updatedAt: null, items: [] });
+  const existingWithoutSeekAuto = (Array.isArray(existing.items) ? existing.items : [])
+    .filter((vehicle) => vehicle?.listingPlatform !== PUBLIC_PLATFORM);
   const byKey = new Map();
   let duplicates = 0;
 
-  for (const vehicle of [...(Array.isArray(existing.items) ? existing.items : []), ...managed]) {
+  for (const vehicle of [...existingWithoutSeekAuto, ...managed]) {
     if (!vehicle?.id) continue;
     const key = publicVehicleKey(vehicle);
     if (byKey.has(key)) duplicates += 1;
@@ -134,7 +153,7 @@ async function writePublicSnapshot(store, filePath) {
 
   const items = [...byKey.values()];
   await writeJson(filePath, { updatedAt: data.updatedAt || new Date().toISOString(), items });
-  return { items: items.length, duplicates };
+  return { items: items.length, managed: managed.length, rejected, duplicates };
 }
 
 async function main() {
@@ -231,6 +250,8 @@ async function main() {
     snapshotApplied: false,
     completeSnapshot: false,
     publicItems: publicSummary.items,
+    publicSeekAutoItems: publicSummary.managed,
+    qualityRejected: publicSummary.rejected,
     publicDuplicatesRemoved: publicSummary.duplicates,
     errors: [...discovery.errors, ...detail.errors],
     state: {
