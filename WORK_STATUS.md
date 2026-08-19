@@ -55,7 +55,35 @@
 - sanitized public snapshot;
 - защита от ложной массовой деактивации;
 - CI tests;
-- one-shot GitHub Actions live import.
+- автоматический GitHub Actions live sync каждые 6 часов;
+- ручной запуск live sync;
+- блокировка параллельных sync-run;
+- baseline перед каждым импортом;
+- diff `added / updated / missing / sold` по стабильному `vehicle_id`;
+- health gate перед публикацией;
+- audit artifact каждого sync-run;
+- публичный sanitized sync status без source IDs;
+- безопасная публикация snapshot только после успешной проверки.
+
+### Автоматический live sync
+
+Текущий pilot-цикл:
+
+`cron / manual trigger → tests → baseline → import 50 cards → diff → health gate → audit artifact → sanitized snapshot → cars.html`.
+
+Расписание: раз в 6 часов, cron `17 */6 * * *` UTC.
+
+Health gate проверяет:
+- импорт завершился успешно;
+- в новом batch минимум 35 машин;
+- доля ошибок не выше 25%;
+- отсутствуют duplicate vehicle_id;
+- основные поля записей валидны;
+- при наличии предыдущего baseline не исчезло более 85% выборки.
+
+Если gate не проходит, новый snapshot в `main` не публикуется. Старый рабочий каталог остаётся доступным.
+
+Diff фиксирует изменения полей автомобиля, включая цену, пробег, статус, фото и характеристики. Полный audit хранится как GitHub Actions artifact 14 дней.
 
 ### Global inventory pilot
 
@@ -73,17 +101,17 @@
 
 ### Production Catalog Collector
 
-Нужно:
+Pilot scheduler и audit уже работают через GitHub Actions. Для рабочего production-контура нужно:
 1. PostgreSQL вместо JSON store;
 2. постоянный разрешённый inventory channel;
-3. scheduler;
-4. import jobs и audit log;
-5. retries и обработка частичных ошибок;
+3. перенести scheduler из GitHub Actions в backend/worker infrastructure при росте объёма;
+4. постоянные `collector_runs` и audit log в БД;
+5. retries/backoff и provider-level error policy;
 6. object storage/CDN для фотографий;
-7. повторная синхронизация и diff;
-8. правило для исчезнувших объявлений без явного sold;
-9. единая модель цены/валюты для нескольких источников;
-10. дедупликация одной физической машины между источниками.
+7. правило для исчезнувших объявлений без явного sold;
+8. единая модель цены/валюты для нескольких источников;
+9. дедупликация одной физической машины между источниками;
+10. мониторинг SLA источников и freshness inventory.
 
 ### Карточка автомобиля
 
@@ -118,7 +146,7 @@
 ## Пока отсутствует
 
 - PostgreSQL;
-- production scheduler;
+- production worker scheduler вне GitHub Actions;
 - постоянный партнёрский feed/API;
 - production media storage/CDN;
 - Vehicle Resolver по VIN;
@@ -139,18 +167,19 @@
 
 ## Следующая P0-задача
 
-### Доказать повторяемую синхронизацию live inventory
+### Наблюдать автоматический sync и перейти к устойчивой актуальности
 
 Критерий:
 
-`baseline → новый import → diff по vehicle_id → added / updated / disappeared / sold → изменения видны в обычной cars.html`.
+`несколько последовательных cron-run → audit healthy → stable vehicle_id → корректные price/mileage/status changes → безопасная публикация`.
 
 План:
-1. сохранить текущий snapshot как baseline;
-2. повторить live-import;
-3. построить diff;
-4. сверить минимум 10 карточек;
-5. проверить изменение цены, пробега и статуса;
-6. определить правило deactivation;
-7. увеличить batch до 100–500 автомобилей;
-8. после стабильного цикла перейти на PostgreSQL + scheduler.
+1. накопить несколько автоматических запусков;
+2. сверить diff минимум по 10 карточкам;
+3. проверить реальные price/mileage changes;
+4. поймать и проверить явный `sold`;
+5. определить правило для `missing` без `sold`;
+6. увеличить batch до 100–500 автомобилей после подтверждения стабильности;
+7. перенести inventory в PostgreSQL;
+8. добавить persistent collector_runs, retries и provider health;
+9. перейти на постоянный разрешённый feed/API.
