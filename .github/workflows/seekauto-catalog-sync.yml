@@ -79,6 +79,7 @@ jobs:
             collector/data/seekauto-import-result.json
             collector/data/seekauto-sync-report.json
             collector/data/seekauto-sync-status.json
+            assets/catalog-thumbs
           if-no-files-found: warn
           retention-days: 14
 
@@ -94,6 +95,9 @@ jobs:
           rm -f collector/data/seekauto-sync-report.json
 
           git add collector/data/global-public-catalog.json collector/data/seekauto-sync-status.json
+          if [ -d assets/catalog-thumbs ]; then
+            git add assets/catalog-thumbs
+          fi
           if git diff --cached --quiet; then
             echo "Healthy SeekAuto public snapshot unchanged"
             exit 0
