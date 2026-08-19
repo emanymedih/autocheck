@@ -65,6 +65,8 @@ test("SeekAuto detail JSON maps target vehicle into canonical source data", () =
   assert.equal(raw.registration, "2025/07/10");
   assert.equal(raw.mileage_km, 23000);
   assert.equal(raw.price, 268000);
+  assert.equal(raw.price_text, "¥268000");
+  assert.equal(raw.fob_price_text, "$37,000");
   assert.equal(raw.currency, "CNY");
   assert.equal(raw.energy_type, "Pure Electric");
   assert.equal(raw.transmission, "Automatic");
@@ -74,6 +76,7 @@ test("SeekAuto detail JSON maps target vehicle into canonical source data", () =
   assert.equal(raw.listing_platform, "SeekAuto");
   assert.equal(raw.status, "active");
   assert.equal(raw.description, "original paint, untouched");
+  assert.ok(raw.extra_specs.some((item) => item.label === "Топливо" && item.value === "Pure Electric"));
 
   const normalized = normalizeListing(raw, { providerId: "seekauto-public" });
   const publicVehicle = toPublicVehicle(normalized);
@@ -81,13 +84,22 @@ test("SeekAuto detail JSON maps target vehicle into canonical source data", () =
   assert.equal(publicVehicle.listingPlatform, "SeekAuto");
   assert.equal(publicVehicle.currency, "CNY");
   assert.equal(publicVehicle.price, 268000);
+  assert.equal(publicVehicle.priceText, "¥268000");
+  assert.equal(publicVehicle.fobPriceText, "$37,000");
   assert.equal(Object.hasOwn(publicVehicle, "source"), false);
 });
 
-test("SeekAuto masked source prices stay null instead of being inferred", () => {
+test("SeekAuto masked source prices stay non-numeric but remain visible", () => {
   const raw = parseSeekAutoDetailData({ ...activeDetail, price: "2*****", currency_price: "$3****" });
   assert.equal(raw.price, null);
+  assert.equal(raw.price_text, "¥2*****");
+  assert.equal(raw.fob_price_text, "$3****");
   assert.equal(raw.currency, "CNY");
+
+  const publicVehicle = toPublicVehicle(normalizeListing(raw, { providerId: "seekauto-public" }));
+  assert.equal(publicVehicle.price, null);
+  assert.equal(publicVehicle.priceText, "¥2*****");
+  assert.equal(publicVehicle.fobPriceText, "$3****");
 });
 
 test("SeekAuto recommendation JSON yields stable listing codes for graph discovery", () => {
