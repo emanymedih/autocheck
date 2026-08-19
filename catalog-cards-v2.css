@@ -1,0 +1,334 @@
+.catalog-page .catalog-grid {
+  grid-template-columns: 1fr !important;
+  gap: 14px !important;
+}
+
+.catalog-page .catalog-grid .catalog-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 212px;
+  display: grid;
+  grid-template-columns: minmax(240px, 286px) minmax(0, 1fr);
+  gap: 0;
+  padding: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--page);
+  box-shadow: none;
+  transform: none;
+}
+
+.catalog-page .catalog-grid .catalog-card:hover {
+  transform: none;
+  border-color: color-mix(in srgb, var(--brand) 38%, var(--line));
+  box-shadow: 0 10px 28px rgba(23, 34, 28, .06);
+}
+
+.catalog-page .catalog-grid .catalog-card-media {
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  min-height: 184px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--soft);
+}
+
+.catalog-page .catalog-grid .catalog-card-media img.catalog-live-photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.catalog-page .catalog-grid .catalog-card-media .catalog-live-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.catalog-page .catalog-grid .catalog-card-status,
+.catalog-page .catalog-grid .catalog-card-ready {
+  top: auto;
+  right: 10px;
+  bottom: 10px;
+  left: auto;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(33, 118, 87, .92);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.catalog-page .catalog-grid .catalog-card-status.inactive {
+  background: rgba(93, 98, 95, .92);
+}
+
+.catalog-page .catalog-grid .catalog-card-status.unknown {
+  background: rgba(151, 113, 46, .94);
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-body {
+  min-width: 0;
+  padding: 5px 4px 5px 20px !important;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(162px, 190px);
+  gap: 24px;
+}
+
+.catalog-card-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 h3 {
+  margin: 0;
+  max-width: 720px;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.catalog-card-color {
+  min-height: 20px;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.catalog-card-specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 26px;
+  row-gap: 5px;
+  margin-top: 15px;
+  max-width: 620px;
+}
+
+.catalog-card-specs span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.catalog-card-source {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "mark label"
+    "mark detail";
+  column-gap: 9px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.catalog-card-source-mark {
+  grid-area: mark;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.catalog-card-source strong {
+  grid-area: label;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.catalog-card-source span.catalog-card-source-detail {
+  grid-area: detail;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.catalog-card-side {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.catalog-card-year {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 780;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+}
+
+.catalog-card-mileage {
+  margin-top: 5px;
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-price {
+  margin: 16px 0 0 !important;
+  color: var(--text);
+  font-size: 23px;
+  font-weight: 850;
+  line-height: 1.1;
+  letter-spacing: -.025em;
+  white-space: nowrap;
+}
+
+.catalog-card-price-note {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-actions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-request,
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-open {
+  min-height: 40px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-request {
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  background: var(--page);
+  color: var(--text);
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-request:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-open {
+  width: 40px;
+  border: 1px solid var(--line);
+  background: var(--page);
+  color: var(--text);
+  font-size: 18px;
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-open:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-request[disabled] {
+  opacity: .45;
+  cursor: default;
+}
+
+html[data-theme="dark"] .catalog-page .catalog-grid .catalog-card:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .18);
+}
+
+@media (max-width: 980px) {
+  .catalog-page .catalog-grid .catalog-card {
+    grid-template-columns: minmax(210px, 250px) minmax(0, 1fr);
+  }
+
+  .catalog-page .catalog-grid .catalog-card-v2 .catalog-card-body {
+    grid-template-columns: minmax(0, 1fr) 150px;
+    gap: 16px;
+    padding-left: 16px !important;
+  }
+
+  .catalog-card-specs {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+}
+
+@media (max-width: 720px) {
+  .catalog-page .catalog-grid .catalog-card {
+    display: block;
+    padding: 10px;
+  }
+
+  .catalog-page .catalog-grid .catalog-card-media {
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
+
+  .catalog-page .catalog-grid .catalog-card-v2 .catalog-card-body {
+    padding: 16px 4px 4px !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .catalog-card-specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalog-card-side {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "year price"
+      "mileage note"
+      "actions actions";
+    align-items: start;
+    gap: 4px 18px;
+    text-align: left;
+  }
+
+  .catalog-card-year { grid-area: year; }
+  .catalog-card-mileage { grid-area: mileage; margin-top: 0; }
+  .catalog-page .catalog-grid .catalog-card-v2 .catalog-card-price { grid-area: price; margin: 0 !important; text-align: right; }
+  .catalog-card-price-note { grid-area: note; margin-top: 0; text-align: right; }
+  .catalog-page .catalog-grid .catalog-card-v2 .catalog-card-actions { grid-area: actions; margin-top: 12px; }
+}
+
+@media (max-width: 480px) {
+  .catalog-card-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-page .catalog-grid .catalog-card-v2 h3 {
+    font-size: 18px;
+  }
+}
