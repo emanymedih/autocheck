@@ -63,7 +63,6 @@ export function parseCatalogQuery(searchParams) {
   const page = legacyOffset === null
     ? clampInteger(searchParams.get("page"), 1, 1, Number.MAX_SAFE_INTEGER)
     : Math.floor(legacyOffset / pageSize) + 1;
-  const offset = legacyOffset ?? (page - 1) * pageSize;
 
   const requestedSort = lower(searchParams.get("sort"));
   const sort = ALLOWED_SORTS.has(requestedSort) ? requestedSort : "updated-desc";
@@ -84,8 +83,7 @@ export function parseCatalogQuery(searchParams) {
     mileageMax: finiteNumber(searchParams.get("mileage_max")),
     sort,
     page,
-    pageSize,
-    offset
+    pageSize
   };
 }
 
@@ -131,17 +129,19 @@ export function filterAndPaginateVehicles(vehicles, searchParams) {
 
   const total = result.length;
   const totalPages = Math.max(1, Math.ceil(total / query.pageSize));
-  const items = result.slice(query.offset, query.offset + query.pageSize);
+  const page = Math.min(query.page, totalPages);
+  const offset = (page - 1) * query.pageSize;
+  const items = result.slice(offset, offset + query.pageSize);
 
   return {
     items,
     total,
-    page: query.page,
+    page,
     pageSize: query.pageSize,
     totalPages,
-    hasPrevious: query.page > 1,
-    hasNext: query.offset + query.pageSize < total,
-    query
+    hasPrevious: page > 1,
+    hasNext: page < totalPages,
+    query: { ...query, page }
   };
 }
 
