@@ -4,252 +4,153 @@
 
 ## Реализовано
 
-### Каталог: серверные фильтры и пагинация
+### Каталог Авточек
 
 Готово:
-- поиск `q`;
-- марка;
-- город;
-- кузов;
-- тип силовой установки;
-- статус;
-- точный год и диапазон года;
-- диапазон цены;
-- диапазон пробега;
-- серверная сортировка;
-- page-based пагинация;
-- endpoint facets для значений фильтров;
-- URL каталога хранит выбранные фильтры и страницу;
-- карточки `inactive` отображаются как снятые с продажи и блокируют новый заказ отчёта;
-- frontend поддерживает CNY, USD, EUR и RUB.
+- обычная `cars.html` показывает текущий live snapshot без специального query-параметра;
+- на GitHub Pages `catalog-static-api.js` подменяет каталоговый `/api` локальным sanitized snapshot;
+- при появлении настоящего backend тот же frontend может работать через `/api/vehicles` и `/api/vehicles/facets`;
+- поиск;
+- фильтры по марке, городу, кузову, силовой установке, году, цене, пробегу и статусу;
+- сортировка;
+- пагинация;
+- URL хранит выбранные фильтры;
+- поддержка CNY, USD, EUR и RUB;
+- реальные фотографии и статусы автомобилей;
+- переход в data-driven `vehicle.html`;
+- карточка открывается по sessionStorage и напрямую по `vehicle_id` через тот же static/API bridge.
 
-Рабочая схема:
+Текущий frontend-контур:
 
-`cars.html → query params → GET /api/vehicles → server filters → pagination → PublicVehicleDTO[] → catalog cards`
+`live sanitized snapshot / backend API → catalog-static-api или /api → catalog-client → cars.html → vehicle.html`.
 
-### Карточка автомобиля: data-driven
+### Карточка автомобиля
 
 Готово:
-- заголовок;
-- цена и валюта;
-- год;
-- пробег;
-- город;
-- регистрация;
-- двигатель;
-- коробка;
-- кузов;
-- тип силовой установки;
-- цвета;
-- VIN;
+- заголовок, цена и валюта;
+- год, пробег, город, регистрация;
+- двигатель, коробка, кузов и силовая установка;
+- цвета, VIN при наличии;
 - дополнительные характеристики;
-- реальные фотографии;
+- фотографии;
 - статус продажи;
-- описание;
-- предварительные факты;
-- предварительное состояние;
-- оснащение;
-- empty-state для отсутствующих разделов;
+- описание, предварительные факты, состояние и оснащение;
+- empty-state для отсутствующих данных;
 - блокировка CTA для снятой с продажи машины.
-
-Все публичные блоки формируются из `VehiclePublicDTO`. Статические сведения Audi используются только как демонстрационный fallback при открытии страницы без `vehicle_id`.
-
-### Single-listing pilot
-
-Подключена одна реально опубликованная карточка Audi A3 через `Che168PilotProvider`.
-
-Проверена цепочка:
-
-`detail URL → Provider → Normalizer → Catalog Store → PublicVehicleDTO → cars.html → vehicle.html`.
-
-### Dealer inventory pilot adapter
-
-Добавлен `Che168DealerInventoryProvider`.
-
-Он умеет:
-- принимать `dealer_id`;
-- начинать discovery со страницы `/dealer/carlist.html?dealerid={dealer_id}`;
-- находить detail URL формата `/dealer/{dealer_id}/{listing_id}.html`;
-- находить ссылки пагинации внутри dealer inventory;
-- дедуплицировать `listing_id`;
-- ограничивать pilot параметром `--limit`;
-- загружать detail cards с ограниченной concurrency;
-- передавать каждую карточку существующему `Che168PilotProvider`;
-- собирать ошибки по inventory pages и individual listings;
-- вычислять `completeDiscovery` и `completeSnapshot`;
-- запрещать массовую деактивацию при частичном обходе, лимите страниц или ошибках detail-card.
-
-### Global export catalog pilot
-
-Добавлен `Che168GlobalCatalogProvider` для международной экспортной витрины.
-
-Проверен реальный live-import через GitHub Actions:
-
-`global catalog → detail cards → Global Provider → Normalizer → sanitized public snapshot → cars.html`.
-
-Готово:
-- discovery detail URL `/en/detail/{listing_id}`;
-- лимит страниц и количества автомобилей;
-- параллельная загрузка detail-card;
-- разбор цены в USD;
-- дата регистрации;
-- модельный год;
-- пробег;
-- тип силовой установки;
-- двигатель;
-- трансмиссия;
-- город;
-- кузов;
-- цвет;
-- привод;
-- места и двери;
-- масса и габариты;
-- реальные изображения;
-- распознавание явного состояния sold;
-- отдельный internal store;
-- отдельный sanitized public snapshot;
-- режим `cars.html?pilot=global`;
-- GitHub Actions one-shot workflow для live-import;
-- автоматические тесты перед импортом;
-- автоматическая публикация только sanitized snapshot.
-
-После первого live-run parser доработан на фактических данных:
-- расширено определение марок;
-- убраны повторения марки в title;
-- Hardtop Coupe нормализуется в `Купе / спорткар`;
-- Station Wagon нормализуется в `Универсал`;
-- габариты очищаются от footer text;
-- `--` в регистрации превращается в отсутствие значения;
-- год из названия автомобиля получает приоритет при конфликте с техническим полем карточки.
-
-Повторный live-run после этих исправлений успешно обновил sanitized snapshot.
-
-## Частично реализовано
 
 ### Catalog Collector
 
-Есть:
+Готово:
 - CSV/XLSX adapter;
 - mapping;
 - normalizer;
 - стабильный `vehicle_id`;
-- snapshot active/inactive;
 - JSON store;
+- snapshot active/inactive;
 - Public API;
-- фильтры;
-- facets;
-- пагинация;
-- data-driven detail fields;
-- single-listing pilot adapter;
-- dealer inventory pilot adapter;
-- global export catalog pilot adapter;
-- реальные multi-card данные и изображения;
+- фильтры, facets и пагинация;
+- single-listing pilot;
+- dealer inventory pilot;
+- global export catalog provider;
+- sanitized public snapshot;
 - защита от ложной массовой деактивации;
 - CI tests;
-- one-shot live import workflow.
+- one-shot GitHub Actions live import.
 
-Для рабочего production-варианта:
-1. заменить JSON store на PostgreSQL;
-2. выбрать постоянный разрешённый канал inventory;
-3. добавить scheduler;
-4. добавить import jobs и audit log;
-5. добавить retries и контроль частичных ошибок;
-6. подключить object storage/CDN для фотографий;
-7. проверить повторную синхронизацию на временном интервале;
-8. проверить реальный переход active → sold;
-9. определить production-правило цены и валюты;
-10. после стабильного цикла подключить Report Availability.
+### Global inventory pilot
 
-### Каталог Авточек
+Реальный live-import уже выполнен.
 
-Frontend и API-контракт готовы. Multi-card live snapshot уже формируется из экспортной витрины.
+Цепочка:
 
-Для production-варианта:
-1. подключить PostgreSQL-backed API по стабильному URL;
-2. убрать pilot query parameter после появления постоянного backend;
-3. прогнать фильтры на сотнях и тысячах машин;
-4. перенести фильтрацию/сортировку в SQL с индексами;
-5. определить единую валюту сортировки и фильтра цены;
-6. добавить SEO/серверный рендер позднее при необходимости индексации.
+`global catalog → detail cards → provider → normalizer → internal store → sanitized public snapshot → обычная cars.html`.
+
+Парсер получает цену, валюту, год, регистрацию, пробег, силовую установку, двигатель, трансмиссию, город, кузов, цвет, привод, места/двери, массу/габариты, фото и явное состояние sold.
+
+В public snapshot отсутствуют source URL, provider ID и исходный listing ID.
+
+## Частично реализовано
+
+### Production Catalog Collector
+
+Нужно:
+1. PostgreSQL вместо JSON store;
+2. постоянный разрешённый inventory channel;
+3. scheduler;
+4. import jobs и audit log;
+5. retries и обработка частичных ошибок;
+6. object storage/CDN для фотографий;
+7. повторная синхронизация и diff;
+8. правило для исчезнувших объявлений без явного sold;
+9. единая модель цены/валюты для нескольких источников;
+10. дедупликация одной физической машины между источниками.
 
 ### Карточка автомобиля
 
-Основная data-driven логика готова и принимает реальные карточки.
-
-Для production-варианта:
-1. расширить DTO после накопления выборки разных автомобилей;
-2. улучшить нормализацию названий моделей и комплектаций;
-3. построить media pipeline;
-4. добавить актуальность карточки `last_seen_at` и `last_checked_at`;
-5. связать `vehicle_id` с `report_linkage`;
-6. добавить полный набор фотографий, если detail source отдаёт галерею отдельным data-layer.
+Нужно:
+1. улучшить нормализацию моделей и комплектаций;
+2. извлекать полную галерею, когда источник отдаёт её отдельно;
+3. добавить `last_seen_at` / `last_checked_at`;
+4. построить media pipeline;
+5. связать `vehicle_id` с `report_linkage`.
 
 ## Реализовано на малую часть
 
 ### Report Availability
 
-Есть CTA и место в пользовательском сценарии.
+Есть CTA и продуктовый сценарий.
 
 Нужно:
-`vehicle_id → report_linkage → internal source availability → quote → public price`.
+`vehicle_id → report_linkage → availability → quote → public price`.
 
-Целевой endpoint:
-`POST /api/report-quotes`.
+Целевой endpoint: `POST /api/report-quotes`.
 
 ### Order Service
-
-Есть продуктовая state machine, рабочего backend пока нет.
 
 Нужно:
 `quote_id + vehicle_id + customer → report_order → payment → paid → queued`.
 
 ### Report Pipeline
 
-Есть архитектура и модель provenance.
-
-Нужно реализовать первый конкретный parser:
+Нужно:
 `raw report → parser → translator → normalizer → analyzer → AvtocheckReport`.
 
 ## Пока отсутствует
 
-- постоянный production feed/API с согласованным режимом использования;
 - PostgreSQL;
-- scheduler Collector;
+- production scheduler;
+- постоянный партнёрский feed/API;
 - production media storage/CDN;
 - Vehicle Resolver по VIN;
-- Report Quote service;
+- Report Quote Service;
 - Order Service;
 - платёжный провайдер;
 - China Source Worker;
 - автоматическая покупка исходного отчёта;
 - raw report storage;
-- production parser/translator/normalizer;
+- production report parser/translator/normalizer;
 - отдельный Report Viewer;
 - аккаунты клиентов;
 - история заказов;
 - уведомления;
 - refund flow;
-- дедупликация одного физического автомобиля между несколькими источниками;
+- cross-source dedup;
 - admin/monitoring.
 
-## Следующая план-задача
+## Следующая P0-задача
 
-### P0 — доказать повторную синхронизацию Global inventory
+### Доказать повторяемую синхронизацию live inventory
 
-Критерий готовности:
+Критерий:
 
-`Global catalog → live batch → vehicle_id → Авточек → повторный import → сравнение → корректные изменения цены/пробега/status`.
+`baseline → новый import → diff по vehicle_id → added / updated / disappeared / sold → изменения видны в обычной cars.html`.
 
-Подзадачи:
-1. сохранить текущий live snapshot как baseline;
-2. повторить импорт через выбранный интервал;
-3. построить diff по `vehicle_id`;
-4. показать added / updated / disappeared / sold;
-5. вручную сверить 10 detail-card с данными Авточек;
-6. улучшить извлечение полной галереи;
-7. определить правило для missing listing без явного sold;
-8. перенести inventory в PostgreSQL;
-9. добавить scheduler и import audit;
-10. параллельно готовить постоянный партнёрский feed.
-
-Следующий рубеж ядра: автоматический повторяемый sync живого многокарточного inventory с контролируемой актуальностью.
+План:
+1. сохранить текущий snapshot как baseline;
+2. повторить live-import;
+3. построить diff;
+4. сверить минимум 10 карточек;
+5. проверить изменение цены, пробега и статуса;
+6. определить правило deactivation;
+7. увеличить batch до 100–500 автомобилей;
+8. после стабильного цикла перейти на PostgreSQL + scheduler.
