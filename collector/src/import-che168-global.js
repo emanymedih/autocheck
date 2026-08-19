@@ -47,6 +47,7 @@ async function writeResult(filePath, result) {
 }
 
 const args = argsFrom(process.argv.slice(2));
+const runStartedAt = new Date().toISOString();
 
 try {
   const targetListings = positiveInteger(args.limit, 20);
@@ -59,7 +60,6 @@ try {
     detailConcurrency: concurrency
   });
 
-  const startedAt = new Date().toISOString();
   const { rows, meta } = await provider.read();
   if (!rows.length) throw new Error("No global catalog listings were imported");
 
@@ -88,9 +88,10 @@ try {
   const publicItems = await writePublicSnapshot(store, publicPath);
 
   const result = {
+    success: true,
     mode: "che168-global-pilot",
     providerId: PROVIDER_ID,
-    startedAt,
+    startedAt: runStartedAt,
     finishedAt: new Date().toISOString(),
     targetListings,
     maxPages,
@@ -107,6 +108,22 @@ try {
   if (resultPath) result.resultPath = resultPath;
   console.log(JSON.stringify(result, null, 2));
 } catch (error) {
+  const failure = {
+    success: false,
+    mode: "che168-global-pilot",
+    providerId: PROVIDER_ID,
+    startedAt: runStartedAt,
+    finishedAt: new Date().toISOString(),
+    targetListings: positiveInteger(args.limit, 20),
+    maxPages: positiveInteger(args.pages, 5),
+    concurrency: positiveInteger(args.concurrency, 3),
+    error: error.message
+  };
+  try {
+    await writeResult(args.result, failure);
+  } catch (writeError) {
+    console.error(`Could not persist failed import metadata: ${writeError.message}`);
+  }
   console.error(error.stack || error.message);
   process.exitCode = 1;
 }
