@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Автомобили, для которых можно запросить проверку истории через Авточек." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Автомобили — Авточек</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("avtocheck-theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : (systemDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch (_) {
+        document.documentElement.dataset.theme = "light";
+        document.documentElement.style.colorScheme = "light";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Авточек — главная">
+        <span class="brand-mark">A</span>
+        <span class="brand-word">АВТОЧЕК</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="cars.html" aria-current="page">Автомобили</a>
+        <a href="index.html#report">Что в отчёте</a>
+        <a href="index.html#difference">Почему Авточек</a>
+        <a href="index.html#how">Как работает</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false" title="Тёмная тема">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.5"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.2A8 8 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+          </svg>
+        </button>
+        <a class="header-cta" href="index.html#check">Проверить VIN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="catalog-page">
+    <div class="content-container">
+      <a class="catalog-back" href="index.html">← На главную</a>
+      <span class="catalog-demo-note">Демонстрационный каталог до подключения живых предложений</span>
+
+      <section class="catalog-page-intro" aria-labelledby="catalogTitle">
+        <div>
+          <p class="section-eyebrow">АВТОМОБИЛИ С ДОСТУПНОЙ ПРОВЕРКОЙ</p>
+          <h1 id="catalogTitle">Выберите автомобиль. Историю запросим через Авточек.</h1>
+        </div>
+        <p>Здесь будут собраны актуальные предложения автомобилей с пробегом. Карточка остаётся внутри Авточек: пользователь выбирает машину, просматривает её данные и запускает заказ отчёта в одном интерфейсе.</p>
+      </section>
+
+      <section aria-label="Фильтры каталога">
+        <div class="catalog-toolbar">
+          <input id="catalogSearch" type="search" placeholder="Марка, модель или кузов" aria-label="Поиск по автомобилям" />
+          <select id="catalogCity" aria-label="Город"><option value="">Все города</option></select>
+          <select id="catalogSort" aria-label="Сортировка">
+            <option value="year">Сначала новее</option>
+            <option value="price-asc">Цена: по возрастанию</option>
+            <option value="price-desc">Цена: по убыванию</option>
+            <option value="mileage">Меньше пробег</option>
+          </select>
+        </div>
+        <p class="catalog-count" id="catalogCount">Найдено: 0</p>
+        <div class="catalog-grid" id="catalogRoot" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-container footer-inner">
+      <a class="footer-brand" href="index.html"><span>A</span> АВТОЧЕК</a>
+      <div class="footer-links"><a href="cars.html">Автомобили</a><a href="index.html#report">Что в отчёте</a><a href="index.html#how">Как работает</a><a href="index.html#faq">FAQ</a></div>
+      <span>© 2026 Авточек</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
