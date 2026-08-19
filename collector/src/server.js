@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { JsonCatalogStore } from "./store/json-store.js";
 import { toPublicVehicle } from "./normalizer.js";
+import { buildVehicleFacets, filterAndPaginateVehicles } from "./catalog-query.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const store = new JsonCatalogStore(process.env.CATALOG_STORE || path.resolve(__dirname, "../data/catalog.json"));
@@ -18,12 +19,6 @@ function json(res, statusCode, payload) {
   res.end(JSON.stringify(payload));
 }
 
-function clampInteger(value, fallback, min, max) {
-  const number = Number.parseInt(value, 10);
-  if (!Number.isFinite(number)) return fallback;
-  return Math.min(max, Math.max(min, number));
-}
-
 const server = http.createServer(async (req, res) => {
   if (!req.url || req.method !== "GET") return json(res, 405, { error: "method_not_allowed" });
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
@@ -34,29 +29,31 @@ const server = http.createServer(async (req, res) => {
 
   const storeData = await store.read();
 
+  if (url.pathname === "/api/vehicles/facets") {
+    return json(res, 200, {
+      facets: buildVehicleFacets(storeData.vehicles),
+      updatedAt: storeData.updatedAt
+    });
+  }
+
   if (url.pathname === "/api/vehicles") {
-    const query = (url.searchParams.get("q") || "").trim().toLowerCase();
-    const city = (url.searchParams.get("city") || "").trim();
-    const includeInactive = url.searchParams.get("include_inactive") === "1";
-    const limit = clampInteger(url.searchParams.get("limit"), 100, 1, 500);
-    const offset = clampInteger(url.searchParams.get("offset"), 0, 0, Number.MAX_SAFE_INTEGER);
-
-    let vehicles = storeData.vehicles.filter((vehicle) => includeInactive || vehicle.status === "active");
-    if (city) vehicles = vehicles.filter((vehicle) => vehicle.city === city);
-    if (query) {
-      vehicles = vehicles.filter((vehicle) => `${vehicle.title || ""} ${vehicle.brand || ""} ${vehicle.model || ""} ${vehicle.body || ""}`.toLowerCase().includes(query));
-    }
-
-    vehicles.sort((a, b) => String(b.sourceUpdatedAt || b.lastSeenAt || "").localeCompare(String(a.sourceUpdatedAt || a.lastSeenAt || "")));
-    const total = vehicles.length;
-    const items = vehicles.slice(offset, offset + limit).map(toPublicVehicle);
-    return json(res, 200, { items, total, limit, offset, updatedAt: storeData.updatedAt });
+    const result = filterAndPaginateVehicles(storeData.vehicles, url.searchParams);
+    return json(res, 200, {
+      items: result.items.map(toPublicVehicle),
+      total: result.total,
+      page: result.page,
+      pageSize: result.pageSize,
+      totalPages: result.totalPages,
+      hasPrevious: result.hasPrevious,
+      hasNext: result.hasNext,
+      updatedAt: storeData.updatedAt
+    });
   }
 
   const match = url.pathname.match(/^\/api\/vehicles\/([^/]+)$/);
   if (match) {
     const id = decodeURIComponent(match[1]);
-    const vehicle = storeData.vehicles.find((item) => item.id === id && item.status === "active");
+    const vehicle = storeData.vehicles.find((item) => item.id === id);
     if (!vehicle) return json(res, 404, { error: "vehicle_not_found" });
     return json(res, 200, { vehicle: toPublicVehicle(vehicle) });
   }
