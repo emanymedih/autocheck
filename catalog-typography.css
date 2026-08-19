@@ -22,8 +22,29 @@
   line-height: 1.4 !important;
 }
 .catalog-page .catalog-grid .catalog-card-v2 .catalog-card-specs span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   font-size: 15px !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
+  white-space: normal;
+}
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-specs small {
+  color: var(--muted);
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+}
+.catalog-page .catalog-grid .catalog-card-v2 .catalog-card-description {
+  display: -webkit-box;
+  max-width: 660px;
+  margin: 12px 0 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .catalog-page .catalog-grid .catalog-card-v2 .catalog-card-source strong {
   font-size: 13px !important;
