@@ -51,7 +51,7 @@ jobs:
         run: >-
           npm run sync:seekauto --
           --limit 60
-          --concurrency 4
+          --concurrency 2
           --recheck 20
           --missing-threshold 2
           --result data/seekauto-import-result.json
