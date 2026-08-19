@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Карточка автомобиля с возможностью запросить отчёт через Авточек." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Карточка автомобиля — Авточек</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("avtocheck-theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : (systemDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch (_) {
+        document.documentElement.dataset.theme = "light";
+        document.documentElement.style.colorScheme = "light";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="vehicle.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Авточек — главная"><span class="brand-mark">A</span><span class="brand-word">АВТОЧЕК</span></a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="cars.html" aria-current="page">Автомобили</a>
+        <a href="index.html#report">Что в отчёте</a>
+        <a href="index.html#difference">Почему Авточек</a>
+        <a href="index.html#how">Как работает</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false" title="Тёмная тема">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8 8 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path></svg>
+        </button>
+        <a class="header-cta" href="index.html#check">Проверить VIN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="vehicle-page">
+    <div class="content-container">
+      <div class="vehicle-breadcrumbs"><a href="cars.html">Автомобили</a><span>→</span><span>Audi A6L</span></div>
+      <span class="vehicle-demo-note">Демонстрационная карточка на референсных данных</span>
+
+      <section class="vehicle-layout" aria-labelledby="vehicleTitle">
+        <div class="vehicle-gallery" aria-label="Галерея автомобиля">
+          <div class="vehicle-gallery-main" id="vehicleMainVisual"></div>
+          <div class="vehicle-gallery-tile" id="vehicleVisualTwo"></div>
+          <div class="vehicle-gallery-tile" id="vehicleVisualThree"></div>
+        </div>
+
+        <aside class="vehicle-summary">
+          <div class="vehicle-status-row"><span class="vehicle-chip ready">Можно запросить отчёт</span><span class="vehicle-chip">В продаже</span></div>
+          <h1 id="vehicleTitle">Audi A6L</h1>
+          <p class="vehicle-trim">2022 · 45 TFSI · спортивная комплектация</p>
+          <span class="vehicle-price-label">Цена автомобиля</span>
+          <div class="vehicle-price">252 800 ¥ <small>референсная цена</small></div>
+          <div class="vehicle-summary-grid">
+            <div><span>Регистрация</span><strong>03.2022</strong></div>
+            <div><span>Город</span><strong>Линьи</strong></div>
+            <div><span>Двигатель</span><strong>2.0T</strong></div>
+            <div><span>Коробка</span><strong>Автомат</strong></div>
+          </div>
+          <button class="vehicle-report-button" id="requestVehicleReport" type="button">Запросить отчёт</button>
+          <p class="vehicle-report-note">Авточек сначала проверит доступность отчёта. Платная операция запускается только после подтверждённой оплаты клиента.</p>
+          <div class="vehicle-request-state" id="vehicleRequestState" hidden></div>
+        </aside>
+      </section>
+
+      <section class="vehicle-content">
+        <div class="vehicle-main-column">
+          <article class="vehicle-panel">
+            <h2>Основные данные</h2>
+            <p class="vehicle-panel-lead">Поля, которые пользователь должен видеть ещё до заказа истории автомобиля.</p>
+            <div class="vehicle-spec-grid">
+              <div class="vehicle-spec"><span>Модель</span><strong>Audi A6L</strong></div>
+              <div class="vehicle-spec"><span>Год</span><strong>2022</strong></div>
+              <div class="vehicle-spec"><span>Первая регистрация</span><strong>Март 2022</strong></div>
+              <div class="vehicle-spec"><span>Переоформлений</span><strong>1</strong></div>
+              <div class="vehicle-spec"><span>Объём двигателя</span><strong>2.0T</strong></div>
+              <div class="vehicle-spec"><span>Коробка передач</span><strong>Автоматическая</strong></div>
+              <div class="vehicle-spec"><span>Цвет кузова</span><strong>Чёрный</strong></div>
+              <div class="vehicle-spec"><span>Цвет салона</span><strong>Тёмный</strong></div>
+              <div class="vehicle-spec"><span>VIN</span><strong>Уточняется системой</strong></div>
+            </div>
+          </article>
+
+          <article class="vehicle-panel">
+            <h2>Что известно до отчёта</h2>
+            <p class="vehicle-panel-lead">Это предварительные сведения из карточки продажи. Они помогают понять предложение, но не заменяют отчёт Авточек.</p>
+            <div class="vehicle-facts">
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">1</span><div><strong>История владения</strong><span>В карточке указана личная эксплуатация и одно переоформление.</span></div></div>
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">2</span><div><strong>Обслуживание</strong><span>Продавцом заявлено обслуживание в авторизованной сервисной сети.</span></div></div>
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">3</span><div><strong>Кузов</strong><span>Указана замена правой передней двери. Остальные панели описаны как сохранившие заводское состояние окраски.</span></div></div>
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">4</span><div><strong>Оснащение</strong><span>Заявлены заводские 20-дюймовые колёса, сиденья с ромбовидной прострочкой и вентиляция передних сидений.</span></div></div>
+            </div>
+          </article>
+
+          <article class="vehicle-panel">
+            <h2>Предварительное состояние</h2>
+            <p class="vehicle-panel-lead">Отдельный слой карточки. Здесь показываются только доступные результаты предварительного осмотра с обязательной оговоркой об их происхождении.</p>
+            <div class="vehicle-facts">
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">✓</span><div><strong>Силовая структура</strong><span>В референсной карточке указано отсутствие признаков серьёзного ДТП по проверенным силовым элементам.</span></div></div>
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">~</span><div><strong>Проверка на затопление</strong><span>Общий итог отмечен как без признаков затопления, при этом в подкатегории присутствуют два замечания. В Авточек такие детали должны показываться отдельно от общего вывода.</span></div></div>
+              <div class="vehicle-fact"><span class="vehicle-fact-icon">✓</span><div><strong>Проверка на пожар</strong><span>В референсном осмотре основные контрольные признаки отмечены как пройденные.</span></div></div>
+            </div>
+          </article>
+
+          <article class="vehicle-panel">
+            <h2>Оснащение</h2>
+            <p class="vehicle-panel-lead">Из карточки продажи можно нормализовать полезные для покупателя опции.</p>
+            <div class="vehicle-features">
+              <span class="vehicle-feature">Круговой обзор 360°</span><span class="vehicle-feature">Auto Hold</span><span class="vehicle-feature">Круиз-контроль</span><span class="vehicle-feature">Парктроники</span><span class="vehicle-feature">Голосовое управление</span><span class="vehicle-feature">Подключённые сервисы</span><span class="vehicle-feature">Центральный дисплей</span><span class="vehicle-feature">Помощь на дороге</span>
+            </div>
+          </article>
+        </div>
+
+        <aside class="vehicle-side-column">
+          <div class="vehicle-report-box">
+            <p class="section-eyebrow">ОТЧЁТ АВТОЧЕК</p>
+            <h2>Проверка начинается из этой карточки.</h2>
+            <p>Пользователю не нужно переходить на внешний сайт или разбираться в поставщиках данных.</p>
+            <div class="vehicle-report-steps">
+              <div class="vehicle-report-step"><i>1</i><div><strong>Фиксируем автомобиль</strong><span>В заказ попадает внутренний vehicle_id и актуальная карточка.</span></div></div>
+              <div class="vehicle-report-step"><i>2</i><div><strong>Проверяем доступность</strong><span>Backend определяет, можно ли получить историю этой машины и сколько это стоит.</span></div></div>
+              <div class="vehicle-report-step"><i>3</i><div><strong>После оплаты получаем историю</strong><span>Исходные данные переводятся, нормализуются и собираются в единый отчёт.</span></div></div>
+            </div>
+            <button class="vehicle-report-button" id="requestVehicleReportSecondary" type="button">Запросить отчёт</button>
+            <div class="vehicle-source-rule">Источник предложения хранится внутри системы и не участвует в пользовательской навигации. Информация о месте продажи может появиться уже внутри готового отчёта как часть происхождения данных.</div>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="content-container footer-inner"><a class="footer-brand" href="index.html"><span>A</span> АВТОЧЕК</a><div class="footer-links"><a href="cars.html">Автомобили</a><a href="index.html#report">Что в отчёте</a><a href="index.html#how">Как работает</a><a href="index.html#faq">FAQ</a></div><span>© 2026 Авточек</span></div></footer>
+
+  <script src="app.js"></script>
+  <script src="vehicle.js"></script>
+</body>
+</html>
