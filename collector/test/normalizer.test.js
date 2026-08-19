@@ -20,12 +20,27 @@ test("normalizer creates stable internal id and public DTO hides source fields",
   assert.equal(vehicle.id, again.id);
   assert.equal(vehicle.mileage, 29000);
   assert.equal(vehicle.price, 252800);
+  assert.equal(vehicle.currency, "CNY");
   assert.deepEqual(vehicle.photos, ["https://img/1.jpg", "https://img/2.jpg"]);
 
   const publicVehicle = toPublicVehicle(vehicle);
   assert.equal(publicVehicle.title, "Audi A6L");
   assert.equal("source" in publicVehicle, false);
   assert.equal(JSON.stringify(publicVehicle).includes("source/listing/42"), false);
+});
+
+test("preserves explicit USD source price", () => {
+  const vehicle = normalizeListing({
+    ...raw,
+    source_listing_id: "usd-1",
+    price_cny: null,
+    price: "75,340",
+    currency: "USD"
+  }, { providerId: "global-pilot" });
+
+  assert.equal(vehicle.price, 75340);
+  assert.equal(vehicle.currency, "USD");
+  assert.equal(toPublicVehicle(vehicle).currency, "USD");
 });
 
 test("invalid VIN is not exposed as VIN", () => {
