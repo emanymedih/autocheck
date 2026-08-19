@@ -2,6 +2,8 @@ name: Global catalog pilot
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
   push:
     branches: [main]
     paths:
@@ -10,10 +12,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: live-catalog-sync
+  cancel-in-progress: false
+
 jobs:
   import-global-catalog:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: collector
@@ -26,27 +32,60 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm test
-      - name: Import 20 export listings
-        run: npm run import:che168-global -- --limit 20 --pages 2 --concurrency 3
-      - name: Validate public snapshot
-        run: |
-          node -e 'const fs=require("fs"); const p=JSON.parse(fs.readFileSync("data/global-public-catalog.json","utf8")); if (!Array.isArray(p.items) || p.items.length < 10) { throw new Error(`Expected at least 10 imported vehicles, got ${p.items?.length || 0}`); } console.log(`Imported ${p.items.length} public vehicles`);'
-      - uses: actions/upload-artifact@v4
+
+      - name: Save current public catalog as baseline
+        run: cp data/global-public-catalog.json data/global-public-catalog.baseline.json
+
+      - name: Import 50 export listings
+        id: live-import
+        continue-on-error: true
+        run: npm run import:che168-global -- --limit 50 --pages 4 --concurrency 3 --result data/global-import-result.json
+
+      - name: Build diff and apply health gate
+        run: >-
+          npm run audit:global-sync --
+          --baseline data/global-public-catalog.baseline.json
+          --current data/global-public-catalog.json
+          --import data/global-import-result.json
+          --report data/global-sync-report.json
+          --status data/global-sync-status.json
+          --min-items 35
+          --max-error-rate 0.25
+          --max-missing-rate 0.85
+
+      - name: Upload sync audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: global-catalog-pilot
+          name: global-catalog-sync
           path: |
             collector/data/global-catalog.json
+            collector/data/global-public-catalog.baseline.json
             collector/data/global-public-catalog.json
-          retention-days: 7
-      - name: Publish sanitized pilot snapshot
+            collector/data/global-import-result.json
+            collector/data/global-sync-report.json
+            collector/data/global-sync-status.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Publish healthy sanitized snapshot
+        if: success()
         working-directory: .
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector/data/global-public-catalog.json
+
+          git restore collector/data/global-catalog.json
+          rm -f collector/data/global-public-catalog.baseline.json
+          rm -f collector/data/global-import-result.json
+          rm -f collector/data/global-sync-report.json
+
+          git add collector/data/global-public-catalog.json collector/data/global-sync-status.json
           if git diff --cached --quiet; then
-            echo "Public snapshot unchanged"
+            echo "Healthy public snapshot unchanged"
             exit 0
           fi
-          git commit -m "Refresh global catalog pilot snapshot"
-          git push
+
+          git commit -m "Refresh live catalog snapshot"
+          git pull --rebase origin main
+          git push origin HEAD:main
