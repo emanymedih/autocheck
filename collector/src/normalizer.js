@@ -7,7 +7,8 @@ const ALLOWED_CURRENCIES = new Set(["CNY", "USD", "EUR", "RUB"]);
 const PUBLIC_PLATFORM_BY_PROVIDER = new Map([
   ["che168-global-pilot", "Autohome Global"],
   ["che168-pilot", "Che168"],
-  ["che168-dealer-pilot", "Che168"]
+  ["che168-dealer-pilot", "Che168"],
+  ["seekauto-public", "SeekAuto"]
 ]);
 
 function clean(value) {
