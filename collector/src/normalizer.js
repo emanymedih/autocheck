@@ -143,7 +143,9 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
     source: {
       providerId,
       listingId: sourceListingId,
-      url: clean(raw.source_url)
+      dealerId: clean(raw.source_dealer_id),
+      url: clean(raw.source_url),
+      checkedAt: clean(raw.checked_at) || now
     }
   };
 }
