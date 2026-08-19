@@ -1,3 +1,6 @@
+@import url("site-typography.css?v=20260819-2");
+@import url("catalog-typography.css?v=20260819-1");
+
 .catalog-page .catalog-grid {
   grid-template-columns: 1fr !important;
   gap: 14px !important;
