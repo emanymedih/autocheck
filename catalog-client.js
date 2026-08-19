@@ -28,7 +28,15 @@
   let debounceTimer = null;
 
   const nf = new Intl.NumberFormat("ru-RU");
-  const formatPrice = (value) => Number.isFinite(Number(value)) ? `${nf.format(Number(value))} ¥` : "Цена уточняется";
+  const formatPrice = (value, currency = "CNY") => {
+    if (!Number.isFinite(Number(value))) return "Цена уточняется";
+    const formatted = nf.format(Number(value));
+    if (currency === "CNY") return `${formatted} ¥`;
+    if (currency === "USD") return `$${formatted}`;
+    if (currency === "EUR") return `€${formatted}`;
+    if (currency === "RUB") return `${formatted} ₽`;
+    return `${formatted} ${currency || ""}`.trim();
+  };
   const formatMileage = (value) => Number.isFinite(Number(value)) ? `${nf.format(Number(value))} км` : "Пробег уточняется";
 
   function escapeHtml(value) {
@@ -90,7 +98,7 @@
     const media = photo
       ? `<img class="catalog-live-photo" src="${photo}" alt="${escapeHtml(vehicle.title || "Автомобиль")}" loading="lazy" decoding="async">`
       : `<div class="catalog-live-placeholder">Фотография ожидается</div>`;
-    const meta = [vehicle.year, vehicle.mileage !== null && vehicle.mileage !== undefined ? formatMileage(vehicle.mileage) : null, vehicle.city].filter(Boolean);
+    const meta = [vehicle.year, vehicle.energyType, vehicle.mileage !== null && vehicle.mileage !== undefined ? formatMileage(vehicle.mileage) : null, vehicle.city].filter(Boolean);
     const active = vehicle.status === "active";
 
     return `<article class="catalog-card" data-vehicle-id="${escapeHtml(vehicle.id)}" data-live-vehicle="1" tabindex="0" aria-label="${escapeHtml(vehicle.title || "Автомобиль")}">
@@ -98,7 +106,7 @@
       <div class="catalog-card-body">
         <h3>${escapeHtml(vehicle.title || [vehicle.brand, vehicle.model].filter(Boolean).join(" ") || "Автомобиль")}</h3>
         <div class="catalog-card-meta">${meta.map((item) => `<span>${escapeHtml(String(item))}</span>`).join("")}</div>
-        <div class="catalog-card-price">${formatPrice(vehicle.price)}</div>
+        <div class="catalog-card-price">${formatPrice(vehicle.price, vehicle.currency)}</div>
         <div class="catalog-card-actions"><button class="catalog-card-request" type="button" data-request-report="${escapeHtml(vehicle.id)}" ${active ? "" : "disabled"}>${active ? "Запросить отчёт" : "Недоступно для заказа"}</button><button class="catalog-card-open" type="button" data-open-vehicle="${escapeHtml(vehicle.id)}" aria-label="Открыть карточку">→</button></div>
       </div>
     </article>`;
@@ -164,7 +172,7 @@
     setSelectOptions(controls.catalogBrand, facets.brands, "Все марки", url.searchParams.get("brand") || "");
     setSelectOptions(controls.catalogCity, facets.cities, "Все города", url.searchParams.get("city") || "");
     setSelectOptions(controls.catalogBody, facets.bodies, "Все кузова", url.searchParams.get("body") || "");
-    setSelectOptions(controls.catalogEngine, facets.engines, "Все двигатели", url.searchParams.get("engine") || "");
+    setSelectOptions(controls.catalogEngine, facets.engines, "Любая силовая установка", url.searchParams.get("engine") || "");
 
     if (controls.catalogYearMin && facets.year?.min !== null) controls.catalogYearMin.min = String(facets.year.min);
     if (controls.catalogYearMax && facets.year?.max !== null) controls.catalogYearMax.max = String(facets.year.max);
