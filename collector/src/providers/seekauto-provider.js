@@ -5,12 +5,12 @@ const IMAGE_BASE = "https://img.jytche.com";
 const DEFAULT_LOCALE = "en";
 const DEFAULT_SEEDS = [
   "SC043375C6Y08",
-  "SC27589737BSU",
-  "SC45932075ZEV",
-  "SC430582BD3M4",
-  "SC38115070HKQ",
-  "SC9077025FZXM",
-  "SC084297451KA"
+  "SC45956390F3F",
+  "SC46097597YKB",
+  "SC661642651SG",
+  "SC8041099CNQT",
+  "SC3498914F3PW",
+  "SC27589737BSU"
 ];
 const SORTED_BRANDS = [...CATALOG_BRANDS].sort((a, b) => b.length - a.length);
 
@@ -115,6 +115,12 @@ function listingStatus(detail) {
   return "unknown";
 }
 
+function energySource(detail) {
+  const values = [detail?.fuel_type, detail?.emission, detail?.capacity].map(clean).filter(Boolean);
+  const explicit = values.find((value) => /pure electric|electric|gasoline|petrol|diesel|plug.?in|hybrid|range extender|erev|methanol|gas\b/i.test(value));
+  return explicit || values[0] || null;
+}
+
 function detailFacts(detail) {
   const facts = [];
   if (clean(detail?.first_audited_at)) facts.push({ label: "Дата объявления", text: clean(detail.first_audited_at), status: "info" });
@@ -217,12 +223,14 @@ export function parseSeekAutoDetailData(detail, { sourceUrl = null } = {}) {
   if (!title) throw new Error(`SeekAuto vehicle name is missing for ${listingId}`);
 
   const identity = inferIdentity(title);
-  const productionYear = clean(detail.built_date)?.match(/((?:19|20)\d{2})/)?.[1] || null;
+  const productionDate = clean(detail.built_date);
+  const productionYear = productionDate?.match(/((?:19|20)\d{2})/)?.[1] || null;
   const registrationYear = clean(detail.plate_date)?.match(/((?:19|20)\d{2})/)?.[1] || null;
   const power = toInteger(detail.max_power);
   const drive = clean(detail.drive_type);
   const updatedAt = sourceDateToIso(detail.last_audited_at) || sourceDateToIso(detail.first_audited_at);
   const extraSpecs = [
+    ["Дата производства", productionDate],
     ["Привод", drive],
     ["Максимальная мощность", power !== null ? `${power} кВт` : null],
     ["Экологический стандарт", clean(detail.emission)]
@@ -234,13 +242,13 @@ export function parseSeekAutoDetailData(detail, { sourceUrl = null } = {}) {
     brand: identity.brand,
     model: identity.model,
     trim: identity.trim,
-    year: productionYear || identity.titleYear || registrationYear,
+    year: identity.titleYear || productionYear || registrationYear,
     mileage_km: toInteger(detail.mileage),
     city: clean(detail.city ?? detail.location ?? detail.location_name),
     price: toInteger(detail.price),
     currency: "CNY",
     body: clean(detail.category_type),
-    energy_type: clean(detail.fuel_type || detail.emission || detail.capacity),
+    energy_type: energySource(detail),
     engine: clean(detail.engine),
     transmission: clean(detail.gearbox),
     body_color: clean(detail.body_color ?? detail.exterior_color),
