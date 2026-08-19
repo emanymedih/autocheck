@@ -1,26 +1,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const TARGET = process.argv[2] || "https://www.seekauto.com/en/car/detail/SC043375C6Y08";
+const TARGET_ID = process.argv[2] || "SC043375C6Y08";
 const OUTPUT = path.resolve(process.argv[3] || "data/seekauto-probe.json");
-const KEYWORDS = /api|car|vehicle|listing|stock|search|detail|goods|inventory|jyt|seekauto/i;
-
-function uniq(values, limit = 300) {
-  return [...new Set(values.filter(Boolean))].slice(0, limit);
-}
-
-function scriptSources(html, base) {
-  const found = [];
-  const regex = /<script\b[^>]*src\s*=\s*(["'])(.*?)\1[^>]*>/gi;
-  let match;
-  while ((match = regex.exec(html))) {
-    try { found.push(new URL(match[2], base).href); } catch (_) { /* ignore */ }
-  }
-  return uniq(found, 120);
-}
+const BASE = "https://www.seekauto.com";
 
 function inlineScripts(html) {
-  return [...html.matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)].map((match) => match[1]).filter(Boolean);
+  return [...String(html ?? "").matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)]
+    .map((match) => match[1])
+    .filter(Boolean);
 }
 
 function balancedJsonObject(text, start) {
@@ -65,95 +53,77 @@ function hydrationDetail(html) {
       if (!objectText) continue;
       return JSON.parse(objectText);
     } catch (_) {
-      // Keep probing other RSC chunks.
+      // Try another RSC chunk.
     }
   }
   return null;
 }
 
-function candidates(text) {
-  const urls = [];
-  for (const match of text.matchAll(/https?:\\?\/\\?\/[A-Za-z0-9._~:/?#\[\]@!$&'()*+,;=%\\-]+/g)) {
-    const value = match[0].replace(/\\\//g, "/");
-    if (KEYWORDS.test(value)) urls.push(value.slice(0, 500));
+async function request(url) {
+  try {
+    const response = await fetch(url, {
+      redirect: "follow",
+      headers: {
+        accept: "application/json,text/plain,*/*",
+        "accept-language": "en-US,en;q=0.9",
+        referer: `${BASE}/en/car/detail/${TARGET_ID}`,
+        "user-agent": "Mozilla/5.0 (compatible; AvtocheckIntegrationProbe/1.0)"
+      },
+      signal: AbortSignal.timeout(20000)
+    });
+    const text = await response.text();
+    let json = null;
+    try { json = JSON.parse(text); } catch (_) { /* keep text sample */ }
+    return {
+      url,
+      status: response.status,
+      contentType: response.headers.get("content-type"),
+      bytes: text.length,
+      json,
+      textSample: json ? null : text.slice(0, 2000)
+    };
+  } catch (error) {
+    return { url, error: error.message };
   }
-
-  const paths = [];
-  for (const match of text.matchAll(/["'`]((?:\\?\/)[A-Za-z0-9._~:@!$&()*+,;=%?{}\[\]\\/-]{3,220})["'`]/g)) {
-    const value = match[1].replace(/\\\//g, "/");
-    if (KEYWORDS.test(value)) paths.push(value);
-  }
-
-  const snippets = [];
-  const tokens = ["baseURL", "axios", "fetch(", "carDetail", "carList", "vehicle", "inventory", "refNo", "api/"];
-  for (const token of tokens) {
-    let cursor = 0;
-    const lower = text.toLowerCase();
-    const needle = token.toLowerCase();
-    while ((cursor = lower.indexOf(needle, cursor)) >= 0 && snippets.length < 120) {
-      const start = Math.max(0, cursor - 140);
-      const end = Math.min(text.length, cursor + token.length + 220);
-      snippets.push(text.slice(start, end).replace(/\s+/g, " "));
-      cursor += token.length;
-    }
-  }
-
-  return { urls: uniq(urls), paths: uniq(paths), snippets: uniq(snippets, 120) };
 }
 
-async function fetchText(url) {
-  const response = await fetch(url, {
+const detailPage = await request(`${BASE}/en/car/detail/${TARGET_ID}`);
+const pageHtml = detailPage.textSample || (detailPage.json ? JSON.stringify(detailPage.json) : "");
+let html = "";
+try {
+  const response = await fetch(`${BASE}/en/car/detail/${TARGET_ID}`, {
     redirect: "follow",
     headers: {
-      accept: "text/html,application/javascript,text/javascript,*/*",
+      accept: "text/html,application/xhtml+xml",
       "accept-language": "en-US,en;q=0.9",
       "user-agent": "Mozilla/5.0 (compatible; AvtocheckIntegrationProbe/1.0)"
     },
     signal: AbortSignal.timeout(20000)
   });
-  if (!response.ok) throw new Error(`HTTP ${response.status} ${url}`);
-  return { text: await response.text(), url: response.url || url, contentType: response.headers.get("content-type") };
+  html = await response.text();
+} catch (_) {
+  html = pageHtml;
 }
 
-const startedAt = new Date().toISOString();
-const page = await fetchText(TARGET);
-const scripts = scriptSources(page.text, page.url);
-const inline = inlineScripts(page.text);
-const pageCandidates = candidates(page.text);
-const hydration = hydrationDetail(page.text);
-const assets = [];
-
-for (const url of scripts.slice(0, 60)) {
-  try {
-    const loaded = await fetchText(url);
-    const found = candidates(loaded.text);
-    if (found.urls.length || found.paths.length || found.snippets.length) {
-      assets.push({
-        url,
-        bytes: loaded.text.length,
-        contentType: loaded.contentType,
-        ...found
-      });
-    }
-  } catch (error) {
-    assets.push({ url, error: error.message });
-  }
-}
-
-const inlineCandidates = inline.map((text, index) => ({ index, bytes: text.length, ...candidates(text) }))
-  .filter((entry) => entry.urls.length || entry.paths.length || entry.snippets.length);
+const proxyPaths = [
+  `/api/proxy/cars/${TARGET_ID}/detail`,
+  `/api/proxy/cars/${TARGET_ID}/recommends`,
+  `/api/proxy/cars/${TARGET_ID}/fobPrice`,
+  `/api/proxy/cars?limit=20&page=1`,
+  `/api/proxy/cars/list?limit=20&page=1`,
+  `/api/proxy/cars/search?limit=20&page=1`
+];
+const proxy = [];
+for (const proxyPath of proxyPaths) proxy.push(await request(`${BASE}${proxyPath}`));
 
 const report = {
-  startedAt,
-  finishedAt: new Date().toISOString(),
-  target: TARGET,
-  pageBytes: page.text.length,
-  hydration,
-  scripts,
-  pageCandidates,
-  inlineCandidates,
-  assets
+  startedAt: new Date().toISOString(),
+  targetId: TARGET_ID,
+  pageBytes: html.length,
+  hydration: hydrationDetail(html),
+  proxy,
+  finishedAt: new Date().toISOString()
 };
 await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
 await fs.writeFile(OUTPUT, `${JSON.stringify(report, null, 2)}\n`, "utf8");
-console.log(JSON.stringify({ scripts: scripts.length, inline: inline.length, hydrationKeys: Object.keys(hydration || {}), interestingAssets: assets.length, output: OUTPUT }, null, 2));
+console.log(JSON.stringify({ targetId: TARGET_ID, hydration: Boolean(report.hydration), proxy: proxy.map((item) => ({ url: item.url, status: item.status, error: item.error || null, bytes: item.bytes || 0 })) }, null, 2));
