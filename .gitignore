@@ -7,3 +7,7 @@ dist/
 .env
 .env.*
 collector/.state/
+collector/data/*-diagnostic-*.json
+collector/data/*-probe.json
+collector/data/*-test-log.txt
+collector/data/*-sync-log.txt
