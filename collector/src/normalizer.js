@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { canonicalBody, canonicalBrand, canonicalEnergyType } from "./catalog-taxonomy.js";
 
 const ACTIVE_VALUES = new Set(["active", "available", "in_stock", "instock", "在售", "可售", "1", "true", "yes"]);
 const INACTIVE_VALUES = new Set(["inactive", "sold", "unavailable", "removed", "下架", "已售", "0", "false", "no"]);
@@ -100,7 +101,7 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
   const sourceListingId = clean(raw.source_listing_id);
   if (!sourceListingId) throw new Error("source_listing_id is required");
 
-  const brand = clean(raw.brand);
+  const brand = canonicalBrand(clean(raw.brand));
   const model = clean(raw.model);
   const title = clean(raw.title) || [brand, model, clean(raw.trim)].filter(Boolean).join(" ");
   if (!title) throw new Error(`title/model is required for listing ${sourceListingId}`);
@@ -120,7 +121,8 @@ export function normalizeListing(raw, { providerId, photoSeparator = "|", detail
     city: clean(raw.city),
     price: integerValue(raw.price_cny),
     currency: "CNY",
-    body: clean(raw.body),
+    body: canonicalBody(clean(raw.body)),
+    energyType: canonicalEnergyType(clean(raw.energy_type ?? raw.powertrain ?? raw.energy)),
     engine: clean(raw.engine),
     transmission: clean(raw.transmission),
     bodyColor: clean(raw.body_color),
@@ -159,6 +161,7 @@ export function toPublicVehicle(vehicle) {
     price: vehicle.price,
     currency: vehicle.currency,
     body: vehicle.body,
+    energyType: vehicle.energyType || null,
     engine: vehicle.engine,
     transmission: vehicle.transmission,
     bodyColor: vehicle.bodyColor,
