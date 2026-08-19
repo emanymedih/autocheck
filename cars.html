@@ -92,21 +92,13 @@
     </div>
   </footer>
 
-  <script>
-    (() => {
-      const params = new URLSearchParams(window.location.search);
-      const selected = params.get("car");
-      if (!selected) return;
-      const action = params.get("action") === "report" ? "&action=report" : "";
-      window.location.replace(`vehicle.html?car=${encodeURIComponent(selected)}${action}`);
-    })();
-  </script>
   <script src="app.js"></script>
   <script>
     document.addEventListener("click", (event) => {
       const requestButton = event.target.closest("[data-request-report]");
       const openButton = event.target.closest("[data-open-vehicle]");
       const card = event.target.closest(".catalog-card");
+      if (card?.dataset.liveVehicle === "1") return;
       if (!requestButton && !openButton && !card) return;
       const id = requestButton?.dataset.requestReport || openButton?.dataset.openVehicle || card?.dataset.vehicleId;
       if (!id) return;
@@ -116,5 +108,6 @@
       window.location.href = `vehicle.html?car=${encodeURIComponent(id)}${action}`;
     }, true);
   </script>
+  <script src="catalog-client.js"></script>
 </body>
 </html>
