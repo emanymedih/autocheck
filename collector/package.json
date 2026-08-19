@@ -9,6 +9,7 @@
     "import:che168-pilot": "node src/import-che168-pilot.js",
     "import:che168-dealer": "node src/import-che168-dealer.js",
     "import:che168-global": "node src/import-che168-global.js",
+    "audit:global-sync": "node src/global-sync-audit.js",
     "test": "node --test"
   },
   "engines": {
