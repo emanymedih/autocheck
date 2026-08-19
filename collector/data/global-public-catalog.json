@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T15:27:17.355Z",
+  "updatedAt": "2026-08-19T18:56:33.224Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -11,6 +11,8 @@
       "mileage": 82000,
       "city": "Сучжоу",
       "price": 25090,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Купе / спорткар",
       "energyType": "Бензин",
@@ -55,7 +57,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M04/A2/62/1400x0_c42_autohomecar__ChtpWGlTJ6yAWeE2AAqsHmv2z5o999.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.376Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.221Z"
     },
     {
       "id": "av_b8a63a4644b6b0443e57",
@@ -67,6 +71,8 @@
       "mileage": 4300,
       "city": "Чанша",
       "price": 58370,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Электро",
@@ -111,7 +117,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M04/68/8C/1400x0_c42_autohomecar__ChxpWGqBmaWAbQPPAAmg0wqdCCg334.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.376Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_eca777a2fe95507359e3",
@@ -123,6 +131,8 @@
       "mileage": 69000,
       "city": "Чжэнчжоу",
       "price": 31470,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Седан",
       "energyType": "Бензин",
@@ -167,7 +177,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/8A/12/1400x0_c42_autohomecar__ChxpWGqE5UiAI7WEAAXFJ0Qa-PI594.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_69010a116debf794a5f2",
@@ -179,6 +191,8 @@
       "mileage": 100,
       "city": "Шэньчжэнь",
       "price": 153700,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "MPV",
       "energyType": "Гибрид с увеличителем запаса хода (EREV)",
@@ -223,7 +237,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M06/48/13/1400x0_c42_autohomecar__ChxpV2p-3FKAEaNQAAaeW9amI1Y486.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_4afd7a357deed76871ae",
@@ -235,6 +251,8 @@
       "mileage": 8000,
       "city": "Чанша",
       "price": 36740,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Универсал",
       "energyType": "Бензин",
@@ -275,7 +293,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M05/BF/5F/1400x0_c42_autohomecar__ChxpWGpwjWaAWpNxAAJjvog7keo729.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_51801d05634b45f2caf0",
@@ -287,6 +307,8 @@
       "mileage": 35000,
       "city": "Ханчжоу",
       "price": 95010,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Бензин",
@@ -331,7 +353,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/58/2C/1400x0_c42_autohomecar__ChxpV2qANsqAXSA9AAnxKeRx0_I340.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_7e3f73ce4578e961e809",
@@ -343,6 +367,8 @@
       "mileage": 15000,
       "city": "Ханчжоу",
       "price": 163380,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Купе / спорткар",
       "energyType": "Бензин",
@@ -387,7 +413,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M05/35/44/1400x0_c42_autohomecar__ChxpWGp9X8uAOJPMAAbxiVTGjMo669.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_f162a6f5e5c4facb604e",
@@ -399,6 +427,8 @@
       "mileage": 20000,
       "city": "Сучжоу",
       "price": 19370,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Седан",
       "energyType": "Бензин",
@@ -443,7 +473,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/1D/22/1400x0_c42_autohomecar__ChxpV2p66k6AA5r6ABGe3NhBqro058.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_ea15f31ef57a2e5fd129",
@@ -455,6 +487,8 @@
       "mileage": 14000,
       "city": "Jining",
       "price": 26400,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Универсал",
       "energyType": "Электро",
@@ -499,7 +533,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M0A/68/29/1400x0_c42_autohomecar__Chto52qBMZGAdECcAA9YoTFu-E0455.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_33626fdf34c9fbbb94d1",
@@ -511,6 +547,8 @@
       "mileage": 13000,
       "city": "Шэньчжэнь",
       "price": 72470,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Купе / спорткар",
       "energyType": "Бензин",
@@ -555,7 +593,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M01/8E/E4/1400x0_c42_autohomecar__ChxpVmnw1uaAC1PDAAIQIo9QjMA757.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
     },
     {
       "id": "av_8ee4b55b72b484732b9e",
@@ -567,6 +607,8 @@
       "mileage": 78000,
       "city": "Guiyang",
       "price": 31470,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Мягкий гибрид 48V",
@@ -611,7 +653,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/3A/5B/1400x0_c42_autohomecar__Chto52p9bGWAY7FjAAWnkPNJWAs055.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_092e687b3c1d15e71f18",
@@ -623,6 +667,8 @@
       "mileage": 10000,
       "city": "Shijiazhuang",
       "price": 29960,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Лифтбек",
       "energyType": "Бензин",
@@ -667,7 +713,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/14/26/1400x0_c42_autohomecar__Chto52p5gyCAfX42ABIQmPFvMfw838.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_3d4579ed3d7e9d46c0d5",
@@ -679,6 +727,8 @@
       "mileage": 10000,
       "city": "Сучжоу",
       "price": 28600,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Бензин",
@@ -723,7 +773,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/5A/66/1400x0_c42_autohomecar__ChxpVWqAJlyAdaJHAA8wdQXQ_0E602.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_fbdd30953599e60a3a8e",
@@ -735,6 +787,8 @@
       "mileage": 87000,
       "city": "Шэньчжэнь",
       "price": 85930,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Купе / спорткар",
       "energyType": "Бензин",
@@ -779,7 +833,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M01/73/9C/1400x0_c42_autohomecar__ChtpWGqC2biAOF3wAAgEpXekBEk196.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_ccaf38a9443096e98ca1",
@@ -791,6 +847,8 @@
       "mileage": 10,
       "city": "Чунцин",
       "price": 70920,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Мягкий гибрид 48V",
@@ -835,7 +893,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M05/6F/A1/1400x0_c42_autohomecar__ChtpWGqChgOAdPrsAAu1_9mP94g235.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_add4b0df7eb8598fe851",
@@ -847,6 +907,8 @@
       "mileage": 200,
       "city": "Нанкин",
       "price": 54280,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Гибрид с увеличителем запаса хода (EREV)",
@@ -891,7 +953,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M03/18/72/1400x0_c42_autohomecar__Chto52p5-N-AVnGmAAHNUkH8vC0200.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_56fc4a5463ae36712842",
@@ -903,6 +967,8 @@
       "mileage": 2000,
       "city": "Ханчжоу",
       "price": 264740,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "Pickup Truck",
       "energyType": "Электро",
@@ -943,7 +1009,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/33/B2/1400x0_c42_autohomecar__ChxpWGp9PFiARkdmAA3GQax-0sE241.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_c17e8b59c58ac6911005",
@@ -955,6 +1023,8 @@
       "mileage": 15000,
       "city": "Шанхай",
       "price": 36010,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "--",
       "energyType": "Прочее",
@@ -991,7 +1061,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/2E/4E/1400x0_c42_autohomecar__ChxpVWp8OqeADK3UAAsV1NLBy14911.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.377Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_4da0167c780ec67029af",
@@ -1003,6 +1075,8 @@
       "mileage": 51000,
       "city": "Чэнду",
       "price": 88960,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "SUV",
       "energyType": "Бензин",
@@ -1047,7 +1121,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/8C/A8/1400x0_c42_autohomecar__ChxpV2qFIBKAD1KoAAMSik9BPss467.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.378Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_34350fbf455c0bfe646d",
@@ -1059,6 +1135,8 @@
       "mileage": 35000,
       "city": "Сямынь",
       "price": 18130,
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "USD",
       "body": "MPV",
       "energyType": "Гибрид (HEV)",
@@ -1103,7 +1181,9 @@
         "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/89/13/1400x0_c42_autohomecar__ChxpVWqEOlmAXH0IAA0h1Qe6zmI081.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
-      "updatedAt": "2026-08-19T10:55:46.378Z"
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.223Z"
     },
     {
       "id": "av_0ae38a66eb9bc832974e",
@@ -5561,6 +5641,246 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-19T09:34:30+08:00"
+    },
+    {
+      "id": "av_5449a0ba2286497aeb87",
+      "title": "Ledao Ledao L90 2025 2WD Base Model",
+      "brand": null,
+      "model": "Ledao Ledao L90",
+      "trim": "Ledao Ledao L90 2025 2WD Base Model",
+      "year": 2025,
+      "mileage": 20000,
+      "city": "Чэнду",
+      "price": 20110,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2025.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2300 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5145*1998*1766 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/7A/50/1400x0_c42_autohomecar__Chto52qC1YWAZiQgAA7PlsNh3jU489.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.222Z"
+    },
+    {
+      "id": "av_296a157f5694bbaf520f",
+      "title": "Toyota GR YARIS 2024 GR Evolution Edition",
+      "brand": "Toyota",
+      "model": "GR YARIS",
+      "trim": "2024 GR Evolution Edition",
+      "year": 2024,
+      "mileage": 2000,
+      "city": "Сямынь",
+      "price": 57190,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Хэтчбек",
+      "energyType": "Бензин",
+      "engine": "1.6T 280HP L3",
+      "transmission": "6-speed manual",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2026.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "3"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1285 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "3995*1805*1455 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M06/77/38/1400x0_c42_autohomecar__Chto52qCldCAa26yAAM7wv_9qcg760.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.224Z"
+    },
+    {
+      "id": "av_df1c036d048a063f8e5c",
+      "title": "Zunjie MPV 2026 Model Base Version",
+      "brand": "Zunjie",
+      "model": "MPV",
+      "trim": "2026 Model Base Version",
+      "year": 2026,
+      "mileage": 1000,
+      "city": "Zibo",
+      "price": 63360,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 156 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2026.07",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2870 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5359*2009*1859 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/EE/D9/1400x0_c42_autohomecar__ChxpV2p1yYiAIVmpAAtxphuWp20068.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.224Z"
+    },
+    {
+      "id": "av_60112131faacfc3702d4",
+      "title": "Lexus RC F 2015 F 5.0L Peak Edition",
+      "brand": "Lexus",
+      "model": "RC F",
+      "trim": "2015 F 5.0L Peak Edition",
+      "year": 2015,
+      "mileage": 49000,
+      "city": "Шэньчжэнь",
+      "price": 85930,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "5.0L 477hp V8",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2016.04",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive (RWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "4"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1840 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4705*1845*1390 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/DC/BE/1400x0_c42_autohomecar__ChxpV2oqbVeAONCyAAeCKYUg64w976.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T18:56:33.224Z"
     }
   ]
 }
