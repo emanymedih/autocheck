@@ -48,3 +48,20 @@ test("detail fields become reusable public data blocks", () => {
   assert.equal(publicVehicle.conditionChecks[0].status, "warning");
   assert.deepEqual(publicVehicle.extraSpecs[1], { label: "Мощность", value: "245 л.с." });
 });
+
+test("Chinese source brand body and energy values normalize to public taxonomy", () => {
+  const vehicle = normalizeListing({
+    ...raw,
+    title: null,
+    brand: "比亚迪",
+    model: "宋PLUS",
+    body: "SUV",
+    energy_type: "插电式混合动力"
+  }, { providerId: "dealer-a" });
+
+  const publicVehicle = toPublicVehicle(vehicle);
+  assert.equal(publicVehicle.brand, "BYD");
+  assert.equal(publicVehicle.title, "BYD 宋PLUS");
+  assert.equal(publicVehicle.body, "SUV");
+  assert.equal(publicVehicle.energyType, "Подключаемый гибрид (PHEV)");
+});
