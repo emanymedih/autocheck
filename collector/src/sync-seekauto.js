@@ -45,6 +45,31 @@ function positiveInteger(value, fallback) {
   return Number.isFinite(number) && number > 0 ? Math.floor(number) : fallback;
 }
 
+function clean(value) {
+  if (value === null || value === undefined) return null;
+  const text = String(value).trim();
+  return text || null;
+}
+
+function exactInteger(value) {
+  const source = clean(value);
+  if (!source || source.includes("*")) return null;
+  const normalized = source.replace(/[^0-9.-]/g, "");
+  if (!normalized) return null;
+  const number = Number(normalized);
+  return Number.isFinite(number) ? Math.round(number) : null;
+}
+
+function sourcePriceText(value, currency) {
+  const source = clean(value);
+  if (!source) return null;
+  const code = String(currency || "").trim().toUpperCase();
+  if (code === "CNY") return /[¥￥]/.test(source) ? source.replace(/￥/g, "¥") : `¥${source}`;
+  if (code === "USD") return source.startsWith("$") ? source : `$${source}`;
+  if (code === "EUR") return source.startsWith("€") ? source : `€${source}`;
+  return source;
+}
+
 function bootstrapEntries(value, locale) {
   const ids = String(value || DEFAULT_BOOTSTRAP_IDS.join(","))
     .split(",")
@@ -181,6 +206,38 @@ function dedupeNormalizedListings(vehicles) {
   return { vehicles: [...byKey.values()], duplicates };
 }
 
+function previewMap(entries) {
+  const result = new Map();
+  for (const entry of entries || []) {
+    if (!entry?.listingId || !entry?.preview) continue;
+    result.set(String(entry.listingId), entry.preview);
+  }
+  return result;
+}
+
+function enrichFromDiscoveryPreview(vehicle, previews) {
+  const listingId = String(vehicle?.source?.listingId || "");
+  const preview = previews.get(listingId);
+  if (!preview) return vehicle;
+
+  const previewPrice = exactInteger(preview.price);
+  const previewPriceText = sourcePriceText(preview.price, "CNY");
+  const previewFobPriceText = sourcePriceText(preview.currency_price, "USD");
+  const photos = Array.isArray(vehicle.photos) ? vehicle.photos : [];
+  const previewPhotos = [preview.top_image, ...(Array.isArray(preview.images) ? preview.images : [])]
+    .map(clean)
+    .filter(Boolean)
+    .map((value) => /^https?:\/\//i.test(value) ? value : `https://img.jytche.com/${value.replace(/^\/+/, "")}?x-oss-process=style%2Fnormal`);
+
+  return {
+    ...vehicle,
+    price: vehicle.price ?? previewPrice,
+    priceText: vehicle.priceText || previewPriceText,
+    fobPriceText: vehicle.fobPriceText || previewFobPriceText,
+    photos: photos.length ? photos : [...new Set(previewPhotos)]
+  };
+}
+
 function publicVehicleKey(vehicle) {
   const vin = String(vehicle?.vin || "").trim().toUpperCase();
   if (/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) return `vin:${vin}`;
@@ -208,16 +265,20 @@ async function readJson(filePath, fallback) {
   }
 }
 
-async function writePublicSnapshot(store, filePath) {
+async function writePublicSnapshot(store, filePath, discoveryEntries = []) {
   const data = await store.read();
+  const previews = previewMap(discoveryEntries);
   const normalized = data.vehicles.filter((vehicle) => vehicle.source?.providerId === PROVIDER_ID);
-  const managedAll = dedupeNormalizedListings(normalized).vehicles.map(toPublicVehicle);
+  const managedAll = dedupeNormalizedListings(normalized).vehicles
+    .map((vehicle) => enrichFromDiscoveryPreview(vehicle, previews))
+    .map(toPublicVehicle);
   const managed = managedAll.filter(isPublishableSeekAuto);
   const rejected = managedAll.length - managed.length;
   if (!managed.length) throw new Error("SeekAuto quality gate rejected every managed listing");
 
   const managedWithThumbnails = await cacheSeekAutoThumbnails(managed, { concurrency: 2, timeoutMs: 15000 });
   const cachedThumbnails = managedWithThumbnails.filter((vehicle) => String(vehicle?.photos?.[0] || "").startsWith(`${THUMBNAIL_PUBLIC_PREFIX}/`)).length;
+  const sourcePrices = managedWithThumbnails.filter((vehicle) => vehicle?.price !== null && vehicle?.price !== undefined || vehicle?.priceText).length;
 
   const existing = await readJson(filePath, { updatedAt: null, items: [] });
   const existingWithoutSeekAuto = (Array.isArray(existing.items) ? existing.items : [])
@@ -234,7 +295,7 @@ async function writePublicSnapshot(store, filePath) {
 
   const items = [...byKey.values()];
   await writeJson(filePath, { updatedAt: data.updatedAt || new Date().toISOString(), items });
-  return { items: items.length, managed: managedWithThumbnails.length, rejected, duplicates, cachedThumbnails };
+  return { items: items.length, managed: managedWithThumbnails.length, rejected, duplicates, cachedThumbnails, sourcePrices };
 }
 
 async function main() {
@@ -306,7 +367,7 @@ async function main() {
     deactivateAfterMisses: missingThreshold
   });
 
-  const publicSummary = await writePublicSnapshot(store, publicPath);
+  const publicSummary = await writePublicSnapshot(store, publicPath, discoveredEntries);
   const result = {
     success: true,
     mode: "seekauto-sync",
@@ -332,6 +393,7 @@ async function main() {
     completeSnapshot: false,
     publicItems: publicSummary.items,
     publicSeekAutoItems: publicSummary.managed,
+    publicSeekAutoItemsWithPrice: publicSummary.sourcePrices,
     cachedThumbnails: publicSummary.cachedThumbnails,
     qualityRejected: publicSummary.rejected,
     publicDuplicatesRemoved: publicSummary.duplicates,
