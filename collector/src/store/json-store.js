@@ -3,6 +3,20 @@ import path from "node:path";
 
 const EMPTY_STORE = { version: 1, updatedAt: null, vehicles: [] };
 
+function positiveInteger(value, fallback) {
+  const number = Number(value);
+  return Number.isFinite(number) && number > 0 ? Math.floor(number) : fallback;
+}
+
+function withObservedSync(previous, vehicle) {
+  return {
+    ...(previous?.sync || {}),
+    ...(vehicle?.sync || {}),
+    missingRuns: 0,
+    lastObservedAt: vehicle.lastSeenAt || new Date().toISOString()
+  };
+}
+
 export class JsonCatalogStore {
   constructor(filePath) {
     this.filePath = filePath;
@@ -26,7 +40,7 @@ export class JsonCatalogStore {
     await fs.rename(temporaryPath, this.filePath);
   }
 
-  async upsertMany(incoming, { providerId, snapshot = false } = {}) {
+  async upsertMany(incoming, { providerId, snapshot = false, deactivateAfterMisses = 1 } = {}) {
     const store = await this.read();
     const byId = new Map(store.vehicles.map((vehicle) => [vehicle.id, vehicle]));
     const seenListingIds = new Set();
@@ -41,23 +55,40 @@ export class JsonCatalogStore {
           ...previous,
           ...vehicle,
           firstSeenAt: previous.firstSeenAt || vehicle.firstSeenAt,
-          lastSeenAt: vehicle.lastSeenAt
+          lastSeenAt: vehicle.lastSeenAt,
+          sync: withObservedSync(previous, vehicle)
         });
         updated += 1;
       } else {
-        byId.set(vehicle.id, vehicle);
+        byId.set(vehicle.id, {
+          ...vehicle,
+          sync: withObservedSync(null, vehicle)
+        });
         inserted += 1;
       }
     }
 
+    let missing = 0;
     let deactivated = 0;
     if (snapshot && providerId) {
+      const threshold = positiveInteger(deactivateAfterMisses, 1);
       for (const [id, vehicle] of byId.entries()) {
         if (vehicle.source?.providerId !== providerId) continue;
         if (seenListingIds.has(vehicle.source?.listingId)) continue;
         if (vehicle.status === "inactive") continue;
-        byId.set(id, { ...vehicle, status: "inactive", lastSeenAt: new Date().toISOString() });
-        deactivated += 1;
+        const missingRuns = positiveInteger(vehicle.sync?.missingRuns, 0) + 1;
+        const shouldDeactivate = missingRuns >= threshold;
+        byId.set(id, {
+          ...vehicle,
+          status: shouldDeactivate ? "inactive" : vehicle.status,
+          sync: {
+            ...(vehicle.sync || {}),
+            missingRuns,
+            lastMissingAt: new Date().toISOString()
+          }
+        });
+        missing += 1;
+        if (shouldDeactivate) deactivated += 1;
       }
     }
 
@@ -67,6 +98,51 @@ export class JsonCatalogStore {
       vehicles: [...byId.values()]
     };
     await this.write(next);
-    return { inserted, updated, deactivated, total: next.vehicles.length };
+    return { inserted, updated, missing, deactivated, total: next.vehicles.length };
+  }
+
+  async markMissing(listingIds, { providerId, deactivateAfterMisses = 2, checkedAt = new Date().toISOString() } = {}) {
+    if (!providerId) throw new Error("providerId is required");
+    const requested = new Set((listingIds || []).map((value) => String(value || "").trim()).filter(Boolean));
+    if (!requested.size) return { marked: 0, deactivated: 0, total: (await this.read()).vehicles.length };
+
+    const threshold = positiveInteger(deactivateAfterMisses, 2);
+    const store = await this.read();
+    let marked = 0;
+    let deactivated = 0;
+
+    const vehicles = store.vehicles.map((vehicle) => {
+      if (vehicle.source?.providerId !== providerId) return vehicle;
+      if (!requested.has(String(vehicle.source?.listingId || ""))) return vehicle;
+      if (vehicle.status === "inactive") return vehicle;
+
+      const missingRuns = positiveInteger(vehicle.sync?.missingRuns, 0) + 1;
+      const shouldDeactivate = missingRuns >= threshold;
+      marked += 1;
+      if (shouldDeactivate) deactivated += 1;
+
+      return {
+        ...vehicle,
+        status: shouldDeactivate ? "inactive" : vehicle.status,
+        source: {
+          ...(vehicle.source || {}),
+          checkedAt
+        },
+        sync: {
+          ...(vehicle.sync || {}),
+          missingRuns,
+          lastMissingAt: checkedAt
+        }
+      };
+    });
+
+    const next = {
+      ...store,
+      version: 1,
+      updatedAt: checkedAt,
+      vehicles
+    };
+    await this.write(next);
+    return { marked, deactivated, total: vehicles.length };
   }
 }
