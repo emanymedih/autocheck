@@ -92,6 +92,15 @@
     </div>
   </footer>
 
+  <script>
+    (() => {
+      const params = new URLSearchParams(window.location.search);
+      const selected = params.get("car");
+      if (!selected) return;
+      const action = params.get("action") === "report" ? "&action=report" : "";
+      window.location.replace(`vehicle.html?car=${encodeURIComponent(selected)}${action}`);
+    })();
+  </script>
   <script src="app.js"></script>
   <script>
     document.addEventListener("click", (event) => {
