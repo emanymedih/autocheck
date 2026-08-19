@@ -1,0 +1,30 @@
+{
+  "sheet": 1,
+  "photoSeparator": "|",
+  "columns": {
+    "source_listing_id": "listing_id",
+    "title": "title",
+    "brand": "brand",
+    "model": "model",
+    "trim": "trim",
+    "year": "year",
+    "mileage_km": "mileage_km",
+    "city": "city",
+    "price_cny": "price_cny",
+    "body": "body",
+    "engine": "engine",
+    "transmission": "transmission",
+    "body_color": "body_color",
+    "interior_color": "interior_color",
+    "registration": "registration",
+    "transfers": "transfers",
+    "vin": "vin",
+    "status": "status",
+    "updated_at": "updated_at",
+    "photo_urls": "photo_urls",
+    "source_url": "source_url"
+  },
+  "defaults": {
+    "status": "active"
+  }
+}
