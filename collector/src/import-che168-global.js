@@ -38,16 +38,28 @@ async function writePublicSnapshot(store, filePath) {
   return vehicles.length;
 }
 
+async function writeResult(filePath, result) {
+  if (!filePath) return null;
+  const resolved = path.resolve(filePath);
+  await fs.mkdir(path.dirname(resolved), { recursive: true });
+  await fs.writeFile(resolved, `${JSON.stringify(result, null, 2)}\n`, "utf8");
+  return resolved;
+}
+
 const args = argsFrom(process.argv.slice(2));
 
 try {
+  const targetListings = positiveInteger(args.limit, 20);
+  const maxPages = positiveInteger(args.pages, 5);
+  const concurrency = positiveInteger(args.concurrency, 3);
   const provider = new Che168GlobalCatalogProvider({
     locale: args.locale || "en",
-    maxListings: positiveInteger(args.limit, 20),
-    maxPages: positiveInteger(args.pages, 5),
-    detailConcurrency: positiveInteger(args.concurrency, 3)
+    maxListings: targetListings,
+    maxPages,
+    detailConcurrency: concurrency
   });
 
+  const startedAt = new Date().toISOString();
   const { rows, meta } = await provider.read();
   if (!rows.length) throw new Error("No global catalog listings were imported");
 
@@ -75,9 +87,14 @@ try {
   });
   const publicItems = await writePublicSnapshot(store, publicPath);
 
-  console.log(JSON.stringify({
+  const result = {
     mode: "che168-global-pilot",
     providerId: PROVIDER_ID,
+    startedAt,
+    finishedAt: new Date().toISOString(),
+    targetListings,
+    maxPages,
+    concurrency,
     ...meta,
     normalizationErrors,
     snapshotApplied: false,
@@ -85,7 +102,10 @@ try {
     storePath,
     publicPath,
     ...storeSummary
-  }, null, 2));
+  };
+  const resultPath = await writeResult(args.result, result);
+  if (resultPath) result.resultPath = resultPath;
+  console.log(JSON.stringify(result, null, 2));
 } catch (error) {
   console.error(error.stack || error.message);
   process.exitCode = 1;
