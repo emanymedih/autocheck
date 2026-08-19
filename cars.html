@@ -93,5 +93,19 @@
   </footer>
 
   <script src="app.js"></script>
+  <script>
+    document.addEventListener("click", (event) => {
+      const requestButton = event.target.closest("[data-request-report]");
+      const openButton = event.target.closest("[data-open-vehicle]");
+      const card = event.target.closest(".catalog-card");
+      if (!requestButton && !openButton && !card) return;
+      const id = requestButton?.dataset.requestReport || openButton?.dataset.openVehicle || card?.dataset.vehicleId;
+      if (!id) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      const action = requestButton ? "&action=report" : "";
+      window.location.href = `vehicle.html?car=${encodeURIComponent(id)}${action}`;
+    }, true);
+  </script>
 </body>
 </html>
