@@ -6,11 +6,15 @@ const BRAND_PREFIXES = [
   ["Mercedes-Benz", "Mercedes-Benz"], ["Xiaomi Auto", "Xiaomi"], ["Fang Cheng Bao", "Fangchengbao"],
   ["Aston Martin", "Aston Martin"], ["Rolls-Royce", "Rolls-Royce"], ["Land Rover", "Land Rover"],
   ["Leapmotor", "Leapmotor"], ["Volkswagen", "Volkswagen"], ["Lamborghini", "Lamborghini"],
+  ["Chevrolet", "Chevrolet"], ["Cadillac", "Cadillac"], ["Genesis", "Genesis"], ["Maserati", "Maserati"],
   ["McLaren", "McLaren"], ["Yangwang", "Yangwang"], ["Mengshi", "Mengshi"], ["Changan", "Changan"],
   ["Toyota", "Toyota"], ["Honda", "Honda"], ["Volvo", "Volvo"], ["Audi", "Audi"], ["BMW", "BMW"],
   ["NIO", "NIO"], ["BYD", "BYD"], ["Tank", "Tank"], ["Jeep", "Jeep"], ["Mazda", "Mazda"],
   ["Lexus", "Lexus"], ["Jaguar", "Jaguar"], ["Peugeot", "Peugeot"], ["Porsche", "Porsche"],
-  ["Tesla", "Tesla"], ["Zeekr", "Zeekr"], ["XPeng", "XPeng"], ["Li Auto", "Li Auto"]
+  ["Tesla", "Tesla"], ["Zeekr", "Zeekr"], ["XPeng", "XPeng"], ["Li Auto", "Li Auto"],
+  ["Ford", "Ford"], ["Buick", "Buick"], ["Hyundai", "Hyundai"], ["Kia", "Kia"], ["Nissan", "Nissan"],
+  ["Subaru", "Subaru"], ["Mitsubishi", "Mitsubishi"], ["Infiniti", "Infiniti"], ["Bentley", "Bentley"],
+  ["Ferrari", "Ferrari"], ["Zunjie", "Zunjie"]
 ].sort((a, b) => b[0].length - a[0].length);
 
 const CITY_RU = new Map(Object.entries({
@@ -26,7 +30,8 @@ const DETAIL_STOP_LABELS = [
   "Mfg.Date", "1st Reg. Date", "Model Year", "Mileage (km)", "Fuel Type", "Engine (cc)", "Trans.",
   "Steering", "Location", "Drive Train", "Body Type", "Seats", "Doors", "Exterior Color", "Curb Weight (kg)",
   "Dimensions (mm)", "Inspection Report", "Specifications", "Model Name", "Manufacturer Suggested Retail Price", "Manufacturer",
-  "Class", "Energy Type", "Launch Date", "Vehicle Details", "Price", "Vehicle Price", "WhatsApp", "Wechat"
+  "Class", "Energy Type", "Launch Date", "Vehicle Details", "Price", "Vehicle Price", "WhatsApp", "Wechat",
+  "How to Buy", "Quick Links", "Contact Us"
 ];
 
 function decodeEntities(value) {
@@ -125,21 +130,30 @@ function normalizeTitle(value) {
 
 function inferIdentity(title) {
   const source = normalizeTitle(title);
-  const pair = BRAND_PREFIXES.find(([prefix]) => source.toLowerCase().startsWith(prefix.toLowerCase()));
+  const yearIndex = source.search(/\b(?:19|20)\d{2}\b/);
+  const identityZone = yearIndex >= 0 ? source.slice(0, yearIndex) : source;
+  const pair = BRAND_PREFIXES.find(([prefix]) => new RegExp(`(?:^|\\s)${escapeRegex(prefix)}(?:\\s|$)`, "i").test(identityZone));
   if (!pair) {
-    const model = source.split(/\s+(?=(?:19|20)\d{2}\b)/)[0] || source;
+    const model = identityZone.trim() || source;
     return { brand: null, model: model || null, trim: source || null };
   }
 
   const [prefix, canonicalBrand] = pair;
-  let rest = source.slice(prefix.length).trim();
+  const lowerSource = source.toLowerCase();
+  const brandIndex = lowerSource.indexOf(prefix.toLowerCase());
+  let rest = source.slice(Math.max(0, brandIndex) + prefix.length).trim();
   if (rest.toLowerCase().startsWith(prefix.toLowerCase())) rest = rest.slice(prefix.length).trim();
   if (rest.toLowerCase().startsWith(canonicalBrand.toLowerCase())) rest = rest.slice(canonicalBrand.length).trim();
 
-  const yearIndex = rest.search(/\b(?:19|20)\d{2}\b/);
-  const model = (yearIndex >= 0 ? rest.slice(0, yearIndex) : rest).trim() || null;
-  const trim = yearIndex >= 0 ? rest.slice(yearIndex).trim() || null : null;
+  const restYearIndex = rest.search(/\b(?:19|20)\d{2}\b/);
+  const model = (restYearIndex >= 0 ? rest.slice(0, restYearIndex) : rest).trim() || null;
+  const trim = restYearIndex >= 0 ? rest.slice(restYearIndex).trim() || null : null;
   return { brand: canonicalBrand, model, trim };
+}
+
+function canonicalDisplayTitle(originalTitle, identity) {
+  if (!identity.brand || !identity.model) return normalizeTitle(originalTitle);
+  return [identity.brand, identity.model, identity.trim].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
 }
 
 function russianCity(value) {
@@ -147,6 +161,15 @@ function russianCity(value) {
   if (!raw) return null;
   const key = raw.toLowerCase();
   return CITY_RU.get(key) || raw.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function sourceBodyToken(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return null;
+  if (/hardtop coupe|coupe/i.test(raw)) return "coupe";
+  if (/station wagon|wagon|estate/i.test(raw)) return "wagon";
+  if (/fastback|liftback/i.test(raw)) return "liftback";
+  return raw;
 }
 
 function extractVehiclePhotos(html, title, baseUrl) {
@@ -260,29 +283,35 @@ export function parseChe168GlobalDetailHtml(html, sourceUrl, { fallbackTitle = n
   const listingId = match[1];
   const text = flatText(html);
   const sold = /Vehicle has been sold|This vehicle has been sold|Автомобиль продан|Этот автомобиль уже продан/i.test(text);
-  const pageTitle = normalizeTitle(h1Text(html) || fallbackTitle || titleText(html));
+  const h1 = normalizeTitle(h1Text(html));
+  const genericSoldTitle = !h1 || /^(?:Car Detail|Vehicle Sold|Автомобиль продан)/i.test(h1);
+  const pageTitle = normalizeTitle((sold && genericSoldTitle ? fallbackTitle : null) || h1 || fallbackTitle || titleText(html));
   if (!pageTitle && !sold) throw new Error(`Could not parse global vehicle title ${listingId}`);
 
-  const title = pageTitle || `Автомобиль ${listingId}`;
-  const identity = inferIdentity(title);
+  const rawTitle = pageTitle || `Автомобиль ${listingId}`;
+  const identity = inferIdentity(rawTitle);
+  const title = canonicalDisplayTitle(rawTitle, identity);
   const priceMatch = text.match(/(?:^|\s)(?:Price|Vehicle Price|Цена автомобиля)\s*\$\s*([\d,]+)/i);
-  const registration = labeledValue(text, "1st Reg. Date") || text.match(/1st Reg\. Date\s*(\d{4}\.\d{1,2})/i)?.[1] || null;
+  const registrationRaw = labeledValue(text, "1st Reg. Date") || text.match(/1st Reg\. Date\s*(\d{4}\.\d{1,2})/i)?.[1] || null;
+  const registration = /^\d{4}\.\d{1,2}$/.test(String(registrationRaw || "")) ? registrationRaw : null;
   const modelYearValue = labeledValue(text, "Model Year");
-  const modelYear = modelYearValue?.match(/((?:19|20)\d{2})/)?.[1] || identity.trim?.match(/((?:19|20)\d{2})/)?.[1] || registration?.slice(0, 4) || null;
-  const mileageValue = labeledValue(text, "Mileage (km)");
+  const titleYear = identity.trim?.match(/((?:19|20)\d{2})/)?.[1] || null;
+  const modelYear = titleYear || modelYearValue?.match(/((?:19|20)\d{2})/)?.[1] || registration?.slice(0, 4) || null;
+  const mileageMatch = text.match(/Mileage \(km\)\s*([\d,]+)/i);
+  const mileageValue = mileageMatch?.[1] || labeledValue(text, "Mileage (km)");
   const fuelType = labeledValue(text, "Fuel Type") || labeledValue(text, "Energy Type");
   const engine = labeledValue(text, "Engine (cc)");
   const transmission = labeledValue(text, "Trans.");
   const city = russianCity(labeledValue(text, "Location"));
-  const body = labeledValue(text, "Body Type");
+  const body = sourceBodyToken(labeledValue(text, "Body Type"));
   const bodyColor = labeledValue(text, "Exterior Color");
   const driveTrain = labeledValue(text, "Drive Train");
   const steering = labeledValue(text, "Steering");
-  const seats = labeledValue(text, "Seats");
-  const doors = labeledValue(text, "Doors");
-  const curbWeight = labeledValue(text, "Curb Weight (kg)");
-  const dimensions = labeledValue(text, "Dimensions (mm)");
-  const photos = extractVehiclePhotos(html, title, sourceUrl);
+  const seats = text.match(/Seats\s*(\d+)/i)?.[1] || labeledValue(text, "Seats");
+  const doors = text.match(/Doors\s*(\d+)/i)?.[1] || labeledValue(text, "Doors");
+  const curbWeight = text.match(/Curb Weight \(kg\)\s*([\d,]+)/i)?.[1] || null;
+  const dimensions = text.match(/Dimensions \(mm\)\s*([0-9]+\s*[*xX]\s*[0-9]+\s*[*xX]\s*[0-9]+)/i)?.[1]?.replace(/\s+/g, "") || null;
+  const photos = extractVehiclePhotos(html, rawTitle, sourceUrl);
 
   const extraSpecs = [
     ["Привод", driveTrain], ["Руль", steering], ["Мест", seats], ["Дверей", doors],
@@ -337,7 +366,7 @@ async function fetchHtml(fetchImpl, url, timeoutMs) {
     headers: {
       accept: "text/html,application/xhtml+xml",
       "accept-language": "en-US,en;q=0.9",
-      "user-agent": "AvtocheckGlobalCatalogPilot/0.1 (+public export inventory validation)"
+      "user-agent": "AvtocheckGlobalCatalogPilot/0.2 (+public export inventory validation)"
     },
     signal: AbortSignal.timeout(timeoutMs)
   });
