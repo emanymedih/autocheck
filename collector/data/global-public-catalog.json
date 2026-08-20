@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T13:14:34.110Z",
+  "updatedAt": "2026-08-20T13:35:07.124Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -1972,6 +1972,66 @@
       "updatedAt": "2026-08-20T13:14:34.108Z"
     },
     {
+      "id": "av_5a1fab50265c44d03791",
+      "title": "Maserati Grecale 2023 2.0T GT",
+      "brand": "Maserati",
+      "model": "Grecale",
+      "trim": "2023 2.0T GT",
+      "year": 2023,
+      "mileage": 66000,
+      "city": "Шэньчжэнь",
+      "price": 34680,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Мягкий гибрид 48V",
+      "engine": "2.0T 300hp L4",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2023.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2067 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4846*1948*1670 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M07/4E/FE/1400x0_c42_autohomecar__ChxpVmp_GguALzVzAAQqcsVvxp0982.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T13:14:34.106Z"
+    },
+    {
       "id": "av_0ae38a66eb9bc832974e",
       "title": "Li Auto Li ONE 2020 ONE 1.2T Range-Extended 6-Seater Edition",
       "brand": "Li Auto",
@@ -2711,7 +2771,7 @@
         "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055069129_270_app_J_15.80M-161.20K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/5483756/car/image/6a28be5c0241b/1781055069082_352_app_C_663.59K-347.74K.jpeg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-01T02:18:05+08:00"
@@ -4562,6 +4622,11 @@
           "label": "Дата объявления",
           "text": "2026-08-07 03:47:30",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-20 12:54:33",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -4606,7 +4671,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-07T03:47:30+08:00"
+      "updatedAt": "2026-08-20T12:54:33+08:00"
     },
     {
       "id": "av_44277de104fda73d164c",
@@ -5317,6 +5382,11 @@
           "label": "Дата объявления",
           "text": "2026-08-11 08:49:00",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-20 12:44:29",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -5361,7 +5431,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-11T08:49:00+08:00"
+      "updatedAt": "2026-08-20T12:44:29+08:00"
     },
     {
       "id": "av_be5ece2b3ac05dce0db7",
@@ -6182,6 +6252,11 @@
           "label": "Дата объявления",
           "text": "2026-08-07 03:35:22",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-20 13:12:11",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -6226,7 +6301,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-07T03:35:22+08:00"
+      "updatedAt": "2026-08-20T13:12:11+08:00"
     },
     {
       "id": "av_fcbf4418f491d8806a74",
@@ -6620,66 +6695,6 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-18T08:37:24+08:00"
-    },
-    {
-      "id": "av_5a1fab50265c44d03791",
-      "title": "Maserati Grecale 2023 2.0T GT",
-      "brand": "Maserati",
-      "model": "Grecale",
-      "trim": "2023 2.0T GT",
-      "year": 2023,
-      "mileage": 66000,
-      "city": "Шэньчжэнь",
-      "price": 34680,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Мягкий гибрид 48V",
-      "engine": "2.0T 300hp L4",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2023.01",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2067 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4846*1948*1670 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M07/4E/FE/1400x0_c42_autohomecar__ChxpVmp_GguALzVzAAQqcsVvxp0982.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T13:14:34.106Z"
     }
   ]
 }
