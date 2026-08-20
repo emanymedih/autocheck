@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T07:09:48.456Z",
+  "updatedAt": "2026-08-20T07:28:29.628Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -1392,6 +1392,579 @@
       ],
       "photos": [
         "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/DC/BE/1400x0_c42_autohomecar__ChxpV2oqbVeAONCyAAeCKYUg64w976.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.454Z"
+    },
+    {
+      "id": "av_284c7697f8a5af3d2c3b",
+      "title": "Mercedes-Benz GLC 2020 Facelift GLC 300 L 4MATIC Dynamic",
+      "brand": "Mercedes-Benz",
+      "model": "GLC",
+      "trim": "2020 Facelift GLC 300 L 4MATIC Dynamic",
+      "year": 2020,
+      "mileage": 72200,
+      "city": "Цзинань",
+      "price": 27580,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 258hp L4",
+      "transmission": "9-speed automatic transmission",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2021.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1910 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4764*1898*1642 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/9B/37/1400x0_c42_autohomecar__ChxpVWqGJ4aAKF_EAAFZOlnMoIw485.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.452Z"
+    },
+    {
+      "id": "av_83b8fafc894c4a9b6cd9",
+      "title": "The vehicle has been sold",
+      "brand": null,
+      "model": "The vehicle has been sold",
+      "trim": "The vehicle has been sold",
+      "year": null,
+      "mileage": null,
+      "city": null,
+      "price": null,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": null,
+      "energyType": null,
+      "engine": null,
+      "transmission": null,
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": null,
+      "transfers": null,
+      "vin": null,
+      "description": "Карточка автомобиля отмечена как снятая с продажи.",
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [],
+      "photos": [],
+      "status": "inactive",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.454Z"
+    },
+    {
+      "id": "av_0cb708b589c2be51f6b5",
+      "title": "Leapmotor B10 2025 510 Comfort Edition",
+      "brand": "Leapmotor",
+      "model": "B10",
+      "trim": "2025 510 Comfort Edition",
+      "year": 2025,
+      "mileage": 14000,
+      "city": "Ухань",
+      "price": 9370,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Red",
+      "interiorColor": null,
+      "registration": "2025.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1670 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4515*1885*1655 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M01/D6/69/1400x0_c42_autohomecar__ChxpV2py94KAGqqjAA01rwhzv1w208.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.452Z"
+    },
+    {
+      "id": "av_9b804000557e58a44d65",
+      "title": "NIO ES9",
+      "brand": "NIO",
+      "model": "ES9",
+      "trim": null,
+      "year": 2026,
+      "mileage": 100,
+      "city": "Hefei",
+      "price": 58510,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2845 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5365*2029*1870 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M07/73/2A/1400x0_c42_autohomecar__ChxpV2qCkfmATRjmAAZn3Hr1Keg488.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.452Z"
+    },
+    {
+      "id": "av_da8ba3fd0837198c7c72",
+      "title": "XPeng G01",
+      "brand": "XPeng",
+      "model": "G01",
+      "trim": null,
+      "year": 2026,
+      "mileage": 500,
+      "city": "Гуанчжоу",
+      "price": 44720,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2690 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5265*1999*1800 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M02/8F/A4/1400x0_c42_autohomecar__ChxpV2qFY3aAPASQAAIhvhQcM24276.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.453Z"
+    },
+    {
+      "id": "av_dcee4f390d09f3fcd7db",
+      "title": "Nissan 370Z 2013 3.7L Coupe",
+      "brand": "Nissan",
+      "model": "370Z",
+      "trim": "2013 3.7L Coupe",
+      "year": 2013,
+      "mileage": 55000,
+      "city": "Шэньчжэнь",
+      "price": 32110,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "3.7L 328HP V6",
+      "transmission": "7-speed automatic manual transmission",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2013.11",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive (RWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1515 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4250*1845*1315 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0B/64/80/1400x0_c42_autohomecar__ChxpV2qBNpqASW0GAAhWlSKqcoc571.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.453Z"
+    },
+    {
+      "id": "av_6e43441a975f780306fa",
+      "title": "Chrysler Chrysler 300C (Import) 2016 3.0L Beyond Edition",
+      "brand": null,
+      "model": "Chrysler Chrysler 300C (Import)",
+      "trim": "Chrysler Chrysler 300C (Import) 2016 3.0L Beyond Edition",
+      "year": 2016,
+      "mileage": 63000,
+      "city": "Ханчжоу",
+      "price": 11340,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "3.0L 234 horsepower V6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2018.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear-Wheel Drive (RWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1897 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5066*1902*1488 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/93/CC/1400x0_c42_autohomecar__ChxpV2qFw0OAXx4SAAeYH4yAuHo129.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.453Z"
+    },
+    {
+      "id": "av_4703b617d6a1ec131492",
+      "title": "Acura Acura NSX 2016 3.5L Standard Model",
+      "brand": null,
+      "model": "Acura Acura NSX",
+      "trim": "Acura Acura NSX 2016 3.5L Standard Model",
+      "year": 2016,
+      "mileage": 3400,
+      "city": "Tai_zhou",
+      "price": 161880,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Гибрид (HEV)",
+      "engine": "3.5T 500HP V6",
+      "transmission": "9-speed wet dual clutch",
+      "bodyColor": "Yellow",
+      "interiorColor": null,
+      "registration": "2020.12",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1766 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4490*1940*1215 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M07/BF/B5/1400x0_c42_autohomecar__ChxpWGo-hkyAblaSABKUhGMqEig177.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.453Z"
+    },
+    {
+      "id": "av_f6030b8fd670a524e4d6",
+      "title": "Ford Bronco 2024 2.3T Long Beach",
+      "brand": "Ford",
+      "model": "Bronco",
+      "trim": "2024 2.3T Long Beach",
+      "year": 2024,
+      "mileage": 30000,
+      "city": "Чунцин",
+      "price": 36230,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.3T 275 horsepower L4",
+      "transmission": "10-speed automatic manual transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2024.09",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2172 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4800*1990*1840 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/15/FE/1400x0_c42_autohomecar__Chto52p5sO6AevK2AAa0_Tij1wk462.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T07:09:48.454Z"
+    },
+    {
+      "id": "av_f9f91b34df8a105ff5cd",
+      "title": "Genesis G70 2023 Model 2.0T AWD Flagship",
+      "brand": "Genesis",
+      "model": "G70",
+      "trim": "2023 Model 2.0T AWD Flagship",
+      "year": 2023,
+      "mileage": 20000,
+      "city": "Сучжоу",
+      "price": 20920,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "2.0T 245 horsepower L4",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Red",
+      "interiorColor": null,
+      "registration": "2023.11",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1795 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4700*1850*1400 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/8B/34/1400x0_c42_autohomecar__ChxpWGqFBLKAWvtfABHP6H7CG84328.jpg.webp?format=webp&w=720"
       ],
       "status": "active",
       "listingPlatform": "Autohome Global",
@@ -2883,6 +3456,11 @@
           "label": "Дата объявления",
           "text": "2026-08-06 03:54:06",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-20 02:00:25",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -2936,7 +3514,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-06T03:54:06+08:00"
+      "updatedAt": "2026-08-20T02:00:25+08:00"
     },
     {
       "id": "av_b07128d95c48d20ce9dc",
@@ -3296,6 +3874,14 @@
           "value": "2023/06"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1998CC)"
+        },
+        {
           "label": "Привод",
           "value": "Front-Wheel Drive"
         },
@@ -3422,8 +4008,8 @@
       "mileage": 45000,
       "city": null,
       "price": null,
-      "priceText": "¥1*****",
-      "fobPriceText": "$1****",
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "CNY",
       "body": "SUV",
       "energyType": "Бензин",
@@ -3901,6 +4487,14 @@
           "value": "2023/05"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1998CC)"
+        },
+        {
           "label": "Привод",
           "value": "Front-Wheel Drive"
         },
@@ -3977,6 +4571,14 @@
           "value": "2023/07"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1998CC)"
+        },
+        {
           "label": "Привод",
           "value": "Front-Wheel Drive"
         },
@@ -4047,6 +4649,14 @@
         {
           "label": "Дата производства",
           "value": "2017"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "3.6T(3604CC)"
         },
         {
           "label": "Привод",
@@ -6010,579 +6620,6 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-18T08:37:24+08:00"
-    },
-    {
-      "id": "av_284c7697f8a5af3d2c3b",
-      "title": "Mercedes-Benz GLC 2020 Facelift GLC 300 L 4MATIC Dynamic",
-      "brand": "Mercedes-Benz",
-      "model": "GLC",
-      "trim": "2020 Facelift GLC 300 L 4MATIC Dynamic",
-      "year": 2020,
-      "mileage": 72200,
-      "city": "Цзинань",
-      "price": 27580,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Бензин",
-      "engine": "2.0T 258hp L4",
-      "transmission": "9-speed automatic transmission",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2021.01",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1910 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4764*1898*1642 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/9B/37/1400x0_c42_autohomecar__ChxpVWqGJ4aAKF_EAAFZOlnMoIw485.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.452Z"
-    },
-    {
-      "id": "av_83b8fafc894c4a9b6cd9",
-      "title": "The vehicle has been sold",
-      "brand": null,
-      "model": "The vehicle has been sold",
-      "trim": "The vehicle has been sold",
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": null,
-      "energyType": null,
-      "engine": null,
-      "transmission": null,
-      "bodyColor": null,
-      "interiorColor": null,
-      "registration": null,
-      "transfers": null,
-      "vin": null,
-      "description": "Карточка автомобиля отмечена как снятая с продажи.",
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [],
-      "photos": [],
-      "status": "inactive",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.454Z"
-    },
-    {
-      "id": "av_0cb708b589c2be51f6b5",
-      "title": "Leapmotor B10 2025 510 Comfort Edition",
-      "brand": "Leapmotor",
-      "model": "B10",
-      "trim": "2025 510 Comfort Edition",
-      "year": 2025,
-      "mileage": 14000,
-      "city": "Ухань",
-      "price": 9370,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Red",
-      "interiorColor": null,
-      "registration": "2025.06",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1670 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4515*1885*1655 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M01/D6/69/1400x0_c42_autohomecar__ChxpV2py94KAGqqjAA01rwhzv1w208.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.452Z"
-    },
-    {
-      "id": "av_9b804000557e58a44d65",
-      "title": "NIO ES9",
-      "brand": "NIO",
-      "model": "ES9",
-      "trim": null,
-      "year": 2026,
-      "mileage": 100,
-      "city": "Hefei",
-      "price": 58510,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2026.08",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2845 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5365*2029*1870 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M07/73/2A/1400x0_c42_autohomecar__ChxpV2qCkfmATRjmAAZn3Hr1Keg488.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.452Z"
-    },
-    {
-      "id": "av_da8ba3fd0837198c7c72",
-      "title": "XPeng G01",
-      "brand": "XPeng",
-      "model": "G01",
-      "trim": null,
-      "year": 2026,
-      "mileage": 500,
-      "city": "Гуанчжоу",
-      "price": 44720,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2026.08",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2690 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5265*1999*1800 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M02/8F/A4/1400x0_c42_autohomecar__ChxpV2qFY3aAPASQAAIhvhQcM24276.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.453Z"
-    },
-    {
-      "id": "av_dcee4f390d09f3fcd7db",
-      "title": "Nissan 370Z 2013 3.7L Coupe",
-      "brand": "Nissan",
-      "model": "370Z",
-      "trim": "2013 3.7L Coupe",
-      "year": 2013,
-      "mileage": 55000,
-      "city": "Шэньчжэнь",
-      "price": 32110,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Бензин",
-      "engine": "3.7L 328HP V6",
-      "transmission": "7-speed automatic manual transmission",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2013.11",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear-Wheel Drive (RWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "2"
-        },
-        {
-          "label": "Дверей",
-          "value": "2"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1515 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4250*1845*1315 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0B/64/80/1400x0_c42_autohomecar__ChxpV2qBNpqASW0GAAhWlSKqcoc571.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.453Z"
-    },
-    {
-      "id": "av_6e43441a975f780306fa",
-      "title": "Chrysler Chrysler 300C (Import) 2016 3.0L Beyond Edition",
-      "brand": null,
-      "model": "Chrysler Chrysler 300C (Import)",
-      "trim": "Chrysler Chrysler 300C (Import) 2016 3.0L Beyond Edition",
-      "year": 2016,
-      "mileage": 63000,
-      "city": "Ханчжоу",
-      "price": 11340,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Седан",
-      "energyType": "Бензин",
-      "engine": "3.0L 234 horsepower V6",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2018.06",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear-Wheel Drive (RWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1897 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5066*1902*1488 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/93/CC/1400x0_c42_autohomecar__ChxpV2qFw0OAXx4SAAeYH4yAuHo129.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.453Z"
-    },
-    {
-      "id": "av_4703b617d6a1ec131492",
-      "title": "Acura Acura NSX 2016 3.5L Standard Model",
-      "brand": null,
-      "model": "Acura Acura NSX",
-      "trim": "Acura Acura NSX 2016 3.5L Standard Model",
-      "year": 2016,
-      "mileage": 3400,
-      "city": "Tai_zhou",
-      "price": 161880,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Гибрид (HEV)",
-      "engine": "3.5T 500HP V6",
-      "transmission": "9-speed wet dual clutch",
-      "bodyColor": "Yellow",
-      "interiorColor": null,
-      "registration": "2020.12",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Mid Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "2"
-        },
-        {
-          "label": "Дверей",
-          "value": "2"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1766 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4490*1940*1215 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M07/BF/B5/1400x0_c42_autohomecar__ChxpWGo-hkyAblaSABKUhGMqEig177.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.453Z"
-    },
-    {
-      "id": "av_f6030b8fd670a524e4d6",
-      "title": "Ford Bronco 2024 2.3T Long Beach",
-      "brand": "Ford",
-      "model": "Bronco",
-      "trim": "2024 2.3T Long Beach",
-      "year": 2024,
-      "mileage": 30000,
-      "city": "Чунцин",
-      "price": 36230,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Бензин",
-      "engine": "2.3T 275 horsepower L4",
-      "transmission": "10-speed automatic manual transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2024.09",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2172 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4800*1990*1840 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/15/FE/1400x0_c42_autohomecar__Chto52p5sO6AevK2AAa0_Tij1wk462.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.454Z"
-    },
-    {
-      "id": "av_f9f91b34df8a105ff5cd",
-      "title": "Genesis G70 2023 Model 2.0T AWD Flagship",
-      "brand": "Genesis",
-      "model": "G70",
-      "trim": "2023 Model 2.0T AWD Flagship",
-      "year": 2023,
-      "mileage": 20000,
-      "city": "Сучжоу",
-      "price": 20920,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Седан",
-      "energyType": "Бензин",
-      "engine": "2.0T 245 horsepower L4",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "Red",
-      "interiorColor": null,
-      "registration": "2023.11",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1795 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4700*1850*1400 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/8B/34/1400x0_c42_autohomecar__ChxpWGqFBLKAWvtfABHP6H7CG84328.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-20T07:09:48.454Z"
     }
   ]
 }
