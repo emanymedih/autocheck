@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T02:00:26.022Z",
+  "updatedAt": "2026-08-21T02:13:43.962Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -1978,6 +1978,670 @@
       "updatedAt": "2026-08-20T19:03:32.297Z"
     },
     {
+      "id": "av_6c2fd43973f8f11bec2f",
+      "title": "Genesis G90 2023 3.5T Flagship Version",
+      "brand": "Genesis",
+      "model": "G90",
+      "trim": "2023 3.5T Flagship Version",
+      "year": 2023,
+      "mileage": 60000,
+      "city": "Сучжоу",
+      "price": 69500,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Мягкий гибрид 48V",
+      "engine": "3.5T 415 horsepower V6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2023.04",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Габариты",
+          "value": "5275*1930*1490 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/A5/D4/1400x0_c42_autohomecar__ChtpWGqHCiiAMa2tAA0yxci296k579.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.018Z"
+    },
+    {
+      "id": "av_62aabfc180754d492329",
+      "title": "Volkswagen ID.ERA 2026 4WD Version",
+      "brand": "Volkswagen",
+      "model": "ID.ERA",
+      "trim": "2026 4WD Version",
+      "year": 2026,
+      "mileage": 12500,
+      "city": "Куньмин",
+      "price": 46890,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 143hp",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2700 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5207*1997*1810 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M09/8D/0A/1400x0_c42_autohomecar__ChxpWGqFJ-OASZISAAdHQQoGtjc485.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.019Z"
+    },
+    {
+      "id": "av_8c4c5edf0950e098ac71",
+      "title": "Maserati Levante 2021 3.8T GTS",
+      "brand": "Maserati",
+      "model": "Levante",
+      "trim": "2021 3.8T GTS",
+      "year": 2021,
+      "mileage": 69000,
+      "city": "Чунцин",
+      "price": 64950,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.8T 530HP V8",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Red",
+      "interiorColor": null,
+      "registration": "2022.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Габариты",
+          "value": "5020*1981*1698 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/A1/D9/1400x0_c42_autohomecar__Chto52qGsQmAXEOJAAT-ld2P0wU807.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.019Z"
+    },
+    {
+      "id": "av_a69fba34a23d24f3f5c2",
+      "title": "Maserati MC20 2021 FUORISERIE Custom Edition",
+      "brand": "Maserati",
+      "model": "MC20",
+      "trim": "2021 FUORISERIE Custom Edition",
+      "year": 2021,
+      "mileage": 4000,
+      "city": "Тяньцзинь",
+      "price": 179050,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "--",
+      "energyType": "Прочее",
+      "engine": null,
+      "transmission": "--",
+      "bodyColor": "Yellow",
+      "interiorColor": null,
+      "registration": "2022.03",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "--"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "--"
+        },
+        {
+          "label": "Дверей",
+          "value": "--"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M03/A4/C0/1400x0_c42_autohomecar__ChxpVWqGwbqASKe2AAD29RC3vwU123.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.019Z"
+    },
+    {
+      "id": "av_7723e61a7ef26f620db8",
+      "title": "Li Auto Li Xiang L9 2025 Ultra Smart Renewal Edition",
+      "brand": "Li Auto",
+      "model": "Li Xiang L9",
+      "trim": "2025 Ultra Smart Renewal Edition",
+      "year": 2025,
+      "mileage": 6100,
+      "city": "Цзинань",
+      "price": 42910,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 154 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Green",
+      "interiorColor": null,
+      "registration": "2025.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2570 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5218*1998*1800 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/A0/60/1400x0_c42_autohomecar__Chto52qGnUyAL8oRAAewaFd_WXE314.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_b923ebdfb2d198bb3037",
+      "title": "Jetour X70 Jetour Zongheng G700 2025 Base Model 5-seater",
+      "brand": null,
+      "model": "Jetour X70 Jetour Zongheng G700",
+      "trim": "Jetour X70 Jetour Zongheng G700 2025 Base Model 5-seater",
+      "year": 2025,
+      "mileage": 9000,
+      "city": "Шэньчжэнь",
+      "price": 45340,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "2.0T 211 HP L4",
+      "transmission": "2-speed DHT",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2026.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "3121 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5198*2050*1956 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M06/9A/41/1400x0_c42_autohomecar__ChtpWGqGo_aAEUzPAAcXbSaUmOY641.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_fa585de924845ae3c8da",
+      "title": "Changan UNI-V 2022 1.5T Sport Edition",
+      "brand": "Changan",
+      "model": "UNI-V",
+      "trim": "2022 1.5T Sport Edition",
+      "year": 2022,
+      "mileage": 28000,
+      "city": "Huizhou",
+      "price": 5690,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Лифтбек",
+      "energyType": "Бензин",
+      "engine": "1.5T 188 HP L4",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2023.09",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1400 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4695*1838*1430 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M0B/A6/85/1400x0_c42_autohomecar__ChxpVWqGzrWAC3enAASDDj43Q6Q449.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_e7d2b624adac49fff1e2",
+      "title": "Ford Focus (Import) 2018 2.3T RS Track Edition",
+      "brand": "Ford",
+      "model": "Focus (Import)",
+      "trim": "2018 2.3T RS Track Edition",
+      "year": 2018,
+      "mileage": 34000,
+      "city": "Шэньчжэнь",
+      "price": 23980,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Хэтчбек",
+      "energyType": "Бензин",
+      "engine": "2.3T 350HP L4",
+      "transmission": "6-speed manual",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2019.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1572 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4390*1823*1482 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/79/5A/1400x0_c42_autohomecar__ChxpVmqCwSyAJyRoAAeOGHBLJEY523.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_42050e424da67e3b1638",
+      "title": "Li Auto MEGA 2024 Ultra",
+      "brand": "Li Auto",
+      "model": "MEGA",
+      "trim": "2024 Ultra",
+      "year": 2024,
+      "mileage": 11200,
+      "city": "Чжэнчжоу",
+      "price": 49710,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2024.03",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2785 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5350*1965*1850 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/97/E1/1400x0_c42_autohomecar__ChtpWGqGeOiAN-n9AATIuNrapJA871.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_f8f908d158960d365603",
+      "title": "SAIC Maxus Dajia 9 2022 Long Range Grassland 7-Seater",
+      "brand": null,
+      "model": "SAIC Maxus Dajia 9",
+      "trim": "SAIC Maxus Dajia 9 2022 Long Range Grassland 7-Seater",
+      "year": 2022,
+      "mileage": 115900,
+      "city": "Шэньян",
+      "price": 14720,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2022.09",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2410 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5270*2000*1840 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/9F/10/1400x0_c42_autohomecar__ChtpWGqGxsKAWizyAAHJCjuifXU899.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_68e584e73da0b018c26e",
+      "title": "Toyota 2021 Sienna 2.5 CVT Ultimate Edition",
+      "brand": "Toyota",
+      "model": "Sienna 2.5 CVT Ultimate Edition",
+      "trim": null,
+      "year": 2021,
+      "mileage": 94000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "MPV",
+      "energyType": "Гибрид (HEV)",
+      "engine": "2.5L 189PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/07/04",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании продавца указан заводской окрас кузова.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:57:18",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-20 06:03:26",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Hybrid"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.5L(2487CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "139 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_68e584e73da0b018c26e.jpg",
+        "https://img.jytche.com/user/264734/car/image/6a85b6155959f/1787147797166U1430_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b61ae6ef7/1787147802735N11419.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b61fe1d4f/1787147807718m3975_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b6250b9af/1787147812835t7400_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b62a06327/1787147817810M2039.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b62fcde0e/1787147823627y139_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b53f57a3f/1787147583152G10720_55570.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b53f57a3f/1787147583154n4404_56312.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/264734/car/image/6a85b53f57a3f/1787147583155o3614_72074.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-20T06:03:26+08:00"
+    },
+    {
       "id": "av_0ae38a66eb9bc832974e",
       "title": "Li Auto Li ONE 2020 ONE 1.2T Range-Extended 6-Seater Edition",
       "brand": "Li Auto",
@@ -2280,8 +2944,8 @@
       "mileage": 143000,
       "city": null,
       "price": null,
-      "priceText": null,
-      "fobPriceText": null,
+      "priceText": "¥9****",
+      "fobPriceText": "$1****",
       "currency": "CNY",
       "body": "Седан",
       "energyType": "Бензин",
@@ -2308,6 +2972,14 @@
           "value": "2023"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1987CC)"
+        },
+        {
           "label": "Привод",
           "value": "Front-Wheel Drive"
         },
@@ -2330,7 +3002,7 @@
         "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774141i1308_73725.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/25816/car/image/6a85b5fe21185/1787147774142I2061_91953.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-19T13:56:53+08:00"
@@ -2560,6 +3232,84 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-19T13:56:19+08:00"
+    },
+    {
+      "id": "av_1ad04db2e0133feed4db",
+      "title": "Toyota 2012 Highlander 2.7 2WD 7-seat Luxury Navigation Edition",
+      "brand": "Toyota",
+      "model": "Highlander 2.7 2WD 7-seat Luxury Navigation Edition",
+      "trim": null,
+      "year": 2012,
+      "mileage": 160000,
+      "city": null,
+      "price": null,
+      "priceText": "¥4****",
+      "fobPriceText": "$6***",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.7L 188PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2013/09/04",
+      "transfers": null,
+      "vin": null,
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:56:10",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2013"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.7L(2672CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "138 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China IV"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_1ad04db2e0133feed4db.jpg",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661464l1450_633681_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661466s6369_660832.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661467I10994_579605_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661468z1820_635295.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661469T9685_492006.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661470p10915_364860_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661472U3372_407469.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661473X1181_473806.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b58d8d416/1787147661474N4074_455375.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b5b6a9bc7/1787147702579j12387_505565.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b5b6a9bc7/1787147702580E3554_478127.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1201421/car/image/6a85b5b6a9bc7/1787147702581o9803_571707.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "unknown",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T13:56:10+08:00"
     },
     {
       "id": "av_507a690d53b58c077477",
@@ -4208,6 +4958,14 @@
           "value": "2017"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "3.6T(3604CC)"
+        },
+        {
           "label": "Привод",
           "value": "All-Wheel Drive"
         },
@@ -5474,8 +6232,8 @@
       "mileage": 13000,
       "city": null,
       "price": null,
-      "priceText": "¥1*****",
-      "fobPriceText": "$1****",
+      "priceText": null,
+      "fobPriceText": null,
       "currency": "CNY",
       "body": "Седан",
       "energyType": "Электро",
@@ -7187,588 +7945,152 @@
       "updatedAt": "2026-08-17T10:17:10+08:00"
     },
     {
-      "id": "av_6c2fd43973f8f11bec2f",
-      "title": "Genesis G90 2023 3.5T Flagship Version",
-      "brand": "Genesis",
-      "model": "G90",
-      "trim": "2023 3.5T Flagship Version",
-      "year": 2023,
-      "mileage": 60000,
-      "city": "Сучжоу",
-      "price": 69500,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Седан",
-      "energyType": "Мягкий гибрид 48V",
-      "engine": "3.5T 415 horsepower V6",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2023.04",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Габариты",
-          "value": "5275*1930*1490 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/A5/D4/1400x0_c42_autohomecar__ChtpWGqHCiiAMa2tAA0yxci296k579.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.018Z"
-    },
-    {
-      "id": "av_62aabfc180754d492329",
-      "title": "Volkswagen ID.ERA 2026 4WD Version",
-      "brand": "Volkswagen",
-      "model": "ID.ERA",
-      "trim": "2026 4WD Version",
-      "year": 2026,
-      "mileage": 12500,
-      "city": "Куньмин",
-      "price": 46890,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 143hp",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2026.05",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2700 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5207*1997*1810 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M09/8D/0A/1400x0_c42_autohomecar__ChxpWGqFJ-OASZISAAdHQQoGtjc485.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.019Z"
-    },
-    {
-      "id": "av_8c4c5edf0950e098ac71",
-      "title": "Maserati Levante 2021 3.8T GTS",
-      "brand": "Maserati",
-      "model": "Levante",
-      "trim": "2021 3.8T GTS",
+      "id": "av_8b65a317d8072faacbeb",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
       "year": 2021,
-      "mileage": 69000,
-      "city": "Чунцин",
-      "price": 64950,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "mileage": 120000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "SUV",
       "energyType": "Бензин",
-      "engine": "3.8T 530HP V8",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "Red",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2022.01",
+      "registration": "2021/07/20",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Серьёзных ДТП продавец не заявляет.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-20 15:31:18",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Габариты",
-          "value": "5020*1981*1698 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/A1/D9/1400x0_c42_autohomecar__Chto52qGsQmAXEOJAAT-ld2P0wU807.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_8b65a317d8072faacbeb.jpg",
+        "https://img.jytche.com/user/2926714/car/image/6a87162ba1e3b/1787237931696_819_app_U_432.57K-432.57K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162ba1569/1787237931693_224_app_J_481.14K-481.14K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162ba9a34/1787237931730_242_app_F_601.05K-722.56K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162ba2ccc/1787237931699_006_app_M_433.25K-433.25K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162babb59/1787237931738_373_app_V_411.08K-411.08K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162ba9a34/1787237931726_305_app_U_474.64K-474.64K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162bb4199/1787237931772_876_app_S_423.29K-423.29K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2926714/car/image/6a87162bbdd95/1787237931806_850_app_E_488.65K-488.65K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.019Z"
+      "updatedAt": "2026-08-20T15:31:18+08:00"
     },
     {
-      "id": "av_a69fba34a23d24f3f5c2",
-      "title": "Maserati MC20 2021 FUORISERIE Custom Edition",
-      "brand": "Maserati",
-      "model": "MC20",
-      "trim": "2021 FUORISERIE Custom Edition",
-      "year": 2021,
-      "mileage": 4000,
-      "city": "Тяньцзинь",
-      "price": 179050,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "--",
-      "energyType": "Прочее",
-      "engine": null,
-      "transmission": "--",
-      "bodyColor": "Yellow",
-      "interiorColor": null,
-      "registration": "2022.03",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "--"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "--"
-        },
-        {
-          "label": "Дверей",
-          "value": "--"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M03/A4/C0/1400x0_c42_autohomecar__ChxpVWqGwbqASKe2AAD29RC3vwU123.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.019Z"
-    },
-    {
-      "id": "av_7723e61a7ef26f620db8",
-      "title": "Li Auto Li Xiang L9 2025 Ultra Smart Renewal Edition",
-      "brand": "Li Auto",
-      "model": "Li Xiang L9",
-      "trim": "2025 Ultra Smart Renewal Edition",
-      "year": 2025,
-      "mileage": 6100,
-      "city": "Цзинань",
-      "price": 42910,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "id": "av_6061c7863f64e157dbda",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 54000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "SUV",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 154 HP",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Green",
-      "interiorColor": null,
-      "registration": "2025.05",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2570 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5218*1998*1800 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/A0/60/1400x0_c42_autohomecar__Chto52qGnUyAL8oRAAewaFd_WXE314.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.020Z"
-    },
-    {
-      "id": "av_b923ebdfb2d198bb3037",
-      "title": "Jetour X70 Jetour Zongheng G700 2025 Base Model 5-seater",
-      "brand": null,
-      "model": "Jetour X70 Jetour Zongheng G700",
-      "trim": "Jetour X70 Jetour Zongheng G700 2025 Base Model 5-seater",
-      "year": 2025,
-      "mileage": 9000,
-      "city": "Шэньчжэнь",
-      "price": 45340,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Подключаемый гибрид (PHEV)",
-      "engine": "2.0T 211 HP L4",
-      "transmission": "2-speed DHT",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2026.01",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "3121 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5198*2050*1956 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M06/9A/41/1400x0_c42_autohomecar__ChtpWGqGo_aAEUzPAAcXbSaUmOY641.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.020Z"
-    },
-    {
-      "id": "av_fa585de924845ae3c8da",
-      "title": "Changan UNI-V 2022 1.5T Sport Edition",
-      "brand": "Changan",
-      "model": "UNI-V",
-      "trim": "2022 1.5T Sport Edition",
-      "year": 2022,
-      "mileage": 28000,
-      "city": "Huizhou",
-      "price": 5690,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Лифтбек",
       "energyType": "Бензин",
-      "engine": "1.5T 188 HP L4",
-      "transmission": "7-speed wet dual-clutch",
-      "bodyColor": "White",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2023.09",
+      "registration": "2022/01/25",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-20 05:52:56",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
+          "value": "Front-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
         },
         {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1400 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4695*1838*1430 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M0B/A6/85/1400x0_c42_autohomecar__ChxpVWqGzrWAC3enAASDDj43Q6Q449.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_6061c7863f64e157dbda.jpg",
+        "https://img.jytche.com/user/411655/car/image/6a8695d6946f0/1787205078684_812_app_X_1.78M-358.26K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695bd34bbd/1787205054693_554_app_H_351.68K-351.68K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695bd34bbd/1787205057500_940_app_F_310.17K-310.17K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695bd34bbd/1787205059494_983_app_E_258.44K-258.44K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695df1cb37/1787205087197_555_app_L_1.57M-298.35K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695bd34bbd/1787205063425_583_app_F_325.77K-325.77K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695bd34bbd/1787205065513_860_app_N_332.36K-332.36K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/411655/car/image/6a8695bd34bbd/1787205067691_103_app_L_317.93K-317.93K_parse.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.020Z"
-    },
-    {
-      "id": "av_e7d2b624adac49fff1e2",
-      "title": "Ford Focus (Import) 2018 2.3T RS Track Edition",
-      "brand": "Ford",
-      "model": "Focus (Import)",
-      "trim": "2018 2.3T RS Track Edition",
-      "year": 2018,
-      "mileage": 34000,
-      "city": "Шэньчжэнь",
-      "price": 23980,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Хэтчбек",
-      "energyType": "Бензин",
-      "engine": "2.3T 350HP L4",
-      "transmission": "6-speed manual",
-      "bodyColor": "Blue",
-      "interiorColor": null,
-      "registration": "2019.01",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1572 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4390*1823*1482 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/79/5A/1400x0_c42_autohomecar__ChxpVmqCwSyAJyRoAAeOGHBLJEY523.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.020Z"
-    },
-    {
-      "id": "av_42050e424da67e3b1638",
-      "title": "Li Auto MEGA 2024 Ultra",
-      "brand": "Li Auto",
-      "model": "MEGA",
-      "trim": "2024 Ultra",
-      "year": 2024,
-      "mileage": 11200,
-      "city": "Чжэнчжоу",
-      "price": 49710,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "MPV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Silver",
-      "interiorColor": null,
-      "registration": "2024.03",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "7"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2785 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5350*1965*1850 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/97/E1/1400x0_c42_autohomecar__ChtpWGqGeOiAN-n9AATIuNrapJA871.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.020Z"
-    },
-    {
-      "id": "av_f8f908d158960d365603",
-      "title": "SAIC Maxus Dajia 9 2022 Long Range Grassland 7-Seater",
-      "brand": null,
-      "model": "SAIC Maxus Dajia 9",
-      "trim": "SAIC Maxus Dajia 9 2022 Long Range Grassland 7-Seater",
-      "year": 2022,
-      "mileage": 115900,
-      "city": "Шэньян",
-      "price": 14720,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "MPV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2022.09",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "7"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2410 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5270*2000*1840 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/9F/10/1400x0_c42_autohomecar__ChtpWGqGxsKAWizyAAHJCjuifXU899.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-21T02:00:26.020Z"
+      "updatedAt": "2026-08-20T05:52:56+08:00"
     }
   ]
 }
