@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T19:20:06.376Z",
+  "updatedAt": "2026-08-21T02:00:26.022Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -10,7 +10,7 @@
       "year": 2017,
       "mileage": 82000,
       "city": "Сучжоу",
-      "price": 25140,
+      "price": 25160,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -59,7 +59,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_b8a63a4644b6b0443e57",
@@ -70,7 +70,7 @@
       "year": 2026,
       "mileage": 4300,
       "city": "Чанша",
-      "price": 58480,
+      "price": 58540,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -119,7 +119,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.295Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_eca777a2fe95507359e3",
@@ -130,7 +130,7 @@
       "year": 2024,
       "mileage": 69000,
       "city": "Чжэнчжоу",
-      "price": 31530,
+      "price": 31560,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -179,7 +179,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_69010a116debf794a5f2",
@@ -190,7 +190,7 @@
       "year": 2026,
       "mileage": 100,
       "city": "Шэньчжэнь",
-      "price": 154000,
+      "price": 154160,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -239,7 +239,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_4afd7a357deed76871ae",
@@ -250,7 +250,7 @@
       "year": 2024,
       "mileage": 8000,
       "city": "Чанша",
-      "price": 36810,
+      "price": 36840,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -295,7 +295,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_51801d05634b45f2caf0",
@@ -306,7 +306,7 @@
       "year": 2025,
       "mileage": 35000,
       "city": "Ханчжоу",
-      "price": 95190,
+      "price": 95290,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -355,7 +355,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_7e3f73ce4578e961e809",
@@ -366,7 +366,7 @@
       "year": 2023,
       "mileage": 15000,
       "city": "Ханчжоу",
-      "price": 163700,
+      "price": 163870,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -415,7 +415,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_f162a6f5e5c4facb604e",
@@ -426,7 +426,7 @@
       "year": 2022,
       "mileage": 20000,
       "city": "Сучжоу",
-      "price": 19410,
+      "price": 19430,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -475,7 +475,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_ea15f31ef57a2e5fd129",
@@ -486,7 +486,7 @@
       "year": 2025,
       "mileage": 14000,
       "city": "Jining",
-      "price": 26450,
+      "price": 26480,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -535,7 +535,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_33626fdf34c9fbbb94d1",
@@ -546,7 +546,7 @@
       "year": 2021,
       "mileage": 13000,
       "city": "Шэньчжэнь",
-      "price": 72610,
+      "price": 72680,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -595,7 +595,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_8ee4b55b72b484732b9e",
@@ -606,7 +606,7 @@
       "year": 2021,
       "mileage": 78000,
       "city": "Guiyang",
-      "price": 31530,
+      "price": 31560,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -655,7 +655,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_092e687b3c1d15e71f18",
@@ -666,7 +666,7 @@
       "year": 2025,
       "mileage": 10000,
       "city": "Shijiazhuang",
-      "price": 30020,
+      "price": 30050,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -715,7 +715,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_3d4579ed3d7e9d46c0d5",
@@ -726,7 +726,7 @@
       "year": 2025,
       "mileage": 10000,
       "city": "Сучжоу",
-      "price": 28650,
+      "price": 28680,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -775,7 +775,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_fbdd30953599e60a3a8e",
@@ -786,7 +786,7 @@
       "year": 2011,
       "mileage": 30000,
       "city": "Шэньчжэнь",
-      "price": 169460,
+      "price": 169640,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -835,7 +835,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_ccaf38a9443096e98ca1",
@@ -846,7 +846,7 @@
       "year": 2026,
       "mileage": 10,
       "city": "Чунцин",
-      "price": 71060,
+      "price": 71140,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -895,7 +895,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_add4b0df7eb8598fe851",
@@ -906,7 +906,7 @@
       "year": 2026,
       "mileage": 200,
       "city": "Нанкин",
-      "price": 54390,
+      "price": 54450,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -955,7 +955,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_56fc4a5463ae36712842",
@@ -966,7 +966,7 @@
       "year": 2024,
       "mileage": 2000,
       "city": "Ханчжоу",
-      "price": 265250,
+      "price": 265530,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1011,7 +1011,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_c17e8b59c58ac6911005",
@@ -1022,7 +1022,7 @@
       "year": 2021,
       "mileage": 15000,
       "city": "Шанхай",
-      "price": 36080,
+      "price": 36120,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1063,7 +1063,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_4da0167c780ec67029af",
@@ -1074,7 +1074,7 @@
       "year": 2022,
       "mileage": 51000,
       "city": "Чэнду",
-      "price": 89130,
+      "price": 89220,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1123,7 +1123,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_34350fbf455c0bfe646d",
@@ -1134,7 +1134,7 @@
       "year": 2024,
       "mileage": 35000,
       "city": "Сямынь",
-      "price": 18160,
+      "price": 18180,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1183,67 +1183,40 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_5449a0ba2286497aeb87",
-      "title": "Ledao Ledao L90 2025 2WD Base Model",
+      "title": "The vehicle has been sold",
       "brand": null,
-      "model": "Ledao Ledao L90",
-      "trim": "Ledao Ledao L90 2025 2WD Base Model",
-      "year": 2025,
-      "mileage": 20000,
-      "city": "Чэнду",
-      "price": 20150,
+      "model": "The vehicle has been sold",
+      "trim": "The vehicle has been sold",
+      "year": null,
+      "mileage": null,
+      "city": null,
+      "price": null,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
-      "energyType": "Электро",
+      "body": null,
+      "energyType": null,
       "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
+      "transmission": null,
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2025.08",
+      "registration": null,
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Карточка автомобиля отмечена как снятая с продажи.",
       "features": [],
       "listingFacts": [],
       "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2300 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5145*1998*1766 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/7A/50/1400x0_c42_autohomecar__Chto52qC1YWAZiQgAA7PlsNh3jU489.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
+      "extraSpecs": [],
+      "photos": [],
+      "status": "inactive",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_296a157f5694bbaf520f",
@@ -1254,7 +1227,7 @@
       "year": 2024,
       "mileage": 2000,
       "city": "Сямынь",
-      "price": 57300,
+      "price": 57360,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1303,7 +1276,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_df1c036d048a063f8e5c",
@@ -1314,7 +1287,7 @@
       "year": 2026,
       "mileage": 1000,
       "city": "Zibo",
-      "price": 63480,
+      "price": 63550,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1363,7 +1336,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_60112131faacfc3702d4",
@@ -1374,7 +1347,7 @@
       "year": 2015,
       "mileage": 49000,
       "city": "Шэньчжэнь",
-      "price": 86100,
+      "price": 86190,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1423,7 +1396,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.021Z"
     },
     {
       "id": "av_284c7697f8a5af3d2c3b",
@@ -1434,7 +1407,7 @@
       "year": 2020,
       "mileage": 72200,
       "city": "Цзинань",
-      "price": 26330,
+      "price": 26360,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1483,7 +1456,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_83b8fafc894c4a9b6cd9",
@@ -1560,7 +1533,7 @@
       "year": 2026,
       "mileage": 100,
       "city": "Hefei",
-      "price": 58510,
+      "price": 58570,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1609,7 +1582,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.019Z"
     },
     {
       "id": "av_da8ba3fd0837198c7c72",
@@ -1620,7 +1593,7 @@
       "year": 2026,
       "mileage": 500,
       "city": "Гуанчжоу",
-      "price": 44720,
+      "price": 44770,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1669,7 +1642,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_dcee4f390d09f3fcd7db",
@@ -1680,7 +1653,7 @@
       "year": 2013,
       "mileage": 55000,
       "city": "Шэньчжэнь",
-      "price": 32110,
+      "price": 32140,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1729,7 +1702,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.296Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_6e43441a975f780306fa",
@@ -1740,7 +1713,7 @@
       "year": 2016,
       "mileage": 63000,
       "city": "Ханчжоу",
-      "price": 11340,
+      "price": 11350,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1789,7 +1762,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_4703b617d6a1ec131492",
@@ -1800,7 +1773,7 @@
       "year": 2016,
       "mileage": 3400,
       "city": "Tai_zhou",
-      "price": 161880,
+      "price": 162050,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1849,7 +1822,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_f6030b8fd670a524e4d6",
@@ -1860,7 +1833,7 @@
       "year": 2024,
       "mileage": 30000,
       "city": "Чунцин",
-      "price": 36230,
+      "price": 36270,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1909,7 +1882,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_f9f91b34df8a105ff5cd",
@@ -1920,7 +1893,7 @@
       "year": 2023,
       "mileage": 20000,
       "city": "Сучжоу",
-      "price": 20920,
+      "price": 20940,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
@@ -1969,7 +1942,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-20T19:03:32.297Z"
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     },
     {
       "id": "av_5a1fab50265c44d03791",
@@ -7212,6 +7185,590 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-17T10:17:10+08:00"
+    },
+    {
+      "id": "av_6c2fd43973f8f11bec2f",
+      "title": "Genesis G90 2023 3.5T Flagship Version",
+      "brand": "Genesis",
+      "model": "G90",
+      "trim": "2023 3.5T Flagship Version",
+      "year": 2023,
+      "mileage": 60000,
+      "city": "Сучжоу",
+      "price": 69500,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Мягкий гибрид 48V",
+      "engine": "3.5T 415 horsepower V6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2023.04",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Габариты",
+          "value": "5275*1930*1490 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/A5/D4/1400x0_c42_autohomecar__ChtpWGqHCiiAMa2tAA0yxci296k579.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.018Z"
+    },
+    {
+      "id": "av_62aabfc180754d492329",
+      "title": "Volkswagen ID.ERA 2026 4WD Version",
+      "brand": "Volkswagen",
+      "model": "ID.ERA",
+      "trim": "2026 4WD Version",
+      "year": 2026,
+      "mileage": 12500,
+      "city": "Куньмин",
+      "price": 46890,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 143hp",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2700 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5207*1997*1810 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M09/8D/0A/1400x0_c42_autohomecar__ChxpWGqFJ-OASZISAAdHQQoGtjc485.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.019Z"
+    },
+    {
+      "id": "av_8c4c5edf0950e098ac71",
+      "title": "Maserati Levante 2021 3.8T GTS",
+      "brand": "Maserati",
+      "model": "Levante",
+      "trim": "2021 3.8T GTS",
+      "year": 2021,
+      "mileage": 69000,
+      "city": "Чунцин",
+      "price": 64950,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.8T 530HP V8",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Red",
+      "interiorColor": null,
+      "registration": "2022.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Габариты",
+          "value": "5020*1981*1698 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/A1/D9/1400x0_c42_autohomecar__Chto52qGsQmAXEOJAAT-ld2P0wU807.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.019Z"
+    },
+    {
+      "id": "av_a69fba34a23d24f3f5c2",
+      "title": "Maserati MC20 2021 FUORISERIE Custom Edition",
+      "brand": "Maserati",
+      "model": "MC20",
+      "trim": "2021 FUORISERIE Custom Edition",
+      "year": 2021,
+      "mileage": 4000,
+      "city": "Тяньцзинь",
+      "price": 179050,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "--",
+      "energyType": "Прочее",
+      "engine": null,
+      "transmission": "--",
+      "bodyColor": "Yellow",
+      "interiorColor": null,
+      "registration": "2022.03",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "--"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "--"
+        },
+        {
+          "label": "Дверей",
+          "value": "--"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M03/A4/C0/1400x0_c42_autohomecar__ChxpVWqGwbqASKe2AAD29RC3vwU123.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.019Z"
+    },
+    {
+      "id": "av_7723e61a7ef26f620db8",
+      "title": "Li Auto Li Xiang L9 2025 Ultra Smart Renewal Edition",
+      "brand": "Li Auto",
+      "model": "Li Xiang L9",
+      "trim": "2025 Ultra Smart Renewal Edition",
+      "year": 2025,
+      "mileage": 6100,
+      "city": "Цзинань",
+      "price": 42910,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 154 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Green",
+      "interiorColor": null,
+      "registration": "2025.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2570 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5218*1998*1800 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/A0/60/1400x0_c42_autohomecar__Chto52qGnUyAL8oRAAewaFd_WXE314.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_b923ebdfb2d198bb3037",
+      "title": "Jetour X70 Jetour Zongheng G700 2025 Base Model 5-seater",
+      "brand": null,
+      "model": "Jetour X70 Jetour Zongheng G700",
+      "trim": "Jetour X70 Jetour Zongheng G700 2025 Base Model 5-seater",
+      "year": 2025,
+      "mileage": 9000,
+      "city": "Шэньчжэнь",
+      "price": 45340,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "2.0T 211 HP L4",
+      "transmission": "2-speed DHT",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2026.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "3121 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5198*2050*1956 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M06/9A/41/1400x0_c42_autohomecar__ChtpWGqGo_aAEUzPAAcXbSaUmOY641.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_fa585de924845ae3c8da",
+      "title": "Changan UNI-V 2022 1.5T Sport Edition",
+      "brand": "Changan",
+      "model": "UNI-V",
+      "trim": "2022 1.5T Sport Edition",
+      "year": 2022,
+      "mileage": 28000,
+      "city": "Huizhou",
+      "price": 5690,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Лифтбек",
+      "energyType": "Бензин",
+      "engine": "1.5T 188 HP L4",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2023.09",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1400 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4695*1838*1430 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M0B/A6/85/1400x0_c42_autohomecar__ChxpVWqGzrWAC3enAASDDj43Q6Q449.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_e7d2b624adac49fff1e2",
+      "title": "Ford Focus (Import) 2018 2.3T RS Track Edition",
+      "brand": "Ford",
+      "model": "Focus (Import)",
+      "trim": "2018 2.3T RS Track Edition",
+      "year": 2018,
+      "mileage": 34000,
+      "city": "Шэньчжэнь",
+      "price": 23980,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Хэтчбек",
+      "energyType": "Бензин",
+      "engine": "2.3T 350HP L4",
+      "transmission": "6-speed manual",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2019.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1572 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4390*1823*1482 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M02/79/5A/1400x0_c42_autohomecar__ChxpVmqCwSyAJyRoAAeOGHBLJEY523.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_42050e424da67e3b1638",
+      "title": "Li Auto MEGA 2024 Ultra",
+      "brand": "Li Auto",
+      "model": "MEGA",
+      "trim": "2024 Ultra",
+      "year": 2024,
+      "mileage": 11200,
+      "city": "Чжэнчжоу",
+      "price": 49710,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2024.03",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2785 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5350*1965*1850 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/97/E1/1400x0_c42_autohomecar__ChtpWGqGeOiAN-n9AATIuNrapJA871.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
+    },
+    {
+      "id": "av_f8f908d158960d365603",
+      "title": "SAIC Maxus Dajia 9 2022 Long Range Grassland 7-Seater",
+      "brand": null,
+      "model": "SAIC Maxus Dajia 9",
+      "trim": "SAIC Maxus Dajia 9 2022 Long Range Grassland 7-Seater",
+      "year": 2022,
+      "mileage": 115900,
+      "city": "Шэньян",
+      "price": 14720,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2022.09",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2410 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5270*2000*1840 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/9F/10/1400x0_c42_autohomecar__ChtpWGqGxsKAWizyAAHJCjuifXU899.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T02:00:26.020Z"
     }
   ]
 }
