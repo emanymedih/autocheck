@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T01:53:44.050Z",
+  "updatedAt": "2026-08-22T02:05:37.321Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -2549,6 +2549,586 @@
       "listingPlatform": "Autohome Global",
       "sellerName": null,
       "updatedAt": "2026-08-22T01:53:44.048Z"
+    },
+    {
+      "id": "av_b58e344375e42dd0da82",
+      "title": "Hengchi Hengchi 5 2022 Ultra Luxury Edition",
+      "brand": null,
+      "model": "Hengchi Hengchi 5",
+      "trim": "Hengchi Hengchi 5 2022 Ultra Luxury Edition",
+      "year": 2022,
+      "mileage": 82300,
+      "city": "Hefei",
+      "price": 9690,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Yellow",
+      "interiorColor": null,
+      "registration": "2023.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1985 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4725*1925*1676 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M07/06/39/1400x0_c42_autohomecar__ChxpWGp4XbSAP3qXAAJ16dNwBJk982.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.045Z"
+    },
+    {
+      "id": "av_9f65154c1264e6538f9d",
+      "title": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "brand": null,
+      "model": "Lotus Cars EMIRA",
+      "trim": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "year": 2021,
+      "mileage": 20000,
+      "city": "Шэньчжэнь",
+      "price": 74070,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "2.0T 405HP L4",
+      "transmission": "8-Speed Wet Dual Clutch",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2024.04",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1460 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4413*1896*1235 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/C4/4F/1400x0_c42_autohomecar__Chto52qIaDiAdtd7AAoJbwjhYN4470.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.046Z"
+    },
+    {
+      "id": "av_3a7167fe098ed322c413",
+      "title": "Xiaomi Vision Gran Turismo 2026 Concept Edition",
+      "brand": "Xiaomi",
+      "model": "Vision Gran Turismo",
+      "trim": "2026 Concept Edition",
+      "year": 2026,
+      "mileage": 4500,
+      "city": "Шэньчжэнь",
+      "price": 69630,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "--",
+      "energyType": "Прочее",
+      "engine": null,
+      "transmission": "--",
+      "bodyColor": "Red",
+      "interiorColor": null,
+      "registration": "2026.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "--"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "--"
+        },
+        {
+          "label": "Дверей",
+          "value": "--"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M09/BA/72/1400x0_c42_autohomecar__ChxpV2qH9yuAT0CrAAiMa1DG2bQ213.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.046Z"
+    },
+    {
+      "id": "av_84256a8b05ebae4be403",
+      "title": "Toyota Camry 2024 Model Dual Hybrid 2.0HXS Sport Plus Edition",
+      "brand": "Toyota",
+      "model": "Camry",
+      "trim": "2024 Model Dual Hybrid 2.0HXS Sport Plus Edition",
+      "year": 2024,
+      "mileage": 22000,
+      "city": "Гуанчжоу",
+      "price": 17000,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Гибрид (HEV)",
+      "engine": "2.0L 152 horsepower L4",
+      "transmission": "E-CVT Continuously Variable Transmission",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2024.10",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1610 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4950*1850*1450 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/B9/DE/1400x0_c42_autohomecar__ChxpVmqHvRGAUoXdAALHBjqtzMM877.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
+    },
+    {
+      "id": "av_d6f531fafc9faf97e83a",
+      "title": "Ferrari 458 2011 4.5L Italia",
+      "brand": "Ferrari",
+      "model": "458",
+      "trim": "2011 4.5L Italia",
+      "year": 2011,
+      "mileage": 38000,
+      "city": "Шэньчжэнь",
+      "price": 84690,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "4.5L 570HP V8",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "Red",
+      "interiorColor": null,
+      "registration": "2010.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1380 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4527*1937*1213 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M06/C4/5C/1400x0_c42_autohomecar__ChxpVmqIa8iAaHsGAAv53WbRfm0687.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
+    },
+    {
+      "id": "av_976518a9d2cee207ac5f",
+      "title": "Maserati Levante 2021 3.8T Trofeo",
+      "brand": "Maserati",
+      "model": "Levante",
+      "trim": "2021 3.8T Trofeo",
+      "year": 2021,
+      "mileage": 15000,
+      "city": "Ухань",
+      "price": 134770,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.8T 581hp V8",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2021.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2345 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5020*1981*1698 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M07/A0/28/1400x0_c42_autohomecar__ChxpVWqGm82ASa1gAAW6EFF80iE353.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
+    },
+    {
+      "id": "av_f0ad97e743eb3650c9ec",
+      "title": "BMW X2 2021 sDrive25i Leading M Sport Package",
+      "brand": "BMW",
+      "model": "X2",
+      "trim": "2021 sDrive25i Leading M Sport Package",
+      "year": 2021,
+      "mileage": 23000,
+      "city": "Guiyang",
+      "price": 16520,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 192HP L4",
+      "transmission": "7-speed wet dual-clutch",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2022.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Габариты",
+          "value": "4379*1824*1555 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/9D/E7/1400x0_c42_autohomecar__ChxpVWqGboqAF8xhAAGYhZnN1Zs938.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
+    },
+    {
+      "id": "av_3e5309e4ff4a0a52a630",
+      "title": "Ineos Grenadier Ineos Grenadier 2025 Standard Edition",
+      "brand": null,
+      "model": "Ineos Grenadier Ineos Grenadier",
+      "trim": "Ineos Grenadier Ineos Grenadier 2025 Standard Edition",
+      "year": 2025,
+      "mileage": 6000,
+      "city": "Пекин",
+      "price": 101690,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "3.0T 286hp L6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2025.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "6"
+        },
+        {
+          "label": "Габариты",
+          "value": "4896*1930*2036 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/BD/C2/1400x0_c42_autohomecar__Chto52qH8imAXrmpAAKQFvqRYKs649.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
+    },
+    {
+      "id": "av_9ae135cc800b792db581",
+      "title": "Suzuki Landi 2007 Model 1.4L Manual Luxury",
+      "brand": null,
+      "model": "Suzuki Landi",
+      "trim": "Suzuki Landi 2007 Model 1.4L Manual Luxury",
+      "year": 2007,
+      "mileage": 170000,
+      "city": "Циндао",
+      "price": 2100,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Passenger Vehicle",
+      "energyType": "Бензин",
+      "engine": "1.4L 95 horsepower L4",
+      "transmission": "5-speed manual",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2007.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "8"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1030 кг"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M01/BD/57/1400x0_c42_autohomecar__ChxpWGqIJHOAPcffAAXmJQt_1ko261.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
+    },
+    {
+      "id": "av_c1ee4e1e8b13fc5e70dc",
+      "title": "Hyundai Genesis 2015 3.0GDi 4WD Luxury",
+      "brand": "Genesis",
+      "model": null,
+      "trim": "2015 3.0GDi 4WD Luxury",
+      "year": 2015,
+      "mileage": 66000,
+      "city": "Пекин",
+      "price": 16210,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "3.0L 257HP V6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Champagne",
+      "interiorColor": null,
+      "registration": "2016.10",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1970 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4990*1890*1480 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/84/A5/1400x0_c42_autohomecar__Chto52qD3EaAObGYAAhSo3QnDpo547.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-22T01:53:44.047Z"
     },
     {
       "id": "av_68e584e73da0b018c26e",
@@ -6201,6 +6781,14 @@
           "value": "2022"
         },
         {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
           "label": "Привод",
           "value": "Front-Wheel Drive"
         },
@@ -9022,6 +9610,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_b905014c5392772c0516.jpg",
         "https://img.jytche.com/user/2131301/car/image/6a882a301527c/1787308592126_769_app_C_667.81K-798.76K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2131301/car/image/6a882a301527c/1787308592156_879_app_L_524.66K-631.06K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2131301/car/image/6a882a301527c/1787308592153_807_app_F_594.92K-715.62K.jpeg?x-oss-process=style%2Fnormal",
@@ -9101,6 +9690,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_f21f45ad364d711bd5f6.jpg",
         "https://img.jytche.com/user/546635/car/image/6a880d00993cf/1787301120635T11414_675857_parse.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/546635/car/image/6a880d00993cf/1787301120637n10115_573967.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/546635/car/image/6a880d00993cf/1787301120638r5268_730989_parse.jpg?x-oss-process=style%2Fnormal",
@@ -9117,584 +9707,298 @@
       "updatedAt": "2026-08-21T08:36:26+08:00"
     },
     {
-      "id": "av_b58e344375e42dd0da82",
-      "title": "Hengchi Hengchi 5 2022 Ultra Luxury Edition",
-      "brand": null,
-      "model": "Hengchi Hengchi 5",
-      "trim": "Hengchi Hengchi 5 2022 Ultra Luxury Edition",
-      "year": 2022,
-      "mileage": 82300,
-      "city": "Hefei",
-      "price": 9690,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Yellow",
-      "interiorColor": null,
-      "registration": "2023.01",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1985 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4725*1925*1676 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M07/06/39/1400x0_c42_autohomecar__ChxpWGp4XbSAP3qXAAJ16dNwBJk982.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.045Z"
-    },
-    {
-      "id": "av_9f65154c1264e6538f9d",
-      "title": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
-      "brand": null,
-      "model": "Lotus Cars EMIRA",
-      "trim": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "id": "av_d3498f935999f1ee4437",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
       "year": 2021,
-      "mileage": 20000,
-      "city": "Шэньчжэнь",
-      "price": 74070,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Бензин",
-      "engine": "2.0T 405HP L4",
-      "transmission": "8-Speed Wet Dual Clutch",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2024.04",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Mid Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "2"
-        },
-        {
-          "label": "Дверей",
-          "value": "2"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1460 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4413*1896*1235 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/C4/4F/1400x0_c42_autohomecar__Chto52qIaDiAdtd7AAoJbwjhYN4470.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.046Z"
-    },
-    {
-      "id": "av_3a7167fe098ed322c413",
-      "title": "Xiaomi Vision Gran Turismo 2026 Concept Edition",
-      "brand": "Xiaomi",
-      "model": "Vision Gran Turismo",
-      "trim": "2026 Concept Edition",
-      "year": 2026,
-      "mileage": 4500,
-      "city": "Шэньчжэнь",
-      "price": 69630,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "--",
-      "energyType": "Прочее",
-      "engine": null,
-      "transmission": "--",
-      "bodyColor": "Red",
-      "interiorColor": null,
-      "registration": "2026.08",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "--"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "--"
-        },
-        {
-          "label": "Дверей",
-          "value": "--"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M09/BA/72/1400x0_c42_autohomecar__ChxpV2qH9yuAT0CrAAiMa1DG2bQ213.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.046Z"
-    },
-    {
-      "id": "av_84256a8b05ebae4be403",
-      "title": "Toyota Camry 2024 Model Dual Hybrid 2.0HXS Sport Plus Edition",
-      "brand": "Toyota",
-      "model": "Camry",
-      "trim": "2024 Model Dual Hybrid 2.0HXS Sport Plus Edition",
-      "year": 2024,
-      "mileage": 22000,
-      "city": "Гуанчжоу",
-      "price": 17000,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Седан",
-      "energyType": "Гибрид (HEV)",
-      "engine": "2.0L 152 horsepower L4",
-      "transmission": "E-CVT Continuously Variable Transmission",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2024.10",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1610 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4950*1850*1450 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M00/B9/DE/1400x0_c42_autohomecar__ChxpVmqHvRGAUoXdAALHBjqtzMM877.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
-    },
-    {
-      "id": "av_d6f531fafc9faf97e83a",
-      "title": "Ferrari 458 2011 4.5L Italia",
-      "brand": "Ferrari",
-      "model": "458",
-      "trim": "2011 4.5L Italia",
-      "year": 2011,
-      "mileage": 38000,
-      "city": "Шэньчжэнь",
-      "price": 84690,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Бензин",
-      "engine": "4.5L 570HP V8",
-      "transmission": "7-speed wet dual-clutch",
-      "bodyColor": "Red",
-      "interiorColor": null,
-      "registration": "2010.05",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Mid Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "2"
-        },
-        {
-          "label": "Дверей",
-          "value": "2"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1380 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4527*1937*1213 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M06/C4/5C/1400x0_c42_autohomecar__ChxpVmqIa8iAaHsGAAv53WbRfm0687.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
-    },
-    {
-      "id": "av_976518a9d2cee207ac5f",
-      "title": "Maserati Levante 2021 3.8T Trofeo",
-      "brand": "Maserati",
-      "model": "Levante",
-      "trim": "2021 3.8T Trofeo",
-      "year": 2021,
-      "mileage": 15000,
-      "city": "Ухань",
-      "price": 134770,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "mileage": 80000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "SUV",
       "energyType": "Бензин",
-      "engine": "3.8T 581hp V8",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "Silver",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2021.05",
+      "registration": "2021/03/17",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "В описании продавца указан заводской окрас кузова.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-21 12:09:06",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2345 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5020*1981*1698 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M07/A0/28/1400x0_c42_autohomecar__ChxpVWqGm82ASa1gAAW6EFF80iE353.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_d3498f935999f1ee4437.jpg",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820432g9326_354000_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820436A3944_435010_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820437v10572_361119_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820438S9715_347432_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820439k2866_399137_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820440a4458_379001_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820440Z9013_449274.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820441y11304_391499.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1864539/car/image/6a883e9c7121d/1787313820442i7039_269417.jpg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
+      "updatedAt": "2026-08-21T12:09:06+08:00"
     },
     {
-      "id": "av_f0ad97e743eb3650c9ec",
-      "title": "BMW X2 2021 sDrive25i Leading M Sport Package",
-      "brand": "BMW",
-      "model": "X2",
-      "trim": "2021 sDrive25i Leading M Sport Package",
+      "id": "av_2c4dd7e9d2fa24089a0a",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
       "year": 2021,
-      "mileage": 23000,
-      "city": "Guiyang",
-      "price": 16520,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "mileage": 100000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "SUV",
       "energyType": "Бензин",
-      "engine": "2.0T 192HP L4",
-      "transmission": "7-speed wet dual-clutch",
-      "bodyColor": "White",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2022.06",
+      "registration": "2022/01/10",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-21 10:34:29",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Габариты",
-          "value": "4379*1824*1555 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/9D/E7/1400x0_c42_autohomecar__ChxpVWqGboqAF8xhAAGYhZnN1Zs938.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_2c4dd7e9d2fa24089a0a.jpg",
+        "https://img.jytche.com/user/37911/car/image/6a88297397473/1787308403670r6671_260827_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/37911/car/image/6a88297397473/1787308403671a8198_281394.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/37911/car/image/6a88297397473/1787308403672n9244_292777.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/37911/car/image/6a88297397473/1787308403672S7003_287090_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/37911/car/image/6a88297397473/1787308403673R5836_289720_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/37911/car/image/6a88297397473/1787308403673X8256_279132_parse.jpg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
+      "updatedAt": "2026-08-21T10:34:29+08:00"
     },
     {
-      "id": "av_3e5309e4ff4a0a52a630",
-      "title": "Ineos Grenadier Ineos Grenadier 2025 Standard Edition",
-      "brand": null,
-      "model": "Ineos Grenadier Ineos Grenadier",
-      "trim": "Ineos Grenadier Ineos Grenadier 2025 Standard Edition",
+      "id": "av_f4b3bfb1282f2458b6c8",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 79000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/10/27",
+      "transfers": null,
+      "vin": null,
+      "description": "Состояние автомобиля продавец оценивает как хорошее. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-21 10:56:44",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_f4b3bfb1282f2458b6c8.jpg",
+        "https://img.jytche.com/user/203919/car/image/6a871efc062af/1787240188061K11450_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871ef57b3e7/1787240181545A5114_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871f035b3d2/1787240195423k8439_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871eea3be48/1787240170316N6168_524969.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871eea3be48/1787240170318G1636_446538.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871eea3be48/1787240170319f9908_432580.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871eea3be48/1787240170321a4980_806067.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871f0ad3745/1787240202950Y6580.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/203919/car/image/6a871eea3be48/1787240170323f8669_261339.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-21T10:56:44+08:00"
+    },
+    {
+      "id": "av_bb4ca72bf4e4e69cd32c",
+      "title": "Volkswagen 2025 ID.3 Smart Version Ultimate Intelligence Edition",
+      "brand": "Volkswagen",
+      "model": "ID.3 Smart Version Ultimate Intelligence Edition",
+      "trim": null,
       "year": 2025,
-      "mileage": 6000,
-      "city": "Пекин",
-      "price": 101690,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Бензин",
-      "engine": "3.0T 286hp L6",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2025.06",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "6"
-        },
-        {
-          "label": "Габариты",
-          "value": "4896*1930*2036 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/BD/C2/1400x0_c42_autohomecar__Chto52qH8imAXrmpAAKQFvqRYKs649.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
-    },
-    {
-      "id": "av_9ae135cc800b792db581",
-      "title": "Suzuki Landi 2007 Model 1.4L Manual Luxury",
-      "brand": null,
-      "model": "Suzuki Landi",
-      "trim": "Suzuki Landi 2007 Model 1.4L Manual Luxury",
-      "year": 2007,
-      "mileage": 170000,
-      "city": "Циндао",
-      "price": 2100,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Passenger Vehicle",
-      "energyType": "Бензин",
-      "engine": "1.4L 95 horsepower L4",
-      "transmission": "5-speed manual",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2007.08",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Mid Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "8"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1030 кг"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M01/BD/57/1400x0_c42_autohomecar__ChxpWGqIJHOAPcffAAXmJQt_1ko261.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
-    },
-    {
-      "id": "av_c1ee4e1e8b13fc5e70dc",
-      "title": "Hyundai Genesis 2015 3.0GDi 4WD Luxury",
-      "brand": "Genesis",
-      "model": null,
-      "trim": "2015 3.0GDi 4WD Luxury",
-      "year": 2015,
-      "mileage": 66000,
-      "city": "Пекин",
-      "price": 16210,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "mileage": 42700,
+      "city": null,
+      "price": null,
+      "priceText": "¥9****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "Седан",
-      "energyType": "Бензин",
-      "engine": "3.0L 257HP V6",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "Champagne",
+      "energyType": "Электро",
+      "engine": "New Energy 170PS",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2016.10",
+      "registration": "2024/11/22",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Есть упоминания окрашенных кузовных элементов. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-22 01:28:30",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2024/10"
+        },
+        {
+          "label": "Топливо",
+          "value": "Pure Electric"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "New Energy"
+        },
+        {
           "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
+          "value": "Rear-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "125 кВт"
         },
         {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1970 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4990*1890*1480 мм"
+          "label": "Экологический стандарт",
+          "value": "Pure Electric"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/84/A5/1400x0_c42_autohomecar__Chto52qD3EaAObGYAAhSo3QnDpo547.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_bb4ca72bf4e4e69cd32c.jpg",
+        "https://img.jytche.com/user/7199036/car/image/6a88fa5250869/1787361874416_390_app_T_667.54K-667.54K_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/7199036/car/image/6a88fa5250869/1787361874412_632_app_L_616.96K-616.96K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/7199036/car/image/6a88fa5250869/1787361874458_606_app_I_521.80K-521.80K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/7199036/car/image/6a88fa523e30f/1787361874106_709_app_J_363.27K-363.27K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/7199036/car/image/6a88fa5250869/1787361874354_510_app_L_517.78K-517.78K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/7199036/car/image/6a88fa5250869/1787361874450_668_app_C_540.05K-527.68K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-22T01:53:44.047Z"
+      "updatedAt": "2026-08-22T01:28:30+08:00"
     }
   ]
 }
