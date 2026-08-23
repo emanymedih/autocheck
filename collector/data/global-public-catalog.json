@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T07:21:08.648Z",
+  "updatedAt": "2026-08-23T13:05:07.220Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -119,67 +119,40 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.819Z"
+      "updatedAt": "2026-08-23T13:05:07.215Z"
     },
     {
       "id": "av_eca777a2fe95507359e3",
-      "title": "Audi A7L 2024 45TFSI S-line Dream Edition Crystal Package",
-      "brand": "Audi",
-      "model": "A7L",
-      "trim": "2024 45TFSI S-line Dream Edition Crystal Package",
-      "year": 2024,
-      "mileage": 69000,
-      "city": "Чжэнчжоу",
-      "price": 31570,
+      "title": "The vehicle has been sold",
+      "brand": null,
+      "model": "The vehicle has been sold",
+      "trim": "The vehicle has been sold",
+      "year": null,
+      "mileage": null,
+      "city": null,
+      "price": null,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Седан",
-      "energyType": "Бензин",
-      "engine": "2.0T 245 horsepower L4",
-      "transmission": "7-speed wet dual-clutch",
-      "bodyColor": "Black",
+      "body": null,
+      "energyType": null,
+      "engine": null,
+      "transmission": null,
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2024.01",
+      "registration": null,
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Карточка автомобиля отмечена как снятая с продажи.",
       "features": [],
       "listingFacts": [],
       "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1855 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5076*1908*1429 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/8A/12/1400x0_c42_autohomecar__ChxpWGqE5UiAI7WEAAXFJ0Qa-PI594.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
+      "extraSpecs": [],
+      "photos": [],
+      "status": "inactive",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_69010a116debf794a5f2",
@@ -239,7 +212,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_4afd7a357deed76871ae",
@@ -295,7 +268,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_51801d05634b45f2caf0",
@@ -355,7 +328,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_7e3f73ce4578e961e809",
@@ -415,7 +388,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_f162a6f5e5c4facb604e",
@@ -475,7 +448,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_ea15f31ef57a2e5fd129",
@@ -535,7 +508,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_33626fdf34c9fbbb94d1",
@@ -661,7 +634,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_3d4579ed3d7e9d46c0d5",
@@ -721,7 +694,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_fbdd30953599e60a3a8e",
@@ -781,7 +754,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_ccaf38a9443096e98ca1",
@@ -982,7 +955,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_4da0167c780ec67029af",
@@ -1042,7 +1015,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_34350fbf455c0bfe646d",
@@ -1106,36 +1079,63 @@
     },
     {
       "id": "av_5449a0ba2286497aeb87",
-      "title": "The vehicle has been sold",
+      "title": "Ledao Ledao L90 2025 2WD Base Model",
       "brand": null,
-      "model": "The vehicle has been sold",
-      "trim": "The vehicle has been sold",
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
+      "model": "Ledao Ledao L90",
+      "trim": "Ledao Ledao L90 2025 2WD Base Model",
+      "year": 2025,
+      "mileage": 20000,
+      "city": "Чэнду",
+      "price": 20170,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": null,
-      "energyType": null,
+      "body": "SUV",
+      "energyType": "Электро",
       "engine": null,
-      "transmission": null,
-      "bodyColor": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
       "interiorColor": null,
-      "registration": null,
+      "registration": "2025.08",
       "transfers": null,
       "vin": null,
-      "description": "Карточка автомобиля отмечена как снятая с продажи.",
+      "description": null,
       "features": [],
       "listingFacts": [],
       "conditionChecks": [],
-      "extraSpecs": [],
-      "photos": [],
-      "status": "inactive",
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2300 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5145*1998*1766 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/7A/50/1400x0_c42_autohomecar__Chto52qC1YWAZiQgAA7PlsNh3jU489.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_296a157f5694bbaf520f",
@@ -1195,7 +1195,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_df1c036d048a063f8e5c",
@@ -1255,7 +1255,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_60112131faacfc3702d4",
@@ -1375,7 +1375,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_83b8fafc894c4a9b6cd9",
@@ -1501,7 +1501,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_da8ba3fd0837198c7c72",
@@ -1561,7 +1561,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_dcee4f390d09f3fcd7db",
@@ -1621,7 +1621,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_6e43441a975f780306fa",
@@ -1681,7 +1681,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_4703b617d6a1ec131492",
@@ -1741,7 +1741,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_f6030b8fd670a524e4d6",
@@ -1801,7 +1801,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_f9f91b34df8a105ff5cd",
@@ -1861,7 +1861,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_5a1fab50265c44d03791",
@@ -2016,7 +2016,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_a69fba34a23d24f3f5c2",
@@ -2068,7 +2068,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.819Z"
+      "updatedAt": "2026-08-23T13:05:07.215Z"
     },
     {
       "id": "av_7723e61a7ef26f620db8",
@@ -2161,7 +2161,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_fa585de924845ae3c8da",
@@ -2221,7 +2221,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_e7d2b624adac49fff1e2",
@@ -2281,7 +2281,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_42050e424da67e3b1638",
@@ -2341,7 +2341,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T02:02:09.660Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_f8f908d158960d365603",
@@ -2378,63 +2378,36 @@
     },
     {
       "id": "av_587bf8afbdf9cb2ab960",
-      "title": "Voyah Auto VOYAH Zhuiguang L 2025 Model Chase Light L",
+      "title": "The vehicle has been sold",
       "brand": null,
-      "model": "Voyah Auto VOYAH Zhuiguang L",
-      "trim": "Voyah Auto VOYAH Zhuiguang L 2025 Model Chase Light L",
-      "year": 2025,
-      "mileage": 3000,
-      "city": "Ухань",
-      "price": 27090,
+      "model": "The vehicle has been sold",
+      "trim": "The vehicle has been sold",
+      "year": null,
+      "mileage": null,
+      "city": null,
+      "price": null,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Седан",
-      "energyType": "Подключаемый гибрид (PHEV)",
-      "engine": "1.5T 150 horsepower L4",
-      "transmission": "1-speed DHT",
-      "bodyColor": "Black",
+      "body": null,
+      "energyType": null,
+      "engine": null,
+      "transmission": null,
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2025.10",
+      "registration": null,
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Карточка автомобиля отмечена как снятая с продажи.",
       "features": [],
       "listingFacts": [],
       "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2370 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5125*1985*1522 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M0B/A1/3F/1400x0_c42_autohomecar__ChxpVWqGq4aAJI84AAh1JkIOuMs932.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
+      "extraSpecs": [],
+      "photos": [],
+      "status": "inactive",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_7b9a19b96da75bcc6f07",
@@ -2494,7 +2467,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_b58e344375e42dd0da82",
@@ -2554,7 +2527,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_9f65154c1264e6538f9d",
@@ -2614,7 +2587,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.819Z"
+      "updatedAt": "2026-08-23T13:05:07.215Z"
     },
     {
       "id": "av_3a7167fe098ed322c413",
@@ -2666,7 +2639,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_84256a8b05ebae4be403",
@@ -2726,7 +2699,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_d6f531fafc9faf97e83a",
@@ -2786,7 +2759,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_976518a9d2cee207ac5f",
@@ -2846,7 +2819,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_f0ad97e743eb3650c9ec",
@@ -2902,7 +2875,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_3e5309e4ff4a0a52a630",
@@ -3134,7 +3107,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_423a6d1b8d9808fc4f02",
@@ -3194,7 +3167,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.218Z"
     },
     {
       "id": "av_eebdb72cb04ef53e55e6",
@@ -3254,7 +3227,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.819Z"
+      "updatedAt": "2026-08-23T13:05:07.215Z"
     },
     {
       "id": "av_f202cd16009c32e8b72b",
@@ -3314,7 +3287,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_57ea08228204e3a1a916",
@@ -3366,7 +3339,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.820Z"
+      "updatedAt": "2026-08-23T13:05:07.216Z"
     },
     {
       "id": "av_9919a31237b54475ea2b",
@@ -3426,7 +3399,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_cd3b67c8fc2624bc327f",
@@ -3486,7 +3459,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_d5c4cb25b4546f93c451",
@@ -3546,7 +3519,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.821Z"
+      "updatedAt": "2026-08-23T13:05:07.217Z"
     },
     {
       "id": "av_3afbdce6a53dcbc32e89",
@@ -3606,7 +3579,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-23T07:04:48.818Z"
+      "updatedAt": "2026-08-23T13:05:07.214Z"
     },
     {
       "id": "av_68e584e73da0b018c26e",
