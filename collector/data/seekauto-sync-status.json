@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:38:38.011Z",
+  "updatedAt": "2026-08-24T19:18:42.003Z",
   "healthy": true,
   "checks": {
     "importCompleted": true,
@@ -10,14 +10,14 @@
     "continuity": true
   },
   "counts": {
-    "baseline": 198,
+    "baseline": 202,
     "current": 202,
     "discovered": 60,
     "imported": 30,
     "failed": 50,
-    "added": 4,
-    "updated": 2,
-    "unchanged": 196,
+    "added": 0,
+    "updated": 1,
+    "unchanged": 201,
     "missing": 0,
     "sold": 0,
     "duplicateIds": 0,
@@ -28,8 +28,8 @@
     "missingRate": 0
   },
   "run": {
-    "startedAt": "2026-08-24T13:38:20.752Z",
-    "finishedAt": "2026-08-24T13:38:42.296Z",
+    "startedAt": "2026-08-24T19:18:26.723Z",
+    "finishedAt": "2026-08-24T19:18:42.036Z",
     "pagesVisited": 0,
     "targetListings": 60,
     "importSucceeded": true
