@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T07:45:28.612Z",
+  "updatedAt": "2026-08-24T13:16:58.202Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -59,7 +59,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_b8a63a4644b6b0443e57",
@@ -74,7 +74,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -119,7 +119,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.691Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_eca777a2fe95507359e3",
@@ -167,7 +167,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "MPV",
+      "body": "Купе / спорткар",
       "energyType": "Гибрид с увеличителем запаса хода (EREV)",
       "engine": "Range Extender 173 HP",
       "transmission": "Electric vehicle single-speed transmission",
@@ -212,7 +212,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_4afd7a357deed76871ae",
@@ -227,7 +227,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Универсал",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.0T 245 horsepower L4",
       "transmission": "8-speed automatic with manual shift mode",
@@ -268,7 +268,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_51801d05634b45f2caf0",
@@ -283,7 +283,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.7T 303HP L4",
       "transmission": "10-speed automatic manual transmission",
@@ -328,7 +328,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_7e3f73ce4578e961e809",
@@ -388,7 +388,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_f162a6f5e5c4facb604e",
@@ -403,7 +403,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Седан",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "1.6T 215HP L4",
       "transmission": "8-speed automatic with manual shift mode",
@@ -448,7 +448,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.691Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_ea15f31ef57a2e5fd129",
@@ -589,7 +589,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Лифтбек",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.0T 204HP L4",
       "transmission": "7-speed wet dual-clutch",
@@ -634,7 +634,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.200Z"
     },
     {
       "id": "av_3d4579ed3d7e9d46c0d5",
@@ -649,7 +649,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.5T 304HP L4",
       "transmission": "8-speed automatic with manual shift mode",
@@ -694,7 +694,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_fbdd30953599e60a3a8e",
@@ -769,7 +769,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Мягкий гибрид 48V",
       "engine": "2.0T 258hp L4",
       "transmission": "9-speed automatic transmission",
@@ -814,7 +814,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_add4b0df7eb8598fe851",
@@ -862,7 +862,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Pickup Truck",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -903,7 +903,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_c17e8b59c58ac6911005",
@@ -918,7 +918,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "--",
+      "body": "Купе / спорткар",
       "energyType": "Прочее",
       "engine": null,
       "transmission": "--",
@@ -955,7 +955,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_4da0167c780ec67029af",
@@ -1030,7 +1030,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "MPV",
+      "body": "Купе / спорткар",
       "energyType": "Гибрид (HEV)",
       "engine": "2.0L 140HP L4",
       "transmission": "2-speed DHT",
@@ -1075,40 +1075,67 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_5449a0ba2286497aeb87",
-      "title": "The vehicle has been sold",
+      "title": "Ledao Ledao L90 2025 2WD Base Model",
       "brand": null,
-      "model": "The vehicle has been sold",
-      "trim": "The vehicle has been sold",
-      "year": null,
-      "mileage": null,
-      "city": null,
-      "price": null,
+      "model": "Ledao Ledao L90",
+      "trim": "Ledao Ledao L90 2025 2WD Base Model",
+      "year": 2025,
+      "mileage": 20000,
+      "city": "Чэнду",
+      "price": 20170,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": null,
-      "energyType": null,
+      "body": "Купе / спорткар",
+      "energyType": "Электро",
       "engine": null,
-      "transmission": null,
-      "bodyColor": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
       "interiorColor": null,
-      "registration": null,
+      "registration": "2025.08",
       "transfers": null,
       "vin": null,
-      "description": "Карточка автомобиля отмечена как снятая с продажи.",
+      "description": null,
       "features": [],
       "listingFacts": [],
       "conditionChecks": [],
-      "extraSpecs": [],
-      "photos": [],
-      "status": "inactive",
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2300 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5145*1998*1766 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/7A/50/1400x0_c42_autohomecar__Chto52qC1YWAZiQgAA7PlsNh3jU489.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.059Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_296a157f5694bbaf520f",
@@ -1123,7 +1150,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Хэтчбек",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "1.6T 280HP L3",
       "transmission": "6-speed manual",
@@ -1168,7 +1195,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_df1c036d048a063f8e5c",
@@ -1288,7 +1315,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_284c7697f8a5af3d2c3b",
@@ -1303,7 +1330,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.0T 258hp L4",
       "transmission": "9-speed automatic transmission",
@@ -1348,7 +1375,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.200Z"
     },
     {
       "id": "av_83b8fafc894c4a9b6cd9",
@@ -1429,7 +1456,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -1474,7 +1501,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.691Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_da8ba3fd0837198c7c72",
@@ -1489,7 +1516,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -1534,7 +1561,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.200Z"
     },
     {
       "id": "av_dcee4f390d09f3fcd7db",
@@ -1594,7 +1621,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_6e43441a975f780306fa",
@@ -1687,7 +1714,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.200Z"
     },
     {
       "id": "av_f6030b8fd670a524e4d6",
@@ -1702,7 +1729,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.3T 275 horsepower L4",
       "transmission": "10-speed automatic manual transmission",
@@ -1747,7 +1774,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_f9f91b34df8a105ff5cd",
@@ -1921,7 +1948,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "3.8T 530HP V8",
       "transmission": "8-speed automatic with manual shift mode",
@@ -1962,59 +1989,40 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_a69fba34a23d24f3f5c2",
-      "title": "Maserati MC20 2021 FUORISERIE Custom Edition",
-      "brand": "Maserati",
-      "model": "MC20",
-      "trim": "2021 FUORISERIE Custom Edition",
-      "year": 2021,
-      "mileage": 4000,
-      "city": "Тяньцзинь",
-      "price": 179090,
+      "title": "The vehicle has been sold",
+      "brand": null,
+      "model": "The vehicle has been sold",
+      "trim": "The vehicle has been sold",
+      "year": null,
+      "mileage": null,
+      "city": null,
+      "price": null,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "--",
-      "energyType": "Прочее",
+      "body": null,
+      "energyType": null,
       "engine": null,
-      "transmission": "--",
-      "bodyColor": "Yellow",
+      "transmission": null,
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2022.03",
+      "registration": null,
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Карточка автомобиля отмечена как снятая с продажи.",
       "features": [],
       "listingFacts": [],
       "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "--"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "--"
-        },
-        {
-          "label": "Дверей",
-          "value": "--"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M03/A4/C0/1400x0_c42_autohomecar__ChxpVWqGwbqASKe2AAD29RC3vwU123.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
+      "extraSpecs": [],
+      "photos": [],
+      "status": "inactive",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_7723e61a7ef26f620db8",
@@ -2122,7 +2130,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Лифтбек",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "1.5T 188 HP L4",
       "transmission": "7-speed wet dual-clutch",
@@ -2167,7 +2175,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_e7d2b624adac49fff1e2",
@@ -2182,7 +2190,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Хэтчбек",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "2.3T 350HP L4",
       "transmission": "6-speed manual",
@@ -2227,7 +2235,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_42050e424da67e3b1638",
@@ -2242,7 +2250,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "MPV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -2287,7 +2295,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.200Z"
     },
     {
       "id": "av_f8f908d158960d365603",
@@ -2413,7 +2421,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_b58e344375e42dd0da82",
@@ -2428,7 +2436,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -2473,7 +2481,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_9f65154c1264e6538f9d",
@@ -2533,7 +2541,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_3a7167fe098ed322c413",
@@ -2705,7 +2713,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_976518a9d2cee207ac5f",
@@ -2832,11 +2840,11 @@
       "year": 2025,
       "mileage": 6000,
       "city": "Пекин",
-      "price": 101690,
+      "price": 96830,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "3.0T 286hp L6",
       "transmission": "8-speed automatic with manual shift mode",
@@ -2877,7 +2885,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.199Z"
     },
     {
       "id": "av_9ae135cc800b792db581",
@@ -2892,7 +2900,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Passenger Vehicle",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "1.4L 95 horsepower L4",
       "transmission": "5-speed manual",
@@ -2933,7 +2941,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_c1ee4e1e8b13fc5e70dc",
@@ -2948,7 +2956,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Седан",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "3.0L 257HP V6",
       "transmission": "8-speed automatic with manual shift mode",
@@ -2993,7 +3001,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_721fe42633867bcd2b34",
@@ -3128,7 +3136,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Подключаемый гибрид (PHEV)",
       "engine": "2.0T 211 HP L4",
       "transmission": "2-speed DHT",
@@ -3173,7 +3181,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_f202cd16009c32e8b72b",
@@ -3248,7 +3256,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "--",
+      "body": "Купе / спорткар",
       "energyType": "Прочее",
       "engine": null,
       "transmission": "--",
@@ -3285,7 +3293,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_9919a31237b54475ea2b",
@@ -3300,7 +3308,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -3345,7 +3353,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_cd3b67c8fc2624bc327f",
@@ -3360,7 +3368,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Лифтбек",
+      "body": "Купе / спорткар",
       "energyType": "Подключаемый гибрид (PHEV)",
       "engine": "2.0T 207HP L4",
       "transmission": "E-CVT Continuously Variable Transmission",
@@ -3405,7 +3413,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_d5c4cb25b4546f93c451",
@@ -3420,7 +3428,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "MPV",
+      "body": "Купе / спорткар",
       "energyType": "Подключаемый гибрид (PHEV)",
       "engine": "1.5T 150 horsepower L4",
       "transmission": "1-speed DHT",
@@ -3465,7 +3473,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.060Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_3afbdce6a53dcbc32e89",
@@ -3540,7 +3548,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Седан",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "1.5T 177HP L4",
       "transmission": "6-speed manual",
@@ -3585,7 +3593,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.690Z"
+      "updatedAt": "2026-08-24T13:16:58.195Z"
     },
     {
       "id": "av_7510bf875220f12864d0",
@@ -3600,7 +3608,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "MPV",
+      "body": "Купе / спорткар",
       "energyType": "Подключаемый гибрид (PHEV)",
       "engine": "1.5T 170hp L4",
       "transmission": "4-speed DHT",
@@ -3645,7 +3653,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.691Z"
+      "updatedAt": "2026-08-24T13:16:58.196Z"
     },
     {
       "id": "av_85bc5979397cedee4830",
@@ -3660,7 +3668,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Гибрид с увеличителем запаса хода (EREV)",
       "engine": "Range Extender 156 HP",
       "transmission": "Electric vehicle single-speed transmission",
@@ -3705,7 +3713,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.691Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_5df56bdf9989c549ef2e",
@@ -3720,7 +3728,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Гибрид с увеличителем запаса хода (EREV)",
       "engine": "Range Extender 143hp",
       "transmission": "Electric vehicle single-speed transmission",
@@ -3765,7 +3773,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.691Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_e5f9b71f494f555b6485",
@@ -3776,11 +3784,11 @@
       "year": 2025,
       "mileage": 1700,
       "city": "Чжэнчжоу",
-      "price": 27600,
+      "price": 27290,
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Седан",
+      "body": "Купе / спорткар",
       "energyType": "Подключаемый гибрид (PHEV)",
       "engine": "1.5T 150 horsepower L4",
       "transmission": "1-speed DHT",
@@ -3825,7 +3833,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.197Z"
     },
     {
       "id": "av_371734784bc600ac2e68",
@@ -3840,7 +3848,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Подключаемый гибрид (PHEV)",
       "engine": "1.5T 156HP L4",
       "transmission": "1-speed DHT",
@@ -3885,7 +3893,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_9254b22b5902fd40792a",
@@ -3933,7 +3941,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Pickup Truck",
+      "body": "Купе / спорткар",
       "energyType": "Дизель",
       "engine": "2.4T 186HP L4",
       "transmission": "9-speed automatic transmission",
@@ -3978,7 +3986,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.692Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_355aa1f518af04b42aae",
@@ -3993,7 +4001,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "Универсал",
+      "body": "Купе / спорткар",
       "energyType": "Бензин",
       "engine": "3.0T 530HP L6",
       "transmission": "8-speed automatic with manual shift mode",
@@ -4038,7 +4046,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_3177315f921e8cd48014",
@@ -4053,7 +4061,7 @@
       "priceText": null,
       "fobPriceText": null,
       "currency": "USD",
-      "body": "SUV",
+      "body": "Купе / спорткар",
       "energyType": "Электро",
       "engine": null,
       "transmission": "Electric vehicle single-speed transmission",
@@ -4098,7 +4106,7 @@
       "status": "active",
       "listingPlatform": "Autohome Global",
       "sellerName": null,
-      "updatedAt": "2026-08-24T07:31:43.693Z"
+      "updatedAt": "2026-08-24T13:16:58.198Z"
     },
     {
       "id": "av_68e584e73da0b018c26e",
