@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:00:24.062Z",
+  "updatedAt": "2026-08-24T02:13:00.364Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -3555,6 +3555,546 @@
       "updatedAt": "2026-08-24T02:00:24.059Z"
     },
     {
+      "id": "av_d71bc87ca82ee5eba509",
+      "title": "Honda Civic 2016 220TURBO Manual Luxury Edition",
+      "brand": "Honda",
+      "model": "Civic",
+      "trim": "2016 220TURBO Manual Luxury Edition",
+      "year": 2016,
+      "mileage": 96000,
+      "city": "Фошань",
+      "price": 6650,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Бензин",
+      "engine": "1.5T 177HP L4",
+      "transmission": "6-speed manual",
+      "bodyColor": "Blue",
+      "interiorColor": null,
+      "registration": "2018.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1275 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4649*1800*1416 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/24/73/1400x0_c42_autohomecar__ChxpV2pfQuSAbnuwAA64LRXNbuA053.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.056Z"
+    },
+    {
+      "id": "av_7510bf875220f12864d0",
+      "title": "WEY WEY Alpine 2025 AWD Alpine 8",
+      "brand": null,
+      "model": "WEY WEY Alpine",
+      "trim": "WEY WEY Alpine 2025 AWD Alpine 8",
+      "year": 2025,
+      "mileage": 6000,
+      "city": "Shijiazhuang",
+      "price": 31800,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "1.5T 170hp L4",
+      "transmission": "4-speed DHT",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2025.12",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2785 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5280*1960*1900 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/E0/8A/1400x0_c42_autohomecar__ChxpV2qK1PmAYpJ3AAwYEaOS-cc843.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.057Z"
+    },
+    {
+      "id": "av_85bc5979397cedee4830",
+      "title": "Li Auto Li L8",
+      "brand": "Li Auto",
+      "model": "Li L8",
+      "trim": null,
+      "year": 2026,
+      "mileage": 2000,
+      "city": "Шэньян",
+      "price": 66290,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 156 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.08",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2805 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5135*2000*1800 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/D9/73/1400x0_c42_autohomecar__ChtpWGqKf-SATZekAAWnS9k3QH8559.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.057Z"
+    },
+    {
+      "id": "av_5df56bdf9989c549ef2e",
+      "title": "Volkswagen ID.ERA 2026 4WD Version",
+      "brand": "Volkswagen",
+      "model": "ID.ERA",
+      "trim": "2026 4WD Version",
+      "year": 2026,
+      "mileage": 7600,
+      "city": "Шэньчжэнь",
+      "price": 50510,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 143hp",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Champagne",
+      "interiorColor": null,
+      "registration": "2026.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2700 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5207*1997*1810 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M02/DE/60/1400x0_c42_autohomecar__ChxpV2qKqUmATx0gAAquy44mA7o492.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.057Z"
+    },
+    {
+      "id": "av_e5f9b71f494f555b6485",
+      "title": "Voyah Auto VOYAH Zhuiguang L 2025 Mid-configuration Model",
+      "brand": null,
+      "model": "Voyah Auto VOYAH Zhuiguang L",
+      "trim": "Voyah Auto VOYAH Zhuiguang L 2025 Mid-configuration Model",
+      "year": 2025,
+      "mileage": 800,
+      "city": "Чжэнчжоу",
+      "price": 27440,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Седан",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "1.5T 150 horsepower L4",
+      "transmission": "1-speed DHT",
+      "bodyColor": "Black",
+      "interiorColor": null,
+      "registration": "2026.03",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2370 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5125*1985*1505 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/D1/7F/1400x0_c42_autohomecar__ChxpVmqJT1-Ae3jzAATp9thDfD8540.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.058Z"
+    },
+    {
+      "id": "av_371734784bc600ac2e68",
+      "title": "Buick Zhijing E7 2026 Model 1.5T Base Version",
+      "brand": "Buick",
+      "model": "Zhijing E7",
+      "trim": "2026 Model 1.5T Base Version",
+      "year": 2026,
+      "mileage": 4000,
+      "city": "Шанхай",
+      "price": 25770,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "SUV",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "1.5T 156HP L4",
+      "transmission": "1-speed DHT",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2026.06",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive (FWD)"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1995 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4850*1910*1676 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/DF/6A/1400x0_c42_autohomecar__ChxpVmqKcz2ATqYSAATPmwDqmwM394.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.059Z"
+    },
+    {
+      "id": "av_9254b22b5902fd40792a",
+      "title": "Voyah Auto Voyah Dreamer 2025 Model PHEV Basic Version",
+      "brand": null,
+      "model": "Voyah Auto Voyah Dreamer",
+      "trim": "Voyah Auto Voyah Dreamer 2025 Model PHEV Basic Version",
+      "year": 2025,
+      "mileage": 5000,
+      "city": "Ухань",
+      "price": 45520,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "MPV",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "1.5T 150 horsepower L4",
+      "transmission": "1-speed DHT",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2026.07",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2780 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5315*1998*1800 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/DF/D2/1400x0_c42_autohomecar__Chto52qKeXCAUZaxAAnVtLZ2_PE797.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.059Z"
+    },
+    {
+      "id": "av_5ea03849402287f9f4e0",
+      "title": "Great Wall Shanhai Cannon 2023 2.4T Diesel Extreme Journey Edition",
+      "brand": null,
+      "model": "Great Wall Shanhai Cannon",
+      "trim": "Great Wall Shanhai Cannon 2023 2.4T Diesel Extreme Journey Edition",
+      "year": 2023,
+      "mileage": 41000,
+      "city": "Shijiazhuang",
+      "price": 17000,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Pickup Truck",
+      "energyType": "Дизель",
+      "engine": "2.4T 186HP L4",
+      "transmission": "9-speed automatic transmission",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2024.01",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "4"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2575 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5440*1991*1924 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/DE/A9/1400x0_c42_autohomecar__Chto52qKZCGAaiEFAAZ4SFy8Vm4927.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.059Z"
+    },
+    {
+      "id": "av_355aa1f518af04b42aae",
+      "title": "BMW M3 2026 BMW M3 Touring M xDrive Competition",
+      "brand": "BMW",
+      "model": "M3",
+      "trim": "2026 BMW M3 Touring M xDrive Competition",
+      "year": 2026,
+      "mileage": 600,
+      "city": "Шанхай",
+      "price": 166640,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Универсал",
+      "energyType": "Бензин",
+      "engine": "3.0T 530HP L6",
+      "transmission": "8-speed automatic with manual shift mode",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2026.07",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1870 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4802*1903*1448 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/D0/AE/1400x0_c42_autohomecar__ChxpV2qJfjyAfBE3AAzVGznKMmc522.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-24T02:00:24.059Z"
+    },
+    {
       "id": "av_68e584e73da0b018c26e",
       "title": "Toyota 2021 Sienna 2.5 CVT Ultimate Edition",
       "brand": "Toyota",
@@ -3934,7 +4474,7 @@
         "https://img.jytche.com/user/2311885/car/image/6a85b5c36ba27/1787147715444_027_app_L_225.75K-225.75K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2311885/car/image/6a85b5c3781cb/1787147715516_717_app_T_542.11K-650.42K.jpeg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-19T13:57:05+08:00"
@@ -4717,6 +5257,77 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-20T04:47:02+08:00"
+    },
+    {
+      "id": "av_47ef091894ed6fab7d99",
+      "title": "BYD Song Pro New Energy 2023 Song Pro DM-i 1.5 CVT Champion Edition Leading 71KM",
+      "brand": "BYD",
+      "model": "Song Pro New Energy",
+      "trim": "2023 Song Pro DM-i 1.5 CVT Champion Edition Leading 71KM",
+      "year": 2023,
+      "mileage": 28000,
+      "city": null,
+      "price": null,
+      "priceText": "¥8****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Подключаемый гибрид (PHEV)",
+      "engine": "1.5L 110PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/05/19",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании продавца указан заводской окрас кузова.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-19 13:55:53",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2024/04"
+        },
+        {
+          "label": "Топливо",
+          "value": "Plug-in Hybrid"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "1.5L(1498CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "81 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_47ef091894ed6fab7d99.jpg",
+        "https://img.jytche.com/user/1969055/car/image/6a85b36305f9f/1787147106375_900_app_C_182.82K-182.82K_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1969055/car/image/6a85b363076cd/1787147106409_006_app_V_170.38K-170.38K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1969055/car/image/6a85b3630a00b/1787147106438_822_app_U_67.04K-67.04K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1969055/car/image/6a85b3630e404/1787147106500_370_app_P_112.05K-112.05K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1969055/car/image/6a85b3709047f/1787147119848_545_app_G_104.17K-104.17K.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-19T13:55:53+08:00"
     },
     {
       "id": "av_81761834e718cf730cc6",
@@ -7634,7 +8245,7 @@
         "https://img.jytche.com/user/1467170/car/image/6a8141f36b374/1786855923298Q1822_105226.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/1467170/car/image/6a8141f36b374/1786855923299F2133_104748_parse.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-16T04:53:59+08:00"
@@ -12666,544 +13277,79 @@
       "updatedAt": "2026-08-22T00:59:02+08:00"
     },
     {
-      "id": "av_d71bc87ca82ee5eba509",
-      "title": "Honda Civic 2016 220TURBO Manual Luxury Edition",
-      "brand": "Honda",
-      "model": "Civic",
-      "trim": "2016 220TURBO Manual Luxury Edition",
-      "year": 2016,
-      "mileage": 96000,
-      "city": "Фошань",
-      "price": 6650,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Седан",
-      "energyType": "Бензин",
-      "engine": "1.5T 177HP L4",
-      "transmission": "6-speed manual",
-      "bodyColor": "Blue",
-      "interiorColor": null,
-      "registration": "2018.05",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1275 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4649*1800*1416 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/24/73/1400x0_c42_autohomecar__ChxpV2pfQuSAbnuwAA64LRXNbuA053.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.056Z"
-    },
-    {
-      "id": "av_7510bf875220f12864d0",
-      "title": "WEY WEY Alpine 2025 AWD Alpine 8",
-      "brand": null,
-      "model": "WEY WEY Alpine",
-      "trim": "WEY WEY Alpine 2025 AWD Alpine 8",
-      "year": 2025,
-      "mileage": 6000,
-      "city": "Shijiazhuang",
-      "price": 31800,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "MPV",
-      "energyType": "Подключаемый гибрид (PHEV)",
-      "engine": "1.5T 170hp L4",
-      "transmission": "4-speed DHT",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2025.12",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "7"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2785 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5280*1960*1900 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/E0/8A/1400x0_c42_autohomecar__ChxpV2qK1PmAYpJ3AAwYEaOS-cc843.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.057Z"
-    },
-    {
-      "id": "av_85bc5979397cedee4830",
-      "title": "Li Auto Li L8",
-      "brand": "Li Auto",
-      "model": "Li L8",
+      "id": "av_0bfad1b048dccdae2816",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
       "trim": null,
-      "year": 2026,
-      "mileage": 2000,
-      "city": "Шэньян",
-      "price": 66290,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
+      "year": 2021,
+      "mileage": 90000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
       "body": "SUV",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 156 HP",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2026.08",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2805 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5135*2000*1800 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M0A/D9/73/1400x0_c42_autohomecar__ChtpWGqKf-SATZekAAWnS9k3QH8559.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.057Z"
-    },
-    {
-      "id": "av_5df56bdf9989c549ef2e",
-      "title": "Volkswagen ID.ERA 2026 4WD Version",
-      "brand": "Volkswagen",
-      "model": "ID.ERA",
-      "trim": "2026 4WD Version",
-      "year": 2026,
-      "mileage": 7600,
-      "city": "Шэньчжэнь",
-      "price": 50510,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 143hp",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Champagne",
-      "interiorColor": null,
-      "registration": "2026.06",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2700 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5207*1997*1810 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M02/DE/60/1400x0_c42_autohomecar__ChxpV2qKqUmATx0gAAquy44mA7o492.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.057Z"
-    },
-    {
-      "id": "av_e5f9b71f494f555b6485",
-      "title": "Voyah Auto VOYAH Zhuiguang L 2025 Mid-configuration Model",
-      "brand": null,
-      "model": "Voyah Auto VOYAH Zhuiguang L",
-      "trim": "Voyah Auto VOYAH Zhuiguang L 2025 Mid-configuration Model",
-      "year": 2025,
-      "mileage": 800,
-      "city": "Чжэнчжоу",
-      "price": 27440,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Седан",
-      "energyType": "Подключаемый гибрид (PHEV)",
-      "engine": "1.5T 150 horsepower L4",
-      "transmission": "1-speed DHT",
-      "bodyColor": "Black",
-      "interiorColor": null,
-      "registration": "2026.03",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2370 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5125*1985*1505 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/D1/7F/1400x0_c42_autohomecar__ChxpVmqJT1-Ae3jzAATp9thDfD8540.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.058Z"
-    },
-    {
-      "id": "av_371734784bc600ac2e68",
-      "title": "Buick Zhijing E7 2026 Model 1.5T Base Version",
-      "brand": "Buick",
-      "model": "Zhijing E7",
-      "trim": "2026 Model 1.5T Base Version",
-      "year": 2026,
-      "mileage": 4000,
-      "city": "Шанхай",
-      "price": 25770,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "SUV",
-      "energyType": "Подключаемый гибрид (PHEV)",
-      "engine": "1.5T 156HP L4",
-      "transmission": "1-speed DHT",
-      "bodyColor": "Silver",
-      "interiorColor": null,
-      "registration": "2026.06",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front-Wheel Drive (FWD)"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1995 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4850*1910*1676 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/DF/6A/1400x0_c42_autohomecar__ChxpVmqKcz2ATqYSAATPmwDqmwM394.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.059Z"
-    },
-    {
-      "id": "av_9254b22b5902fd40792a",
-      "title": "Voyah Auto Voyah Dreamer 2025 Model PHEV Basic Version",
-      "brand": null,
-      "model": "Voyah Auto Voyah Dreamer",
-      "trim": "Voyah Auto Voyah Dreamer 2025 Model PHEV Basic Version",
-      "year": 2025,
-      "mileage": 5000,
-      "city": "Ухань",
-      "price": 45520,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "MPV",
-      "energyType": "Подключаемый гибрид (PHEV)",
-      "engine": "1.5T 150 horsepower L4",
-      "transmission": "1-speed DHT",
-      "bodyColor": "Silver",
-      "interiorColor": null,
-      "registration": "2026.07",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "7"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2780 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5315*1998*1800 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M09/DF/D2/1400x0_c42_autohomecar__Chto52qKeXCAUZaxAAnVtLZ2_PE797.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.059Z"
-    },
-    {
-      "id": "av_5ea03849402287f9f4e0",
-      "title": "Great Wall Shanhai Cannon 2023 2.4T Diesel Extreme Journey Edition",
-      "brand": null,
-      "model": "Great Wall Shanhai Cannon",
-      "trim": "Great Wall Shanhai Cannon 2023 2.4T Diesel Extreme Journey Edition",
-      "year": 2023,
-      "mileage": 41000,
-      "city": "Shijiazhuang",
-      "price": 17000,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Pickup Truck",
-      "energyType": "Дизель",
-      "engine": "2.4T 186HP L4",
-      "transmission": "9-speed automatic transmission",
-      "bodyColor": "Silver",
-      "interiorColor": null,
-      "registration": "2024.01",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "4"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2575 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5440*1991*1924 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M08/DE/A9/1400x0_c42_autohomecar__Chto52qKZCGAaiEFAAZ4SFy8Vm4927.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.059Z"
-    },
-    {
-      "id": "av_355aa1f518af04b42aae",
-      "title": "BMW M3 2026 BMW M3 Touring M xDrive Competition",
-      "brand": "BMW",
-      "model": "M3",
-      "trim": "2026 BMW M3 Touring M xDrive Competition",
-      "year": 2026,
-      "mileage": 600,
-      "city": "Шанхай",
-      "price": 166640,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Универсал",
       "energyType": "Бензин",
-      "engine": "3.0T 530HP L6",
-      "transmission": "8-speed automatic with manual shift mode",
-      "bodyColor": "Silver",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2026.07",
+      "registration": "2021/07/17",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. Есть упоминания окрашенных кузовных элементов. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-24 01:26:55",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1870 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4802*1903*1448 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/D0/AE/1400x0_c42_autohomecar__ChxpV2qJfjyAfBE3AAzVGznKMmc522.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_0bfad1b048dccdae2816.jpg",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742693V859_575758_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742694F6929_563459_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742695D6173_602913_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742696C5119_604777_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742697O6996_480655_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742698I177_534845_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742699v1998_432269_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742700R2583_427501.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6a8b9d96a1b8e/1787534742700O11741_509059_parse.jpg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-24T02:00:24.059Z"
+      "updatedAt": "2026-08-24T01:26:55+08:00"
     }
   ]
 }
