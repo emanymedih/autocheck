@@ -1,7 +1,7 @@
 (() => {
   if (!document.querySelector('script[data-marketplace-header-loader]')) {
     const script = document.createElement("script");
-    script.src = new URL("marketplace-header.js?v=20260825-1", document.baseURI).href;
+    script.src = new URL("marketplace-header.js?v=20260825-2", document.baseURI).href;
     script.defer = true;
     script.dataset.marketplaceHeaderLoader = "1";
     document.head.appendChild(script);
@@ -11,8 +11,14 @@
 (() => {
   const SNAPSHOT_URL = new URL("collector/data/global-public-catalog.json", document.baseURI).href;
   const SESSION_KEY = "avtocheck-selected-vehicle";
-  const VISIBLE_LIMIT = 12;
+  const INITIAL_VISIBLE = 12;
+  const LOAD_MORE_STEP = 8;
+  const POPULAR_BRANDS_LIMIT = 12;
   const nf = new Intl.NumberFormat("ru-RU");
+
+  let vehicles = [];
+  let vehiclesById = new Map();
+  let visibleCount = INITIAL_VISIBLE;
 
   function clean(value) {
     return String(value ?? "").trim();
@@ -38,10 +44,9 @@
     }
   }
 
-  function formatPrice(value, currency = "CNY") {
-    if (value === null || value === undefined || value === "") return "Цена уточняется";
+  function formatPrice(value, currency = "CNY", priceText = "") {
     const number = Number(value);
-    if (!Number.isFinite(number)) return "Цена уточняется";
+    if (!Number.isFinite(number)) return clean(priceText) || "Цена по запросу";
     const formatted = nf.format(number);
     const code = clean(currency).toUpperCase();
     if (code === "USD") return `$${formatted}`;
@@ -52,56 +57,31 @@
   }
 
   function formatMileage(value) {
-    if (value === null || value === undefined || value === "") return null;
     const number = Number(value);
     return Number.isFinite(number) ? `${nf.format(number)} км` : null;
   }
 
-  function formatUpdatedAt(value) {
-    const date = new Date(value);
-    if (Number.isNaN(date.getTime())) return "Актуальные предложения";
-    return `Каталог Авточек обновлён ${new Intl.DateTimeFormat("ru-RU", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit"
-    }).format(date)}`;
-  }
-
-  function platformName(vehicle) {
-    return clean(vehicle?.listingPlatform || vehicle?.sourcePlatform || vehicle?.marketplace) || "Autohome Global";
+  function catalogUrlForBrand(brand = "") {
+    const url = new URL("cars.html", document.baseURI);
+    if (brand) url.searchParams.set("brand", brand);
+    url.searchParams.set("status", "active");
+    url.searchParams.set("sort", "updated-desc");
+    return `${url.pathname.split("/").pop()}${url.search}`;
   }
 
   function cardMarkup(vehicle) {
     const id = clean(vehicle?.id);
     const title = clean(vehicle?.title) || [vehicle?.brand, vehicle?.model].filter(Boolean).join(" ") || "Автомобиль";
     const photo = safePhoto(vehicle?.photos?.[0]);
-    const meta = [
-      vehicle?.year || null,
-      clean(vehicle?.energyType),
-      formatMileage(vehicle?.mileage),
-      clean(vehicle?.city)
-    ].filter(Boolean);
-    const platform = platformName(vehicle);
-    const media = photo
-      ? `<img class="home-live-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">`
-      : `<div class="home-live-photo-placeholder">Фотография ожидается</div>`;
+    const meta = [vehicle?.year || null, formatMileage(vehicle?.mileage), clean(vehicle?.city)].filter(Boolean);
+    const media = `<div class="home-marketplace-photo-placeholder">Фотография ожидается</div>${photo ? `<img class="home-marketplace-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : ""}`;
 
-    return `<article class="catalog-card home-live-card" data-home-live-id="${escapeHtml(id)}" tabindex="0" aria-label="${escapeHtml(title)}">
-      <div class="catalog-card-media">
-        ${media}
-        <span class="catalog-card-ready">В продаже</span>
-      </div>
-      <div class="catalog-card-body">
+    return `<article class="home-marketplace-card" data-home-live-id="${escapeHtml(id)}" tabindex="0" aria-label="${escapeHtml(title)}">
+      <div class="home-marketplace-media">${media}</div>
+      <div class="home-marketplace-copy">
+        <div class="home-marketplace-price">${escapeHtml(formatPrice(vehicle?.price, vehicle?.currency, vehicle?.priceText))}</div>
         <h3>${escapeHtml(title)}</h3>
-        <div class="catalog-card-meta">${meta.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
-        <div class="catalog-card-price">${escapeHtml(formatPrice(vehicle?.price, vehicle?.currency))}</div>
-        <div class="home-live-source"><span aria-hidden="true">●</span><strong>${escapeHtml(platform)}</strong></div>
-        <div class="catalog-card-actions">
-          <button class="catalog-card-request" type="button" data-home-report="${escapeHtml(id)}">Запросить отчёт</button>
-          <button class="catalog-card-open" type="button" data-home-open="${escapeHtml(id)}" aria-label="Открыть карточку">→</button>
-        </div>
+        <div class="home-marketplace-meta">${meta.map((item) => `<span>${escapeHtml(String(item))}</span>`).join("")}</div>
       </div>
     </article>`;
   }
@@ -113,45 +93,97 @@
         const photoDiff = Number(Boolean(b?.photos?.[0])) - Number(Boolean(a?.photos?.[0]));
         if (photoDiff) return photoDiff;
         return String(b?.updatedAt || "").localeCompare(String(a?.updatedAt || ""));
-      })
-      .slice(0, VISIBLE_LIMIT);
+      });
   }
 
-  function navigate(vehicle, requestReport = false) {
+  function topBrands(items) {
+    const counts = new Map();
+    items.forEach((vehicle) => {
+      const brand = clean(vehicle?.brand);
+      if (!brand) return;
+      counts.set(brand, (counts.get(brand) || 0) + 1);
+    });
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ru"))
+      .slice(0, POPULAR_BRANDS_LIMIT);
+  }
+
+  function renderPopularBrands() {
+    const root = document.getElementById("popularBrands");
+    if (!root) return;
+    const brands = topBrands(vehicles);
+    if (!brands.length) {
+      root.innerHTML = `<span class="home-popular-brands-loading">Марки временно недоступны</span>`;
+      return;
+    }
+    root.innerHTML = brands.map(([brand]) => `<a class="home-popular-brand" href="${escapeHtml(catalogUrlForBrand(brand))}"><span aria-hidden="true"></span><strong>${escapeHtml(brand)}</strong></a>`).join("");
+  }
+
+  function renderVehicles() {
+    const grid = document.getElementById("vehicleGrid");
+    const more = document.getElementById("homeMarketplaceMore");
+    const loadMore = document.getElementById("homeLoadMore");
+    if (!grid) return;
+
+    const visible = vehicles.slice(0, visibleCount);
+    grid.innerHTML = visible.length ? visible.map(cardMarkup).join("") : `<div class="home-live-error">Сейчас нет автомобилей, доступных для показа на главной.</div>`;
+
+    const hasMore = visibleCount < vehicles.length;
+    if (more) more.hidden = !hasMore;
+    if (loadMore) loadMore.textContent = hasMore ? `Показать ещё` : "Все автомобили показаны";
+  }
+
+  function navigate(vehicle) {
     if (!vehicle?.id) return;
     try {
       sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...vehicle, entry: "home-live-catalog" }));
     } catch (_) {}
-    const params = new URLSearchParams({ id: vehicle.id });
-    if (requestReport) params.set("action", "report");
-    window.location.href = `vehicle.html?${params.toString()}`;
+    window.location.href = `vehicle.html?id=${encodeURIComponent(vehicle.id)}`;
   }
 
-  function replaceControl(oldControl) {
-    if (!oldControl) return null;
-    const fresh = oldControl.cloneNode(true);
-    oldControl.replaceWith(fresh);
-    return fresh;
+  function bindInteractions() {
+    const grid = document.getElementById("vehicleGrid");
+    const loadMore = document.getElementById("homeLoadMore");
+    if (!grid) return;
+
+    grid.addEventListener("click", (event) => {
+      const card = event.target.closest("[data-home-live-id]");
+      if (!card) return;
+      const vehicle = vehiclesById.get(card.dataset.homeLiveId);
+      if (!vehicle) return;
+      event.preventDefault();
+      navigate(vehicle);
+    });
+
+    grid.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const card = event.target.closest("[data-home-live-id]");
+      if (!card) return;
+      const vehicle = vehiclesById.get(card.dataset.homeLiveId);
+      if (!vehicle) return;
+      event.preventDefault();
+      navigate(vehicle);
+    });
+
+    grid.addEventListener("error", (event) => {
+      const image = event.target.closest?.(".home-marketplace-photo");
+      if (image) image.remove();
+    }, true);
+
+    loadMore?.addEventListener("click", () => {
+      visibleCount = Math.min(vehicles.length, visibleCount + LOAD_MORE_STEP);
+      renderVehicles();
+      const firstNewCard = grid.children[Math.max(0, visibleCount - LOAD_MORE_STEP)];
+      firstNewCard?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
   }
 
   async function init() {
     const section = document.getElementById("cars-preview");
-    if (!section) return;
+    const grid = document.getElementById("vehicleGrid");
+    if (!section || !grid) return;
 
     section.classList.add("home-live-loading");
-    const note = section.querySelector(".catalog-demo-note");
-    if (note) note.textContent = "Загружаем актуальные предложения…";
-
-    const oldCarousel = section.querySelector("#vehicleCarousel");
-    if (!oldCarousel) return;
-    const carousel = oldCarousel.cloneNode(false);
-    carousel.className = oldCarousel.className;
-    carousel.id = oldCarousel.id;
-    carousel.innerHTML = `<div class="home-live-loading-card">Загружаем автомобили в продаже…</div>`;
-    oldCarousel.replaceWith(carousel);
-
-    const prev = replaceControl(section.querySelector("[data-carousel-prev]"));
-    const next = replaceControl(section.querySelector("[data-carousel-next]"));
 
     try {
       const response = await fetch(SNAPSHOT_URL, {
@@ -160,49 +192,21 @@
       });
       if (!response.ok) throw new Error(`snapshot_http_${response.status}`);
       const payload = await response.json();
-      const vehicles = selectVehicles(payload.items);
+      vehicles = selectVehicles(payload.items);
       if (!vehicles.length) throw new Error("snapshot_has_no_active_vehicles");
-      const byId = new Map(vehicles.map((vehicle) => [String(vehicle.id), vehicle]));
+      vehiclesById = new Map(vehicles.map((vehicle) => [String(vehicle.id), vehicle]));
 
-      carousel.innerHTML = vehicles.map(cardMarkup).join("");
+      renderPopularBrands();
+      renderVehicles();
+      bindInteractions();
       section.classList.remove("home-live-loading");
       section.classList.add("home-live-ready");
-
-      if (note) note.textContent = formatUpdatedAt(payload.updatedAt);
-      const description = section.querySelector(".catalog-section-head > div > p:not(.section-eyebrow)");
-      if (description) description.textContent = "Живые предложения из подключённого каталога. Карточки и статус продажи обновляются автоматически.";
-
-      const scrollAmount = () => Math.max(320, Math.min(720, carousel.clientWidth * 0.72));
-      prev?.addEventListener("click", () => carousel.scrollBy({ left: -scrollAmount(), behavior: "smooth" }));
-      next?.addEventListener("click", () => carousel.scrollBy({ left: scrollAmount(), behavior: "smooth" }));
-
-      carousel.addEventListener("click", (event) => {
-        const card = event.target.closest("[data-home-live-id]");
-        if (!card) return;
-        const vehicle = byId.get(card.dataset.homeLiveId);
-        if (!vehicle) return;
-        event.preventDefault();
-        event.stopPropagation();
-        navigate(vehicle, Boolean(event.target.closest("[data-home-report]")));
-      });
-
-      carousel.addEventListener("keydown", (event) => {
-        if (event.key !== "Enter" && event.key !== " ") return;
-        if (event.target.closest("button")) return;
-        const card = event.target.closest("[data-home-live-id]");
-        if (!card) return;
-        const vehicle = byId.get(card.dataset.homeLiveId);
-        if (!vehicle) return;
-        event.preventDefault();
-        navigate(vehicle, false);
-      });
     } catch (_) {
       section.classList.remove("home-live-loading");
       section.classList.add("home-live-error-state");
-      if (note) note.textContent = "Актуальные предложения временно недоступны";
-      carousel.innerHTML = `<div class="home-live-error">Не удалось загрузить текущие автомобили. Полный каталог можно открыть по кнопке «Все автомобили».</div>`;
-      prev?.setAttribute("disabled", "");
-      next?.setAttribute("disabled", "");
+      const brands = document.getElementById("popularBrands");
+      if (brands) brands.innerHTML = `<span class="home-popular-brands-loading">Марки временно недоступны</span>`;
+      grid.innerHTML = `<div class="home-live-error">Не удалось загрузить текущие автомобили. Полный каталог доступен по ссылке «Все автомобили».</div>`;
     }
   }
 
