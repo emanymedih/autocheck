@@ -1,9 +1,13 @@
 @import url("site-typography.css?v=20260819-2");
 
-/* Keep the first screen focused on the VIN form and the report preview. */
+/* Keep the homepage focused on the primary VIN flow and core content. */
 #vinAssist,
 .hero-trust,
-.confidence-bar {
+.confidence-bar,
+.hero-kicker,
+#cars-preview .catalog-demo-note,
+#report .section-head > .section-lead,
+.bottom-check {
   display: none !important;
 }
 
