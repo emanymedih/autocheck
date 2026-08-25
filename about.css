@@ -1,0 +1,109 @@
+/* Supporting information moved off the product homepage. */
+
+.about-page {
+  min-height: calc(100vh - 68px);
+}
+
+.about-hero {
+  padding: 78px 0 70px;
+  border-bottom: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.about-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .55fr);
+  gap: 56px;
+  align-items: end;
+}
+
+.about-hero h1 {
+  max-width: 760px;
+  margin-bottom: 0;
+  font-size: clamp(44px, 5.4vw, 68px);
+}
+
+.about-hero p {
+  max-width: 460px;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.about-page .services-section,
+.about-page .difference-section,
+.about-page .how-section,
+.about-page .truth-section,
+.about-page .faq-section {
+  scroll-margin-top: 88px;
+}
+
+.about-page .services-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-page .service-card.featured {
+  grid-column: span 2;
+}
+
+.about-project {
+  padding: 82px 0 90px;
+  border-top: 1px solid var(--line);
+}
+
+.about-project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.about-project h2 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.about-project-copy {
+  display: grid;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.about-project-copy p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .about-hero-inner,
+  .about-project-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .about-page .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .about-hero {
+    padding: 54px 0 48px;
+  }
+
+  .about-page .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .service-card.featured {
+    grid-column: auto;
+  }
+
+  .about-project {
+    padding: 62px 0 70px;
+  }
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Как работает Авточек, что входит в отчёт и какие ограничения важно учитывать." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>О сервисе — Авточек</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("avtocheck-theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : (systemDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch (_) {
+        document.documentElement.dataset.theme = "light";
+        document.documentElement.style.colorScheme = "light";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="about.css?v=20260825-1" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Авточек — главная"><span class="brand-mark">A</span><span class="brand-word">АВТОЧЕК</span></a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="cars.html">Автомобили</a>
+        <a href="#report">Что в отчёте</a>
+        <a href="#how">Как работает</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false" title="Тёмная тема">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8 8 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path></svg>
+        </button>
+        <a class="header-cta" href="index.html#check">Проверить VIN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <div class="content-container about-hero-inner">
+        <div>
+          <p class="section-eyebrow">ОБ АВТОЧЕК</p>
+          <h1>Как устроена проверка автомобиля.</h1>
+        </div>
+        <p>Здесь собрана справочная информация о составе отчёта, принципах проверки и ограничениях данных. Главная страница остаётся для двух действий: проверить VIN или выбрать автомобиль.</p>
+      </div>
+    </section>
+
+    <section class="services-section" id="report">
+      <div class="content-container">
+        <div class="section-head">
+          <div><p class="section-eyebrow">ЧТО В ОТЧЁТЕ</p><h2>Главное по автомобилю — в одной структуре.</h2></div>
+          <p class="section-lead">Авточек собирает доступные записи и показывает их в единой хронологии с понятными пояснениями.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><div class="service-icon danger">!</div><h3>Повреждения и ремонты</h3><p>Кузовные работы, заменённые элементы и связанные события, когда такие сведения доступны.</p></article>
+          <article class="service-card"><div class="service-icon success">↗</div><h3>Пробег</h3><p>Хронология значений одометра и возможные несоответствия между записями.</p></article>
+          <article class="service-card"><div class="service-icon blue">⌁</div><h3>Обслуживание</h3><p>Сервисные визиты, выполненные работы и заменённые детали, если источник их передаёт.</p></article>
+          <article class="service-card"><div class="service-icon amber">◎</div><h3>Страховые события</h3><p>Даты и детали страховых записей, когда они присутствуют в доступной истории.</p></article>
+          <article class="service-card featured"><div class="service-icon violet">◇</div><h3>Происхождение записи</h3><p>Для важных событий показываем, к какому типу источника относится запись, если это можно определить.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="difference-section" id="difference">
+      <div class="content-container difference-grid">
+        <div class="difference-copy">
+          <p class="section-eyebrow">ПОЧЕМУ АВТОЧЕК</p>
+          <h2>Отчёт должен помогать принять решение.</h2>
+          <p>Интерфейс строится вокруг трёх вопросов: что произошло, откуда это известно и насколько уверенно событие можно трактовать.</p>
+        </div>
+        <div class="difference-cards">
+          <article><span>01</span><div><h3>Несколько слоёв истории</h3><p>Сервисные, страховые, пробеговые и другие доступные записи сопоставляются в одном сценарии.</p></div></article>
+          <article><span>02</span><div><h3>Факт и вывод разделены</h3><p>Пользователь видит событие отдельно от объяснения его значения.</p></div></article>
+          <article><span>03</span><div><h3>Честные ограничения</h3><p>Если данные недоступны или источник не раскрывает деталь, интерфейс прямо это показывает.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="content-container">
+        <div class="section-head compact"><div><p class="section-eyebrow">КАК ЭТО РАБОТАЕТ</p><h2>Три шага для пользователя.</h2></div></div>
+        <div class="steps-grid">
+          <article><span>1</span><h3>Выберите автомобиль или введите VIN</h3><p>Проверка привязывается к конкретной машине.</p></article>
+          <article><span>2</span><h3>Авточек собирает доступную историю</h3><p>Система запрашивает доступные данные и приводит их к единому формату.</p></article>
+          <article><span>3</span><h3>Изучите единый отчёт</h3><p>История, риски, происхождение записей и пояснения собраны в одном интерфейсе.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="truth-section">
+      <div class="content-container truth-layout">
+        <div class="truth-mark">i</div>
+        <div>
+          <p class="section-eyebrow">ВАЖНО ПОНИМАТЬ</p>
+          <h2>Отсутствие записи не доказывает отсутствие события.</h2>
+          <p>Некоторые события могут не попасть в цифровую историю. Отчёт помогает оценить риски и подготовиться к осмотру, но физическая проверка автомобиля остаётся важной частью покупки.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="content-container faq-layout">
+        <div><p class="section-eyebrow">ЧАСТЫЕ ВОПРОСЫ</p><h2>Коротко о важном перед проверкой.</h2></div>
+        <div class="faq-list">
+          <details id="vin-help"><summary>Где найти VIN автомобиля?</summary><p>VIN обычно указан в документах и на самом автомобиле. Для проверки нужен 17-значный номер без пробелов.</p></details>
+          <details><summary>Откуда берутся данные в отчёте?</summary><p>Авточек собирает доступные записи из подключённых источников выбранного рынка и приводит их к единому формату.</p></details>
+          <details><summary>Почему часть истории может отсутствовать?</summary><p>Событие может пройти вне подключённых систем, обновиться с задержкой или отсутствовать у доступных поставщиков данных.</p></details>
+          <details><summary>Если серьёзных событий нет, автомобиль точно чистый?</summary><p>Это означает только то, что соответствующие записи не обнаружены в доступной истории. Финальное решение стоит принимать вместе с физическим осмотром.</p></details>
+          <details><summary>Какие автомобили сейчас проверяет Авточек?</summary><p>Первый рабочий рынок — Китай. Архитектура рассчитана на подключение других рынков позже.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-project" id="about">
+      <div class="content-container about-project-grid">
+        <div><p class="section-eyebrow">О ПРОЕКТЕ</p><h2>Один интерфейс для выбора и проверки.</h2></div>
+        <div class="about-project-copy"><p>Авточек объединяет каталог автомобилей и проверку истории в одном пользовательском сценарии.</p><p>Пользователь выбирает автомобиль, изучает карточку и при необходимости запускает проверку без перехода между чужими интерфейсами.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-container footer-inner">
+      <a class="footer-brand" href="index.html"><span>A</span> АВТОЧЕК</a>
+      <div class="footer-links"><a href="cars.html">Автомобили</a><a href="#report">Что в отчёте</a><a href="#how">Как работает</a><a href="#faq">FAQ</a></div>
+      <span>© 2026 Авточек</span>
+    </div>
+  </footer>
+
+  <script src="about-page.js"></script>
+  <script src="marketplace-header.js?v=20260825-2"></script>
+</body>
+</html>
