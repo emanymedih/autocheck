@@ -81,8 +81,18 @@
   }
 
   function updateSourceCopy() {
+    const vehicle = currentVehicle();
     const context = document.getElementById("vehiclePriceContext");
     if (context && context.textContent.trim() === "Цена площадки") context.textContent = "Цена предложения";
+
+    const footer = document.getElementById("vehiclePlatformFooter");
+    if (footer) {
+      const platform = clean(vehicle?.listingPlatform || vehicle?.sourcePlatform || vehicle?.marketplace);
+      footer.textContent = platform || document.getElementById("vehiclePlatform")?.textContent || "Каталог Авточек";
+    }
+
+    const secondary = document.getElementById("requestVehicleReportSecondary");
+    if (secondary && !secondary.disabled) secondary.textContent = "Запросить полный отчёт";
   }
 
   function update() {
@@ -92,17 +102,13 @@
     updateSourceCopy();
   }
 
-  const title = document.getElementById("vehicleTitle");
-  if (title) {
+  const watchedIds = ["vehicleTitle", "vehicleOwnershipList", "vehicleQuickSpecs", "vehiclePlatform", "vehiclePriceContext"];
+  watchedIds.forEach((id) => {
+    const node = document.getElementById(id);
+    if (!node) return;
     const observer = new MutationObserver(() => requestAnimationFrame(update));
-    observer.observe(title, { childList: true, characterData: true, subtree: true });
-  }
-
-  const ownership = document.getElementById("vehicleOwnershipList");
-  if (ownership) {
-    const observer = new MutationObserver(() => requestAnimationFrame(update));
-    observer.observe(ownership, { childList: true, subtree: true });
-  }
+    observer.observe(node, { childList: true, characterData: true, subtree: true });
+  });
 
   window.addEventListener("load", () => requestAnimationFrame(update), { once: true });
   requestAnimationFrame(update);
