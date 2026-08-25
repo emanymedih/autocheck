@@ -26,10 +26,16 @@
     return `${url.pathname.split("/").pop()}${url.search}`;
   }
 
-  function pageHref(anchor = "") {
+  function homeHref(anchor = "") {
     const path = window.location.pathname.split("/").pop() || "index.html";
-    if (path === "index.html" || path === "") return anchor || "index.html";
+    if ((path === "index.html" || path === "") && anchor) return anchor;
     return `index.html${anchor}`;
+  }
+
+  function aboutHref(anchor = "") {
+    const path = window.location.pathname.split("/").pop();
+    if (path === "about.html" && anchor) return anchor;
+    return `about.html${anchor}`;
   }
 
   function isCatalogPage() {
@@ -53,11 +59,12 @@
     const hev = catalogUrl("Гибрид (HEV)");
     const phev = catalogUrl("Подключаемый гибрид (PHEV)");
     const erev = catalogUrl("Гибрид с увеличителем запаса хода (EREV)");
-    const check = pageHref("#check");
-    const report = pageHref("#report");
-    const difference = pageHref("#difference");
-    const how = pageHref("#how");
-    const faq = pageHref("#faq");
+    const check = homeHref("#check");
+    const report = aboutHref("#report");
+    const difference = aboutHref("#difference");
+    const how = aboutHref("#how");
+    const faq = aboutHref("#faq");
+    const about = aboutHref("#about");
 
     return `<div class="marketplace-menu-backdrop" data-marketplace-menu-close></div>
       <nav class="marketplace-menu" id="marketplaceMenu" aria-label="Меню Авточек" aria-hidden="true">
@@ -79,7 +86,7 @@
           </section>
 
           <section class="marketplace-menu-group" aria-labelledby="marketplaceCheckHeading">
-            <span class="marketplace-menu-eyebrow" id="marketplaceCheckHeading">Проверка автомобиля</span>
+            <span class="marketplace-menu-eyebrow" id="marketplaceCheckHeading">Проверка и информация</span>
             <div class="marketplace-menu-links">
               <a class="marketplace-menu-link" href="${check}">Проверить VIN</a>
               <a class="marketplace-menu-link" href="${report}">Что входит в отчёт</a>
@@ -89,6 +96,7 @@
             <div class="marketplace-menu-links">
               <a class="marketplace-menu-small-link" href="${difference}">Почему Авточек</a>
               <a class="marketplace-menu-small-link" href="${faq}">Частые вопросы</a>
+              <a class="marketplace-menu-small-link" href="${about}">О проекте</a>
             </div>
           </section>
 
@@ -119,6 +127,19 @@
       </nav>`;
   }
 
+  function rewriteSupportingLinks() {
+    const targets = {
+      "Что в отчёте": aboutHref("#report"),
+      "Как работает": aboutHref("#how"),
+      "Почему Авточек": aboutHref("#difference"),
+      "FAQ": aboutHref("#faq")
+    };
+    document.querySelectorAll(".site-footer a, .main-nav a").forEach((link) => {
+      const label = link.textContent.trim();
+      if (targets[label]) link.href = targets[label];
+    });
+  }
+
   function initMarketplaceHeader() {
     const header = document.querySelector(".site-header");
     const inner = header?.querySelector(".header-inner");
@@ -127,6 +148,8 @@
     const actions = inner?.querySelector(".header-actions");
     if (!header || !inner || !brand || !mainNav || !actions || header.dataset.marketplaceReady === "1") return;
     header.dataset.marketplaceReady = "1";
+
+    rewriteSupportingLinks();
 
     const toggle = document.createElement("button");
     toggle.className = "header-menu-toggle";
@@ -142,7 +165,7 @@
     const cta = actions.querySelector(".header-cta");
     if (cta) {
       cta.textContent = "Проверить VIN";
-      cta.href = pageHref("#check");
+      cta.href = homeHref("#check");
     }
 
     header.insertAdjacentHTML("beforeend", menuMarkup());
@@ -160,10 +183,7 @@
 
     toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
     backdrop?.addEventListener("click", () => setOpen(false));
-
-    menu?.addEventListener("click", (event) => {
-      if (event.target.closest("a")) setOpen(false);
-    });
+    menu?.addEventListener("click", (event) => { if (event.target.closest("a")) setOpen(false); });
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && header.classList.contains("is-menu-open")) setOpen(false, { restoreFocus: true });
