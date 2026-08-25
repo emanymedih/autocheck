@@ -1,0 +1,56 @@
+/* Simplified product homepage: two primary user tasks only. */
+
+.home-product-hero .hero-inner {
+  grid-template-columns: minmax(0, 700px) minmax(120px, 1fr);
+  min-height: 552px;
+}
+
+.home-product-hero .hero-copy {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.home-product-hero .hero-description {
+  max-width: 610px;
+}
+
+.home-product-hero .vin-form {
+  margin-top: 30px;
+}
+
+.home-catalog-only {
+  border-top: 0;
+}
+
+.home-catalog-only .catalog-section-head > div > p:not(.section-eyebrow) {
+  max-width: 460px;
+}
+
+.home-catalog-only .home-live-source {
+  display: none !important;
+}
+
+.home-catalog-only .catalog-card-price {
+  margin-bottom: 15px;
+}
+
+.site-footer .footer-links a {
+  white-space: nowrap;
+}
+
+@media (max-width: 1040px) {
+  .home-product-hero .hero-inner {
+    grid-template-columns: minmax(0, 700px);
+  }
+}
+
+@media (max-width: 760px) {
+  .home-product-hero .hero-inner {
+    min-height: auto;
+  }
+
+  .home-product-hero .hero-copy {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+}
