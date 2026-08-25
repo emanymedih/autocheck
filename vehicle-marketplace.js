@@ -95,6 +95,12 @@
       if (footer.textContent.trim() !== platform) footer.textContent = platform;
     }
 
+    const description = document.getElementById("vehicleDescription");
+    if (description && vehicle && !clean(vehicle.description)) {
+      const fallback = "Описание продавца по этой карточке не передано.";
+      if (description.textContent.trim() !== fallback) description.textContent = fallback;
+    }
+
     const secondary = document.getElementById("requestVehicleReportSecondary");
     if (secondary && !secondary.disabled && secondary.textContent.trim() !== "Запросить полный отчёт") secondary.textContent = "Запросить полный отчёт";
   }
@@ -106,7 +112,7 @@
     updateSourceCopy();
   }
 
-  const watchedIds = ["vehicleTitle", "vehicleOwnershipList", "vehicleQuickSpecs", "vehiclePlatform", "vehiclePriceContext"];
+  const watchedIds = ["vehicleTitle", "vehicleOwnershipList", "vehicleQuickSpecs", "vehiclePlatform", "vehiclePriceContext", "vehicleDescription"];
   watchedIds.forEach((id) => {
     const node = document.getElementById(id);
     if (!node) return;
