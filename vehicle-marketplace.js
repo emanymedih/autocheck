@@ -70,14 +70,16 @@
     const first = root.querySelector(".vehicle-quick-spec");
     const label = first?.querySelector("span");
     const value = first?.querySelector("strong");
-    if (label?.textContent.trim() === "Комплектация" && value && clean(vehicle.trim)) value.textContent = clean(vehicle.trim);
+    const trim = clean(vehicle.trim);
+    if (label?.textContent.trim() === "Комплектация" && value && trim && value.textContent.trim() !== trim) value.textContent = trim;
   }
 
   function updateHistoryGrade() {
     const vehicle = currentVehicle();
     const target = document.getElementById("vehicleReportGrade");
     if (!target) return;
-    target.textContent = reportGrade(vehicle || {});
+    const next = reportGrade(vehicle || {});
+    if (target.textContent.trim() !== next) target.textContent = next;
   }
 
   function updateSourceCopy() {
@@ -87,12 +89,14 @@
 
     const footer = document.getElementById("vehiclePlatformFooter");
     if (footer) {
-      const platform = clean(vehicle?.listingPlatform || vehicle?.sourcePlatform || vehicle?.marketplace);
-      footer.textContent = platform || document.getElementById("vehiclePlatform")?.textContent || "Каталог Авточек";
+      const platform = clean(vehicle?.listingPlatform || vehicle?.sourcePlatform || vehicle?.marketplace)
+        || document.getElementById("vehiclePlatform")?.textContent
+        || "Каталог Авточек";
+      if (footer.textContent.trim() !== platform) footer.textContent = platform;
     }
 
     const secondary = document.getElementById("requestVehicleReportSecondary");
-    if (secondary && !secondary.disabled) secondary.textContent = "Запросить полный отчёт";
+    if (secondary && !secondary.disabled && secondary.textContent.trim() !== "Запросить полный отчёт") secondary.textContent = "Запросить полный отчёт";
   }
 
   function update() {
