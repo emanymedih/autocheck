@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="vehicle.css" />
   <link rel="stylesheet" href="vehicle-typography.css?v=20260819-1" />
+  <link rel="stylesheet" href="vehicle-hero-v2.css?v=20260825-1" />
 </head>
 <body>
   <header class="site-header">
@@ -49,52 +50,20 @@
   <main class="vehicle-page">
     <div class="content-container">
       <div class="vehicle-breadcrumbs"><a href="cars.html">Автомобили</a><span>→</span><span id="vehicleBreadcrumbTitle">Автомобиль</span></div>
-      <span class="vehicle-demo-note" id="vehicleDataNote">Загружаем данные автомобиля</span>
 
-      <section class="vehicle-reference-card" aria-labelledby="vehicleTitle">
-        <header class="vehicle-reference-head">
+      <section class="vehicle-reference-card vehicle-hero-v2" aria-labelledby="vehicleTitle">
+        <header class="vehicle-reference-head vehicle-hero-v2-head">
           <div class="vehicle-reference-title">
+            <div class="vehicle-title-meta">
+              <span class="vehicle-demo-note" id="vehicleDataNote">Загружаем данные автомобиля</span>
+              <span class="vehicle-source-status" id="vehicleSaleStatusChip">Статус уточняется</span>
+            </div>
             <h1 id="vehicleTitle">Автомобиль</h1>
             <p id="vehicleTrim">Характеристики загружаются</p>
           </div>
-          <div class="vehicle-reference-price">
-            <strong id="vehiclePrice">Цена уточняется</strong>
-            <span id="vehiclePriceContext">Цена площадки</span>
-          </div>
         </header>
 
-        <div class="vehicle-reference-grid">
-          <aside class="vehicle-reference-sidebar">
-            <div class="vehicle-history-box">
-              <span class="vehicle-history-icon" aria-hidden="true">✓</span>
-              <div>
-                <strong>История автомобиля</strong>
-                <span id="vehicleAvailabilityChip">Проверяем доступность отчёта</span>
-              </div>
-              <button class="vehicle-history-action" id="requestVehicleReport" type="button">Запросить отчёт</button>
-            </div>
-
-            <section class="vehicle-reference-section" aria-labelledby="vehicleOwnershipHeading">
-              <h2 id="vehicleOwnershipHeading">Владение</h2>
-              <div class="vehicle-info-table" id="vehicleOwnershipList"></div>
-            </section>
-
-            <div class="vehicle-source-card">
-              <span class="vehicle-source-label">Площадка</span>
-              <strong id="vehiclePlatform">Площадка продажи</strong>
-              <span id="vehicleSeller">Данные продавца уточняются</span>
-              <span class="vehicle-source-status" id="vehicleSaleStatusChip">Статус уточняется</span>
-            </div>
-
-            <section class="vehicle-reference-section" aria-labelledby="vehicleQuickSpecsHeading">
-              <h2 id="vehicleQuickSpecsHeading">Характеристики</h2>
-              <div class="vehicle-quick-specs" id="vehicleQuickSpecs"></div>
-              <a class="vehicle-all-specs" href="#vehicleSpecsPanel">Все характеристики</a>
-            </section>
-
-            <div class="vehicle-request-state" id="vehicleRequestState" hidden></div>
-          </aside>
-
+        <div class="vehicle-reference-grid vehicle-hero-v2-grid">
           <div class="vehicle-gallery-shell">
             <div class="vehicle-gallery" aria-label="Галерея автомобиля">
               <div class="vehicle-gallery-main" id="vehicleMainVisual"></div>
@@ -105,6 +74,45 @@
               <span id="vehicleGallerySourceLabel">Галерея Авточек</span>
             </div>
           </div>
+
+          <aside class="vehicle-reference-sidebar vehicle-decision-panel">
+            <div class="vehicle-price-block">
+              <span class="vehicle-price-eyebrow">Цена автомобиля</span>
+              <div class="vehicle-reference-price">
+                <strong id="vehiclePrice">Цена уточняется</strong>
+                <span id="vehiclePriceContext">Цена площадки</span>
+              </div>
+            </div>
+
+            <div class="vehicle-source-card vehicle-source-card--hero">
+              <span class="vehicle-source-label">Источник предложения</span>
+              <strong id="vehiclePlatform">Площадка продажи</strong>
+              <span id="vehicleSeller">Данные продавца уточняются</span>
+            </div>
+
+            <section class="vehicle-reference-section vehicle-reference-section--compact" aria-labelledby="vehicleOwnershipHeading">
+              <h2 id="vehicleOwnershipHeading">Ключевые данные</h2>
+              <div class="vehicle-info-table" id="vehicleOwnershipList"></div>
+            </section>
+
+            <section class="vehicle-reference-section vehicle-reference-section--compact" aria-labelledby="vehicleQuickSpecsHeading">
+              <h2 id="vehicleQuickSpecsHeading">Характеристики</h2>
+              <div class="vehicle-quick-specs" id="vehicleQuickSpecs"></div>
+              <a class="vehicle-all-specs" href="#vehicleSpecsPanel">Все характеристики</a>
+            </section>
+
+            <div class="vehicle-history-box vehicle-history-box--hero">
+              <span class="vehicle-history-icon" aria-hidden="true">✓</span>
+              <div>
+                <strong>История автомобиля</strong>
+                <span id="vehicleAvailabilityChip">Проверяем доступность отчёта</span>
+                <small>История, инспекция и дополнительные проверки доступны отдельным запросом.</small>
+              </div>
+              <button class="vehicle-history-action" id="requestVehicleReport" type="button">Запросить отчёт</button>
+            </div>
+
+            <div class="vehicle-request-state" id="vehicleRequestState" hidden></div>
+          </aside>
         </div>
       </section>
 
