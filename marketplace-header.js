@@ -11,6 +11,13 @@
     document.head.appendChild(link);
   }
 
+  if (!document.getElementById("marketplaceHeaderRuntimeFixes")) {
+    const style = document.createElement("style");
+    style.id = "marketplaceHeaderRuntimeFixes";
+    style.textContent = `.site-header .main-nav{display:flex}.site-header .header-inner{position:relative;z-index:3}.marketplace-menu{z-index:2}.marketplace-menu-backdrop{z-index:1}.marketplace-service-card .marketplace-service-icon{display:grid}`;
+    document.head.appendChild(style);
+  }
+
   function catalogUrl(engine = "") {
     const url = new URL("cars.html", document.baseURI);
     if (engine) url.searchParams.set("engine", engine);
@@ -28,6 +35,14 @@
   function isCatalogPage() {
     const path = window.location.pathname.split("/").pop();
     return path === "cars.html" || path === "vehicle.html";
+  }
+
+  function vehicleCountLabel(count) {
+    const mod10 = count % 10;
+    const mod100 = count % 100;
+    if (mod10 === 1 && mod100 !== 11) return `${count} автомобиль в продаже`;
+    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${count} автомобиля в продаже`;
+    return `${count} автомобилей в продаже`;
   }
 
   function menuMarkup() {
@@ -168,7 +183,7 @@
       .then((payload) => {
         const count = Array.isArray(payload?.items) ? payload.items.filter((item) => item?.status === "active").length : 0;
         const target = document.getElementById("marketplaceCatalogCount");
-        if (target && count) target.textContent = `${count} ${count % 10 === 1 && count % 100 !== 11 ? "автомобиль" : "автомобилей"} в продаже`;
+        if (target && count) target.textContent = vehicleCountLabel(count);
       })
       .catch(() => {});
   }
