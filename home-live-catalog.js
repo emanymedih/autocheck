@@ -1,4 +1,14 @@
 (() => {
+  if (!document.querySelector('script[data-marketplace-header-loader]')) {
+    const script = document.createElement("script");
+    script.src = new URL("marketplace-header.js?v=20260825-1", document.baseURI).href;
+    script.defer = true;
+    script.dataset.marketplaceHeaderLoader = "1";
+    document.head.appendChild(script);
+  }
+})();
+
+(() => {
   const SNAPSHOT_URL = new URL("collector/data/global-public-catalog.json", document.baseURI).href;
   const SESSION_KEY = "avtocheck-selected-vehicle";
   const VISIBLE_LIMIT = 12;
