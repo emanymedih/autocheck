@@ -1,0 +1,561 @@
+/* Vehicle card reference: familiar marketplace hierarchy adapted for Chinese inventory. */
+
+.vehicle-page {
+  padding-top: 24px;
+}
+
+.vehicle-reference-card {
+  background: transparent;
+}
+
+.vehicle-marketplace-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 18px;
+  border-bottom: 0;
+}
+
+.vehicle-marketplace-title {
+  min-width: 0;
+}
+
+.vehicle-marketplace-title h1 {
+  margin: 0;
+  max-width: 850px;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.08;
+  letter-spacing: -.025em;
+}
+
+.vehicle-marketplace-title > p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.vehicle-marketplace-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.vehicle-marketplace-meta .vehicle-demo-note,
+.vehicle-marketplace-meta .vehicle-source-status {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.vehicle-marketplace-meta .vehicle-source-status {
+  color: var(--brand) !important;
+}
+
+.vehicle-marketplace-meta .vehicle-source-status.inactive,
+.vehicle-marketplace-meta .vehicle-source-status.unknown {
+  color: var(--muted) !important;
+}
+
+.vehicle-marketplace-price {
+  min-width: 260px;
+  padding-top: 1px;
+  text-align: right;
+}
+
+.vehicle-marketplace-price .vehicle-price-eyebrow {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.vehicle-marketplace-price .vehicle-reference-price strong {
+  display: block;
+  font-size: clamp(30px, 3vw, 38px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  white-space: nowrap;
+}
+
+.vehicle-marketplace-price .vehicle-reference-price span {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.vehicle-source-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: -4px 0 18px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.vehicle-source-strip strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.vehicle-source-strip .vehicle-source-separator {
+  color: var(--line-strong, var(--line));
+}
+
+.vehicle-marketplace-grid {
+  display: grid;
+  grid-template-columns: 292px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  padding-top: 0;
+}
+
+.vehicle-marketplace-rail {
+  min-width: 0;
+}
+
+.vehicle-marketplace-rail .vehicle-history-box {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px 12px;
+  padding: 15px;
+  border-radius: 16px;
+  background: var(--soft);
+}
+
+.vehicle-marketplace-rail .vehicle-history-box strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.vehicle-marketplace-rail .vehicle-history-box span:not(.vehicle-history-icon) {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.vehicle-marketplace-rail .vehicle-history-box small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.vehicle-marketplace-rail .vehicle-history-action {
+  grid-column: 1 / -1;
+  min-height: 42px;
+  margin-top: 3px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.vehicle-marketplace-rail .vehicle-reference-section {
+  margin-top: 20px;
+}
+
+.vehicle-marketplace-rail .vehicle-reference-section h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.vehicle-marketplace-rail .vehicle-info-table {
+  gap: 8px;
+}
+
+.vehicle-marketplace-rail .vehicle-info-row {
+  grid-template-columns: minmax(0, 105px) minmax(0, 1fr);
+  gap: 8px;
+}
+
+.vehicle-marketplace-rail .vehicle-info-row span,
+.vehicle-marketplace-rail .vehicle-info-row strong {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.vehicle-marketplace-rail .vehicle-info-row strong {
+  font-weight: 500;
+}
+
+.vehicle-marketplace-rail .vehicle-quick-specs {
+  gap: 12px;
+}
+
+.vehicle-marketplace-rail .vehicle-quick-spec {
+  grid-template-columns: 27px minmax(0, 1fr);
+  gap: 9px;
+}
+
+.vehicle-marketplace-rail .vehicle-quick-spec span {
+  font-size: 11px;
+}
+
+.vehicle-marketplace-rail .vehicle-quick-spec strong {
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.vehicle-marketplace-rail .vehicle-all-specs {
+  min-height: 42px;
+  margin-top: 17px;
+  padding: 0 15px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.vehicle-marketplace-gallery .vehicle-gallery {
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.vehicle-marketplace-gallery .vehicle-gallery-main {
+  min-height: 480px;
+  aspect-ratio: 4 / 3;
+}
+
+.vehicle-marketplace-gallery .vehicle-gallery-thumbs {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.vehicle-marketplace-gallery .vehicle-gallery-tile {
+  height: 82px;
+}
+
+.vehicle-marketplace-gallery .vehicle-gallery-caption {
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.vehicle-request-state {
+  margin-top: 12px;
+}
+
+.vehicle-content {
+  display: block;
+  margin-top: 48px;
+}
+
+.vehicle-main-column {
+  display: grid;
+  gap: 18px;
+}
+
+.vehicle-history-section {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.vehicle-history-section-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.vehicle-history-section-head h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+}
+
+.vehicle-history-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 0 8px;
+  border: 1px solid rgba(113, 90, 215, .45);
+  border-radius: 7px;
+  color: #715ad7;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.vehicle-history-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--page);
+}
+
+.vehicle-history-card-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 17px 20px;
+  background: var(--soft);
+}
+
+.vehicle-history-card-head strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.vehicle-history-card-head span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.vehicle-history-grade {
+  min-width: 100px;
+  text-align: right;
+}
+
+.vehicle-history-grade small,
+.vehicle-history-grade strong {
+  display: block;
+}
+
+.vehicle-history-grade small {
+  color: var(--muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.vehicle-history-grade strong {
+  margin-top: 2px;
+  color: var(--brand);
+  font-size: 16px;
+}
+
+.vehicle-history-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 36px;
+  padding: 9px 20px 4px;
+}
+
+.vehicle-history-check {
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  gap: 9px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.vehicle-history-check:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.vehicle-history-check i {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.vehicle-history-check strong,
+.vehicle-history-check span {
+  display: block;
+}
+
+.vehicle-history-check strong {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.vehicle-history-check span {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.vehicle-history-cta {
+  padding: 14px 20px 20px;
+}
+
+.vehicle-history-cta .vehicle-report-button {
+  min-height: 48px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.vehicle-panel {
+  padding: 22px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.vehicle-panel h2 {
+  font-size: 24px;
+}
+
+.vehicle-panel-lead {
+  max-width: 780px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.vehicle-spec-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vehicle-seller-description {
+  max-width: 920px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.vehicle-seller-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.vehicle-source-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.vehicle-source-footer strong {
+  color: var(--text);
+}
+
+.vehicle-side-column {
+  display: none !important;
+}
+
+html[data-theme="dark"] .vehicle-history-card-head {
+  background: var(--soft);
+}
+
+html[data-theme="dark"] .vehicle-history-badge {
+  border-color: rgba(169, 148, 255, .45);
+  color: #b7a6ff;
+}
+
+@media (max-width: 1040px) {
+  .vehicle-marketplace-grid {
+    grid-template-columns: 250px minmax(0, 1fr);
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-main {
+    min-height: 390px;
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-thumbs {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-tile:nth-child(n + 6) {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .vehicle-marketplace-head {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .vehicle-marketplace-price {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .vehicle-marketplace-price .vehicle-reference-price strong {
+    white-space: normal;
+  }
+
+  .vehicle-source-strip {
+    margin-top: 0;
+  }
+
+  .vehicle-marketplace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-marketplace-gallery {
+    order: 1;
+  }
+
+  .vehicle-marketplace-rail {
+    order: 2;
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-main {
+    min-height: 0;
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-thumbs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-tile {
+    height: 70px;
+  }
+
+  .vehicle-marketplace-gallery .vehicle-gallery-tile:nth-child(n + 5) {
+    display: none;
+  }
+
+  .vehicle-history-card-head {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-history-grade {
+    text-align: left;
+  }
+
+  .vehicle-history-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-history-check:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .vehicle-history-check:last-child {
+    border-bottom: 0;
+  }
+
+  .vehicle-spec-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
