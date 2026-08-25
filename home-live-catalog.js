@@ -16,6 +16,47 @@
   const POPULAR_BRANDS_LIMIT = 12;
   const nf = new Intl.NumberFormat("ru-RU");
 
+  const SIMPLE_ICONS_BASE = "https://cdn.simpleicons.org/";
+  const LOCAL_BRAND_ICONS = new Set(["audi", "bmw", "cadillac", "chevrolet"]);
+  const BRAND_ICON_SLUGS = new Map([
+    ["audi", "audi"],
+    ["bmw", "bmw"],
+    ["byd", "byd"],
+    ["cadillac", "cadillac"],
+    ["chevrolet", "chevrolet"],
+    ["citroen", "citroen"],
+    ["ferrari", "ferrari"],
+    ["ford", "ford"],
+    ["geely", "geely"],
+    ["honda", "honda"],
+    ["hyundai", "hyundai"],
+    ["jeep", "jeep"],
+    ["kia", "kia"],
+    ["land rover", "landrover"],
+    ["landrover", "landrover"],
+    ["lexus", "lexus"],
+    ["maserati", "maserati"],
+    ["mazda", "mazda"],
+    ["mercedes", "mercedes"],
+    ["mercedes-benz", "mercedes"],
+    ["mini", "mini"],
+    ["mitsubishi", "mitsubishi"],
+    ["nio", "nio"],
+    ["nissan", "nissan"],
+    ["opel", "opel"],
+    ["peugeot", "peugeot"],
+    ["porsche", "porsche"],
+    ["renault", "renault"],
+    ["skoda", "skoda"],
+    ["subaru", "subaru"],
+    ["suzuki", "suzuki"],
+    ["tesla", "tesla"],
+    ["toyota", "toyota"],
+    ["volkswagen", "volkswagen"],
+    ["volvo", "volvo"],
+    ["xpeng", "xpeng"]
+  ]);
+
   let vehicles = [];
   let vehiclesById = new Map();
   let visibleCount = INITIAL_VISIBLE;
@@ -71,6 +112,34 @@
     return `${url.pathname.split("/").pop()}${url.search}`;
   }
 
+  function brandIconSlug(brand) {
+    const normalized = clean(brand).toLowerCase();
+    return BRAND_ICON_SLUGS.get(normalized) || null;
+  }
+
+  function brandIconUrl(slug) {
+    if (!slug) return null;
+    if (LOCAL_BRAND_ICONS.has(slug)) return new URL(`assets/brands/${slug}.svg`, document.baseURI).href;
+    return `${SIMPLE_ICONS_BASE}${encodeURIComponent(slug)}`;
+  }
+
+  function brandMonogram(brand) {
+    const words = clean(brand).split(/[\s-]+/).filter(Boolean);
+    if (!words.length) return "A";
+    if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+    return words.slice(0, 2).map((word) => word[0]).join("").toUpperCase();
+  }
+
+  function brandLogoMarkup(brand) {
+    const slug = brandIconSlug(brand);
+    const monogram = escapeHtml(brandMonogram(brand));
+    const iconUrl = brandIconUrl(slug);
+    const image = iconUrl
+      ? `<img class="home-brand-logo-image" src="${escapeHtml(iconUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
+      : "";
+    return `<span class="home-brand-logo" aria-hidden="true"><span class="home-brand-logo-fallback">${monogram}</span>${image}</span>`;
+  }
+
   function cardMarkup(vehicle) {
     const id = clean(vehicle?.id);
     const title = clean(vehicle?.title) || [vehicle?.brand, vehicle?.model].filter(Boolean).join(" ") || "Автомобиль";
@@ -118,7 +187,7 @@
       root.innerHTML = `<span class="home-popular-brands-loading">Марки временно недоступны</span>`;
       return;
     }
-    root.innerHTML = brands.map(([brand]) => `<a class="home-popular-brand" href="${escapeHtml(catalogUrlForBrand(brand))}"><span aria-hidden="true"></span><strong>${escapeHtml(brand)}</strong></a>`).join("");
+    root.innerHTML = brands.map(([brand, count]) => `<a class="home-popular-brand" href="${escapeHtml(catalogUrlForBrand(brand))}" aria-label="${escapeHtml(brand)} — ${count} ${count === 1 ? "предложение" : "предложений"}">${brandLogoMarkup(brand)}<strong>${escapeHtml(brand)}</strong></a>`).join("");
   }
 
   function renderVehicles() {
@@ -145,6 +214,7 @@
 
   function bindInteractions() {
     const grid = document.getElementById("vehicleGrid");
+    const brands = document.getElementById("popularBrands");
     const loadMore = document.getElementById("homeLoadMore");
     if (!grid) return;
 
@@ -170,6 +240,12 @@
     grid.addEventListener("error", (event) => {
       const image = event.target.closest?.(".home-marketplace-photo");
       if (image) image.remove();
+    }, true);
+
+    brands?.addEventListener("error", (event) => {
+      const image = event.target.closest?.(".home-brand-logo-image");
+      if (!image) return;
+      image.remove();
     }, true);
 
     loadMore?.addEventListener("click", () => {
