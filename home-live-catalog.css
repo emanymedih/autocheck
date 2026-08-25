@@ -305,6 +305,10 @@ html[data-theme="dark"] #cars-preview .home-brand-logo {
   background: var(--soft);
 }
 
+html[data-theme="dark"] #cars-preview .home-brand-logo-image[src*="/assets/brands/"] {
+  filter: invert(1) grayscale(1) brightness(1.25);
+}
+
 @media (max-width: 1100px) {
   #cars-preview .home-popular-brands-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
