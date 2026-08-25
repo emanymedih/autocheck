@@ -1,139 +1,368 @@
 @import url("site-typography.css?v=20260819-2");
 
-/* Keep the homepage focused on the primary VIN flow and core content. */
+/* Homepage stays focused on the VIN flow and the vehicle marketplace. */
 #vinAssist,
 .hero-trust,
 .confidence-bar,
 .hero-kicker,
-#cars-preview .catalog-demo-note,
-#report .section-head > .section-lead,
 .bottom-check {
   display: none !important;
 }
 
-#cars-preview.home-live-loading .catalog-demo-note::before,
-#cars-preview.home-live-ready .catalog-demo-note::before {
-  background: var(--brand);
+#cars-preview {
+  padding: 76px 0 92px;
+  border-bottom: 1px solid var(--line);
+  background: var(--page);
 }
 
-#cars-preview .vehicle-carousel {
-  min-height: 360px;
+#cars-preview .home-popular-brands {
+  margin-bottom: 72px;
 }
 
-#cars-preview .home-live-card {
-  flex: 0 0 min(318px, 82vw);
+#cars-preview .home-popular-brands-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
-#cars-preview .home-live-card .catalog-card-media {
-  height: 188px;
-  background: var(--soft);
+#cars-preview .home-popular-brands-head h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -.03em;
 }
 
-#cars-preview .home-live-photo {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center center;
-}
-
-#cars-preview .home-live-photo-placeholder {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  background: var(--soft);
-  color: var(--muted);
+#cars-preview .home-popular-brands-head a {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  border-radius: 9px;
+  background: var(--soft-2);
+  color: var(--text);
   font-size: 12px;
   font-weight: 700;
 }
 
-#cars-preview .home-live-card .catalog-card-body {
-  min-height: 178px;
-  display: flex;
-  flex-direction: column;
+#cars-preview .home-popular-brands-head a:hover {
+  color: var(--brand);
+  background: var(--brand-soft);
 }
 
-#cars-preview .home-live-card h3 {
-  min-height: 42px;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+#cars-preview .home-popular-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 46px;
+  row-gap: 8px;
 }
 
-#cars-preview .home-live-card .catalog-card-meta {
-  min-height: 32px;
-  align-content: flex-start;
-}
-
-#cars-preview .home-live-card .catalog-card-price {
-  margin: 13px 0 8px;
-}
-
-#cars-preview .home-live-source {
+#cars-preview .home-popular-brand {
+  min-width: 0;
   display: flex;
   align-items: center;
-  gap: 7px;
-  min-width: 0;
-  margin-bottom: 12px;
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 1.3;
+  gap: 11px;
+  min-height: 38px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.2;
 }
 
-#cars-preview .home-live-source span {
+#cars-preview .home-popular-brand > span {
+  width: 8px;
+  height: 8px;
   flex: 0 0 auto;
-  color: var(--brand);
-  font-size: 8px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 0 4px var(--brand-soft);
 }
 
-#cars-preview .home-live-source strong {
+#cars-preview .home-popular-brand strong {
   min-width: 0;
   overflow: hidden;
-  color: var(--text);
-  font-size: 10px;
-  font-weight: 750;
+  font-weight: 650;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-#cars-preview .home-live-card .catalog-card-actions {
-  margin-top: auto;
+#cars-preview .home-popular-brand:hover strong {
+  color: var(--brand);
+}
+
+#cars-preview .home-popular-brands-loading {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+#cars-preview .home-marketplace-head {
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+#cars-preview .home-marketplace-head h2 {
+  max-width: 760px;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.06;
+}
+
+#cars-preview .home-marketplace-head > div > p:not(.section-eyebrow) {
+  max-width: 600px;
+  margin-top: 13px;
+}
+
+#cars-preview .catalog-head-actions {
+  align-self: end;
+}
+
+#cars-preview .catalog-all-link {
+  gap: 8px;
+  white-space: nowrap;
+}
+
+#cars-preview .home-vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 34px 22px;
+  min-height: 340px;
+}
+
+#cars-preview .home-marketplace-card {
+  min-width: 0;
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+#cars-preview .home-marketplace-card:focus-visible {
+  border-radius: 14px;
+  outline: 3px solid rgba(47, 106, 85, .28);
+  outline-offset: 4px;
+}
+
+#cars-preview .home-marketplace-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--soft);
+}
+
+#cars-preview .home-marketplace-photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  color: var(--muted);
+  background: linear-gradient(145deg, var(--soft), var(--soft-2));
+  text-align: center;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+#cars-preview .home-marketplace-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .22s ease;
+}
+
+#cars-preview .home-marketplace-card:hover .home-marketplace-photo {
+  transform: scale(1.018);
+}
+
+#cars-preview .home-marketplace-copy {
+  padding: 11px 0 0;
+}
+
+#cars-preview .home-marketplace-price {
+  margin-bottom: 3px;
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+#cars-preview .home-marketplace-card h3 {
+  min-height: 40px;
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 4px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -.015em;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  transition: color .16s ease;
+}
+
+#cars-preview .home-marketplace-card:hover h3 {
+  color: var(--brand);
+}
+
+#cars-preview .home-marketplace-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+#cars-preview .home-marketplace-meta span + span::before {
+  content: "/";
+  margin: 0 6px;
+  color: var(--line);
+}
+
+#cars-preview .home-marketplace-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+#cars-preview .home-marketplace-more[hidden] {
+  display: none;
+}
+
+#cars-preview .home-load-more {
+  min-width: 190px;
+  min-height: 46px;
+  padding: 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--page);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+#cars-preview .home-load-more:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+  background: var(--brand-soft);
 }
 
 #cars-preview .home-live-loading-card,
 #cars-preview .home-live-error {
-  width: 100%;
-  min-height: 330px;
+  grid-column: 1 / -1;
+  min-height: 260px;
   display: grid;
   place-items: center;
-  flex: 0 0 100%;
+  padding: 30px;
   border: 1px dashed var(--line);
-  border-radius: 16px;
-  background: var(--page);
+  border-radius: 14px;
+  background: var(--soft);
   color: var(--muted);
-  padding: 28px;
   text-align: center;
   font-size: 12px;
   line-height: 1.6;
 }
 
-#cars-preview .catalog-arrow[disabled] {
-  cursor: default;
-  opacity: .4;
+html[data-theme="dark"] #cars-preview .home-popular-brands-head a,
+html[data-theme="dark"] #cars-preview .home-load-more {
+  background: var(--soft);
+}
+
+@media (max-width: 1100px) {
+  #cars-preview .home-popular-brands-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 28px;
+  }
+
+  #cars-preview .home-vehicle-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
-  #cars-preview .vehicle-carousel {
-    min-height: 350px;
+  #cars-preview {
+    padding: 58px 0 70px;
   }
 
-  #cars-preview .home-live-card {
-    flex-basis: 84vw;
+  #cars-preview .home-popular-brands {
+    margin-bottom: 50px;
   }
 
-  #cars-preview .home-live-card .catalog-card-media {
-    height: 196px;
+  #cars-preview .home-popular-brands-head {
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+
+  #cars-preview .home-popular-brands-head h2 {
+    font-size: 21px;
+  }
+
+  #cars-preview .home-popular-brands-head a {
+    min-height: 34px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  #cars-preview .home-popular-brands-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+  }
+
+  #cars-preview .home-marketplace-head {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  #cars-preview .home-marketplace-head .catalog-head-actions {
+    margin-top: 16px;
+  }
+
+  #cars-preview .home-vehicle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 12px;
+  }
+
+  #cars-preview .home-marketplace-media {
+    border-radius: 11px;
+  }
+
+  #cars-preview .home-marketplace-price {
+    font-size: 18px;
+  }
+
+  #cars-preview .home-marketplace-card h3 {
+    min-height: 36px;
+    font-size: 13px;
+  }
+
+  #cars-preview .home-marketplace-meta {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  #cars-preview .home-popular-brand {
+    font-size: 13px;
+  }
+
+  #cars-preview .home-marketplace-price {
+    font-size: 17px;
+  }
+
+  #cars-preview .home-marketplace-card h3 {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #cars-preview .home-marketplace-photo {
+    transition: none;
   }
 }
