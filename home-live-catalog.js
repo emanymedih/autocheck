@@ -45,6 +45,7 @@
   }
 
   function formatPrice(value, currency = "CNY", priceText = "") {
+    if (value === null || value === undefined || value === "") return clean(priceText) || "Цена по запросу";
     const number = Number(value);
     if (!Number.isFinite(number)) return clean(priceText) || "Цена по запросу";
     const formatted = nf.format(number);
@@ -57,6 +58,7 @@
   }
 
   function formatMileage(value) {
+    if (value === null || value === undefined || value === "") return null;
     const number = Number(value);
     return Number.isFinite(number) ? `${nf.format(number)} км` : null;
   }
@@ -130,7 +132,7 @@
 
     const hasMore = visibleCount < vehicles.length;
     if (more) more.hidden = !hasMore;
-    if (loadMore) loadMore.textContent = hasMore ? `Показать ещё` : "Все автомобили показаны";
+    if (loadMore) loadMore.textContent = hasMore ? "Показать ещё" : "Все автомобили показаны";
   }
 
   function navigate(vehicle) {
@@ -171,9 +173,10 @@
     }, true);
 
     loadMore?.addEventListener("click", () => {
+      const previousCount = visibleCount;
       visibleCount = Math.min(vehicles.length, visibleCount + LOAD_MORE_STEP);
       renderVehicles();
-      const firstNewCard = grid.children[Math.max(0, visibleCount - LOAD_MORE_STEP)];
+      const firstNewCard = grid.children[previousCount];
       firstNewCard?.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
   }
