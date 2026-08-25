@@ -1,86 +1,9 @@
-/* Final report CTA: prominent in light mode, restrained in dark mode. */
+/* Secondary report block removed from the vehicle page. */
 
-.vehicle-report-box {
-  border: 1px solid rgba(113, 90, 215, .18);
-  background:
-    radial-gradient(circle at 12% 10%, rgba(113, 90, 215, .22), transparent 34%),
-    linear-gradient(135deg, rgba(245, 242, 255, .98) 0%, rgba(255, 255, 255, .99) 48%, rgba(235, 229, 255, .94) 100%);
-  color: #181320;
-  box-shadow: 0 18px 44px rgba(113, 90, 215, .14);
+.vehicle-side-column {
+  display: none !important;
 }
 
-.vehicle-report-box .section-eyebrow {
-  color: #715ad7;
-}
-
-.vehicle-report-box h2 {
-  color: #181320;
-}
-
-.vehicle-report-box > p:not(.section-eyebrow) {
-  color: rgba(24, 19, 32, .72);
-}
-
-.vehicle-report-step i {
-  border-color: rgba(113, 90, 215, .26);
-  background: rgba(113, 90, 215, .10);
-  color: #715ad7;
-}
-
-.vehicle-report-step strong {
-  color: #181320;
-}
-
-.vehicle-report-step span {
-  color: rgba(24, 19, 32, .64);
-}
-
-.vehicle-report-button {
-  background: #3e8c67;
-  color: #fff;
-  box-shadow: 0 10px 22px rgba(62, 140, 103, .22);
-}
-
-.vehicle-report-button:hover {
-  background: #347b59;
-  transform: translateY(-1px);
-}
-
-html[data-theme="dark"] .vehicle-report-box {
-  border-color: #26362f;
-  background: #111714;
-  color: #fff;
-  box-shadow: none;
-}
-
-html[data-theme="dark"] .vehicle-report-box .section-eyebrow {
-  color: #9fd2b8;
-}
-
-html[data-theme="dark"] .vehicle-report-box h2,
-html[data-theme="dark"] .vehicle-report-step strong {
-  color: #fff;
-}
-
-html[data-theme="dark"] .vehicle-report-box > p:not(.section-eyebrow) {
-  color: #aab8b0;
-}
-
-html[data-theme="dark"] .vehicle-report-step i {
-  border-color: #31443a;
-  background: transparent;
-  color: #9fd2b8;
-}
-
-html[data-theme="dark"] .vehicle-report-step span {
-  color: #8fa198;
-}
-
-html[data-theme="dark"] .vehicle-report-button {
-  background: var(--brand);
-  box-shadow: none;
-}
-
-html[data-theme="dark"] .vehicle-report-button:hover {
-  background: var(--brand-dark);
+.vehicle-content {
+  grid-template-columns: minmax(0, 1fr) !important;
 }

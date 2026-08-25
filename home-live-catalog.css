@@ -1,5 +1,12 @@
 @import url("site-typography.css?v=20260819-2");
 
+/* Keep the first screen focused on the VIN form and the report preview. */
+#vinAssist,
+.hero-trust,
+.confidence-bar {
+  display: none !important;
+}
+
 #cars-preview.home-live-loading .catalog-demo-note::before,
 #cars-preview.home-live-ready .catalog-demo-note::before {
   background: var(--brand);
