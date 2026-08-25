@@ -64,19 +64,43 @@
   display: flex;
   align-items: center;
   gap: 11px;
-  min-height: 38px;
+  min-height: 42px;
   color: var(--text);
   font-size: 15px;
   line-height: 1.2;
 }
 
-#cars-preview .home-popular-brand > span {
-  width: 8px;
-  height: 8px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background: var(--brand);
-  box-shadow: 0 0 0 4px var(--brand-soft);
+#cars-preview .home-brand-logo {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--page);
+}
+
+#cars-preview .home-brand-logo-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: -.02em;
+}
+
+#cars-preview .home-brand-logo-image {
+  position: absolute;
+  inset: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  display: block;
+  object-fit: contain;
 }
 
 #cars-preview .home-popular-brand strong {
@@ -89,6 +113,11 @@
 
 #cars-preview .home-popular-brand:hover strong {
   color: var(--brand);
+}
+
+#cars-preview .home-popular-brand:hover .home-brand-logo {
+  border-color: rgba(47, 106, 85, .28);
+  background: var(--brand-soft);
 }
 
 #cars-preview .home-popular-brands-loading {
@@ -271,7 +300,8 @@
 }
 
 html[data-theme="dark"] #cars-preview .home-popular-brands-head a,
-html[data-theme="dark"] #cars-preview .home-load-more {
+html[data-theme="dark"] #cars-preview .home-load-more,
+html[data-theme="dark"] #cars-preview .home-brand-logo {
   background: var(--soft);
 }
 
@@ -313,6 +343,17 @@ html[data-theme="dark"] #cars-preview .home-load-more {
   #cars-preview .home-popular-brands-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 18px;
+  }
+
+  #cars-preview .home-popular-brand {
+    gap: 9px;
+  }
+
+  #cars-preview .home-brand-logo {
+    width: 26px;
+    height: 26px;
+    flex-basis: 26px;
+    border-radius: 8px;
   }
 
   #cars-preview .home-marketplace-head {
