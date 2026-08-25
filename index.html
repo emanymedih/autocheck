@@ -22,8 +22,8 @@
   </script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="theme.css" />
-  <link rel="stylesheet" href="home-live-catalog.css" />
-  <link rel="stylesheet" href="home-simplified.css?v=20260825-1" />
+  <link rel="stylesheet" href="home-live-catalog.css?v=20260825-2" />
+  <link rel="stylesheet" href="home-simplified.css?v=20260825-2" />
 </head>
 <body>
   <header class="site-header">
@@ -74,19 +74,32 @@
 
     <section class="catalog-preview-section home-catalog-only" id="cars-preview" aria-labelledby="homeCatalogTitle">
       <div class="content-container">
-        <div class="catalog-section-head">
+        <div class="home-popular-brands" aria-labelledby="popularBrandsTitle">
+          <div class="home-popular-brands-head">
+            <h2 id="popularBrandsTitle">Популярные марки</h2>
+            <a href="cars.html?status=active&sort=updated-desc">Все предложения <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="home-popular-brands-grid" id="popularBrands"><span class="home-popular-brands-loading">Загружаем марки…</span></div>
+        </div>
+
+        <div class="catalog-section-head home-marketplace-head">
           <div>
             <p class="section-eyebrow">АВТОМОБИЛИ В ПРОДАЖЕ</p>
-            <h2 id="homeCatalogTitle">Выберите машину и запросите её историю.</h2>
-            <p>Автомобили в продаже в Китае. Откройте карточку, изучите характеристики и при необходимости запросите проверку истории.</p>
+            <h2 id="homeCatalogTitle">Выберите машину и изучите её подробнее.</h2>
+            <p>Актуальные автомобили в Китае. Цена, пробег и ключевые данные — сразу на витрине; история и полные характеристики — внутри карточки.</p>
           </div>
           <div class="catalog-head-actions">
-            <a class="catalog-all-link" href="cars.html?status=active&sort=updated-desc">Все автомобили</a>
-            <button class="catalog-arrow" type="button" data-carousel-prev aria-label="Предыдущие автомобили">←</button>
-            <button class="catalog-arrow" type="button" data-carousel-next aria-label="Следующие автомобили">→</button>
+            <a class="catalog-all-link" href="cars.html?status=active&sort=updated-desc">Все автомобили <span aria-hidden="true">→</span></a>
           </div>
         </div>
-        <div class="vehicle-carousel" id="vehicleCarousel"><div class="home-live-loading-card">Загружаем автомобили в продаже…</div></div>
+
+        <div class="home-vehicle-grid" id="vehicleGrid" aria-live="polite">
+          <div class="home-live-loading-card">Загружаем автомобили в продаже…</div>
+        </div>
+
+        <div class="home-marketplace-more" id="homeMarketplaceMore" hidden>
+          <button class="home-load-more" id="homeLoadMore" type="button">Показать ещё</button>
+        </div>
       </div>
     </section>
   </main>
@@ -101,6 +114,6 @@
 
   <a class="mobile-sticky-cta" href="#check">Проверить VIN <span>→</span></a>
   <script src="app.js"></script>
-  <script src="home-live-catalog.js"></script>
+  <script src="home-live-catalog.js?v=20260825-2"></script>
 </body>
 </html>
