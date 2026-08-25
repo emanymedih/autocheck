@@ -1,13 +1,11 @@
 /* Catalog filter rules for the active-only marketplace flow. */
 
 .catalog-page .catalog-toolbar-primary {
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
-@media (max-width: 1040px) {
-  .catalog-page .catalog-toolbar-primary {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
+.catalog-page .catalog-live-state {
+  display: none !important;
 }
 
 @media (max-width: 760px) {

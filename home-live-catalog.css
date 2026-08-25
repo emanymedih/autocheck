@@ -267,6 +267,9 @@
 #cars-preview .home-load-more {
   min-width: 190px;
   min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 20px;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -275,6 +278,7 @@
   cursor: pointer;
   font-size: 13px;
   font-weight: 750;
+  text-decoration: none;
 }
 
 #cars-preview .home-load-more:hover {
