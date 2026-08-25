@@ -17,6 +17,7 @@
   const nf = new Intl.NumberFormat("ru-RU");
 
   const SIMPLE_ICONS_BASE = "https://cdn.simpleicons.org/";
+  const LOCAL_BRAND_ICONS = new Set(["audi", "bmw", "cadillac", "chevrolet"]);
   const BRAND_ICON_SLUGS = new Map([
     ["audi", "audi"],
     ["bmw", "bmw"],
@@ -27,7 +28,6 @@
     ["ferrari", "ferrari"],
     ["ford", "ford"],
     ["geely", "geely"],
-    ["genesis", "genesis"],
     ["honda", "honda"],
     ["hyundai", "hyundai"],
     ["jeep", "jeep"],
@@ -117,6 +117,12 @@
     return BRAND_ICON_SLUGS.get(normalized) || null;
   }
 
+  function brandIconUrl(slug) {
+    if (!slug) return null;
+    if (LOCAL_BRAND_ICONS.has(slug)) return new URL(`assets/brands/${slug}.svg`, document.baseURI).href;
+    return `${SIMPLE_ICONS_BASE}${encodeURIComponent(slug)}`;
+  }
+
   function brandMonogram(brand) {
     const words = clean(brand).split(/[\s-]+/).filter(Boolean);
     if (!words.length) return "A";
@@ -127,8 +133,9 @@
   function brandLogoMarkup(brand) {
     const slug = brandIconSlug(brand);
     const monogram = escapeHtml(brandMonogram(brand));
-    const image = slug
-      ? `<img class="home-brand-logo-image" src="${SIMPLE_ICONS_BASE}${encodeURIComponent(slug)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
+    const iconUrl = brandIconUrl(slug);
+    const image = iconUrl
+      ? `<img class="home-brand-logo-image" src="${escapeHtml(iconUrl)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
       : "";
     return `<span class="home-brand-logo" aria-hidden="true"><span class="home-brand-logo-fallback">${monogram}</span>${image}</span>`;
   }
