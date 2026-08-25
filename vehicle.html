@@ -24,8 +24,7 @@
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="vehicle.css" />
   <link rel="stylesheet" href="vehicle-typography.css?v=20260819-1" />
-  <link rel="stylesheet" href="vehicle-hero-v2.css?v=20260825-1" />
-  <link rel="stylesheet" href="vehicle-report-gradient.css?v=20260825-1" />
+  <link rel="stylesheet" href="vehicle-marketplace.css?v=20260825-1" />
 </head>
 <body>
   <header class="site-header">
@@ -52,20 +51,59 @@
     <div class="content-container">
       <div class="vehicle-breadcrumbs"><a href="cars.html">Автомобили</a><span>→</span><span id="vehicleBreadcrumbTitle">Автомобиль</span></div>
 
-      <section class="vehicle-reference-card vehicle-hero-v2" aria-labelledby="vehicleTitle">
-        <header class="vehicle-reference-head vehicle-hero-v2-head">
-          <div class="vehicle-reference-title">
-            <div class="vehicle-title-meta">
-              <span class="vehicle-demo-note" id="vehicleDataNote">Загружаем данные автомобиля</span>
-              <span class="vehicle-source-status" id="vehicleSaleStatusChip">Статус уточняется</span>
-            </div>
+      <section class="vehicle-reference-card" aria-labelledby="vehicleTitle">
+        <header class="vehicle-reference-head vehicle-marketplace-head">
+          <div class="vehicle-reference-title vehicle-marketplace-title">
             <h1 id="vehicleTitle">Автомобиль</h1>
             <p id="vehicleTrim">Характеристики загружаются</p>
+            <div class="vehicle-marketplace-meta">
+              <span class="vehicle-source-status" id="vehicleSaleStatusChip">Статус уточняется</span>
+              <span class="vehicle-demo-note" id="vehicleDataNote">Загружаем данные автомобиля</span>
+            </div>
+          </div>
+          <div class="vehicle-marketplace-price">
+            <span class="vehicle-price-eyebrow">Цена предложения в Китае</span>
+            <div class="vehicle-reference-price">
+              <strong id="vehiclePrice">Цена уточняется</strong>
+              <span id="vehiclePriceContext">Цена предложения</span>
+            </div>
           </div>
         </header>
 
-        <div class="vehicle-reference-grid vehicle-hero-v2-grid">
-          <div class="vehicle-gallery-shell">
+        <div class="vehicle-source-strip" aria-label="Источник предложения">
+          <span>Источник предложения</span>
+          <strong id="vehiclePlatform">Площадка продажи</strong>
+          <span class="vehicle-source-separator">·</span>
+          <span id="vehicleSeller">Данные продавца уточняются</span>
+        </div>
+
+        <div class="vehicle-reference-grid vehicle-marketplace-grid">
+          <aside class="vehicle-reference-sidebar vehicle-marketplace-rail">
+            <div class="vehicle-history-box">
+              <span class="vehicle-history-icon" aria-hidden="true">i</span>
+              <div>
+                <strong>История автомобиля</strong>
+                <span id="vehicleAvailabilityChip">Проверяем доступность отчёта</span>
+                <small>Пробег, события, обслуживание и инспекция — если данные доступны.</small>
+              </div>
+              <button class="vehicle-history-action" id="requestVehicleReport" type="button">Запросить отчёт</button>
+            </div>
+
+            <section class="vehicle-reference-section" aria-labelledby="vehicleOwnershipHeading">
+              <h2 id="vehicleOwnershipHeading">Основные данные</h2>
+              <div class="vehicle-info-table" id="vehicleOwnershipList"></div>
+            </section>
+
+            <section class="vehicle-reference-section" aria-labelledby="vehicleQuickSpecsHeading">
+              <h2 id="vehicleQuickSpecsHeading">Характеристики</h2>
+              <div class="vehicle-quick-specs" id="vehicleQuickSpecs"></div>
+              <a class="vehicle-all-specs" href="#vehicleSpecsPanel">Все характеристики</a>
+            </section>
+
+            <div class="vehicle-request-state" id="vehicleRequestState" hidden></div>
+          </aside>
+
+          <div class="vehicle-gallery-shell vehicle-marketplace-gallery">
             <div class="vehicle-gallery" aria-label="Галерея автомобиля">
               <div class="vehicle-gallery-main" id="vehicleMainVisual"></div>
               <div class="vehicle-gallery-thumbs" id="vehicleThumbnails" aria-label="Миниатюры фотографий"></div>
@@ -75,65 +113,59 @@
               <span id="vehicleGallerySourceLabel">Галерея Авточек</span>
             </div>
           </div>
-
-          <aside class="vehicle-reference-sidebar vehicle-decision-panel">
-            <div class="vehicle-price-block">
-              <span class="vehicle-price-eyebrow">Цена автомобиля</span>
-              <div class="vehicle-reference-price">
-                <strong id="vehiclePrice">Цена уточняется</strong>
-                <span id="vehiclePriceContext">Цена площадки</span>
-              </div>
-            </div>
-
-            <div class="vehicle-source-card vehicle-source-card--hero">
-              <span class="vehicle-source-label">Источник предложения</span>
-              <strong id="vehiclePlatform">Площадка продажи</strong>
-              <span id="vehicleSeller">Данные продавца уточняются</span>
-            </div>
-
-            <section class="vehicle-reference-section vehicle-reference-section--compact" aria-labelledby="vehicleOwnershipHeading">
-              <h2 id="vehicleOwnershipHeading">Ключевые данные</h2>
-              <div class="vehicle-info-table" id="vehicleOwnershipList"></div>
-            </section>
-
-            <section class="vehicle-reference-section vehicle-reference-section--compact" aria-labelledby="vehicleQuickSpecsHeading">
-              <h2 id="vehicleQuickSpecsHeading">Характеристики</h2>
-              <div class="vehicle-quick-specs" id="vehicleQuickSpecs"></div>
-              <a class="vehicle-all-specs" href="#vehicleSpecsPanel">Все характеристики</a>
-            </section>
-
-            <div class="vehicle-history-box vehicle-history-box--hero">
-              <span class="vehicle-history-icon" aria-hidden="true">✓</span>
-              <div>
-                <strong>История автомобиля</strong>
-                <span id="vehicleAvailabilityChip">Проверяем доступность отчёта</span>
-                <small>История, инспекция и дополнительные проверки доступны отдельным запросом.</small>
-              </div>
-              <button class="vehicle-history-action" id="requestVehicleReport" type="button">Запросить отчёт</button>
-            </div>
-
-            <div class="vehicle-request-state" id="vehicleRequestState" hidden></div>
-          </aside>
         </div>
       </section>
 
       <section class="vehicle-content">
         <div class="vehicle-main-column">
-          <article class="vehicle-panel" id="vehicleSpecsPanel">
-            <h2>Все характеристики</h2>
-            <p class="vehicle-panel-lead" id="vehicleDescription">Характеристики, которые доступны по текущему предложению.</p>
-            <div class="vehicle-spec-grid" id="vehicleSpecGrid"></div>
+          <article class="vehicle-history-section" id="vehicleHistoryPanel">
+            <div class="vehicle-history-section-head">
+              <h2>История автомобиля</h2>
+              <span class="vehicle-history-badge">отчёт</span>
+            </div>
+
+            <div class="vehicle-history-card">
+              <div class="vehicle-history-card-head">
+                <div>
+                  <strong>Проверить автомобиль перед покупкой</strong>
+                  <span>Авточек соберёт доступную историю по этой машине и отделит проверенные данные от сведений продавца.</span>
+                </div>
+                <div class="vehicle-history-grade">
+                  <small>Оценка</small>
+                  <strong id="vehicleReportGrade">После проверки</strong>
+                </div>
+              </div>
+
+              <div class="vehicle-history-checks">
+                <div class="vehicle-history-check"><i>1</i><div><strong>ДТП и страховые события</strong><span>Покажем найденные записи и их источник.</span></div></div>
+                <div class="vehicle-history-check"><i>2</i><div><strong>Пробег</strong><span>Соберём доступные отметки и проверим последовательность.</span></div></div>
+                <div class="vehicle-history-check"><i>3</i><div><strong>Владение и регистрации</strong><span>Покажем доступные сведения о смене владельца и регистрации.</span></div></div>
+                <div class="vehicle-history-check"><i>4</i><div><strong>Обслуживание и ремонты</strong><span>Сведём сервисные записи в единую хронологию.</span></div></div>
+                <div class="vehicle-history-check"><i>5</i><div><strong>Затопление и пожар</strong><span>Проверим соответствующие признаки, если источник их передаёт.</span></div></div>
+                <div class="vehicle-history-check"><i>6</i><div><strong>Инспекция состояния</strong><span>Покажем оценку и замечания осмотра, когда они доступны.</span></div></div>
+              </div>
+
+              <div class="vehicle-history-cta">
+                <button class="vehicle-report-button" id="requestVehicleReportSecondary" type="button">Запросить полный отчёт</button>
+              </div>
+            </div>
           </article>
 
           <article class="vehicle-panel" id="vehicleFactsPanel">
-            <h2>Что известно до отчёта</h2>
-            <p class="vehicle-panel-lead">Предварительные сведения из карточки продажи. Они показываются отдельно от будущей истории автомобиля.</p>
+            <h2>Сведения из объявления</h2>
+            <p class="vehicle-panel-lead">Данные, которые переданы вместе с предложением. Они не считаются результатом проверки Авточек.</p>
             <div class="vehicle-facts" id="vehicleFacts"></div>
           </article>
 
+          <article class="vehicle-panel" id="vehicleSpecsPanel">
+            <h2>Все характеристики</h2>
+            <p class="vehicle-panel-lead">Технические параметры и идентификационные данные, доступные по текущему предложению.</p>
+            <div class="vehicle-spec-grid" id="vehicleSpecGrid"></div>
+          </article>
+
           <article class="vehicle-panel" id="vehicleConditionPanel">
-            <h2>Предварительное состояние</h2>
-            <p class="vehicle-panel-lead">Результаты предварительного осмотра, если площадка передаёт такие данные.</p>
+            <h2>Состояние и инспекция</h2>
+            <p class="vehicle-panel-lead">Показываем только те результаты осмотра, которые передал источник. Проверенная история автомобиля оформляется отдельным отчётом.</p>
             <div class="vehicle-facts" id="vehicleCondition"></div>
           </article>
 
@@ -142,21 +174,14 @@
             <p class="vehicle-panel-lead">Опции и оборудование, переданные вместе с карточкой автомобиля.</p>
             <div class="vehicle-features" id="vehicleFeatures"></div>
           </article>
-        </div>
 
-        <aside class="vehicle-side-column">
-          <div class="vehicle-report-box">
-            <p class="section-eyebrow">ОТЧЁТ АВТОЧЕК</p>
-            <h2>Запрос истории привязан к этой машине.</h2>
-            <p>Авточек проверит доступность данных и покажет стоимость отчёта до оплаты.</p>
-            <div class="vehicle-report-steps">
-              <div class="vehicle-report-step"><i>1</i><div><strong>Фиксируем автомобиль</strong><span>В заказ попадает внутренний vehicle_id и актуальная карточка.</span></div></div>
-              <div class="vehicle-report-step"><i>2</i><div><strong>Проверяем доступность</strong><span>Определяем, какие данные по машине доступны для отчёта.</span></div></div>
-              <div class="vehicle-report-step"><i>3</i><div><strong>Собираем историю</strong><span>После оплаты данные переводятся и собираются в единый отчёт.</span></div></div>
-            </div>
-            <button class="vehicle-report-button" id="requestVehicleReportSecondary" type="button">Запросить отчёт</button>
-          </div>
-        </aside>
+          <article class="vehicle-panel" id="vehicleSellerPanel">
+            <h2>Описание продавца</h2>
+            <div class="vehicle-seller-description" id="vehicleDescription">Описание автомобиля загружается.</div>
+            <p class="vehicle-seller-note">Описание предоставлено продавцом или площадкой и не является результатом проверки Авточек.</p>
+            <div class="vehicle-source-footer"><span>Источник: <strong id="vehiclePlatformFooter">см. выше</strong></span><span>Проверенные выводы будут показаны только в отчёте Авточек.</span></div>
+          </article>
+        </div>
       </section>
     </div>
   </main>
@@ -166,5 +191,6 @@
   <script src="app.js"></script>
   <script src="catalog-static-api.js"></script>
   <script src="vehicle.js"></script>
+  <script src="vehicle-marketplace.js?v=20260825-1"></script>
 </body>
 </html>
