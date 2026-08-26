@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T02:01:16.282Z",
+  "updatedAt": "2026-08-26T02:14:33.990Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -4247,6 +4247,358 @@
       "listingPlatform": "Autohome Global",
       "sellerName": null,
       "updatedAt": "2026-08-26T02:01:16.280Z"
+    },
+    {
+      "id": "av_a6dbb6713cd316d8a19c",
+      "title": "Volkswagen ID.ERA 2026 4WD Version",
+      "brand": "Volkswagen",
+      "model": "ID.ERA",
+      "trim": "2026 4WD Version",
+      "year": 2026,
+      "mileage": 6000,
+      "city": "Чанша",
+      "price": 37650,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 143hp",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Champagne",
+      "interiorColor": null,
+      "registration": "2026.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2700 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5207*1997*1810 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/01/62/1400x0_c42_autohomecar__ChxpWGqNZe2AIJXaAAzwUosibZg633.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-26T02:01:16.276Z"
+    },
+    {
+      "id": "av_c8dc2782d83af802075d",
+      "title": "NIO ES9",
+      "brand": "NIO",
+      "model": "ES9",
+      "trim": null,
+      "year": 2026,
+      "mileage": 10000,
+      "city": "Чэнду",
+      "price": 60410,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Электро",
+      "engine": null,
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2026.05",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Dual Motor, All-Wheel Drives"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "6"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2845 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5365*2029*1870 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M04/02/AD/1400x0_c42_autohomecar__ChxpWGqNeUSAM3IRAAPz5OeFems101.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-26T02:01:16.277Z"
+    },
+    {
+      "id": "av_fa1900a42f7d71e777ef",
+      "title": "Mazda EZ-60 2025 Range-extender Base Model",
+      "brand": "Mazda",
+      "model": "EZ-60",
+      "trim": "2025 Range-extender Base Model",
+      "year": 2025,
+      "mileage": 5000,
+      "city": "Чжэнчжоу",
+      "price": 15170,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
+      "engine": "Range Extender 98 HP",
+      "transmission": "Electric vehicle single-speed transmission",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2025.10",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Rear Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "5"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2048 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4850*1935*1620 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/E7/78/1400x0_c42_autohomecar__ChtpWGqLzaaAKGPSAARq2coDpkc241.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-26T02:01:16.277Z"
+    },
+    {
+      "id": "av_7433b4c13a6cdbeb563d",
+      "title": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "brand": null,
+      "model": "Lotus Cars EMIRA",
+      "trim": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
+      "year": 2021,
+      "mileage": 10300,
+      "city": "Шанхай",
+      "price": 70230,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "2.0T 405HP L4",
+      "transmission": "8-Speed Wet Dual Clutch",
+      "bodyColor": "Yellow",
+      "interiorColor": null,
+      "registration": "2023.12",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Mid Engine, Rear-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "2"
+        },
+        {
+          "label": "Дверей",
+          "value": "2"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "1460 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "4413*1896*1235 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/FD/25/1400x0_c42_autohomecar__ChxpV2qNKv-AQVB0AAHXlj4u0Ow081.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-26T02:01:16.278Z"
+    },
+    {
+      "id": "av_88fc31468cb6a7e5bdaf",
+      "title": "Lincoln Navigator 2018 Model 3.5T Ultimate China V",
+      "brand": null,
+      "model": "Lincoln Navigator",
+      "trim": "Lincoln Navigator 2018 Model 3.5T Ultimate China V",
+      "year": 2018,
+      "mileage": 210000,
+      "city": "Циндао",
+      "price": 30060,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Бензин",
+      "engine": "3.5T 415 horsepower V6",
+      "transmission": "10-speed automatic manual transmission",
+      "bodyColor": "White",
+      "interiorColor": null,
+      "registration": "2018.04",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "Front Engine, All-Wheel Drive"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "7"
+        },
+        {
+          "label": "Дверей",
+          "value": "5"
+        },
+        {
+          "label": "Снаряжённая масса",
+          "value": "2825 кг"
+        },
+        {
+          "label": "Габариты",
+          "value": "5355*2073*1937 мм"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/03/2E/1400x0_c42_autohomecar__ChxpVWqNQXaAQvnwAAYxN2TpcIE088.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-26T02:01:16.279Z"
+    },
+    {
+      "id": "av_547c4d0f6ee2bf1a1f5c",
+      "title": "Honda S2000 1999 Japanese Version",
+      "brand": "Honda",
+      "model": "S2000",
+      "trim": "1999 Japanese Version",
+      "year": 1999,
+      "mileage": 80000,
+      "city": "Гуанчжоу",
+      "price": 57680,
+      "priceText": null,
+      "fobPriceText": null,
+      "currency": "USD",
+      "body": "Купе / спорткар",
+      "energyType": "Прочее",
+      "engine": null,
+      "transmission": "--",
+      "bodyColor": "Silver",
+      "interiorColor": null,
+      "registration": "2019.11",
+      "transfers": null,
+      "vin": null,
+      "description": null,
+      "features": [],
+      "listingFacts": [],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Привод",
+          "value": "--"
+        },
+        {
+          "label": "Руль",
+          "value": "Left"
+        },
+        {
+          "label": "Мест",
+          "value": "--"
+        },
+        {
+          "label": "Дверей",
+          "value": "--"
+        }
+      ],
+      "photos": [
+        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/00/33/1400x0_c42_autohomecar__Chto52qNEkKAQG1fAAFoqLRbR5o662.jpg.webp?format=webp&w=720"
+      ],
+      "status": "active",
+      "listingPlatform": "Autohome Global",
+      "sellerName": null,
+      "updatedAt": "2026-08-26T02:01:16.279Z"
     },
     {
       "id": "av_68e584e73da0b018c26e",
@@ -15452,356 +15804,313 @@
       "updatedAt": "2026-08-25T08:41:45+08:00"
     },
     {
-      "id": "av_a6dbb6713cd316d8a19c",
-      "title": "Volkswagen ID.ERA 2026 4WD Version",
-      "brand": "Volkswagen",
-      "model": "ID.ERA",
-      "trim": "2026 4WD Version",
-      "year": 2026,
-      "mileage": 6000,
-      "city": "Чанша",
-      "price": 37650,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 143hp",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Champagne",
-      "interiorColor": null,
-      "registration": "2026.05",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2700 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5207*1997*1810 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M00/01/62/1400x0_c42_autohomecar__ChxpWGqNZe2AIJXaAAzwUosibZg633.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-26T02:01:16.276Z"
-    },
-    {
-      "id": "av_c8dc2782d83af802075d",
-      "title": "NIO ES9",
-      "brand": "NIO",
-      "model": "ES9",
+      "id": "av_72e963499ffa7855e1ec",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
       "trim": null,
-      "year": 2026,
-      "mileage": 10000,
-      "city": "Чэнду",
-      "price": 60410,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Электро",
-      "engine": null,
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "White",
-      "interiorColor": null,
-      "registration": "2026.05",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Dual Motor, All-Wheel Drives"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "6"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2845 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5365*2029*1870 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M04/02/AD/1400x0_c42_autohomecar__ChxpWGqNeUSAM3IRAAPz5OeFems101.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-26T02:01:16.277Z"
-    },
-    {
-      "id": "av_fa1900a42f7d71e777ef",
-      "title": "Mazda EZ-60 2025 Range-extender Base Model",
-      "brand": "Mazda",
-      "model": "EZ-60",
-      "trim": "2025 Range-extender Base Model",
-      "year": 2025,
-      "mileage": 5000,
-      "city": "Чжэнчжоу",
-      "price": 15170,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Гибрид с увеличителем запаса хода (EREV)",
-      "engine": "Range Extender 98 HP",
-      "transmission": "Electric vehicle single-speed transmission",
-      "bodyColor": "Silver",
-      "interiorColor": null,
-      "registration": "2025.10",
-      "transfers": null,
-      "vin": null,
-      "description": null,
-      "features": [],
-      "listingFacts": [],
-      "conditionChecks": [],
-      "extraSpecs": [
-        {
-          "label": "Привод",
-          "value": "Rear Engine, Rear-Wheel Drive"
-        },
-        {
-          "label": "Руль",
-          "value": "Left"
-        },
-        {
-          "label": "Мест",
-          "value": "5"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2048 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4850*1935*1620 мм"
-        }
-      ],
-      "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M03/E7/78/1400x0_c42_autohomecar__ChtpWGqLzaaAKGPSAARq2coDpkc241.jpg.webp?format=webp&w=720"
-      ],
-      "status": "active",
-      "listingPlatform": "Autohome Global",
-      "sellerName": null,
-      "updatedAt": "2026-08-26T02:01:16.277Z"
-    },
-    {
-      "id": "av_7433b4c13a6cdbeb563d",
-      "title": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
-      "brand": null,
-      "model": "Lotus Cars EMIRA",
-      "trim": "Lotus Cars EMIRA 2021 2.0T DCT First Edition",
       "year": 2021,
-      "mileage": 10300,
-      "city": "Шанхай",
-      "price": 70230,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
+      "mileage": 60000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
       "energyType": "Бензин",
-      "engine": "2.0T 405HP L4",
-      "transmission": "8-Speed Wet Dual Clutch",
-      "bodyColor": "Yellow",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2023.12",
+      "registration": "2022/07/01",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-26 01:08:40",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Mid Engine, Rear-Wheel Drive"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "2"
-        },
-        {
-          "label": "Дверей",
-          "value": "2"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "1460 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "4413*1896*1235 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g34/M08/FD/25/1400x0_c42_autohomecar__ChxpV2qNKv-AQVB0AAHXlj4u0Ow081.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_72e963499ffa7855e1ec.jpg",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c6670b51/1787706470531_977_app_W_482.70K-482.70K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c66536bc/1787706470412_818_app_X_508.38K-508.38K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c6651249/1787706470397_641_app_A_410.38K-410.38K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c666bfc2/1787706470514_163_app_I_303.37K-303.37K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c665a9f4/1787706470438_991_app_E_228.48K-228.48K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c6678491/1787706470560_582_app_K_338.87K-338.87K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c6651249/1787706470397_156_app_S_280.23K-280.23K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1011069/car/image/6a8e3c666fb65/1787706470525_292_app_D_226.35K-226.35K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-26T02:01:16.278Z"
+      "updatedAt": "2026-08-26T01:08:40+08:00"
     },
     {
-      "id": "av_88fc31468cb6a7e5bdaf",
-      "title": "Lincoln Navigator 2018 Model 3.5T Ultimate China V",
-      "brand": null,
-      "model": "Lincoln Navigator",
-      "trim": "Lincoln Navigator 2018 Model 3.5T Ultimate China V",
-      "year": 2018,
-      "mileage": 210000,
-      "city": "Циндао",
-      "price": 30060,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
+      "id": "av_4f4ded8f6c622fc44f4c",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 85000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "SUV",
       "energyType": "Бензин",
-      "engine": "3.5T 415 horsepower V6",
-      "transmission": "10-speed automatic manual transmission",
-      "bodyColor": "White",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2018.04",
+      "registration": "2022/03/25",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Есть упоминания окрашенных кузовных элементов. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-25 10:34:35",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-25 15:14:21",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
           "label": "Привод",
-          "value": "Front Engine, All-Wheel Drive"
+          "value": "All-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
         },
         {
-          "label": "Мест",
-          "value": "7"
-        },
-        {
-          "label": "Дверей",
-          "value": "5"
-        },
-        {
-          "label": "Снаряжённая масса",
-          "value": "2825 кг"
-        },
-        {
-          "label": "Габариты",
-          "value": "5355*2073*1937 мм"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M05/03/2E/1400x0_c42_autohomecar__ChxpVWqNQXaAQvnwAAYxN2TpcIE088.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_4f4ded8f6c622fc44f4c.jpg",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8eccea3f/1787668716867_677_app_H_455.81K-455.81K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecc6407/1787668716834_222_app_R_446.58K-446.58K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecc8c9d/1787668716844_658_app_O_400.44K-400.44K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecd33ff/1787668716901_061_app_T_462.41K-462.41K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8eceaf9b/1787668716984_424_app_U_364.28K-364.28K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecf34ab/1787668717018_336_app_T_413.27K-413.27K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ed067aa/1787668717047_768_app_D_450.39K-450.39K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ed0e352/1787668717080_640_app_O_503.22K-503.22K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecd33ff/1787668716964_020_app_H_363.49K-363.49K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecd33ff/1787668716939_831_app_H_304.18K-304.18K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecc6407/1787668716840_160_app_J_412.36K-412.36K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8eccea3f/1787668716874_632_app_M_415.78K-415.78K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/6778419/car/image/6a8da8ecd33ff/1787668716911_194_app_B_454.16K-454.16K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-26T02:01:16.279Z"
+      "updatedAt": "2026-08-25T15:14:21+08:00"
     },
     {
-      "id": "av_547c4d0f6ee2bf1a1f5c",
-      "title": "Honda S2000 1999 Japanese Version",
+      "id": "av_6b43af258efa85a4eeea",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
       "brand": "Honda",
-      "model": "S2000",
-      "trim": "1999 Japanese Version",
-      "year": 1999,
-      "mileage": 80000,
-      "city": "Гуанчжоу",
-      "price": 57680,
-      "priceText": null,
-      "fobPriceText": null,
-      "currency": "USD",
-      "body": "Купе / спорткар",
-      "energyType": "Прочее",
-      "engine": null,
-      "transmission": "--",
-      "bodyColor": "Silver",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 113000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
       "interiorColor": null,
-      "registration": "2019.11",
+      "registration": "2020/12/01",
       "transfers": null,
       "vin": null,
-      "description": null,
+      "description": "Есть упоминания окрашенных кузовных элементов. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
-      "listingFacts": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-26 00:58:01",
+          "status": "info"
+        }
+      ],
       "conditionChecks": [],
       "extraSpecs": [
         {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
           "label": "Привод",
-          "value": "--"
+          "value": "Front-Wheel Drive"
         },
         {
-          "label": "Руль",
-          "value": "Left"
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
         },
         {
-          "label": "Мест",
-          "value": "--"
-        },
-        {
-          "label": "Дверей",
-          "value": "--"
+          "label": "Экологический стандарт",
+          "value": "China VI"
         }
       ],
       "photos": [
-        "https://erscglobal2.autoimg.cn/escimg/auto/g33/M04/00/33/1400x0_c42_autohomecar__Chto52qNEkKAQG1fAAFoqLRbR5o662.jpg.webp?format=webp&w=720"
+        "assets/catalog-thumbs/av_6b43af258efa85a4eeea.jpg",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675535638_031_app_O_468.66K-468.66K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675535663_110_app_I_410.27K-410.27K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675535932_685_app_K_479.05K-479.05K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675536179_782_app_S_336.01K-336.01K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675536610_114_app_U_272.76K-272.76K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675536850_226_app_C_323.61K-323.61K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675537085_980_app_O_339.29K-339.29K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675537331_737_app_K_363.05K-363.05K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675537563_054_app_Y_376.69K-376.69K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2856037/car/image/6a8dc38f9b7b4/1787675536374_841_app_B_194.49K-194.49K.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
-      "listingPlatform": "Autohome Global",
+      "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-26T02:01:16.279Z"
+      "updatedAt": "2026-08-26T00:58:01+08:00"
+    },
+    {
+      "id": "av_833d469d9e2d313fd11b",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 75000,
+      "city": null,
+      "price": null,
+      "priceText": "¥8****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2020/11/25",
+      "transfers": null,
+      "vin": null,
+      "description": "В карточке есть сведения о страховке. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-25 06:49:48",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2020/09"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_833d469d9e2d313fd11b.jpg",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4c4737/1787639460833_598_app_G_377.78K-377.78K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4cfe69/1787639460881_704_app_H_389.22K-389.22K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4dac1f/1787639460919_121_app_B_367.42K-367.42K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4d6eb1/1787639460903_332_app_E_352.72K-352.72K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a50b3f8/1787639461071_518_app_E_456.64K-456.64K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4c4737/1787639460840_854_app_L_419.73K-419.73K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4d6eb1/1787639460904_370_app_X_389.12K-389.12K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4dac1f/1787639460977_721_app_E_430.84K-430.84K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/5208398/car/image/6a8d36a4dac1f/1787639460956_563_app_H_396.65K-396.65K.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-25T06:49:48+08:00"
     }
   ]
 }
