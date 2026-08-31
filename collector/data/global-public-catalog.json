@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T14:27:26.616Z",
+  "updatedAt": "2026-08-31T23:02:37.276Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -5870,6 +5870,11 @@
           "label": "Дата объявления",
           "text": "2026-08-19 13:55:52",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-22 14:08:42",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -5911,7 +5916,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T13:55:52+08:00"
+      "updatedAt": "2026-08-22T14:08:42+08:00"
     },
     {
       "id": "av_269dc7f8be9fdb8547d7",
@@ -10293,6 +10298,11 @@
           "label": "Дата объявления",
           "text": "2026-08-20 11:25:47",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-24 01:20:20",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -10340,7 +10350,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-20T11:25:47+08:00"
+      "updatedAt": "2026-08-24T01:20:20+08:00"
     },
     {
       "id": "av_9bda3faf302bd938826d",
@@ -12253,7 +12263,7 @@
         },
         {
           "label": "Обновлено на площадке",
-          "text": "2026-08-22 11:16:20",
+          "text": "2026-08-31 03:57:39",
           "status": "info"
         }
       ],
@@ -12299,7 +12309,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-22T11:16:20+08:00"
+      "updatedAt": "2026-08-31T03:57:39+08:00"
     },
     {
       "id": "av_962134b60a42bb4258c2",
@@ -21764,6 +21774,78 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-31T06:25:07+08:00"
+    },
+    {
+      "id": "av_a8ff7adac9999b4a5f28",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 71000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2021/03/12",
+      "transfers": null,
+      "vin": null,
+      "description": "Поставщик передал дополнительное описание состояния автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-08-31 09:08:21",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_a8ff7adac9999b4a5f28.jpg",
+        "https://img.jytche.com/user/1799555/car/image/6a954416dadf8/1788167190917o4939_605194_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1799555/car/image/6a954416dadf8/1788167190919E11805_553985_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1799555/car/image/6a954416dadf8/1788167190920D4220_669143_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1799555/car/image/6a954416dadf8/1788167190921f8556_268723.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1799555/car/image/6a954416dadf8/1788167190922d4866_367721.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1799555/car/image/6a954416dadf8/1788167190921s2977_292343.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-08-31T09:08:21+08:00"
     }
   ]
 }
