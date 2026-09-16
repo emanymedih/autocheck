@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T17:18:06.179Z",
+  "updatedAt": "2026-09-16T21:44:24.971Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -18046,7 +18046,7 @@
       "mileage": 160000,
       "city": null,
       "price": null,
-      "priceText": "¥1*****",
+      "priceText": "¥9****",
       "fobPriceText": "$1****",
       "currency": "CNY",
       "body": "SUV",
@@ -18064,6 +18064,11 @@
         {
           "label": "Дата объявления",
           "text": "2026-08-28 09:15:59",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-08-29 14:32:12",
           "status": "info"
         }
       ],
@@ -18106,10 +18111,10 @@
         "https://img.jytche.com/user/924891/car/image/6a915153c0861/1787908436515_490_app_A_361.76K-361.76K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/924891/car/image/6a915153c0861/1787908436645_982_app_K_290.91K-290.91K.jpeg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-28T09:15:59+08:00"
+      "updatedAt": "2026-08-29T14:32:12+08:00"
     },
     {
       "id": "av_95e96903626c5777b613",
@@ -39340,7 +39345,7 @@
       "mileage": 26000,
       "city": null,
       "price": null,
-      "priceText": "¥1*****",
+      "priceText": "¥9****",
       "fobPriceText": "$1****",
       "currency": "CNY",
       "body": "Седан",
@@ -41336,6 +41341,84 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-09-16T02:55:56+08:00"
+    },
+    {
+      "id": "av_f7aee6c49c44bf68c6a9",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 54000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/01/25",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании продавца указан заводской окрас кузова.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-09-16 04:10:48",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "https://img.jytche.com/user/206320/car/image/6aaa1676036b4/1789531766584_373_app_G_420.75K-420.75K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa16761b5b3/1789531766691_624_app_B_435.60K-435.60K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa16761c723/1789531766805_735_app_F_253.58K-253.58K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa16761be25/1789531766695_116_app_H_170.91K-170.91K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa1676487c4/1789531766871_123_app_O_189.19K-189.19K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167609c2d/1789531766647_576_app_L_228.76K-228.76K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167609c2d/1789531766646_150_app_M_287.04K-287.04K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167609c2d/1789531766624_037_app_U_226.25K-226.25K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167609c2d/1789531766612_984_app_D_449.80K-449.80K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167630864/1789531766798_207_app_B_445.28K-445.28K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167601699/1789531766578_950_app_G_282.21K-282.21K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa16762a9f2/1789531766787_547_app_Q_204.95K-204.95K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/206320/car/image/6aaa167601699/1789531766578_647_app_I_233.70K-233.70K_parse.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-09-16T04:10:48+08:00"
     }
   ]
 }
