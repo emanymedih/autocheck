@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T13:56:57.256Z",
+  "updatedAt": "2026-10-01T22:55:54.231Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -8191,7 +8191,7 @@
         },
         {
           "label": "Обновлено на площадке",
-          "text": "2026-08-06 13:30:45",
+          "text": "2026-09-29 09:14:56",
           "status": "info"
         }
       ],
@@ -8237,7 +8237,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-06T13:30:45+08:00"
+      "updatedAt": "2026-09-29T09:14:56+08:00"
     },
     {
       "id": "av_e9ae822430f56c4866b1",
@@ -53308,7 +53308,7 @@
         },
         {
           "label": "Обновлено на площадке",
-          "text": "2026-09-29 04:02:41",
+          "text": "2026-10-01 01:41:19",
           "status": "info"
         }
       ],
@@ -53341,21 +53341,21 @@
       ],
       "photos": [
         "assets/catalog-thumbs/av_8c7f2d919f2e511c7aa3.jpg",
-        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228705_262_app_Y_3.45M-368.92K_parse.jpeg?x-oss-process=style%2Fnormal",
-        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228214_518_app_Q_3.13M-311.17K.jpeg?x-oss-process=style%2Fnormal",
-        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228535_357_app_A_3.03M-294.87K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2595671/car/image/6abdba1c776e3/1790818844843_431_app_N_3.45M-368.92K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228684_413_app_P_5.18M-248.67K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228744_577_app_U_5.44M-301.29K.jpeg?x-oss-process=style%2Fnormal",
-        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228803_826_app_Y_4.69M-288.20K_parse.jpeg?x-oss-process=style%2Fnormal",
-        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228306_272_app_M_3.37M-346.97K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228553_476_app_N_3.37M-347.11K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228331_745_app_T_3.05M-285.24K.jpeg?x-oss-process=style%2Fnormal",
-        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228786_092_app_Q_5.50M-248.67K.jpeg?x-oss-process=style%2Fnormal"
+        "https://img.jytche.com/user/2595671/car/image/6abdba1c776e3/1790818844849_191_app_Y_3.13M-311.17K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2595671/car/image/6abdba1c776e3/1790818844802_182_app_O_3.03M-294.87K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228786_092_app_Q_5.50M-248.67K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228803_826_app_Y_4.69M-288.20K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/2595671/car/image/6aba25a3d1291/1790584228306_272_app_M_3.37M-346.97K_parse.jpeg?x-oss-process=style%2Fnormal"
       ],
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-09-29T04:02:41+08:00"
+      "updatedAt": "2026-10-01T01:41:19+08:00"
     },
     {
       "id": "av_7477d782c67973084596",
