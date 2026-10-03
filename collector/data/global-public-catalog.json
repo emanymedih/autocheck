@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T22:35:33.959Z",
+  "updatedAt": "2026-10-03T05:47:41.574Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -7565,6 +7565,11 @@
           "label": "Дата объявления",
           "text": "2026-08-19 08:45:20",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-09-24 09:34:37",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -7606,7 +7611,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-19T08:45:20+08:00"
+      "updatedAt": "2026-09-24T09:34:37+08:00"
     },
     {
       "id": "av_4e6385f2ce521288db79",
@@ -23130,7 +23135,7 @@
         "https://img.jytche.com/user/1368958/car/image/6a94ee1035516/1788145167834y11369_102317.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/1368958/car/image/6a94ee1035516/1788145167835X9888_78537_parse.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-08-31T03:00:24+08:00"
@@ -56935,6 +56940,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_f6d62ea9dee8d35d75b2.jpg",
         "https://img.jytche.com/user/787546/car/image/6abf2de3653a1/1790914019236L4766_567355_parse.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/787546/car/image/6abf2de3653a1/1790914019237P4856_944976.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/787546/car/image/6abf2de3653a1/1790914019237i7813_906259.jpg?x-oss-process=style%2Fnormal",
@@ -57009,6 +57015,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_5f620f569024e8107fcd.jpg",
         "https://img.jytche.com/user/862668/car/image/6abdb7cee15e8/1790818254968_016_app_V_589.66K-469.18K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/862668/car/image/6abdb7cee431d/1790818255023_258_app_A_558.24K-445.94K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/862668/car/image/6abdb7cee0d73/1790818254952_117_app_A_480.33K-480.33K_parse.jpg?x-oss-process=style%2Fnormal",
@@ -57086,6 +57093,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_641293bfcc23a7da6f76.jpg",
         "https://img.jytche.com/user/1764518/car/image/6abe326a30983/1790849642339_287_app_E_6.80M-289.13K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/1764518/car/image/6abe326a30983/1790849642335_752_app_F_6.47M-302.50K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/1764518/car/image/6abe326a30983/1790849642329_028_app_R_5.58M-237.16K.jpeg?x-oss-process=style%2Fnormal",
@@ -57167,6 +57175,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_445f3cf39cde5e20deb4.jpg",
         "https://img.jytche.com/user/2971692/car/image/6abf22ba60525/1790911162543_489_app_L_10.24M-289.49K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2971692/car/image/6abf22ba60525/1790911162544_668_app_T_9.25M-244.92K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/2971692/car/image/6abf22ba60525/1790911162544_858_app_W_9.29M-244.92K.jpeg?x-oss-process=style%2Fnormal",
@@ -57241,6 +57250,7 @@
         }
       ],
       "photos": [
+        "assets/catalog-thumbs/av_a1df7cf61f0db34c8529.jpg",
         "https://img.jytche.com/user/7148621/car/image/6abf19a87232d/1790908840563_970_app_D_1.36M-734.05K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/7148621/car/image/6abf19a87232d/1790908840563_188_app_C_1.38M-750.15K_parse.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/7148621/car/image/6abf19a87232d/1790908840561_253_app_G_1.26M-664.63K_parse.jpeg?x-oss-process=style%2Fnormal",
