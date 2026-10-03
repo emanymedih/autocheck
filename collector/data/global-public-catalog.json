@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T05:47:41.574Z",
+  "updatedAt": "2026-10-03T12:04:12.235Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -20293,6 +20293,11 @@
           "label": "Дата объявления",
           "text": "2026-08-30 04:33:17",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-09-02 13:50:50",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -20332,10 +20337,10 @@
         "https://img.jytche.com/user/574649/car/image/6a93add2e68d9/1788063187389d2392_674654.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/574649/car/image/6a93add2e68d9/1788063187390J11223_334182.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-08-30T04:33:17+08:00"
+      "updatedAt": "2026-09-02T13:50:50+08:00"
     },
     {
       "id": "av_02cbc7009f430ce760dc",
