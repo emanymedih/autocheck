@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T06:53:25.301Z",
+  "updatedAt": "2026-10-06T18:38:36.540Z",
   "healthy": true,
   "checks": {
     "importCompleted": true,
@@ -28,8 +28,8 @@
     "missingRate": 0
   },
   "run": {
-    "startedAt": "2026-10-06T06:53:10.389Z",
-    "finishedAt": "2026-10-06T06:53:25.454Z",
+    "startedAt": "2026-10-06T18:38:20.743Z",
+    "finishedAt": "2026-10-06T18:38:36.689Z",
     "pagesVisited": 0,
     "targetListings": 60,
     "importSucceeded": true
