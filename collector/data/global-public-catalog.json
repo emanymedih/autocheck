@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T11:56:21.617Z",
+  "updatedAt": "2026-10-16T16:59:28.939Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -68289,6 +68289,472 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-10-16T03:33:41+08:00"
+    },
+    {
+      "id": "av_e39b5038494622e0f48b",
+      "title": "Mazda 2023 CX-50 Xingye 2.0 Lingxing Version",
+      "brand": "Mazda",
+      "model": "CX-50 Xingye 2.0 Lingxing Version",
+      "trim": null,
+      "year": 2023,
+      "mileage": 9000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0L 155PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2024/01/30",
+      "transfers": null,
+      "vin": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. В описании есть сведения о пробеге; их нужно сверить с отчётом. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-16 10:40:55",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1998CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "114 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_e39b5038494622e0f48b.jpg",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146924079682_80651932_app_F_812.33K-223.61K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146924070477_80883252_app_J_813.20K-223.07K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146924079584_96708343_app_S_774.65K-203.78K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146924788148_58322927_app_S_1.08M-263.88K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146924796089_16511169_app_B_1.10M-254.01K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146924797860_83477165_app_O_1.05M-242.02K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146925431278_46945642_app_K_813.35K-222.73K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146925425005_72906999_app_L_811.08K-221.78K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146925423630_43881140_app_J_740.16K-193.42K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146926126977_23621390_app_J_976.65K-305.91K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146926130952_68440054_app_W_962.22K-288.14K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146926146379_02979732_app_U_1.29M-337.82K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146926786320_67937557_app_V_971.02K-309.96K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146926826213_50657681_app_W_1.85M-499.85K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146927409213_94292155_app_S_1.35M-383.71K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146927420702_71713930_app_C_1.30M-332.65K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146927561642_96224018_app_E_2.22M-476.92K_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146928085659_97299100_app_K_1.25M-316.75K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146926787303_08327153_app_J_810.96K-228.44K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4667482/car/image/6ad1fdec3435c/1792146928079621_43609802_app_L_1.23M-307.57K.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-16T10:40:55+08:00"
+    },
+    {
+      "id": "av_c538076175ee12d52ee3",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 113000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2021/09/16",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании продавца указан заводской окрас кузова.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-16 14:53:03",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2020/12"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_c538076175ee12d52ee3.jpg",
+        "https://img.jytche.com/user/254775/car/image/6ad22e5e9a0d8/1792159326640y11356_525961_parse_parse_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351760G4323_506415.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351762b3069_440137.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351763x8787_404531.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351764o9755_564878.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351766P5764_664740.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351768R12298_599252.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351767f2056_207199.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e77b5cb0/1792159351765F8474_320870_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/254775/car/image/6ad22e9217aba/1792159378109f11175_535081_parse.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-16T14:53:03+08:00"
+    },
+    {
+      "id": "av_6ea6385371ec5ec8c859",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 90000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2021/07/17",
+      "transfers": null,
+      "vin": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-16 13:08:29",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_6ea6385371ec5ec8c859.jpg",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052329k3308_386283_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052331G903_365630.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052332h5712_415830_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052334n10114_370728_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052335s7149_324550_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052336c8954_376667.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052337M6632_500370_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052338w10551_470412_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1343075/car/image/6ad221946b521/1792156052339k2950_444198_parse.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-16T13:08:29+08:00"
+    },
+    {
+      "id": "av_88314bcbc5ef946d3a5d",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 111000,
+      "city": null,
+      "price": null,
+      "priceText": "¥9****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/03/29",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании есть окрашенные или требующие окраски кузовные элементы. В описании продавца указан заводской окрас кузова.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-16 12:51:17",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-10-16 13:42:12",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_88314bcbc5ef946d3a5d.jpg",
+        "https://img.jytche.com/user/1674833/car/image/6ad21d930ef0d/1792155027099R4898_244511_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1674833/car/image/6ad21d930ef0d/1792155027100G12120_456692.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1674833/car/image/6ad21d930ef0d/1792155027102c8896_291815_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1674833/car/image/6ad21d930ef0d/1792155027104P10756_647628_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1674833/car/image/6ad21d930ef0d/1792155027105j11459_595454.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1674833/car/image/6ad21d930ef0d/1792155027106w10040_489205_parse.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "unknown",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-16T13:42:12+08:00"
+    },
+    {
+      "id": "av_5782315e93c7474e7aa0",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 91000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/02/14",
+      "transfers": null,
+      "vin": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-16 11:36:43",
+          "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-10-16 11:53:39",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2021"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_5782315e93c7474e7aa0.jpg",
+        "https://img.jytche.com/user/3685762/car/image/6ad20b5615ec4/1792150358191441_59347165_app_Y_999.72K-521.08K_parse_parse.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3685762/car/image/6ad20b5615ec4/1792150358189922_08596907_app_K_1.04M-437.33K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3685762/car/image/6ad20b5615ec4/1792150358839702_78717714_app_O_942.06K-473.20K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3685762/car/image/6ad20b5615ec4/1792150358838982_92403095_app_Q_929.90K-441.36K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3685762/car/image/6ad20b5615ec4/1792150358859615_20301059_app_O_737.06K-365.98K.jpeg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/3685762/car/image/6ad20b5615ec4/1792150358190035_68262278_app_Q_847.57K-426.82K_parse.jpeg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-16T11:53:39+08:00"
+    },
+    {
+      "id": "av_988498e2fb9c0f0c1c09",
+      "title": "Honda 2020 UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "brand": "Honda",
+      "model": "UR-V 2.0T 370TURBO Front-Wheel-Drive Prestige Edition",
+      "trim": null,
+      "year": 2020,
+      "mileage": 62000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 272PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2023/03/28",
+      "transfers": null,
+      "vin": null,
+      "description": "В описании есть окрашенные или требующие окраски кузовные элементы.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-16 09:29:27",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1996CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "200 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_988498e2fb9c0f0c1c09.jpg",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142869503061_55682841_app_E_446.49K-446.49K_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142869503304_49565483_app_U_503.51K-503.51K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142869503510_00331284_app_H_445.66K-445.66K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142870707934_88050387_app_L_314.61K-314.61K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142870733674_01913056_app_I_292.61K-292.61K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142870736800_57767539_app_L_254.54K-254.54K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142871353863_03447523_app_D_430.53K-430.53K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142871497458_26406665_app_C_445.52K-445.52K.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/509401/car/image/6ad1ee1684d53/1792142871497806_04957842_app_R_430.73K-430.73K.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-16T09:29:27+08:00"
     }
   ]
 }
