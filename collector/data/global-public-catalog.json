@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T17:39:29.638Z",
+  "updatedAt": "2026-10-22T21:56:16.401Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -29419,6 +29419,11 @@
           "label": "Дата объявления",
           "text": "2026-09-07 03:40:27",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-10-10 01:03:16",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -29463,7 +29468,7 @@
       "status": "active",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-09-07T03:40:27+08:00"
+      "updatedAt": "2026-10-10T01:03:16+08:00"
     },
     {
       "id": "av_d0a99834b2722881b12d",
@@ -75774,6 +75779,79 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-10-22T14:47:21+08:00"
+    },
+    {
+      "id": "av_1680d8754d5c04e780f2",
+      "title": "TANK 2021 Tank 300 2.0T Off-Road Edition Conqueror",
+      "brand": "Tank",
+      "model": "Tank 300 2.0T Off-Road Edition Conqueror",
+      "trim": null,
+      "year": 2021,
+      "mileage": 68000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$1****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0T 227PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2022/05/07",
+      "transfers": null,
+      "vin": null,
+      "description": "Кузов заявлен в заводском окрасе, без серьёзного кузовного ремонта.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-22 12:15:11",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2022"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0T(1967CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "All-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "167 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_1680d8754d5c04e780f2.jpg",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f82b843cc/1792669739563t6127_506946_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f7a4c0ac8/1792669604824T3286_230355.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f7a4c0ac8/1792669604828c4569_300351.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f7a4c0ac8/1792669604833H4125_281429.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f7a4c0ac8/1792669604835H4245_333499.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f7a4c0ac8/1792669604826e344_281129_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/1131661/car/image/6ad9f7a4c0ac8/1792669604830X1370_310612_parse.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-22T12:15:11+08:00"
     }
   ]
 }
