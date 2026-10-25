@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T16:50:51.591Z",
+  "updatedAt": "2026-10-25T21:16:01.208Z",
   "items": [
     {
       "id": "av_ab2bdab2a4f25e90b5d6",
@@ -28624,7 +28624,7 @@
         "https://img.jytche.com/user/3861465/car/image/6a9ccfce19e78/1788661709335_071_app_Y_206.45K-206.45K.jpeg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/3861465/car/image/6a9ccfce1d76f/1788661709338_843_app_P_206.04K-206.04K_parse.jpeg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-09-06T02:29:32+08:00"
@@ -31393,7 +31393,7 @@
         "https://img.jytche.com/user/1505051/car/image/6a9fef11c12b7/1788866321824G10833_349804.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/1505051/car/image/6a9fef11c12b7/1788866321825N12277_2017197.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-09-08T11:20:00+08:00"
@@ -31666,6 +31666,11 @@
           "label": "Дата объявления",
           "text": "2026-09-09 04:09:33",
           "status": "info"
+        },
+        {
+          "label": "Обновлено на площадке",
+          "text": "2026-09-12 04:27:43",
+          "status": "info"
         }
       ],
       "conditionChecks": [],
@@ -31704,10 +31709,10 @@
         "https://img.jytche.com/user/298319/car/image/6aa0da5116eab/1788926544911f6295_69565.jpg?x-oss-process=style%2Fnormal",
         "https://img.jytche.com/user/298319/car/image/6aa0da5116eab/1788926544911e6533_58041.jpg?x-oss-process=style%2Fnormal"
       ],
-      "status": "active",
+      "status": "unknown",
       "listingPlatform": "SeekAuto",
       "sellerName": null,
-      "updatedAt": "2026-09-09T04:09:33+08:00"
+      "updatedAt": "2026-09-12T04:27:43+08:00"
     },
     {
       "id": "av_137758865e4a4d639dcd",
@@ -32126,7 +32131,7 @@
       "registration": "2022/07/21",
       "transfers": null,
       "vin": null,
-      "description": "В описании продавца указан заводской окрас кузова. Продавец заявляет готовность автомобиля к независимой проверке.",
+      "description": "Кузов в основном заявлен в заводском окрасе. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
       "features": [],
       "listingFacts": [
         {
@@ -79140,6 +79145,90 @@
       "listingPlatform": "SeekAuto",
       "sellerName": null,
       "updatedAt": "2026-10-25T13:55:25+08:00"
+    },
+    {
+      "id": "av_457e8d1165814f384fe4",
+      "title": "Mazda 2023 CX-50 Xingye 2.0 Lingxing Version",
+      "brand": "Mazda",
+      "model": "CX-50 Xingye 2.0 Lingxing Version",
+      "trim": null,
+      "year": 2023,
+      "mileage": 29000,
+      "city": null,
+      "price": null,
+      "priceText": "¥1*****",
+      "fobPriceText": "$2****",
+      "currency": "CNY",
+      "body": "SUV",
+      "energyType": "Бензин",
+      "engine": "2.0L 155PS L4",
+      "transmission": "Automatic",
+      "bodyColor": null,
+      "interiorColor": null,
+      "registration": "2023/09/07",
+      "transfers": null,
+      "vin": null,
+      "description": "Кузов в основном заявлен в заводском окрасе. В описании есть сведения о пробеге; их нужно сверить с отчётом. Поставщик также перечисляет оснащение автомобиля. Формулировка приведена в понятном для покупателя виде; ключевые факты стоит подтвердить отчётом и осмотром.",
+      "features": [],
+      "listingFacts": [
+        {
+          "label": "Дата объявления",
+          "text": "2026-10-25 05:03:47",
+          "status": "info"
+        }
+      ],
+      "conditionChecks": [],
+      "extraSpecs": [
+        {
+          "label": "Дата производства",
+          "value": "2023"
+        },
+        {
+          "label": "Топливо",
+          "value": "Gasoline"
+        },
+        {
+          "label": "Рабочий объём / тип",
+          "value": "2.0L(1998CC)"
+        },
+        {
+          "label": "Привод",
+          "value": "Front-Wheel Drive"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "114 кВт"
+        },
+        {
+          "label": "Экологический стандарт",
+          "value": "China VI"
+        }
+      ],
+      "photos": [
+        "assets/catalog-thumbs/av_457e8d1165814f384fe4.jpg",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883400F6379_678448_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883402q5541_564742_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883403N10342_493193_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883404M3972_513274_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883405t4715_521994_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883406j12295_653114_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883407q7686_554787.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883408m2999_444006_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add5803971fd/1792890883409f206_339699_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899308L638_373061_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899310N5114_280526.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899311g351_433044_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899312M5229_456115.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899313h1001_372903.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899313L5867_570263.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899314o6802_370790.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899315Y3464_320762_parse.jpg?x-oss-process=style%2Fnormal",
+        "https://img.jytche.com/user/4601490/car/image/6add58138144b/1792890899316e12297_203880.jpg?x-oss-process=style%2Fnormal"
+      ],
+      "status": "active",
+      "listingPlatform": "SeekAuto",
+      "sellerName": null,
+      "updatedAt": "2026-10-25T05:03:47+08:00"
     }
   ]
 }
